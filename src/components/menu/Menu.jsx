@@ -1,9 +1,9 @@
 import React from 'react';
 import "./menu.scss";
 
-export default function Menu() {
+export default function Menu({ menuOpen, setMenuOpen }) {
   return (
-    <div className="menu">
+    <div className={"menu " + (menuOpen && "active")}>
       <ul>
         <li>
           <a href="#intro">Home</a>
@@ -15,7 +15,7 @@ export default function Menu() {
           <a href="#works">Works</a>
         </li>
         <li>
-          <a href="#testimonials">Testimonials</a>
+          <a href="#testimonial">Testimonials</a>
         </li>
         <li>
           <a href="#contact">Contact</a>
