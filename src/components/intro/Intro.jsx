@@ -1,5 +1,6 @@
 import "./intro.scss"
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 
 export default function intro() {
   return (
@@ -13,13 +14,13 @@ export default function intro() {
         <div className="wrapper">
           <h2>Hi There, I'm </h2>
           <h1>Brandon Magofna</h1>
-          <h3>Freelance<span></span></h3>
+          <h3>Freelance <span>Designer</span></h3>
         </div>
-        <a href="#portfolio">
-          <KeyboardArrowDownIcon className="downIcon" />
-          <KeyboardArrowDownIcon className="downIcon" />
-          {/* <img src="assets/down.jpeg" alt="arrow"></img> */}
-        </a>
+        <div className="wrapper">
+          <a href="#portfolio">
+            <DoubleArrowIcon className="downIcon" onClick="" />
+          </a>
+        </div>
       </div>
 
     </div>

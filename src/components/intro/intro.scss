@@ -5,6 +5,8 @@
   .left{
     flex: 0.5;
     overflow: hidden;
+    background-color: rgb(70, 64, 65);
+    border-radius: 5%;
 
     .imgContainer{
       width: 700px;
@@ -24,15 +26,54 @@
   }
   .right{
     flex: 0.5;
-
-
-    .downIcon{
+    position: relative;
+    
+    .wrapper{
       width: 100%;
       height: 100%;
-      align-items: flex-start;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
-      color: black;
+
+      h1{
+        font-size: 60px;
+        margin: 10px 0px;
+      }
+      h2{
+        font-size: 35px;
+      }
+      h3{
+        font-size: 30px;
+        span{
+          font-size: 30px;
+          color: crimson;
+        }
+      }
+      a{
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+        
+      }
+      .downIcon{
+        width: 50%;
+        height: 30%;
+        align-items: flex-start;
+        justify-content: center;
+        color: red;
+        // border-top: solid;
+        // border-color: black;
+        transform: rotate(90deg);
+        animation: arrowBlink 2s infinite;
+
+        @keyframes arrowBlink{
+          100%{
+            opacity: 0%;
+
+          }
+        }
+      }
     }
-    
   }
 }
