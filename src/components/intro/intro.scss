@@ -1,12 +1,12 @@
 .intro {
-  background-color: white;
+  background-color: #AEB4A9;
   display: flex;
 
   .left{
     flex: 0.5;
     overflow: hidden;
-    background-color: rgb(70, 64, 65);
-    border-radius: 5%;
+    // background-color: rgb(70, 64, 65);
+    // border-radius: 5%;
 
     .imgContainer{
       width: 700px;
@@ -17,6 +17,8 @@
       align-items: flex-end;
       justify-content: center;
       float: right;
+      margin-top: 6%;
+      margin-left: 3%;
 
       img{
         height: 100%;
@@ -27,24 +29,28 @@
   .right{
     flex: 0.5;
     position: relative;
+    overflow: hidden;
+
     
     .wrapper{
       width: 100%;
       height: 100%;
-      padding-left: 50px;
+      // padding-left: 50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
       h1{
         font-size: 60px;
-        margin: 10px 0px;
+        margin: 10px 50px;
       }
       h2{
         font-size: 35px;
+        margin-left: 50px;
       }
       h3{
         font-size: 30px;
+        margin-left: 50px;
         
         span{
           font-size: 30px;
@@ -66,8 +72,8 @@
       }
         a{
         position: absolute;
-        bottom: 10px;
-        left: 40%;
+        bottom: 50px;
+        left: 30%;
         
       }
       .downIcon{
