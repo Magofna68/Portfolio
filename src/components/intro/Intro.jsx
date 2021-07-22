@@ -1,8 +1,22 @@
 import "./intro.scss"
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
+import { init } from 'ityped';
+import { useEffect, useRef } from "react";
 
-export default function intro() {
+export default function Intro() {
+
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    if (!textRef.current) {
+      return;
+    }
+    init(textRef.current, {
+      showCursor: false,
+      strings: ['Developer', 'Designer', 'Content Creator']
+    })
+  }, []);
+
   return (
     <div className="intro" id="intro">
       <div className="left">
@@ -14,7 +28,7 @@ export default function intro() {
         <div className="wrapper">
           <h2>Hi There, I'm </h2>
           <h1>Brandon Magofna</h1>
-          <h3>Freelance <span>Designer</span></h3>
+          <h3>Freelance <span ref={textRef}></span></h3>
         </div>
         <div className="wrapper">
           <a href="#portfolio">
