@@ -2,17 +2,17 @@
   background-color: #bcb8b1;
   display: flex;
 
-  .left{
+  .left {
     flex: 0.5;
     overflow: hidden;
     // background-color: rgb(70, 64, 65);
     // border-radius: 5%;
 
-    .imgContainer{
+    .imgContainer {
       width: 700px;
       height: 600px;
       background-color: crimson;
-      border-radius: 50%;
+      border-radius: 10%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
@@ -20,63 +20,60 @@
       margin-top: 6%;
       margin-left: 3%;
 
-      img{
+      img {
         height: 100%;
-      
       }
     }
   }
-  .right{
+  .right {
     flex: 0.5;
     position: relative;
     overflow: hidden;
 
-    
-    .wrapper{
+    .wrapper {
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
-      h1{
+      h1 {
         font-size: 60px;
         margin: 10px 50px;
         color: #495057;
       }
-      h2{
+      h2 {
         font-size: 35px;
         margin-left: 50px;
       }
-      h3{
+      h3 {
         font-size: 30px;
         margin-left: 50px;
-        
-        span{
+
+        span {
           font-size: 30px;
           color: crimson;
         }
 
-        .ityped-cursor{
+        .ityped-cursor {
           animation: blink 1s infinite;
         }
 
         @keyframes blink {
-          50%{
+          50% {
             opacity: 1;
           }
-          100%{
+          100% {
             opacity: 0;
           }
         }
       }
-        a{
+      a {
         position: absolute;
         bottom: 50px;
         left: 30%;
-        
       }
-      .downIcon{
+      .downIcon {
         width: 50%;
         height: 30%;
         align-items: flex-start;
@@ -87,10 +84,9 @@
         transform: rotate(90deg);
         animation: arrowBlink 6s infinite;
 
-        @keyframes arrowBlink{
-          100%{
+        @keyframes arrowBlink {
+          100% {
             opacity: 20%;
-
           }
         }
       }
