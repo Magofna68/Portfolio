@@ -22,6 +22,11 @@
       overflow: hidden;
       // transform: rotate(5deg)
 
+      .iconContainer {
+        display: block;
+        align-content: flex-end;
+      }
+
       img {
         // width: 80%;
         // top: 10%;

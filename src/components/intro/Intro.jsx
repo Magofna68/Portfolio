@@ -3,7 +3,13 @@ import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 import { init } from 'ityped';
 import { useEffect, useRef } from "react";
 import Placeholder from "../../public/assets/placeholder.JPG";
-import Facebook from '@material-ui/icons/Facebook';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
+
 
 export default function Intro() {
 
@@ -27,9 +33,18 @@ export default function Intro() {
       <div className="left">
         <div className="imgContainer">
           <img src={Placeholder} alt="test"></img>
-          <div className="iconContainer">
-            {<Facebook/>}
-          </div>
+        <Grid item xs={12}>
+          <Paper sx={{p:2}}>
+            <Grid container spacing={8}>
+              <Grid item>
+                <FacebookIcon/>
+                <GitHubIcon/>
+                <InstagramIcon/>
+
+              </Grid>
+            </Grid>
+          </Paper>
+        </Grid>
         </div>
       </div>
       <div className="right">
