@@ -9,19 +9,25 @@
     // border-radius: 5%;
 
     .imgContainer {
-      width: 700px;
-      height: 600px;
+      width: 500px;
+      height: 550px;
       background-color: crimson;
-      border-radius: 10%;
+      border-radius: 30%;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: center;
-      float: right;
-      margin-top: 6%;
-      margin-left: 3%;
+      float: left;
+      margin-top: 12%;
+      margin-left: 12%;
+      overflow: hidden;
+      // transform: rotate(5deg)
 
       img {
-        height: 100%;
+        // width: 80%;
+        // top: 10%;
+        border-radius: 10%;
+        margin-right: 2%;
+        margin-left: 2%;
       }
     }
   }
@@ -42,6 +48,7 @@
         margin: 10px 50px;
         color: #495057;
       }
+
       h2 {
         font-size: 35px;
         margin-left: 50px;

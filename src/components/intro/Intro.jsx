@@ -2,6 +2,8 @@ import "./intro.scss"
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 import { init } from 'ityped';
 import { useEffect, useRef } from "react";
+import Placeholder from "../../public/assets/placeholder.JPG";
+import Facebook from '@material-ui/icons/Facebook';
 
 export default function Intro() {
 
@@ -24,7 +26,10 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/placeholder.JPG" alt="test"></img>
+          <img src={Placeholder} alt="test"></img>
+          <div className="iconContainer">
+            {<Facebook/>}
+          </div>
         </div>
       </div>
       <div className="right">
