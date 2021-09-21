@@ -33,14 +33,14 @@ export default function Intro() {
       <div className="left">
         <div className="imgContainer">
           <img src={Placeholder} alt="test"></img>
-        <Grid item xs={8}>
+        <Grid item xs={4} direction="row">
           <Paper sx={{p:1}}>
-            <Grid 
+            {/* <Grid 
             container 
             spacing={8}
-            // direction="row"
-            >
-              <Grid item>
+            direction="row"
+            > */}
+              <Grid item direction="row">
                 <a href="google.com">
                   <span>
                     <FacebookIcon 
@@ -57,7 +57,7 @@ export default function Intro() {
                 <br></br>
                 <Paper> <InstagramIcon/> </Paper>                
               </Grid>
-            </Grid>
+            {/* </Grid> */}
           </Paper>
         </Grid>
         </div>

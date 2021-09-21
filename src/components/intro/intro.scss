@@ -13,26 +13,34 @@
       height: 550px;
       background-color: crimson;
       border-radius: 30%;
-      display: flex;
+      display: inline-block;
       align-items: center;
-      justify-content: center;
-      float: left;
+      justify-content: baseline;
+      // float: left;
       margin-top: 12%;
       margin-left: 12%;
       overflow: hidden;
+      vertical-align: bottom;
+
       // transform: rotate(5deg)
 
       .iconContainer {
-        display: block;
-        align-content: flex-end;
+        display: inline-block;
+        align-content: center;
+        position: relative;
+        direction: row;
       }
 
       img {
-        // width: 80%;
-        // top: 10%;
+        width: 80%;
+        height: 55%;
+        margin-top: 20%;
         border-radius: 10%;
-        margin-right: 2%;
-        margin-left: 2%;
+        margin-right: 5%;
+        margin-left: 10%;
+        align-content: center;
+        display: flex;
+        justify-content: center;
       }
     }
   }
