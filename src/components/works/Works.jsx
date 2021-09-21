@@ -1,8 +1,9 @@
 import "./works.scss"
 // import {ArrowForwardIosIcon, ArrowBackIosIconNew} from '@material-ui/icons'
-import Arrow from "../../public/assets/arrow.png";
-import Desk from "../../public/assets/desk.jpeg";
-import Skyscrapers from "../../public/assets/skyscrapers.jpeg";
+import Arrow from "../../assets/arrow.png";
+import Desk from "../../assets/desk.jpeg";
+// import Skyscrapers from "portfolio/src/assets/skyscrapers.jpeg";
+import Skyscrapers from "../../assets/skyscrapers.jpeg";
 
 import React, {useState, useEffect} from 'react';
 

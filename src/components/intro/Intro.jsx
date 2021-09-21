@@ -2,7 +2,7 @@ import "./intro.scss"
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 import { init } from 'ityped';
 import { useEffect, useRef } from "react";
-import Placeholder from "../../public/assets/placeholder.JPG";
+import Placeholder from "../../assets/placeholder.JPG";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
@@ -33,7 +33,7 @@ export default function Intro() {
       <div className="left">
         <div className="imgContainer">
           <img src={Placeholder} alt="test"></img>
-        <Grid item xs={3}>
+        <Grid item xs={8}>
           <Paper sx={{p:1}}>
             <Grid 
             container 
@@ -41,8 +41,20 @@ export default function Intro() {
             // direction="row"
             >
               <Grid item>
-                <Paper> <FacebookIcon/> </Paper>
+                <a href="google.com">
+                  <span>
+                    <FacebookIcon 
+                      fontSize="large"
+                      direction="row"
+                      justifyContent="center"
+                      alignItems="center"
+                    />
+                  </span>
+                </a>
+                {/* <Paper> <span><FacebookIcon /></span>< </Paper> */}
+                <br></br>
                 <Paper> <GitHubIcon/> </Paper>
+                <br></br>
                 <Paper> <InstagramIcon/> </Paper>                
               </Grid>
             </Grid>
