@@ -33,14 +33,14 @@ export default function Intro() {
       <div className="left">
         <div className="imgContainer">
           <img src={Placeholder} alt="test"></img>
-        <Grid item xs={4} direction="row">
-          <Paper sx={{p:1}}>
+        <Grid item xs={12}>
+          <Paper sx={{paddingRight:1, paddingLeft:1, display: "inline-block", direction:"row", marginLeft: 22, marginTop: 5, backgroundColor: "teal"}}>
             {/* <Grid 
             container 
             spacing={8}
             direction="row"
             > */}
-              <Grid item direction="row">
+              <Grid item fontSize="large" direction="row" spacing={8} alignItems="center">
                 <a href="google.com">
                   <span>
                     <FacebookIcon 
@@ -51,13 +51,27 @@ export default function Intro() {
                     />
                   </span>
                 </a>
-                {/* <Paper> <span><FacebookIcon /></span>< </Paper> */}
-                <br></br>
-                <Paper> <GitHubIcon/> </Paper>
-                <br></br>
-                <Paper> <InstagramIcon/> </Paper>                
+                <a href="google.com">
+                  <span id="iconTest">
+                    <InstagramIcon 
+                      fontSize="large"
+                      direction="row"
+                      justifyContent="center"
+                      alignItems="center"
+                    />
+                  </span>
+                </a>
+                <a href="google.com">
+                  <span>
+                    <GitHubIcon
+                      fontSize="large"
+                      direction="row"
+                      justifyContent="center"
+                      alignItems="center"
+                    />
+                  </span>
+                </a>
               </Grid>
-            {/* </Grid> */}
           </Paper>
         </Grid>
         </div>

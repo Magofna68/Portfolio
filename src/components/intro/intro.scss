@@ -11,7 +11,7 @@
     .imgContainer {
       width: 500px;
       height: 550px;
-      background-color: crimson;
+      background-color: #495057;
       border-radius: 30%;
       display: inline-block;
       align-items: center;
@@ -21,6 +21,8 @@
       margin-left: 12%;
       overflow: hidden;
       vertical-align: bottom;
+      border: solid;
+      border-color: white;
 
       // transform: rotate(5deg)
 
@@ -29,6 +31,8 @@
         align-content: center;
         position: relative;
         direction: row;
+        border: solid;
+        border-color: black;
       }
 
       img {
@@ -43,6 +47,10 @@
         justify-content: center;
       }
     }
+  }
+  #iconTest {
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .right {
     flex: 0.5;
