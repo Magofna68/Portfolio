@@ -32,7 +32,8 @@
         position: relative;
         direction: row;
         border: solid;
-        border-color: black;
+        border-width: 3px;
+        border-color: rgb(219, 196, 196);
       }
 
       img {
@@ -45,6 +46,10 @@
         align-content: center;
         display: flex;
         justify-content: center;
+        border: solid;
+        border-width: 3px;
+        // border-color: rgb(219, 196, 196);
+        border-color: black;
       }
     }
   }
