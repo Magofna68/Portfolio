@@ -23,7 +23,8 @@ export default function Testimonial() {
       icon: 
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfYYjpR9PSe6HzwooCkC50psOk0UZwnUFwDt1_39ZuK5a3oVIMi8_k6asdmPG4rQ2NNU&usqp=CAU",
       desc: 
-        "He was greate because he was my friend and I never had to do anything  because I knew he was getting paid to do it for me. It was like being a business owener."
+        "He was greate because he was my friend and I never had to do anything  because I knew he was getting paid to do it for me. It was like being a business owener.",
+      featured: true,
     },
     {
       id:2,
@@ -42,7 +43,8 @@ export default function Testimonial() {
       <h1>Testimonials</h1>
       <div className="container">
         {reviews.map((r) => (
-        <div className="card">
+          <div className={r.featured ? "card featured" : "card"}>
+        {/* <div className="card"> */}
           <div className="top">
           {/* <img src="" className="left" alt="" /> */}
           <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfYYjpR9PSe6HzwooCkC50psOk0UZwnUFwDt1_39ZuK5a3oVIMi8_k6asdmPG4rQ2NNU&usqp=CAU" className="right" alt="epicodus"/>
