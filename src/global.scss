@@ -1,3 +1,11 @@
 // $mainColor: #4cc9f0;
 // $mainColor: grey;
 $mainColor: black;
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content
+  }
+}
