@@ -1,3 +1,75 @@
-.contact{
-  background-color: #ba1f33;
+.contact {
+  background-color: white;
+  display: flex;
+
+  .left {
+    flex: 1;
+
+    img {
+      height: 80%;
+      overflow: hidden;
+      padding: 50px 30px;
+    }
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15%;
+    padding-top: 8%;
+    justify-content: space-around;
+
+    h2 {
+      font-size: 50px;
+      padding-bottom: 5%;
+    }
+
+    form {
+      width: 70%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 10px;
+
+      input {
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+        padding: 5px;
+        margin-bottom: 20px;
+      }
+
+      textarea {
+        width: 300px;
+        height: 200px;
+        font-size: 14px;
+        padding: 5px;
+        margin-bottom: 15px;
+      }
+    }
+    button {
+      width: 150px;
+      height: 30px;
+      color: whitesmoke;
+      background-color: crimson;
+      border: none;
+      border-radius: 10px;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    span {
+      padding-top: 5%;
+      color: green;
+      // transform::
+    }
+  }
 }
