@@ -39,7 +39,7 @@ export default function Portfolio() {
         setData(featuredPortfolio);
         break;
       case "mobile": 
-        setData(featuredPortfolio);
+        setData(featuredMobile);
         break;
       case "web": 
         setData(featuredPortfolio);
@@ -75,7 +75,7 @@ export default function Portfolio() {
           {data.map((d) => (
           <div className="item">
             <img src={d.img}
-            alt="modern desk with coffee"></img>
+            alt={d.alt}></img>
             <h3>{d.title}</h3>
           </div>
           ))}
