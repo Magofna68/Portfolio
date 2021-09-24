@@ -7,8 +7,17 @@
   align-items: center;
   padding-top: 50px;
 
+  @include mobile {
+    padding-top: 0px;
+  }
+
   h1 {
     font-style: 50px;
+
+    @include mobile {
+      font-size: 30px;
+      padding: 40px 0 0 0;
+    }
   }
 
   ul {
@@ -16,6 +25,25 @@
     margin: 10px;
     list-style: none;
     display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile {
+      padding: 0 0 0 0;
+      font-size: 8px;
+      margin: 8px;
+    }
+
+    li {
+      width: 50px;
+      margin: 0px;
+      font-size: 12px;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+    }
   }
 
   .container {
@@ -25,40 +53,61 @@
     justify-content: center;
     flex-wrap: wrap;
 
+    @include mobile {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1%;
+    }
+
     .item {
-      width: 220px;
-      height: 150px;
+      width: 320px;
+      height: 250px;
       border-radius: 20px;
       border: 1px solid rgb(228, 224, 224);
       margin: 10px 20px;
       align-items: center;
       justify-content: center;
-      color: white;
+      color: rgb(105, 105, 105);
       display: flex;
       position: relative;
       transition: all 0.7s ease;
       cursor: pointer;
       background-color: lightgray;
 
+      @include mobile {
+        width: 145px;
+        height: 135px;
+        align-items: center;
+        scroll-behavior: none;
+      }
+
       h3 {
-        position: absolute;
-        font-size: 20px;
+        display: none;
       }
 
       img {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         object-fit: cover;
         z-index: 1;
-        color: lightgray;
+        color: rgb(231, 230, 230);
+        opacity: 60%;
       }
 
       &:hover {
         // background-color: $mainColor;
-        background-color: lightgreen;
+        background-color: rgb(155, 155, 155);
         img {
-          opacity: 0 2;
+          opacity: 100%;
           z-index: 0;
+        }
+        h3 {
+          position: absolute;
+          font-size: 20px;
+          display: inline;
+          bottom: 15%;
+          color: rgb(240, 235, 235);
         }
       }
     }

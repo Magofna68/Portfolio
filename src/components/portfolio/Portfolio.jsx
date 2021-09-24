@@ -2,7 +2,7 @@ import { ListItem } from "@material-ui/core";
 import "./portfolio.scss"
 import PortfolioList from "../portfolioList/PortfolioList"
 import React, {useState, useEffect} from 'react';
-import { featuredPortfolio } from "../data" ;
+import { featuredPortfolio, featuredWebApp } from "../data" ;
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
@@ -11,38 +11,39 @@ export default function Portfolio() {
   const [data, setData] = useState([]);
 
   const list = [
+    // potential list of different languages? C#/javascript/ect.
+    {
+      id: "web",
+      title: "Web App",
+    },
+    // {
+    //   id: "branding",
+    //   title: "Branding",
+    // },
     {
       id: "featured",
       title: "Featured",
     },
     {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "web",
-      title: "Web App",
-    },
-    {
-      id: "branding",
-      title: "Branding",
-    },
-    {
       id: "design",
       title: "Design",
     },
- ];
-
+    // {
+    //   id: "mobile",
+    //   title: "Mobile App",
+    // },
+  ];
+    
  useEffect(() => {
     switch(selected){
       case "featured": 
         setData(featuredPortfolio);
         break;
-      case "mobile": 
-        setData(featuredMobile);
-        break;
+      // case "mobile": 
+      //   setData(featuredMobile);
+      //   break;
       case "web": 
-        setData(featuredPortfolio);
+        setData(featuredWebApp);
         break;
       case "branding": 
         setData(featuredPortfolio);
