@@ -9,7 +9,18 @@ export default function Contact() {
     setMessage(true);
   }
   return (
-    <div className="contact" id="contact">
+    <div 
+    className="contact" 
+    id="contact"
+    style={{
+      backgroundRepeat: `no-repeat`,
+      backgroundColor: `black`,
+      backgroundPositionX: `94%`,
+      backgroundPositionY: `5%`,
+      // float: `right`,
+      position: `absolute`,
+      backgroundImage: `url("https://c.tenor.com/EhXBLBx7n9sAAAAd/planet-earth.gif")`
+    }}>
       <div className="left">
         <img src="https://memegenerator.net/img/instances/68186355.jpg" alt="businessmen shaking hands"/>
       </div>

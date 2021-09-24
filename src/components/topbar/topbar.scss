@@ -62,16 +62,16 @@
         align-items: center;
         margin-left: 30px;
 
-        @include mobile {
-          height: 80%vh;
-          width: 80%vw;
-          font-size: 12px;
-          align-items: left;
-          margin: 0 -10px 0 10px;
-          padding: 0 10 10 0;
-        }
+        // @include mobile {
+        //   height: 80%vh;
+        //   width: 80%vw;
+        //   font-size: 12px;
+        //   align-items: left;
+        //   margin: 0 -10px 0 10px;
+        //   padding: 0 10 10 0;
+        // }
         .icon {
-          font-size: 18px;
+          font-size: 35px;
           margin-right: 5px;
 
           @include mobile {
@@ -87,19 +87,21 @@
           // }
         }
 
-        #mobile {
-          font-size: 8px;
-          margin: 0 0 0 0;
-          padding: 0 40px 0 15px;
-        }
+        // #mobile {
+        //   // font-size: 8px;
+        //   // margin: 0 0 0 0;
+        //   // padding: 0 40px 0 15px;
+        // }
 
         span {
           font-size: 15px;
-          font-weight: 500;
+          font-weight: 400;
           color: #d3d3d3;
+          margin: 0 35px 0 0;
 
           @include mobile {
             font-size: 10px;
+            margin-right: 5px;
             // width: 80%;
           }
         }

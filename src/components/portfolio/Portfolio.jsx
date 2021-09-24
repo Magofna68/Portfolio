@@ -60,7 +60,12 @@ export default function Portfolio() {
  }, [selected])
 
   return (
-    <div className="portfolio" id="portfolio">
+    <div 
+    className="portfolio" 
+    id="portfolio"
+    style={{
+      backgroundImage: `url("")`
+    }}>
         <h1>Portfolio</h1>
         <ul>
           {list.map((item) => (

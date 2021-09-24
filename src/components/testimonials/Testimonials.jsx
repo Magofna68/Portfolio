@@ -39,7 +39,15 @@ export default function Testimonial() {
     }
   ]
   return (
-    <div className="testimonial" id="testimonial">
+    <div 
+    className="testimonial" 
+    id="testimonial"
+    style={{
+      // opacity: `90%`,
+      backgroundSize: `cover`,
+      repeat: `no-repeat`,
+      backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
+    }}>>
       <h1>Testimonials</h1>
       <div className="container">
         {reviews.map((r) => (

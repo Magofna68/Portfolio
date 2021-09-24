@@ -30,7 +30,19 @@ export default function Intro() {
   }, []);
 
   return (
-    <div className="intro" id="intro">
+    <div 
+      className="intro" 
+      id="intro"
+      style={{ 
+        backgroundImage: `url("https://cdn.wallpapersafari.com/83/6/DY9RHb.gif")`,
+        // backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/5238dfcae4b0468ec26edfdb/1501481401480-1Z9ISSUEPQGZHLBE264A/Webp.net-gifmaker.gif")`,
+        backgroundRepeat: `no-repeat`,
+        justifyContent: `center`,
+        backgroundColor: `black`,
+        opacity: `90%`,
+        backgroundSize: `cover`
+        
+      }}>
       <div className="left">
         <div className="imgContainer">
           <img src={Placeholder} alt="test"></img>
@@ -88,7 +100,8 @@ export default function Intro() {
           </div>
         </div>
       </div>
-      <div className="right">
+      <div 
+      className="right">
         <div className="wrapper">
           <h2>Hi There, I'm </h2>
           <h1>Brandon Magofna.</h1>

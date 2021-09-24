@@ -43,7 +43,15 @@ export default function Works() {
     setCurrentSlide(currentSlide<data.length -1 ? currentSlide +1 : 0);
   };
   return (
-    <div className="works" id="works">
+    <div 
+    className="works" 
+    id="works"
+    style={{
+      opacity: `90%`,
+      backgroundSize: `cover`,
+      repeat: `no-repeat`,
+      backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
+    }}>
         <div 
         className="slider" 
         style={{transform: `translateX(-${currentSlide * 100}vw)`}}
@@ -77,6 +85,9 @@ export default function Works() {
           </div>
           <img 
             className="arrow left"
+            style={{
+              color: "white",
+            }}
             src={Arrow} 
             alt= "" onClick={()=> handleClick("left")}
           />
@@ -84,7 +95,7 @@ export default function Works() {
             className="arrow right"
             src={Arrow} 
             alt="page right" onClick={()=> handleClick("right")}
-          />
+            />
         </div>
   )
 }

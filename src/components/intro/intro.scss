@@ -39,7 +39,7 @@
       @include mobile {
         // align-items: center;
         padding: 0 0 0 0;
-        margin: 9% 0 0% 0;
+        margin: 6% 0 0% 0;
         height: 275px;
         width: 300px;
         align-items: center;
@@ -121,13 +121,14 @@
     overflow: hidden;
 
     @include mobile {
-      margin: 0 0 0 0;
+      margin: 0 0 15% 0;
     }
 
     .wrapper {
-      width: 100%;
+      width: 120%;
       height: 100%;
       display: flex;
+      overlay: show;
       flex-direction: column;
       justify-content: center;
 
@@ -137,8 +138,9 @@
       }
 
       h1 {
-        font-size: 60px;
-        margin: 10px 50px;
+        font-size: 50px;
+        margin: 10px 70px 0 50px;
+        padding: 0 20px 0 0;
         color: #495057;
 
         @include mobile {
@@ -151,6 +153,7 @@
       h2 {
         font-size: 35px;
         margin-left: 50px;
+        color: #495057;
 
         @include mobile {
           font-size: 20px;
@@ -161,6 +164,7 @@
       h3 {
         font-size: 30px;
         margin-left: 50px;
+        color: white;
 
         @include mobile {
           font-size: 15px;

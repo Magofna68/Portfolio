@@ -3,7 +3,11 @@ import "./menu.scss";
 
 export default function Menu({ menuOpen, setMenuOpen }) {
   return (
-    <div className={"menu " + (menuOpen && "active")}>
+    <div 
+    className={"menu " + (menuOpen && "active")}
+    style={{ 
+      backgroundImage: `url("https://media.freestocktextures.com/cache/0d/42/0d42eeb83ad3a56c97468d69721b2c18.jpg")` 
+    }}>
       <ul>
         <li onClick={() => setMenuOpen(false)}>
           <a href="#intro">Home</a>
