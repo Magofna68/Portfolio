@@ -50,7 +50,7 @@ export default function Works() {
       opacity: `90%`,
       backgroundSize: `cover`,
       repeat: `no-repeat`,
-      backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
+      backgroundImage: `url("https://i.pinimg.com/originals/ae/ec/b2/aeecb292820f0e8b16d83d07e3531c66.jpg")`
     }}>
         <div 
         className="slider" 

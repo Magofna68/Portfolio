@@ -64,7 +64,10 @@ export default function Portfolio() {
     className="portfolio" 
     id="portfolio"
     style={{
-      backgroundImage: `url("")`
+            opacity: `90%`,
+      backgroundSize: `cover`,
+      repeat: `no-repeat`,
+      backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
     }}>
         <h1>Portfolio</h1>
         <ul>
