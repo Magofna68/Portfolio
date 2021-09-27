@@ -1,0 +1,45 @@
+@import "../../global.scss";
+
+.aboutMe {
+  // transform: rotateY(180deg);
+  // rotate: y 180deg;
+  // opacity: 80%;
+  width: 90%;
+  height: 90%;
+
+  .container {
+    // transform: rotateY(180deg);
+
+    .left {
+      width: 35%;
+      height: 70%;
+      margin: 10% 0 0 10%;
+      padding: 0 0 0 0;
+
+      h1 {
+        font-size: 50px;
+        font-stretch: 1, 2;
+      }
+
+      p {
+        font-size: 25px;
+        // color: white;
+      }
+    }
+
+    .right {
+      width: 35%;
+      height: 70%;
+      padding: 0 0 0 0;
+      margin: 0 0 0 0;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+
+      a {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+      }
+    }
+  }
+}

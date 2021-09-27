@@ -117,7 +117,7 @@ export default function Intro() {
           <h3>Freelance <span ref={textRef}></span></h3>
         </div>
         <div className="wrapper">
-          <a href="#AboutMe">
+          <a href="#aboutMe">
             <DoubleArrowIcon className="downIcon" onClick="" />
           </a>
         </div>
