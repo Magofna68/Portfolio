@@ -38,6 +38,7 @@ export default function Testimonial() {
         "lorem ipsum  for the win of course if they didnt want that it would fall apart and this wouldnt be the best example."
     }
   ]
+
   return (
     <div 
     className="testimonial" 
@@ -48,7 +49,7 @@ export default function Testimonial() {
       repeat: `no-repeat`,
       backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
     }}>>
-      <h1>Testimonials</h1>
+      <h1>Testimonials<span>.</span></h1>
       <div className="container">
         {reviews.map((r) => (
           <div className={r.featured ? "card featured" : "card"}>

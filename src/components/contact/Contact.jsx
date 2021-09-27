@@ -25,7 +25,7 @@ export default function Contact() {
         <img src="https://memegenerator.net/img/instances/68186355.jpg" alt="businessmen shaking hands"/>
       </div>
       <div className="right">
-        <h2>Contact.</h2>
+        <h2>Contact<span>.</span></h2>
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder="Email"></input>
           <textarea placeholder="Message"></textarea>

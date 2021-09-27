@@ -47,7 +47,7 @@ export default function Works() {
     className="works" 
     id="works"
     style={{
-      opacity: `90%`,
+      // opacity: `90%`,
       backgroundSize: `cover`,
       repeat: `no-repeat`,
       backgroundImage: `url("https://i2.wp.com/files.123freevectors.com/wp-content/original/142906-cool-grey-wave-business-background-vector-art.jpg?w=800&q=95")`

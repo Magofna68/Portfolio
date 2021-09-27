@@ -61,7 +61,7 @@ export default function Portfolio() {
       repeat: `no-repeat`,
       backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
     }}>
-        <h1>Portfolio</h1>
+        <h1>Portfolio<span>.</span></h1>
         <br/>
         <ul>
           {list.map((item) => (

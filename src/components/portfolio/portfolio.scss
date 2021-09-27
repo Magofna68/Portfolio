@@ -16,6 +16,10 @@
     color: white;
     overflow: visible;
 
+    span {
+      color: grey;
+    }
+
     @include mobile {
       font-size: 30px;
       padding: 40px 0 0 0;
