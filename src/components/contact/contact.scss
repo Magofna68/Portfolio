@@ -1,14 +1,41 @@
+@import "../../global.scss";
+
 .contact {
   background-color: white;
   display: flex;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position-x: 94%;
+  background-position-y: 5%;
+  // float: `right`,
+  position: relative;
+  background-image: url("https://c.tenor.com/EhXBLBx7n9sAAAAd/planet-earth.gif");
+
+  @include mobile {
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position-x: 50%;
+    background-position-y: 5%;
+    // float: `right`,
+    position: absolute;
+    background-image: url("https://c.tenor.com/EhXBLBx7n9sAAAAd/planet-earth.gif");
+  }
 
   .left {
     flex: 1;
+
+    @include mobile {
+      flex: 0;
+    }
 
     img {
       height: 80%;
       overflow: hidden;
       padding: 50px 30px;
+
+      @include mobile {
+        display: none;
+      }
     }
   }
 
@@ -21,6 +48,13 @@
     // padding-top: 18%;
     justify-content: space-around;
 
+    @include mobile {
+      margin: 0 0% 0 0%;
+      width: 70%;
+      padding: 0 0 0 0%;
+      flex-direction: none;
+    }
+
     h2 {
       font-size: 50px;
       // padding-bottom: 5%;
@@ -28,6 +62,12 @@
       padding-top: 15%;
       margin: 10% 0 0 0;
       overflow: hidden;
+
+      @include mobile {
+        margin-top: 15%;
+        font-size: 50px;
+        padding-top: 20%;
+      }
 
       span {
         color: grey;
@@ -44,6 +84,13 @@
       padding: 0px 0 0 0;
       // margin: 10% 0 0 0;
       bottom: 20%;
+
+      @include mobile {
+        flex-direction: none;
+        width: 80%;
+        margin-right: 5%;
+        padding-left: 5%;
+      }
 
       input {
         width: 300px;
@@ -80,6 +127,11 @@
       padding-top: 5%;
       color: green;
       // transform::
+
+      @include mobile {
+        margin-top: -30%;
+        overflow: visible;
+      }
     }
   }
 }
