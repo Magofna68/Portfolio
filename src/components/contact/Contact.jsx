@@ -1,5 +1,7 @@
 import "./contact.scss"
 import React, {useState} from "react";
+import Placeholder from "../../assets/placeholder.JPG";
+
 
 
 export default function Contact() {
@@ -22,8 +24,13 @@ export default function Contact() {
     //   backgroundImage: `url("https://c.tenor.com/EhXBLBx7n9sAAAAd/planet-earth.gif")`
     // }}
     >
-      <div className="left">
-        <img src="https://memegenerator.net/img/instances/68186355.jpg" alt="businessmen shaking hands"/>
+      <div 
+        className="left"
+        style={{
+          backgroundImage: `url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25806764.jpg")`,
+          opacity: '80%'
+        }}>
+        <img src={Placeholder} alt="hiking face shot"/>
       </div>
       <div className="right">
         <h2>Contact<span>.</span></h2>
@@ -34,6 +41,10 @@ export default function Contact() {
         </form>
           {message && <span> Thanks for your interest. <br/>I will get back to you shortly.<br/><br/>    - Brandon<br/><br/></span>}
       </div>
+        {/* <div className="aboutMe">
+          <h2>About Me<span>.</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, recusandae ipsa aliquam accusamus maiores illum voluptatum ex ipsam fuga repellendus magni aperiam nesciunt libero earum iusto at eaque porro alias!</p>
+        </div> */}
 
     </div>
   )

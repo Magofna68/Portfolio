@@ -5,10 +5,10 @@
   display: flex;
   background-repeat: no-repeat;
   background-color: black;
-  background-position-x: 94%;
+  background-position-x: center;
   background-position-y: 5%;
   // float: `right`,
-  position: relative;
+  position: absolute;
   background-image: url("https://c.tenor.com/EhXBLBx7n9sAAAAd/planet-earth.gif");
 
   @include mobile {
@@ -22,16 +22,45 @@
   }
 
   .left {
-    flex: 1;
+    // flex: 1;
+    width: 500px;
+    height: 550px;
+    background-color: #495057;
+    border-radius: 30%;
+    display: inline-block;
+    align-items: center;
+    justify-content: baseline;
+    // float: left;
+    margin-top: 10%;
+    margin-left: 5%;
+    overflow: hidden;
+    vertical-align: bottom;
+    border: solid;
+    border-color: white;
 
     @include mobile {
       flex: 0;
+      display: none;
     }
 
     img {
-      height: 80%;
-      overflow: hidden;
-      padding: 50px 30px;
+      // height: 80%;
+      // overflow: hidden;
+      // padding: 50px 30px;
+
+      width: 80%;
+      height: 55%;
+      margin-top: 20%;
+      border-radius: 10%;
+      margin-right: 5%;
+      margin-left: 10%;
+      align-content: center;
+      display: flex;
+      justify-content: center;
+      border: solid;
+      border-width: 3px;
+      // border-color: rgb(219, 196, 196);
+      border-color: black;
 
       @include mobile {
         display: none;
@@ -133,5 +162,14 @@
         overflow: visible;
       }
     }
+    // .aboutMe {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    //   margin: 0 0 0% 0;
+    //   overflow: scroll;
+    //   color: white;
+    //   background-color: white;
+    // }
   }
 }
