@@ -16,10 +16,6 @@ export default function Portfolio() {
       id: "web",
       title: "Web App",
     },
-    // {
-    //   id: "branding",
-    //   title: "Branding",
-    // },
     {
       id: "featured",
       title: "Featured",
@@ -27,11 +23,7 @@ export default function Portfolio() {
     {
       id: "design",
       title: "Design",
-    },
-    // {
-    //   id: "mobile",
-    //   title: "Mobile App",
-    // },
+    }
   ];
     
  useEffect(() => {
@@ -70,6 +62,7 @@ export default function Portfolio() {
       backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
     }}>
         <h1>Portfolio</h1>
+        <br/>
         <ul>
           {list.map((item) => (
             <PortfolioList 

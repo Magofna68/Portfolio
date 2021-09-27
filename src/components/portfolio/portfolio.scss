@@ -14,6 +14,7 @@
   h1 {
     font-style: 50px;
     color: white;
+    overflow: visible;
 
     @include mobile {
       font-size: 30px;
@@ -30,6 +31,7 @@
     justify-content: center;
     align-items: center;
     color: darkslategrey;
+    overflow: visible;
 
     @include mobile {
       padding: 0 0 0 0;
@@ -48,6 +50,7 @@
       flex-wrap: wrap;
       background: white;
       font-weight: 400;
+      overflow: hidden;
     }
   }
 
@@ -57,6 +60,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
 
     @include mobile {
       width: 100%;
@@ -66,8 +70,8 @@
     }
 
     .item {
-      width: 320px;
-      height: 250px;
+      width: 350px;
+      height: 270px;
       border-radius: 20px;
       border: 1px solid rgb(228, 224, 224);
       margin: 10px 20px;
@@ -79,6 +83,7 @@
       transition: all 0.7s ease;
       cursor: pointer;
       background-color: lightgray;
+      overflow: visible;
 
       @include mobile {
         width: 145px;
@@ -92,12 +97,15 @@
       }
 
       img {
-        width: 200px;
-        height: 200px;
+        // width: 200px;
+        // height: 200px;
+        width: 70%;
+        height: 70%;
         object-fit: cover;
         z-index: 1;
         color: rgb(231, 230, 230);
         opacity: 60%;
+        overflow: hidden;
       }
 
       &:hover {
@@ -106,6 +114,7 @@
         img {
           opacity: 100%;
           z-index: 0;
+          overflow: contained;
         }
         h3 {
           position: absolute;

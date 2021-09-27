@@ -44,7 +44,16 @@ export default function Intro() {
         
       }}>
       <div className="left">
-        <div className="imgContainer">
+        <div 
+          className="imgContainer"
+          // style={{
+          //   backgroundImage: `url("https://www.popsci.com/uploads/2019/12/20/VC6OKOFVRZAN7GUN4KUEHAAOMU.jpg")`
+          // }}
+            style={{
+            backgroundImage: `url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25806764.jpg")`,
+            opacity: '80%',
+          }}
+          >
           <img src={Placeholder} alt="test"></img>
             <div className="socials">
               <Grid item xs={12}>

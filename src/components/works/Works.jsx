@@ -50,7 +50,7 @@ export default function Works() {
       opacity: `90%`,
       backgroundSize: `cover`,
       repeat: `no-repeat`,
-      backgroundImage: `url("https://i.pinimg.com/originals/ae/ec/b2/aeecb292820f0e8b16d83d07e3531c66.jpg")`
+      backgroundImage: `url("https://i2.wp.com/files.123freevectors.com/wp-content/original/142906-cool-grey-wave-business-background-vector-art.jpg?w=800&q=95")`
     }}>
         <div 
         className="slider" 

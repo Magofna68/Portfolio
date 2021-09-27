@@ -49,11 +49,5 @@ export  const featuredWebApp = [
     title: "four",
     alt: "placeholder4",
     img: "http://imgs.abduzeedo.com/files/articles/beautiful-3d-nature-scenes/1293669_large.jpg",
-  },
-  {
-    id: 5,
-    title: "four",
-    alt: "placeholder4",
-    img: "http://imgs.abduzeedo.com/files/articles/beautiful-3d-nature-scenes/1293669_large.jpg",
-  },
+  }
 ]
