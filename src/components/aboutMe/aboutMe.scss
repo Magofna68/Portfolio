@@ -4,41 +4,88 @@
   // transform: rotateY(180deg);
   // rotate: y 180deg;
   // opacity: 80%;
-  width: 90%;
-  height: 90%;
+  // align-content: row;
+  justify-content: center;
+  // align-items: row;
+  // align-content: start;
 
   .container {
-    // transform: rotateY(180deg);
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 90%;
+    align-content: start;
+    align-items: center;
+    justify-content: center;
+    // border: solid;
+    // border-color: rgb(189, 49, 49);
+    margin: 2% 2% 0 2%;
+    padding: 10px;
 
     .left {
-      width: 35%;
-      height: 70%;
-      margin: 10% 0 0 10%;
-      padding: 0 0 0 0;
+      flex: 40%;
+      // width: 35%;
+      height: 50%;
+      margin: 5% 0% 0 0%;
+      padding: 10px 10px 10px 10px;
+      // border: solid;
+      // border-color: black;
 
       h1 {
+        float: left;
+        text-align: left;
+        justify-content: left;
         font-size: 50px;
-        font-stretch: 1, 2;
+        margin: 0 0 0 0;
+        // position: absolute;
       }
 
       p {
-        font-size: 25px;
+        font-size: 15px;
+
         // color: white;
       }
     }
 
     .right {
-      width: 35%;
-      height: 70%;
-      padding: 0 0 0 0;
-      margin: 0 0 0 0;
-      align-items: center;
+      flex: 20%;
+      height: 50%;
+      margin: 10% 0 0 0%;
+      padding: 10px 10px 10px 10px;
+      border: solid;
+      border-color: black;
+      // align-items: right;
       justify-content: center;
-      display: flex;
+      align-content: space-around;
 
-      a {
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
+      .clickables {
+        width: 400px;
+        height: 300px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        display: flex;
+
+        .resumeContainer {
+          width: 200px;
+          height: 150px;
+          align-content: space-around;
+          align-items: center;
+          justify-content: space-around;
+          display: flex;
+          margin: 0 10% 0 10%;
+
+          a {
+            margin: 0 10px 0 10px;
+            padding: 0 0 0 0;
+
+            img {
+              width: 70px;
+              height: 100px;
+            }
+          }
+        }
       }
     }
   }
