@@ -33,17 +33,23 @@ export default function AboutMe() {
       <div className="right">
         <div className="clickables">
         <div className="resumeContainer">
-          <a 
-          href="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing">
+          {/* <a 
+          target=""
+          href="">
             <img 
-              src="https://www.clipartmax.com/png/middle/308-3085735_cv-contract-agreement-resume-paper-document-comments-resume-icon-transparent.png">
+              src="">
             </img>
-          </a>
+          </a> */}
           <a 
-          href="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing">
+            target="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing">
             <img 
-              src="https://www.clipartmax.com/png/middle/308-3085735_cv-contract-agreement-resume-paper-document-comments-resume-icon-transparent.png">
+              src="https://thumbs.dreamstime.com/b/hand-holding-resume-cartoon-vector-illustration-employment-paper-document-titled-isolated-grey-background-human-resource-87505699.jpg">
             </img>
+            <br/>
+            <br/>
+            <br/>
+            <h3>Checkout my <br/>resume</h3>
           </a>
           </div>
         </div>
