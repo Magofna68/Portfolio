@@ -20,14 +20,15 @@
     // border: solid;
     // border-color: rgb(189, 49, 49);
     margin: 2% 2% 0 2%;
-    padding: 10px;
+    padding: 10px 10px 10px 0px;
 
     .left {
       flex: 40%;
       // width: 35%;
       height: 50%;
       margin: 5% 0% 0 0%;
-      padding: 10px 10px 10px 10px;
+      padding: 10px 10% 60px 0%;
+      overflow: visible;
       // border: solid;
       // border-color: black;
 
@@ -66,37 +67,47 @@
       .clickables {
         // width: 400px;
         // height: 300px;
-        height: 90%;
-        width: 90%;
+        height: 98%;
+        width: 98%;
         align-content: center;
         justify-content: center;
         align-items: center;
         background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e4/StarfieldSimulation.gif");
         align-items: center;
         display: flex;
+        scroll-behavior: none;
+        overflow: visible;
+        // display: cover;
 
         .resumeContainer {
           // width: 150px;
           // height: 150px;
-          height: 75%;
-          width: 75%;
+          height: 95%;
+          width: 90%;
           align-content: space-around;
           align-items: center;
           justify-content: space-around;
           display: flex;
-          margin: 0 10% 0 10%;
+          margin: 0 10% 5% 10%;
+          scroll-behavior: none;
           // background-color: rgb(129, 54, 54);
+          overflow: visible;
 
           a {
             margin: 0 10px 0 10px;
             padding: 0 0 0 0;
             transition: all 2s ease;
             justify-content: center;
+            scroll-behavior: none;
+            align-content: center;
 
             img {
-              width: 150px;
-              height: 150px;
-              border-radius: 50%;
+              width: 85%;
+              height: 90%;
+              margin: 0 0 0 0;
+              padding: 2% 0 0 7%;
+              // overflow: hidden;
+              border-radius: 70%;
               opacity: 60%;
               transition: all 0.8s ease;
 
@@ -107,11 +118,10 @@
                 img {
                   opacity: 100%;
                   z-index: 0;
-                  overflow: contained;
+                  overflow: visible;
                 }
               }
             }
-
             h3 {
               opacity: 20%;
               color: white;
@@ -124,18 +134,17 @@
               text-align: center;
               border-left: solid;
               border-right: solid;
-
-              // &:hover {
-              //   display: none;
-              //   color: white;
-              //   display: block;
-              //   font-size: 18px;
-              //   align-items: center;
-              // }
+              overflow: contained;
             }
           }
         }
       }
     }
   }
+}
+
+.center {
+  padding: 0 0 0 0;
+  margin: 20px 0 0 0;
+  position: top;
 }
