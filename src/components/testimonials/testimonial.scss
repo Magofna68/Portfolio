@@ -25,7 +25,7 @@
     // background-color: white;
 
     .card {
-      width: 350px;
+      width: 300px;
       margin: 0 1% 0 1%;
       // width: 30%;
       height: 80%;
@@ -33,14 +33,20 @@
       box-shadow: 0px 0px 15px -8px white;
       display: flex;
       background-color: rgb(255, 255, 255);
-      align-items: center;
-      align-content: center;
       overflow: visible;
       scroll-behavior: none;
       flex-direction: column;
       justify-content: space-around;
-      padding: 30px 20px 20px 20px;
+      padding: 20px 20px 20px 20px;
       transition: all 0.5s ease;
+
+      p {
+        font-size: 10px;
+        text-align: right;
+        margin: -17% 0 8% 0;
+        padding: 0% 0 3% 10%;
+        font-weight: 500;
+      }
 
       &.featured {
         width: 400px;
@@ -57,10 +63,10 @@
         align-items: center;
         justify-content: center;
         // width: 250px;
-        width: 95%;
+        width: 100%;
         // height: 15%;
         // height: 80%;
-        padding: 5px 5px 0px 5px;
+        // padding: 0px 5px 0px 5px;
         margin: 0 0 20px 0;
         border-radius: 5%;
         align-content: center;
@@ -69,29 +75,34 @@
         scroll-behavior: none;
         // background-color: rgb(173, 169, 169);
 
+        @include mobile {
+          flex: 50%;
+          
+        }
+
         img {
           &.left,
           &.right {
-            height: 35px;
-            // float: left;
-            background-color: lightgray;
-            padding: 2px 5px;
-            border-radius: 5%;
+            height: 40px;
+            // padding: 5px 5px;
+            margin: 0 15px 0 0;
           }
           &.user {
             height: 100px;
             width: 100px;
             border-radius: 50%;
             object-fit: cover;
-            // padding-top: 20px;
-            margin: 0 30px;
+            padding: 3px;
+            margin: -3px 30px;
+            border: solid;
+            border-color: goldenrod;
           }
         }
       }
 
       .center {
-        margin-top: 0px;
-        padding: 0px 10px 10px 10px;
+        margin: 5px;
+        padding: 10px;
         border-radius: 10px;
         background-color: rgb(233, 230, 230);
       }
