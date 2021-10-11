@@ -11,12 +11,11 @@ export default function AboutMe() {
       repeat: `no-repeat`,
       backgroundImage: `url("https://i2.wp.com/files.123freevectors.com/wp-content/original/142906-cool-grey-wave-business-background-vector-art.jpg?w=800&q=95")`
     }}>
-      <div className="container">
-        <div className="left">
           <h1>
             <span 
             style={{
-            color: `grey`
+            color: `grey`,
+            padding: `15% 0 0 0`
           }}
           >About
           </span> Brandon
@@ -25,9 +24,11 @@ export default function AboutMe() {
             color: `grey`,
           }}>.</span><br/></h1>
           <br/><br/><br/>
+      <div className="container">
+        <div className="left">
           {/* <br/><br/> */}
           <p>
-            Upon graduation in 2019, Brandon dove head first into software sales. After working collaboratively in a sales team with individual goals/quota retirements, he quickly realized how fleeting success was within this industry.
+            Upon graduation in 2019, Brandon dove head first into software sales. After working collaboratively in a sales team with individual goals/quota retirements, he quickly realized how fleeting success was within the sales industry.
           {/* </p> */}
           <br/>
           <br/>

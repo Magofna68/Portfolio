@@ -5,38 +5,40 @@ export default function Testimonial() {
   const reviews = [
     {
       id:0,
-      name: "Janet Legend",
+      name: "Levi Kohler",
       title: "Junior Developer",
       img: 
-        "https://d5t4h5a9.rocketcdn.me/wp-content/uploads/2020/11/Professional-Headshot-Poses-Blog-Post.jpg",
+        "https://media-exp1.licdn.com/dms/image/C5603AQGbbV68LZyErg/profile-displayphoto-shrink_100_100/0/1547706774120?e=1639612800&v=beta&t=VOMYbuvZgsaRtzxKSqB8NzgIgCcu7AVOUbBLaeNhG9k",
       icon: 
+        "https://www.deltek.com/~/media/images%20danielle/tbt%20-%20odd%20sizes/logos/header-logo.ashx?h=56&la=en&w=195&=67B4B90F4363C6F792A4FC960BEABF19CF0D0B1B",
+      icon2:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfYYjpR9PSe6HzwooCkC50psOk0UZwnUFwDt1_39ZuK5a3oVIMi8_k6asdmPG4rQ2NNU&usqp=CAU",
-      desc: 
-        "lorem ipsum  for the win of course if they didnt want that it would fall apart and this wouldnt be the best example."
+        desc: 
+        `"Brandon is the most organized SDR I have ever worked with, and it shows with the results he got during our time at Deltek together. If there was any objection I hadn't heard from a prospect I knew Brandon would have some record of how to best handle it and shoot for the opportunity. Listening to Brandon make calls was a work of art, I've never seen an SDR who has a great plan going into every call. Inevitably we all have calls where we are unprepared or get surprised by something on the account, but never Brandon. He joined the team over a year after me, but I couldn't be happier because within just a few short months he had already taught me things that had never even crossed my mind. He is an avid learner who is constantly trying the newest strategies from whatever book he happens to be reading at the time, and he is always more than willing to share that information with the rest of the team. I couldn't look back on our time together more fondly, and I know wherever his career opportunities lead him he will use that same intrinsic drive and thirst for knowledge to find success."`
     },
     {
       id:1,
-      name: "Kylie Shame",
-      title: "Veterinarian",
+      name: "Jadon Wiersma",
+      title: "Sales Development Representative",
       img: 
-        "https://snworksceo.imgix.net/dpn/d4fef529-1504-4442-9fc0-cb32d59969f1.sized-1000x1000.jpg?w=1000",
+        "https://media-exp1.licdn.com/dms/image/C5603AQGKgIpGqB8gqw/profile-displayphoto-shrink_100_100/0/1545327570046?e=1639612800&v=beta&t=iWr34qsMc-qfNWvSlZcNPmMWJEm3UmVpaUQ69-KRbkw",
       icon: 
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfYYjpR9PSe6HzwooCkC50psOk0UZwnUFwDt1_39ZuK5a3oVIMi8_k6asdmPG4rQ2NNU&usqp=CAU",
+        "https://www.deltek.com/~/media/images%20danielle/tbt%20-%20odd%20sizes/logos/header-logo.ashx?h=56&la=en&w=195&=67B4B90F4363C6F792A4FC960BEABF19CF0D0B1B",
       desc: 
-        "He was greate because he was my friend and I never had to do anything  because I knew he was getting paid to do it for me. It was like being a business owener.",
-      featured: true,
+      `"I had the pleasure of working with Brandon for almost 2 years. Brandon was consistently one of the most prepared and introspective professionals I've worked with. His organization allowed him to be prepared for nearly any situation that popped up in the day-to-day and he went the extra mile to understand prospects and their unique situations. Brandon is always looking to improve himself with personal development and ways to improve things internally and that spirit lifted others up as well. He truly cares and puts pride in his work doing all of the little things that make a huge difference at the end of the day. He would be a fantastic asset to anyone's team both personally and professionally."`,
+      // featured: true,
     },
-    {
-      id:2,
-      name: "Aron Yessik",
-      title: "Carpenter",
-      img: 
-        "https://www.stlukesonline.org/~/media/stlukes/provider%20images/fearday-aaron-hs.jpg",
-      icon: 
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfYYjpR9PSe6HzwooCkC50psOk0UZwnUFwDt1_39ZuK5a3oVIMi8_k6asdmPG4rQ2NNU&usqp=CAU",
-      desc: 
-        "lorem ipsum  for the win of course if they didnt want that it would fall apart and this wouldnt be the best example."
-    }
+    // {
+    //   id:2,
+    //   name: "Aron Yessik",
+    //   title: "Carpenter",
+    //   img: 
+    //     "https://www.stlukesonline.org/~/media/stlukes/provider%20images/fearday-aaron-hs.jpg",
+    //   icon: 
+    //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfYYjpR9PSe6HzwooCkC50psOk0UZwnUFwDt1_39ZuK5a3oVIMi8_k6asdmPG4rQ2NNU&usqp=CAU",
+    //   desc: 
+    //     "lorem ipsum  for the win of course if they didnt want that it would fall apart and this wouldnt be the best example."
+    // }
   ]
 
   return (
@@ -55,15 +57,13 @@ export default function Testimonial() {
           <div className={r.featured ? "card featured" : "card"}>
         {/* <div className="card"> */}
           <div className="top">
-          {/* <img src="" className="left" alt="" /> */}
-          <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfYYjpR9PSe6HzwooCkC50psOk0UZwnUFwDt1_39ZuK5a3oVIMi8_k6asdmPG4rQ2NNU&usqp=CAU" className="right" alt="epicodus"/>
           <img src={r.img} className="user" alt="professional man" />
-          <img  src={r.icon} className="right" alt="epicodus"/>
+          <img  src={r.icon} className="right"/>
           </div>
           <div className="center"> {r.desc}</div>
           <div className="bottom">
             <h3>{r.name}</h3>
-            <h4>{r.title}</h4>
+            <h5>{r.title}</h5>
           </div>
         </div>
       ))}
