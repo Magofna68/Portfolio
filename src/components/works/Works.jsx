@@ -2,6 +2,7 @@ import "./works.scss"
 // import {ArrowForwardIosIcon, ArrowBackIosIconNew} from '@material-ui/icons'
 import Arrow from "../../assets/arrow.png";
 import Desk from "../../assets/desk.jpeg";
+import capstone from "../../assets/capstone.png"
 // import Skyscrapers from "portfolio/src/assets/skyscrapers.jpeg";
 import Skyscrapers from "../../assets/skyscrapers.jpeg";
 
@@ -21,7 +22,7 @@ export default function Works() {
       title: "two",
       icon: "https://cdn.mos.cms.futurecdn.net/izXa9hiiSTbnNtwSp2ixKC.jpg",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, optio labore? Cupiditate.",
-      img: "https://thumbs.dreamstime.com/b/agile-software-development-business-internet-techology-concept-100573268.jpg",
+      img: {capstone},
     },
     {
       id: "3",
@@ -88,7 +89,7 @@ export default function Works() {
                   <img 
                     src={d.img} 
                     // src="https://thumbs.dreamstime.com/b/agile-software-development-business-internet-techology-concept-100573268.jpg"
-                    alt="mars rover"
+                    alt=""
                     className="sliderImage"
                   />
                 </div>
