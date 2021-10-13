@@ -28,7 +28,16 @@ export  const featuredPortfolio = [
     },
 ]
 
-export  const featuredReact = [
+export  const featuredC = [
+  {
+    id: 1,
+    title: "Hitchhiker's",
+    alt: "thumb",
+    img: "https://www.pngfind.com/pngs/m/24-243739_thumbs-up-png-transparent-image-thumbs-up-image.png",
+  }
+]
+
+export const featuredReact = [
   {
     id: 1,
     title: "TapRoom w/ Redux",
