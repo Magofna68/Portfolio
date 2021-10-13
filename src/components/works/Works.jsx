@@ -1,14 +1,9 @@
-import "./works.scss"
-// import {ArrowForwardIosIcon, ArrowBackIosIconNew} from '@material-ui/icons'
-import Arrow from "../../assets/arrow.png";
-import Desk from "../../assets/desk.jpeg";
-import capstone from "../../assets/capstone.png"
-// import Skyscrapers from "portfolio/src/assets/skyscrapers.jpeg";
-import Skyscrapers from "../../assets/skyscrapers.jpeg";
-
 import React, {useState, useEffect} from 'react';
-
-
+import "./works.scss"
+import Arrow from "../../assets/arrow.png";
+// import Desk from "../../assets/desk.jpeg";
+import Capstone from "../../assets/capstone.png";
+// import Skyscrapers from "../../assets/skyscrapers.jpeg";
 
 
 export default function Works() {
@@ -19,10 +14,10 @@ export default function Works() {
 
     {
       id: "2",
-      title: "two",
-      icon: "https://cdn.mos.cms.futurecdn.net/izXa9hiiSTbnNtwSp2ixKC.jpg",
+      title: "Capstone Project @ Epicodus",
+      icon: "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/32/original/epicodus-ico.png",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, optio labore? Cupiditate.",
-      img: {capstone},
+      img: `${Capstone}`,
     },
     {
       id: "3",
@@ -71,12 +66,10 @@ export default function Works() {
               >
                 <div className="left">
                   <div className="leftContainer">
-                  <div className="imgContainer">
+                  <div className="iconContainer">
                     <img src={d.icon} alt="" />
                   </div>
                   <h2>{d.title}</h2>
-                  {/* <h2>Title</h2> */}
-
                   <p>{d.desc}</p>
                   <span>Projects</span>
                   <ul>
@@ -88,7 +81,6 @@ export default function Works() {
                 <div className="right">
                   <img 
                     src={d.img} 
-                    // src="https://thumbs.dreamstime.com/b/agile-software-development-business-internet-techology-concept-100573268.jpg"
                     alt=""
                     className="sliderImage"
                   />
