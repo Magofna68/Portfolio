@@ -101,17 +101,22 @@
             h2 {
               font-size: 20px;
               color: white;
-              padding: 10px 0 25px 15px;
+              padding: 0px 0 25px 15px;
               overflow: visible;
               // margin: 0 0 0 42%;
               align-content: center;
               justify-content: center;
               align-items: center;
             }
-            p {
-              font-size: 13px;
-              padding: 0 10px 0 0;
+
+            .descText {
+              font-size: 14px;
+              font-weight: 500;
+              margin: 0 0 15% 0;
+              padding: 23px 10px 0 0;
               overflow: visible;
+              border-top: double;
+              border-color: white;
             }
             span {
               font-size: 12px;

@@ -16,7 +16,7 @@ export default function Works() {
       id: "2",
       title: "Capstone Project @ Epicodus",
       icon: "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/32/original/epicodus-ico.png",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, optio labore? Cupiditate.",
+      desc: "My final project at Epicodus: built for marketing purposes to extend reach and accessibility for potential clientele.",
       img: `${Capstone}`,
     },
     {
@@ -70,12 +70,14 @@ export default function Works() {
                     <img src={d.icon} alt="" />
                   </div>
                   <h2>{d.title}</h2>
-                  <p>{d.desc}</p>
-                  <span>Projects</span>
+                  <div className="descText">
+                    <p>{d.desc}</p>
+                  </div>
+                  {/* <span>Projects</span>
                   <ul>
                     <li>one</li>
                     <li>two</li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
                 <div className="right">
