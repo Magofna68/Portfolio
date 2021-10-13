@@ -1,3 +1,5 @@
+import taproom from "../assets/taproom.png";
+
 export  const featuredPortfolio = [
     {
       id: 1,
@@ -25,12 +27,12 @@ export  const featuredPortfolio = [
     },
 ]
 
-export  const featuredWebApp = [
+export  const featuredReact = [
   {
     id: 1,
-    title: "This is my project",
-    alt: "test",
-    img: "https://news.yale.edu/sites/default/files/styles/featured_media/public/ynews-238597223.jpg?itok=incx5bBX&c=a75e254fe1da31f2732f6b0d7bce1413",
+    title: "TapRoom w/ Redux",
+    alt: "taproom application",
+    img: `${taproom}`,
   },
   {
     id: 2,

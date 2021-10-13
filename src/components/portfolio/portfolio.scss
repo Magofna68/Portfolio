@@ -110,6 +110,8 @@
         color: rgb(231, 230, 230);
         opacity: 60%;
         overflow: hidden;
+        border-radius: 10%;
+        transition: ease-out 2s;
       }
 
       &:hover {
@@ -119,13 +121,14 @@
           opacity: 100%;
           z-index: 0;
           overflow: contained;
+          border-radius: 10%;
         }
         h3 {
           position: absolute;
           font-size: 20px;
           display: inline;
-          bottom: 15%;
-          color: rgb(240, 235, 235);
+          bottom: 5%;
+          color: black;
         }
       }
     }

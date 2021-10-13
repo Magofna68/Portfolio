@@ -13,21 +13,21 @@ export default function Works() {
   const data = [
 
     {
-      id: "2",
+      id: "1",
       title: "Capstone Project @ Epicodus",
       icon: "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/32/original/epicodus-ico.png",
       desc: "My final project at Epicodus: built for marketing purposes to extend reach and accessibility for potential clientele.",
       img: `${Capstone}`,
     },
     {
-      id: "3",
+      id: "2",
       title: "Frantic",
       icon: "https://cdn.mos.cms.futurecdn.net/izXa9hiiSTbnNtwSp2ixKC.jpg",
       desc: "Loadipisicing elit. Libero, optio labore? Cu dolor sit amet consectetur adipisicing elit. Libero, optio labore? Cupiditate.",
       img: "http://imgs.abduzeedo.com/files/articles/beautiful-3d-nature-scenes/1229926_large.jpg",
     },
     {
-      id: "1",
+      id: "3",
       title: "yes",
       icon: "https://cdn.mos.cms.futurecdn.net/izXa9hiiSTbnNtwSp2ixKC.jpg",
       desc: "Lorem adipisicing elit. Libero, optio labore? Cupiditateipsum dolor sit amet ",
