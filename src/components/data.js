@@ -1,4 +1,5 @@
 import taproom from "../assets/taproom.png";
+import helpQue from "../assets/helpQue.png";
 
 export  const featuredPortfolio = [
     {
@@ -33,12 +34,14 @@ export  const featuredReact = [
     title: "TapRoom w/ Redux",
     alt: "taproom application",
     img: `${taproom}`,
+    link: "https://magofna68.github.io/TapRoom-Redux/"
   },
   {
     id: 2,
-    title: "Life Portrait",
-    alt: "meme",
-    img: "https://cdn2.hubspot.net/hubfs/53/how-to-make-a-meme.jpg",
+    title: "Help-Que w/ Redux",
+    alt: "Help Que web application",
+    img: `${helpQue}`,
+    link: "https://redux-help-queue-15476.web.app/",
   },
   {
     id: 3,
