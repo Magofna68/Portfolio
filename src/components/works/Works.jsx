@@ -3,7 +3,7 @@ import "./works.scss"
 import Arrow from "../../assets/arrow.png";
 // import Desk from "../../assets/desk.jpeg";
 import Capstone from "../../assets/capstone.png";
-// import Skyscrapers from "../../assets/skyscrapers.jpeg";
+import Martian from '../../assets/Martian.png';
 
 
 export default function Works() {
@@ -21,10 +21,10 @@ export default function Works() {
     },
     {
       id: "2",
-      title: "Frantic",
-      icon: "https://cdn.mos.cms.futurecdn.net/izXa9hiiSTbnNtwSp2ixKC.jpg",
-      desc: "Loadipisicing elit. Libero, optio labore? Cu dolor sit amet consectetur adipisicing elit. Libero, optio labore? Cupiditate.",
-      img: "http://imgs.abduzeedo.com/files/articles/beautiful-3d-nature-scenes/1229926_large.jpg",
+      title: "Martian-Project",
+      icon: "https://icon-library.com/images/nasa-icon/nasa-icon-10.jpg",
+      desc: "A collaborative project focused around API's: features photos, info, and a video on the Mars landing from NASA.",
+      img: `${Martian}`,
     },
     {
       id: "3",

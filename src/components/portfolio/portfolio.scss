@@ -76,19 +76,19 @@
     }
 
     .item {
-      width: 350px;
-      height: 270px;
-      border-radius: 20px;
-      border: 1px solid rgb(228, 224, 224);
-      margin: 10px 20px;
-      align-items: center;
-      justify-content: center;
-      // color: rgb(226, 0, 0);
-      display: flex;
-      position: relative;
-      transition: all 0.7s ease;
-      cursor: pointer;
-      background-color: rgb(247, 244, 244);
+      // width: 350px;
+      // height: 270px;
+      // border-radius: 20px;
+      // border: 1px solid rgb(228, 224, 224);
+      // margin: 10px 20px;
+      // align-items: center;
+      // justify-content: center;
+      // // color: rgb(226, 0, 0);
+      // display: flex;
+      // position: relative;
+      // transition: all 0.7s ease;
+      // cursor: pointer;
+      // background-color: rgb(247, 244, 244);
       overflow: visible;
 
       @include mobile {
@@ -98,39 +98,58 @@
         scroll-behavior: none;
       }
 
-      h3 {
+      h4 {
         display: none;
       }
+      a {
+        width: 350px;
+        height: 280px;
+        border-radius: 20px;
+        border: 1px solid rgb(228, 224, 224);
+        margin: 10px 20px;
+        align-items: center;
+        justify-content: center;
+        // color: rgb(226, 0, 0);
+        display: flex;
+        position: relative;
+        transition: all 0.7s ease;
+        cursor: pointer;
+        background-color: rgb(247, 244, 244);
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
 
-      img {
-        // width: 200px;
-        // height: 200px;
-        width: 70%;
-        height: 70%;
-        object-fit: cover;
-        z-index: 1;
-        color: rgb(231, 230, 230);
-        opacity: 70%;
-        overflow: hidden;
-        border-radius: 10%;
-        transition: ease-out 2s;
-      }
-
-      &:hover {
-        // background-color: $mainColor;
-        background-color: rgb(155, 155, 155);
         img {
-          opacity: 100%;
-          z-index: 0;
-          overflow: contained;
+          // width: 200px;
+          // height: 200px;
+          width: 90%;
+          height: 75%;
+          object-fit: cover;
+          z-index: 1;
+          color: rgb(231, 230, 230);
+          opacity: 70%;
+          overflow: hidden;
           border-radius: 10%;
+          transition: ease-out 2s;
         }
-        h3 {
-          position: absolute;
-          font-size: 20px;
-          display: inline;
-          bottom: 5%;
-          color: black;
+
+        &:hover {
+          // background-color: $mainColor;
+          background-color: rgb(155, 155, 155);
+          img {
+            opacity: 100%;
+            z-index: 0;
+            overflow: contained;
+            border-radius: 10%;
+          }
+          h4 {
+            position: absolute;
+            font-size: 20px;
+            display: inline;
+            bottom: 2%;
+            color: black;
+          }
         }
       }
     }

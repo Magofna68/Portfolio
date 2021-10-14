@@ -1,7 +1,7 @@
 import taproom from "../assets/taproom.png";
 import helpQue from "../assets/helpQue.png";
 import takeAHike from "../assets/takeAHike.png";
-import martian from "../assets/martian.mov";
+import Martian from '../assets/Martian.png';
 
 export  const featuredPortfolio = [
     {
@@ -15,7 +15,8 @@ export  const featuredPortfolio = [
       id: 2,
       title: "Martian-Proj",
       alt: "placeholder2",
-      img: `${martian}`,
+      img: `${Martian}`,
+      link: "https://magofna68.github.io/Martian-Proj/",
     },
     {
       id: 3,

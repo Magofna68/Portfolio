@@ -1,6 +1,9 @@
 import "./contact.scss"
 import React, {useState} from "react";
 import Placeholder from "../../assets/placeholder.JPG";
+import Martian from "../../assets/martian.mov";
+import ReactPlayer from 'react-player';
+
 
 
 
@@ -30,6 +33,10 @@ export default function Contact() {
           backgroundImage: `url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25806764.jpg")`,
           opacity: '80%'
         }}>
+          {/* format for rendering a video-- */}
+          {/* <video controls autoPlay loop muted>
+            <source src={Martian} type="video/mp4"></source>
+          </video> */}
         <img src={Placeholder} alt="hiking face shot"/>
       </div>
       <div className="right">
