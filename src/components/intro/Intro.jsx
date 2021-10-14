@@ -25,7 +25,7 @@ export default function Intro() {
       startDelay: 0,
       typeSpeed: 150,
       showCursor: true,
-      strings: ['Developer', 'Designer', 'Content Creator']
+      strings: ['Developer', 'Designer', 'Engineer']
     })
   }, []);
 
@@ -73,35 +73,37 @@ export default function Intro() {
                     spacing={8} 
                     alignItems="center"
                   >
-                    <a href="google.com">
-                      <span>
+                    <a target="_blank" href="https://www.facebook.com/brandon.magofna.5">
+                      {/* <span> */}
                         <FacebookIcon 
                           fontSize="large"
                           direction="row"
                           justifyContent="center"
                           alignItems="center"
                         />
-                      </span>
+                      {/* </span> */}
                     </a>
-                    <a href="google.com">
-                      <span id="iconTest">
+                    <a 
+                    target="_blank" 
+                    href="https://www.instagram.com/bmagofna68/"
+                    id="iconTest">
                         <InstagramIcon 
                           fontSize="large"
                           direction="row"
                           justifyContent="center"
                           alignItems="center"
                         />
-                      </span>
+                      {/* </span> */}
                     </a>
-                    <a href="google.com">
-                      <span>
+                    <a target="_blank" href="https://github.com/Magofna68">
+                      {/* <span> */}
                         <GitHubIcon
                           fontSize="large"
                           direction="row"
                           justifyContent="center"
                           alignItems="center"
                         />
-                      </span>
+                      {/* </span> */}
                     </a>
                   </Grid>
             {/* </Paper> */}
