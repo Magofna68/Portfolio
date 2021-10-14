@@ -36,6 +36,7 @@
     align-items: center;
     color: darkslategrey;
     overflow: visible;
+    text-align: center;
 
     @include mobile {
       padding: 0 0 0 0;
@@ -44,10 +45,10 @@
     }
 
     li {
-      width: 50px;
-      margin: 0 30px 0 0px;
+      width: 120px;
+      margin: 0 10% 0 0px;
       // padding: 0 10px 0 10px;
-      font-size: 12px;
+      font-size: 15px;
       align-items: center;
       justify-content: center;
       align-content: center;
@@ -63,6 +64,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
     overflow: hidden;
 
@@ -81,12 +83,12 @@
       margin: 10px 20px;
       align-items: center;
       justify-content: center;
-      color: rgb(105, 105, 105);
+      // color: rgb(226, 0, 0);
       display: flex;
       position: relative;
       transition: all 0.7s ease;
       cursor: pointer;
-      background-color: lightgray;
+      background-color: rgb(247, 244, 244);
       overflow: visible;
 
       @include mobile {
@@ -108,7 +110,7 @@
         object-fit: cover;
         z-index: 1;
         color: rgb(231, 230, 230);
-        opacity: 60%;
+        opacity: 70%;
         overflow: hidden;
         border-radius: 10%;
         transition: ease-out 2s;

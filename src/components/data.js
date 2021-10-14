@@ -1,18 +1,21 @@
 import taproom from "../assets/taproom.png";
 import helpQue from "../assets/helpQue.png";
+import takeAHike from "../assets/takeAHike.png";
+import martian from "../assets/martian.mov";
 
 export  const featuredPortfolio = [
     {
       id: 1,
-      title: "Hitchhiker's",
-      alt: "thumb",
-      img: "https://www.pngfind.com/pngs/m/24-243739_thumbs-up-png-transparent-image-thumbs-up-image.png",
+      title: "Take-A-Hike",
+      alt: "Hiking web application",
+      img: `${takeAHike}`,
+      link: "https://github.com/Magofna68/take-a-hike",
     },
     {
       id: 2,
-      title: "two",
+      title: "Martian-Proj",
       alt: "placeholder2",
-      img: "http://massisan.cgsociety.org/art/landscape-vue-visualization-photoshop-environment-design-nature-white-beach-3d-1232045",
+      img: `${martian}`,
     },
     {
       id: 3,
