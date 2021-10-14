@@ -18,6 +18,7 @@ export default function Works() {
       icon: "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/32/original/epicodus-ico.png",
       desc: "My final project at Epicodus: built for marketing purposes to extend reach and accessibility for potential clientele.",
       img: `${Capstone}`,
+      link: "https://magofna68.github.io/capstone/"
     },
     {
       id: "2",
@@ -25,6 +26,7 @@ export default function Works() {
       icon: "https://icon-library.com/images/nasa-icon/nasa-icon-10.jpg",
       desc: "A collaborative project focused around API's: features photos, info, and a video on the Mars landing from NASA.",
       img: `${Martian}`,
+      link: "https://magofna68.github.io/Martian-Proj/",
     },
     {
       id: "3",
@@ -72,12 +74,9 @@ export default function Works() {
                   <h2>{d.title}</h2>
                   <div className="descText">
                     <p>{d.desc}</p>
+                    <br/>
+                    <a target="_blank" href={d.link}>Check it out here</a>
                   </div>
-                  {/* <span>Projects</span>
-                  <ul>
-                    <li>one</li>
-                    <li>two</li>
-                  </ul> */}
                 </div>
               </div>
                 <div className="right">
