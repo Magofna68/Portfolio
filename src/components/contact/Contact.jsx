@@ -1,7 +1,6 @@
 import "./contact.scss"
 import React, {useState} from "react";
 import Placeholder from "../../assets/placeholder.JPG";
-import Martian from "../../assets/martian.mov";
 import ReactPlayer from 'react-player';
 
 

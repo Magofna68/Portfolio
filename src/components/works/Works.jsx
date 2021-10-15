@@ -4,6 +4,7 @@ import Arrow from "../../assets/arrow.png";
 // import Desk from "../../assets/desk.jpeg";
 import Capstone from "../../assets/capstone.png";
 import Martian from '../../assets/Martian.png';
+import VALIDATE from '../../assets/VALIDATE.png';
 
 
 export default function Works() {
@@ -14,9 +15,9 @@ export default function Works() {
 
     {
       id: "1",
-      title: "Capstone Project @ Epicodus",
+      title: "Capstone Project",
       icon: "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/32/original/epicodus-ico.png",
-      desc: "My final project at Epicodus: built for marketing purposes to extend reach and accessibility for potential clientele.",
+      desc: "My final project at Epicodus: a 27 week coding bootcamp. This project was built with a React front end to promote and extend reach and accessibility for provided services.",
       img: `${Capstone}`,
       link: "https://magofna68.github.io/capstone/"
     },
@@ -24,16 +25,17 @@ export default function Works() {
       id: "2",
       title: "Martian-Project",
       icon: "https://icon-library.com/images/nasa-icon/nasa-icon-10.jpg",
-      desc: "A collaborative project focused around API's: features photos, info, and a video on the Mars landing from NASA.",
+      desc: "A collaborative dev-team project focused around APIs. Features numerous API calls for dynamic information updates, photos, and a video of the Mars landing from NASA in April 2021.",
       img: `${Martian}`,
       link: "https://magofna68.github.io/Martian-Proj/",
     },
     {
       id: "3",
-      title: "yes",
-      icon: "https://cdn.mos.cms.futurecdn.net/izXa9hiiSTbnNtwSp2ixKC.jpg",
-      desc: "Lorem adipisicing elit. Libero, optio labore? Cupiditateipsum dolor sit amet ",
-      img: "https://assets.weforum.org/article/image/ti3O0eGP60ScE_PpvYwtIYMd3us18yFd3HQqFw-k8rk.jpg",
+      title: "VALIDATE, LLC",
+      icon: "https://media-exp1.licdn.com/dms/image/C4E0BAQGZYBwSEs2zUQ/company-logo_200_200/0/1565048189782?e=1642636800&v=beta&t=igVrMLRHrKjcCzn52VTSo3NjkbWTfxWqf9GV1HMi2cg",
+      desc: "Worked collaboratively in a dev team to further develop a React-based app from Alpha stage to Beta version. Improved UI experience, tested feature branches, and submitted pull requests",
+      img: `${VALIDATE}`,
+      link: "https://www.linkedin.com/company/validateclub/about/",
     },
 ]
   const handleClick = (way) => {

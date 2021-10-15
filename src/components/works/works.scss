@@ -38,7 +38,7 @@
     }
   }
   .slider {
-    height: 350px;
+    height: 375px;
     display: flex;
     position: absolute;
     left: 0;
@@ -65,7 +65,7 @@
 
         .left {
           flex: 4;
-          height: 90%;
+          height: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -82,7 +82,7 @@
               // width: 40px;
               // height: 50px;
               width: 30%;
-              height: 30%;
+              height: 25%;
               border-radius: 25%;
               background-color: black;
               display: flex;
