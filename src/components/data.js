@@ -2,6 +2,7 @@ import taproom from "../assets/taproom.png";
 import helpQue from "../assets/helpQue.png";
 import takeAHike from "../assets/takeAHike.png";
 import Martian from '../assets/Martian.png';
+import Exchanger from './assets/Exchanger.png';
 
 export  const featuredPortfolio = [
     {
@@ -20,9 +21,10 @@ export  const featuredPortfolio = [
     },
     {
       id: 3,
-      title: "three",
-      alt: "placeholder3",
-      img: "http://imgs.abduzeedo.com/files/articles/beautiful-3d-nature-scenes/1229926_large.jpg",
+      title: "Currency Exchanger",
+      alt: "Currency Exchanger",
+      img: `${Exchanger}`,
+      link: "https://magofna68.github.io/Currency-Exchanger/",
     },
     {
       id: 4,
