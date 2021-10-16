@@ -2,7 +2,7 @@ import taproom from "../assets/taproom.png";
 import helpQue from "../assets/helpQue.png";
 import takeAHike from "../assets/takeAHike.png";
 import Martian from '../assets/Martian.png';
-import Exchanger from './assets/Exchanger.png';
+import Exchanger from '../assets/Exchanger.png';
 
 export  const featuredPortfolio = [
     {
