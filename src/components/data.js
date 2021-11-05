@@ -3,6 +3,7 @@ import helpQue from "../assets/helpQue.png";
 import takeAHike from "../assets/takeAHike.png";
 import Martian from '../assets/Martian.png';
 import Exchanger from '../assets/Exchanger.png';
+import RecipeBox from '../assets/RecipeBox.png';
 
 export  const featuredPortfolio = [
     {
@@ -26,20 +27,20 @@ export  const featuredPortfolio = [
       img: `${Exchanger}`,
       link: "https://magofna68.github.io/Currency-Exchanger/",
     },
-    {
-      id: 4,
-      title: "four",
-      alt: "placeholder4",
-      img: "http://imgs.abduzeedo.com/files/articles/beautiful-3d-nature-scenes/1293669_large.jpg",
-    },
+    // {
+    //   id: 4,
+    //   title: "four",
+    //   alt: "placeholder4",
+    //   img: "http://imgs.abduzeedo.com/files/articles/beautiful-3d-nature-scenes/1293669_large.jpg",
+    // },
 ]
 
 export  const featuredC = [
   {
     id: 1,
-    title: "Hitchhiker's",
-    alt: "thumb",
-    img: "https://www.pngfind.com/pngs/m/24-243739_thumbs-up-png-transparent-image-thumbs-up-image.png",
+    title: "Recipe Box",
+    alt: "Recipe Box",
+    img: `${RecipeBox}`,
   }
 ]
 
@@ -58,16 +59,16 @@ export const featuredReact = [
     img: `${helpQue}`,
     link: "https://redux-help-queue-15476.web.app/",
   },
-  {
-    id: 3,
-    title: "The who is the What",
-    alt: "placeholder3",
-    img: "https://icatcare.org/app/uploads/2018/07/Helping-your-new-cat-or-kitten-settle-in-1.png",
-  },
-  {
-    id: 4,
-    title: "four",
-    alt: "placeholder4",
-    img: "http://imgs.abduzeedo.com/files/articles/beautiful-3d-nature-scenes/1293669_large.jpg",
-  }
+  // {
+  //   id: 3,
+  //   title: "The who is the What",
+  //   alt: "placeholder3",
+  //   img: "https://icatcare.org/app/uploads/2018/07/Helping-your-new-cat-or-kitten-settle-in-1.png",
+  // },
+  // {
+  //   id: 4,
+  //   title: "four",
+  //   alt: "placeholder4",
+  //   img: "http://imgs.abduzeedo.com/files/articles/beautiful-3d-nature-scenes/1293669_large.jpg",
+  // }
 ]
