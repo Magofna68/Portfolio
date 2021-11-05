@@ -5,42 +5,43 @@ import Martian from '../assets/Martian.png';
 import Exchanger from '../assets/Exchanger.png';
 import RecipeBox from '../assets/RecipeBox.png';
 
-export  const featuredPortfolio = [
-    {
-      id: 1,
-      title: "Take-A-Hike",
-      alt: "Hiking web application",
-      img: `${takeAHike}`,
-      link: "https://github.com/Magofna68/take-a-hike",
-    },
-    {
-      id: 2,
-      title: "Martian-Proj",
-      alt: "placeholder2",
-      img: `${Martian}`,
-      link: "https://magofna68.github.io/Martian-Proj/",
-    },
-    {
-      id: 3,
-      title: "Currency Exchanger",
-      alt: "Currency Exchanger",
-      img: `${Exchanger}`,
-      link: "https://magofna68.github.io/Currency-Exchanger/",
-    },
-    // {
-    //   id: 4,
-    //   title: "four",
-    //   alt: "placeholder4",
-    //   img: "http://imgs.abduzeedo.com/files/articles/beautiful-3d-nature-scenes/1293669_large.jpg",
-    // },
+export const featuredPortfolio = [
+  {
+    id: 1,
+    title: "Take-A-Hike",
+    alt: "Hiking web application",
+    img: `${takeAHike}`,
+    link: "https://github.com/Magofna68/take-a-hike",
+  },
+  {
+    id: 2,
+    title: "Martian-Proj",
+    alt: "placeholder2",
+    img: `${Martian}`,
+    link: "https://magofna68.github.io/Martian-Proj/",
+  },
+  {
+    id: 3,
+    title: "Currency Exchanger",
+    alt: "Currency Exchanger",
+    img: `${Exchanger}`,
+    link: "https://magofna68.github.io/Currency-Exchanger/",
+  },
+  // {
+  //   id: 4,
+  //   title: "four",
+  //   alt: "placeholder4",
+  //   img: "http://imgs.abduzeedo.com/files/articles/beautiful-3d-nature-scenes/1293669_large.jpg",
+  // },
 ]
 
-export  const featuredC = [
+export const featuredC = [
   {
     id: 1,
     title: "Recipe Box",
     alt: "Recipe Box",
     img: `${RecipeBox}`,
+    link: "https://github.com/Magofna68/RecipeBox.Solution",
   }
 ]
 
