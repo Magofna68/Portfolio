@@ -44,11 +44,21 @@
     left: 0;
     transition: all 1s ease-out;
 
+    @include mobile {
+      height: 500px;
+    }
+
     .container {
       width: 100vw;
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @include mobile {
+        align-items: start;
+        align-content: start;
+        // display: grid;
+      }
 
       .item {
         border-radius: 3%;
@@ -63,6 +73,11 @@
         box-shadow: 4px 5px black;
         // transform: rotateY(180deg);
 
+        @include mobile {
+          align-content: start;
+          align-items: start;
+        }
+
         .left {
           flex: 4;
           height: 100%;
@@ -71,12 +86,21 @@
           justify-content: center;
           color: rgb(66, 65, 65);
 
+          @include mobile {
+            flex: 4;
+          }
+
           .leftContainer {
             width: 90%;
             height: 90%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @include mobile {
+              overflow: visible;
+              justify-content: space-evenly;
+            }
 
             .iconContainer {
               // width: 40px;
@@ -94,6 +118,12 @@
               overflow: hidden;
               scroll-behavior: none;
 
+              @include mobile {
+                width: 60%;
+                height: 20%;
+                margin: 0 0 0% 25%;
+              }
+
               .img {
                 width: 35px;
               }
@@ -107,6 +137,11 @@
               align-content: center;
               justify-content: center;
               align-items: center;
+
+              @include mobile {
+                margin: 10px 0 0 10px;
+                color: gray;
+              }
             }
 
             .descText {
@@ -117,6 +152,11 @@
               overflow: visible;
               border-top: double;
               border-color: white;
+
+              @include mobile {
+                width: 300px;
+                overflow: visible;
+              }
             }
             span {
               font-size: 12px;
@@ -126,6 +166,12 @@
               color: black;
               margin: 10px 0 5px 0;
               overflow: visible;
+            }
+
+            p {
+              @include mobile {
+                overflow: visible;
+              }
             }
 
             ul {
@@ -139,6 +185,9 @@
                 justify-content: center;
                 align-items: center;
                 overflow: visible;
+
+                @include mobile {
+                }
               }
             }
           }
@@ -152,6 +201,15 @@
           overflow: hidden;
           margin-right: 3%;
 
+          @include mobile {
+            align-items: start;
+            margin-top: 10px;
+            // position: absolute;
+            // z-index: 1;
+            height: 40%;
+            top: 0%;
+          }
+
           img {
             width: 80%;
             max-height: 80%;
@@ -160,6 +218,10 @@
             border-bottom: white;
             border-color: black;
             transition: 1.5s ease;
+
+            @include mobile {
+              width: 100%;
+            }
 
             &:hover {
               transform: scale(1.25);
