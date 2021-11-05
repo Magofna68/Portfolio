@@ -87,6 +87,12 @@ export default function Works() {
                     alt=""
                     className="sliderImage"
                   />
+                  <div className="mobile">
+                    <p>{d.desc}</p>
+                    <br/>
+                    <br/>
+                    <a target="_blank" href={d.link}>Check it out here</a>
+                  </div>
                 </div>
               </div>
             </div>

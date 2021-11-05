@@ -76,6 +76,7 @@
         @include mobile {
           align-content: start;
           align-items: start;
+          height: 80%;
         }
 
         .left {
@@ -87,7 +88,7 @@
           color: rgb(66, 65, 65);
 
           @include mobile {
-            flex: 4;
+            width: 100%;
           }
 
           .leftContainer {
@@ -99,7 +100,9 @@
 
             @include mobile {
               overflow: visible;
-              justify-content: space-evenly;
+              align-content: flex-start;
+              align-items: flex-start;
+              // justify-content: space-evenly;
             }
 
             .iconContainer {
@@ -121,7 +124,7 @@
               @include mobile {
                 width: 60%;
                 height: 20%;
-                margin: 0 0 0% 25%;
+                margin: 12% 0 0% 25%;
               }
 
               .img {
@@ -139,7 +142,7 @@
               align-items: center;
 
               @include mobile {
-                margin: 10px 0 0 10px;
+                margin: 0 0 110% 10px;
                 color: gray;
               }
             }
@@ -156,6 +159,7 @@
               @include mobile {
                 width: 300px;
                 overflow: visible;
+                display: none;
               }
             }
             span {
@@ -166,12 +170,6 @@
               color: black;
               margin: 10px 0 5px 0;
               overflow: visible;
-            }
-
-            p {
-              @include mobile {
-                overflow: visible;
-              }
             }
 
             ul {
@@ -203,11 +201,12 @@
 
           @include mobile {
             align-items: start;
-            margin-top: 10px;
+            margin-top: 2%;
             // position: absolute;
             // z-index: 1;
-            height: 40%;
+            // height: 40%;
             top: 0%;
+            display: block;
           }
 
           img {
@@ -221,10 +220,23 @@
 
             @include mobile {
               width: 100%;
+              margin: 0 0 10% 0;
             }
 
             &:hover {
               transform: scale(1.25);
+            }
+          }
+
+          .mobile {
+            display: none;
+
+            @include mobile {
+              display: inline-block;
+              margin: 15% 0 0 0;
+              // padding: 20% 0 0 0;
+              width: 100%;
+              align-content: center;
             }
           }
         }
