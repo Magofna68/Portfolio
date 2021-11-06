@@ -82,17 +82,20 @@ export default function Works() {
                 </div>
               </div>
                 <div className="right">
+                  <div className="mobile">
+                    <h2> {d.title}</h2>
+                    <p>{d.desc}</p>
+                    <br/>
+                    <br/>
+                  </div>
                   <img 
                     src={d.img} 
                     alt=""
                     className="sliderImage"
                   />
-                  <div className="mobile">
-                    <p>{d.desc}</p>
-                    <br/>
-                    <br/>
+                  <br/>
+                  <br/>
                     <a target="_blank" href={d.link}>Check it out here</a>
-                  </div>
                 </div>
               </div>
             </div>
