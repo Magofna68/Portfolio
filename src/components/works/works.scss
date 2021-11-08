@@ -76,7 +76,7 @@
         @include mobile {
           // align-content: start;
           // align-items: start;
-          // height: 70%;
+          height: 70%;
         }
 
         .left {
@@ -166,6 +166,7 @@
                 width: 300px;
                 overflow: visible;
                 display: none;
+                margin: 0 0 0 0px;
               }
             }
             span {
@@ -221,13 +222,14 @@
           }
 
           img {
-            width: 80%;
-            max-height: 80%;
+            width: 78%;
+            max-height: 70%;
             border-radius: 4%;
             border: solid;
             border-bottom: white;
             border-color: black;
             transition: 1.5s ease;
+            margin: 0 0 0 1%;
 
             @include mobile {
               width: 150%;
@@ -269,6 +271,7 @@
           }
         }
         img.sliderImage {
+          display: none;
           @include mobile {
             width: 80%;
             margin: 0% 0 0 0;

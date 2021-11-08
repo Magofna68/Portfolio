@@ -19,6 +19,7 @@ export default function Works() {
       icon: "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/32/original/epicodus-ico.png",
       desc: "My final project at Epicodus: a 27 week coding bootcamp. This project was built with a React front end to promote and extend reach and accessibility for provided services.",
       img: `${Capstone}`,
+      alt: "Capstone project at Epicodus: website application",
       link: "https://magofna68.github.io/capstone/"
     },
     {
@@ -27,6 +28,7 @@ export default function Works() {
       icon: "https://icon-library.com/images/nasa-icon/nasa-icon-10.jpg",
       desc: "A collaborative dev-team project focused around APIs. Features numerous API calls for dynamic information updates, photos, and a video of the Mars landing from NASA in April 2021.",
       img: `${Martian}`,
+      alt: "Nasa API collab project",
       link: "https://magofna68.github.io/Martian-Proj/",
     },
     {
@@ -35,6 +37,7 @@ export default function Works() {
       icon: "https://media-exp1.licdn.com/dms/image/C4E0BAQGZYBwSEs2zUQ/company-logo_200_200/0/1565048189782?e=1642636800&v=beta&t=igVrMLRHrKjcCzn52VTSo3NjkbWTfxWqf9GV1HMi2cg",
       desc: "Worked collaboratively in a dev team to further develop a React-based app from Alpha stage to Beta version. Improved UI experience, tested feature branches, and submitted pull requests",
       img: `${VALIDATE}`,
+      alt: "VALIDATE; from Alpha to Beta",
       link: "https://www.linkedin.com/company/validateclub/about/",
     },
 ]
@@ -92,7 +95,12 @@ export default function Works() {
                     <br/>
                     <br/>
                   </div>
-                    <a target="_blank" href={d.link}>Check it out here</a>
+                  <img 
+                    src={d.img} 
+                    alt={d.alt}
+                    className="imgPreview"
+                  /><br/>
+                    {/* <a target="_blank" href={d.link}>Check it out here</a> */}
                   <br/>
                   <br/>
                 </div>
