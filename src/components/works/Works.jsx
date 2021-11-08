@@ -71,11 +71,6 @@ export default function Works() {
                 backgroundImage: `url("https://cdn.mos.cms.futurecdn.net/gtkekaDHpknr4beyGmbtCo-1200-80.png")`
               }}
               >
-                                <img 
-                    src={d.img} 
-                    alt=""
-                    className="sliderImage"
-                  />
                 <div className="left">
                   <div className="leftContainer">
                   <div className="iconContainer">
@@ -91,19 +86,15 @@ export default function Works() {
               </div>
                 <div className="right">
                   <div className="mobile">
-                    <p>{d.desc}</p>
-                    <br/>
-                    <br/>
+                    {d.desc}
+                    {/* <br/> */}
                   </div>
-                  <img 
+                </div>
+                  {/* <img 
                     src={d.img} 
                     alt={d.alt}
-                    className="imgPreview"
-                  /><br/>
-                    {/* <a target="_blank" href={d.link}>Check it out here</a> */}
+                    className="imgPreview" */}
                   <br/>
-                  <br/>
-                </div>
               </div>
             </div>
           ))}
