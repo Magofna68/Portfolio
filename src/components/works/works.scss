@@ -29,6 +29,11 @@
       }
     }
 
+    @include mobile {
+      height: 10%;
+      top: 70%;
+    }
+
     &.left {
       left: 7%;
       transform: rotateY(180deg);
@@ -216,23 +221,13 @@
             position: right;
             position: absolute;
             color: white;
-            // align-content: baseline;
-            // float: right;
             top: 3%;
             right: 0%;
             font-size: 14px;
-            // bottom: 0%;
-            // margin-top: 2%;
             margin: 0% 0 0% 0;
-            // position: absolute;
-
-            // z-index: 1;
-            // height: 40%;
-            // bottom: 100%;
-            // display: block;
           }
 
-          img {
+          .worksImages {
             // display: none;
             width: 78%;
             max-height: 70%;
@@ -244,22 +239,20 @@
             margin: 0 0 0 1%;
 
             @include mobile {
-              width: 150%;
-              margin: 0 0% 0% 0%;
+              display: none;
             }
 
             &:hover {
               transform: scale(1.25);
             }
-          }
 
-          img.imgPreview {
-            @include mobile {
-              align-items: baseline;
-              align-content: center;
-              display: flex;
-              margin: 0 0 0% 0;
-              width: 50px;
+            img {
+              // display: none;
+              width: 100%;
+              @include mobile {
+                margin: 10% 0 0% 0;
+                transition: 1.5s ease;
+              }
             }
           }
 
@@ -273,6 +266,13 @@
               width: 100%;
               align-content: center;
               display: flex;
+              flex-direction: column;
+            }
+
+            a {
+              @include mobile {
+                color: #dee2e6;
+              }
             }
 
             p {
@@ -299,45 +299,20 @@
               }
             }
           }
-
-          // .mobileView {
-          //   display: none;
-
-          //   @include mobile {
-          //     // align-items: start;
-          //     margin: 15% 0 12% 0;
-          //     // padding: 20% 0 0 0;
-          //     width: 100%;
-          //     align-content: center;
-          //     display: flex;
-          //   }
-
-          //   h2 {
-          //     display: none;
-
-          //     @include mobile {
-          //       display: block;
-          //     }
-          //   }
-
-          //   a {
-          //     display: none;
-
-          //     @include mobile {
-          //       display: flex;
-          //     }
-          //   }
-          // }
         }
-        // img.sliderImage {
-        //   display: none;
-        //   @include mobile {
-        //     display: flex;
-        //     // width: ;
-        //     margin: 10%% 0 0 10%;
-        //     bottom: 20%;
-        //   }
-        // }
+        .imgPreview {
+          display: none;
+          @include mobile {
+            display: flex;
+            margin: 0% 0 0% 0;
+            transition: 1.5s ease;
+            width: 50px;
+
+            &:hover {
+              transform: scale(1.25);
+            }
+          }
+        }
       }
     }
   }

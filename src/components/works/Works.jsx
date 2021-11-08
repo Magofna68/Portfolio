@@ -85,15 +85,36 @@ export default function Works() {
                 </div>
               </div>
                 <div className="right">
+                  <div className="worksImages">
+                    <img 
+                      src={d.img} 
+                      alt={d.alt}
+                      styles={{
+                        width: "300px"
+                      }}
+                    />
+                  </div>
                   <div className="mobile">
                     {d.desc}
-                    {/* <br/> */}
+                    <br/>
+                    <br/>
+                    <a target="_blank" href={d.link}>Check it out here</a>
                   </div>
                 </div>
-                  {/* <img 
+                <div className="imgPreview">
+                  <img 
                     src={d.img} 
                     alt={d.alt}
-                    className="imgPreview" */}
+                    // className="imgPreview"
+                    style={{
+                      width: "250px",
+                      position: "absolute",
+                      bottom: "5%",
+                      right: "15%",
+                      transition: "1.5s ease",
+                    }}
+                    />
+                  </div>
                   <br/>
               </div>
             </div>
