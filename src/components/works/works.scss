@@ -250,7 +250,7 @@
               // display: none;
               width: 100%;
               @include mobile {
-                margin: 10% 0 0% 0;
+                // margin: 10% 0 0% 0;
                 transition: 1.5s ease;
               }
             }
@@ -267,6 +267,7 @@
               align-content: center;
               display: flex;
               flex-direction: column;
+              // transition: 1.5s ease;
             }
 
             a {
@@ -291,22 +292,19 @@
               }
             }
 
-            a {
-              display: none;
+            // a {
+            //   display: none;
 
-              @include mobile {
-                display: flex;
-              }
-            }
+            //   @include mobile {
+            //     display: flex;
+            //   }
+            // }
           }
         }
         .imgPreview {
           display: none;
           @include mobile {
             display: flex;
-            margin: 0% 0 0% 0;
-            transition: 1.5s ease;
-            width: 50px;
 
             &:hover {
               transform: scale(1.25);
