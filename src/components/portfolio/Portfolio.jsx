@@ -87,11 +87,10 @@ export default function Portfolio() {
         </div>
         <p style={{
             fontWeight: `500`,
-          }}>
+        }}>
              Epicodus has provided a framework of over 250 hours of experience, and nearly 20 projects in each of the following: C#/.Net, Javascript, & React.<br/>
-             The above projects are a sample of a few of those.
-             {/* (GIT, pair-programming, CRUD, REST) */}
-          </p>
+             The above projects are a few of those.
+        </p>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import "./works.scss"
 import Arrow from "../../assets/arrow.png";
-// import Desk from "../../assets/desk.jpeg";
 import Capstone from "../../assets/capstone.png";
 import Martian from '../../assets/Martian.png';
 import VALIDATE from '../../assets/VALIDATE.png';
@@ -47,32 +46,31 @@ export default function Works() {
   };
   return (
     <div 
-    className="works" 
-    id="works"
-    style={{
-      // opacity: `90%`,
+      className="works" 
+      id="works"
+      style={{
       backgroundSize: `cover`,
       transform: `rotateY(180deg)`,
       repeat: `no-repeat`,
       backgroundImage: `url("https://i2.wp.com/files.123freevectors.com/wp-content/original/142906-cool-grey-wave-business-background-vector-art.jpg?w=800&q=95")`
     }}>
-        <div 
+      <div 
         className="slider" 
         style={{
           transform: `translateX(-${currentSlide * 100}vw)`,
         }}
-        >
-          {data.map((d) => (
-            <div className="container">
-              <div 
+      >
+        {data.map((d) => (
+          <div className="container">
+            <div 
               className="item"
               style={{
                 transform: `rotateY(180deg)`,
                 backgroundImage: `url("https://cdn.mos.cms.futurecdn.net/gtkekaDHpknr4beyGmbtCo-1200-80.png")`
-              }}
-              >
-                <div className="left">
-                  <div className="leftContainer">
+            }}
+            >
+              <div className="left">
+                <div className="leftContainer">
                   <div className="iconContainer">
                     <img src={d.icon} alt="" />
                   </div>
@@ -84,43 +82,42 @@ export default function Works() {
                   </div>
                 </div>
               </div>
-                <div className="right">
-                  <div className="worksImages">
-                    <img 
-                      src={d.img} 
-                      alt={d.alt}
-                      styles={{
-                        width: "300px"
-                      }}
-                    />
-                  </div>
-                  <div className="mobile">
-                    {d.desc}
-                    <br/>
-                    <br/>
-                    <a target="_blank" href={d.link}>Check it out here</a>
-                  </div>
-                </div>
-                <div className="imgPreview">
+              <div className="right">
+                <div className="worksImages">
                   <img 
                     src={d.img} 
                     alt={d.alt}
-                    // className="imgPreview"
-                    style={{
-                      width: "260px",
-                      position: "absolute",
-                      bottom: "1%",
-                      right: "12%",
-                      transition: "1.5s ease",
-                      borderLeft: "solid 3px black",
-                      borderRight: "solid 3px black",
-                      borderBottom: "solid 3px",
-                      borderColor: "gray",
+                    styles={{
+                      width: "300px"
                     }}
-                    />
-                  </div>
+                  />
+                </div>
+                <div className="mobile">
+                  {d.desc}
                   <br/>
+                  <br/>
+                  <a target="_blank" href={d.link}>Check it out here</a>
+                </div>
               </div>
+              <div className="imgPreview">
+                <img 
+                  src={d.img} 
+                  alt={d.alt}
+                  style={{
+                    width: "260px",
+                    position: "absolute",
+                    bottom: "1%",
+                    right: "12%",
+                    transition: "1.5s ease",
+                    borderLeft: "solid 3px black",
+                    borderRight: "solid 3px black",
+                    borderBottom: "solid 3px",
+                    borderColor: "gray",
+                  }}
+                />
+              </div>
+              <br/>
+            </div>
             </div>
           ))}
           </div>

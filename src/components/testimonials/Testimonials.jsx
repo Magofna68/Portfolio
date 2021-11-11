@@ -61,7 +61,6 @@ export default function Testimonial() {
       <div className="container">
         {reviews.map((r) => (
           <div className={r.featured ? "card featured" : "card"}>
-        {/* <div className="card"> */}
           <div className="top">
             <img src={r.img} className="user" alt={r.alt}/>
             <img  src={r.icon} className="right"/>
@@ -70,7 +69,6 @@ export default function Testimonial() {
           <div className="center"> {r.desc}</div>
           <div className="bottom">
             <h3>{r.name}</h3>
-            {/* <h5>Relation: Deltek</h5> */}
             <h5>Current: {r.title}</h5>
           </div>
         </div>
