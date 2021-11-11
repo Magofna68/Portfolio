@@ -86,6 +86,7 @@
 
         @include mobile {
           font-size: 12px;
+          margin: -30px 0 0 0;
         }
       }
     }
@@ -111,8 +112,11 @@
       overflow: none;
 
       @include mobile {
-        flex: 30%;
-        height: 50%;
+        // flex: 30%;
+        height: 40%;
+        max-width: 250px;
+        padding: 0;
+        margin: 5% 0 0 13%;
       }
 
       .clickables {
@@ -130,6 +134,10 @@
         overflow: visible;
         // display: cover;
 
+        @include mobile {
+          width: 90%;
+        }
+
         .resumeContainer {
           // width: 150px;
           // height: 150px;
@@ -144,6 +152,10 @@
           // background-color: rgb(129, 54, 54);
           overflow: visible;
 
+          @include mobile {
+            // display: none;
+          }
+
           a {
             margin: 0 10px 0 10px;
             padding: 0 0 0 0;
@@ -151,6 +163,10 @@
             justify-content: center;
             scroll-behavior: none;
             align-content: center;
+
+            @include mobile {
+              // display: none;
+            }
 
             img {
               width: 85%;
@@ -163,10 +179,12 @@
               transition: all 0.8s ease;
 
               @include mobile {
-                height: 20%;
+                // display: none;
+                height: 25%;
                 width: 80%;
                 padding: 10% 0 0 9%;
                 opacity: 90%;
+                border-radius: 40%;
               }
               &:hover {
                 opacity: 100%;
@@ -192,6 +210,10 @@
               border-left: solid;
               border-right: solid;
               overflow: contained;
+
+              @include mobile {
+                // display: none;
+              }
             }
           }
         }

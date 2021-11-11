@@ -121,7 +121,8 @@
     overflow: hidden;
 
     @include mobile {
-      margin: 0 0 15% 0;
+      margin: 0 0 % 0;
+      bottom: 5%;
     }
 
     .wrapper {
@@ -134,7 +135,7 @@
 
       @include mobile {
         height: 80%;
-        margin: 20% 0 0 0;
+        margin: 20% 0 0% 0;
       }
 
       h1 {
@@ -182,7 +183,7 @@
         }
 
         .ityped-cursor {
-          animation: blink 1s infinite;
+          animation: blink 0.75s infinite;
         }
 
         @keyframes blink {
@@ -199,6 +200,7 @@
         bottom: 50px;
         left: 30%;
       }
+
       .downIcon {
         width: 50%;
         height: 30%;
@@ -221,6 +223,53 @@
             100% {
               display: none;
             }
+          }
+        }
+      }
+    }
+  }
+
+  .mobileArrow {
+    display: none;
+
+    @keyframes arrowBlink {
+      100% {
+        opacity: 20%;
+      }
+    }
+    @include mobile {
+      display: block;
+      color: red;
+      bottom: 2%;
+      margin: 0% 0 0 0;
+      transform: rotate(90deg);
+      @keyframes arrowBlink {
+        100% {
+          display: none;
+        }
+      }
+    }
+
+    .downIconMobile {
+      display: none;
+      width: 100px;
+      height: 100px;
+      align-items: flex-start;
+      justify-content: center;
+      color: red;
+      animation: arrowBlink 6s infinite;
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 20%;
+        }
+      }
+      @include mobile {
+        display: flex;
+        // transform: rotate(90deg);
+        @keyframes arrowBlink {
+          100% {
+            display: none;
           }
         }
       }
