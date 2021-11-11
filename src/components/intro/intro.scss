@@ -234,7 +234,7 @@
 
     @keyframes arrowBlink {
       100% {
-        opacity: 20%;
+        display: none;
       }
     }
     @include mobile {
@@ -257,21 +257,18 @@
       align-items: flex-start;
       justify-content: center;
       color: red;
-      animation: arrowBlink 6s infinite;
+      animation: arrowBlink 3s infinite;
 
       @keyframes arrowBlink {
         100% {
           opacity: 20%;
         }
+        0% {
+          opacity: 100%;
+        }
       }
       @include mobile {
         display: flex;
-        // transform: rotate(90deg);
-        @keyframes arrowBlink {
-          100% {
-            display: none;
-          }
-        }
       }
     }
   }
