@@ -6,12 +6,10 @@ import { featuredPortfolio, featuredReact, featuredC } from "../data" ;
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
-  // const [data, setData] = useState();
 
   const [data, setData] = useState([]);
 
   const list = [
-    // potential list of different languages? C#/javascript/ect.
     {
       id: "react",
       title: "React",

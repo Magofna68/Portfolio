@@ -12,8 +12,6 @@
   .left {
     flex: 0.5;
     overflow: hidden;
-    // background-color: rgb(70, 64, 65);
-    // border-radius: 5%;
 
     @include mobile {
       margin: 5% 0 -11% 0;
@@ -28,7 +26,6 @@
       display: inline-block;
       align-items: center;
       justify-content: baseline;
-      // float: left;
       margin-top: 10%;
       margin-left: 5%;
       overflow: hidden;
@@ -37,7 +34,6 @@
       border-color: white;
 
       @include mobile {
-        // align-items: center;
         padding: 0 0 0 0;
         margin: 6% 0 0% 0;
         height: 275px;
@@ -52,20 +48,12 @@
         background-color: rgb(218, 216, 214);
         padding: 0 5px 0 5px;
         width: 28%;
-        // font-size: larger;
         border-radius: 5%;
 
         @include mobile {
-          // margin-right: 10%;
-          // margin: 0 0 0 10%;
           height: 0;
-          // padding: 0 0 10 0;
-          // align-items: center;
-          // justify-content: center;
         }
       }
-
-      // transform: rotate(5deg)
 
       .iconContainer {
         display: inline-block;
@@ -93,7 +81,6 @@
         justify-content: center;
         border: solid;
         border-width: 3px;
-        // border-color: rgb(219, 196, 196);
         border-color: black;
 
         @include mobile {
@@ -101,8 +88,6 @@
           width: 75%;
           margin-top: 12%;
           margin-left: 12%;
-          // margin: 0 0 0 12%;
-          // margin-bottom: 50px;
         }
       }
     }
@@ -110,10 +95,6 @@
   #iconTest {
     padding-right: 15px;
     padding-left: 15px;
-
-    @include mobile {
-      // float: left;
-    }
   }
   .right {
     flex: 0.3;
@@ -207,8 +188,6 @@
         align-items: flex-start;
         justify-content: center;
         color: red;
-        // border-top: solid;
-        // border-color: black;
         transform: rotate(90deg);
         animation: arrowBlink 6s infinite;
 

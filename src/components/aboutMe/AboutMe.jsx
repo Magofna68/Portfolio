@@ -31,10 +31,8 @@ export default function AboutMe() {
           </p>
           <p id="mobileP2">
             After much thought, Brandon came to realize his passion didnt lie in sales, but rather in the excitement of overcoming a challenge. He left my sales role behind and to pursue a career in coding; to be an aspiring software engineer. Applying the knowledge base cultivated from college and from his experiences in sales, Brandon goal is to further develop a growth mindset; leaning into unknown endeavors, and reshaping the world one line of code at a time.
-          {/* </p> */}
           <br/>
           <br/>
-          {/* <p> */}
             With exposure and repetition to best practices for over the better part of a year, Brandon has been building up his technical and nontechnical skills to place him in a position to overcome complex challenges. 
             <br/>The strong push for effective, collaborative-work, has honed his interpersonal skills and have granted him insight to alternative perspectives and methodologies while overcoming challenges.
           </p>
@@ -46,7 +44,6 @@ export default function AboutMe() {
           </p>
           <br/>
           <br/>
-            {/* </p> */}
       </div>
       <div className="right">
         <div className="clickables">

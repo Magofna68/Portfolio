@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import Arrow from "../../assets/arrow.png"
+import Arrow from "../../assets/arrow.png";
 
 
 
@@ -61,14 +61,12 @@ export default function Intro() {
                     alignItems="center"
                   >
                     <a target="_blank" href="https://www.facebook.com/brandon.magofna.5">
-                      {/* <span> */}
                         <FacebookIcon 
                           fontSize="large"
                           direction="row"
                           justifyContent="center"
                           alignItems="center"
                         />
-                      {/* </span> */}
                     </a>
                     <a 
                     target="_blank" 
@@ -80,20 +78,16 @@ export default function Intro() {
                           justifyContent="center"
                           alignItems="center"
                         />
-                      {/* </span> */}
                     </a>
                     <a target="_blank" href="https://github.com/Magofna68">
-                      {/* <span> */}
                         <GitHubIcon
                           fontSize="large"
                           direction="row"
                           justifyContent="center"
                           alignItems="center"
                         />
-                      {/* </span> */}
                     </a>
                   </Grid>
-            {/* </Paper> */}
           </Grid>
           </div>
         </div>
