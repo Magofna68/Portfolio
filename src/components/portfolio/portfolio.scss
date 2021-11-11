@@ -174,5 +174,11 @@
   p {
     color: white;
     text-align: center;
+    margin: 8% 0 0 0;
+    @include mobile {
+      color: white;
+      text-align: center;
+      margin: 15% 0 0 0;
+    }
   }
 }
