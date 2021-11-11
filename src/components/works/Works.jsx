@@ -107,10 +107,10 @@ export default function Works() {
                     alt={d.alt}
                     // className="imgPreview"
                     style={{
-                      width: "280px",
+                      width: "260px",
                       position: "absolute",
-                      bottom: "3%",
-                      right: "9%",
+                      bottom: "1%",
+                      right: "12%",
                       transition: "1.5s ease",
                       borderLeft: "solid 3px black",
                       borderRight: "solid 3px black",

@@ -49,9 +49,10 @@
       transition: all 0.5s ease;
 
       @include mobile {
-        height: 95%;
-        width: 95%;
+        height: 80%;
+        width: 92%;
         padding: 5px;
+        margin: 0 2% 0 2%;
       }
 
       p {
