@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.8370b4b7.chunk.css",
+    "main.js": "/Portfolio/static/js/main.0a35f3a0.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.0a35f3a0.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.5d68f097.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.5d68f097.js.map",
+    "static/js/2.45d6a3bc.chunk.js": "/Portfolio/static/js/2.45d6a3bc.chunk.js",
+    "static/js/2.45d6a3bc.chunk.js.map": "/Portfolio/static/js/2.45d6a3bc.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/main.8370b4b7.chunk.css.map": "/Portfolio/static/css/main.8370b4b7.chunk.css.map",
+    "static/js/2.45d6a3bc.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.45d6a3bc.chunk.js.LICENSE.txt",
+    "static/media/Exchanger.43c665a8.png": "/Portfolio/static/media/Exchanger.43c665a8.png",
+    "static/media/Martian.c7e64618.png": "/Portfolio/static/media/Martian.c7e64618.png",
+    "static/media/RecipeBox.3ce3f578.png": "/Portfolio/static/media/RecipeBox.3ce3f578.png",
+    "static/media/VALIDATE.f8846713.png": "/Portfolio/static/media/VALIDATE.f8846713.png",
+    "static/media/capstone.394aed30.png": "/Portfolio/static/media/capstone.394aed30.png",
+    "static/media/helpQue.ac498514.png": "/Portfolio/static/media/helpQue.ac498514.png",
+    "static/media/placeholder.0926232e.JPG": "/Portfolio/static/media/placeholder.0926232e.JPG",
+    "static/media/takeAHike.270d0b2a.png": "/Portfolio/static/media/takeAHike.270d0b2a.png",
+    "static/media/taproom.09b31804.png": "/Portfolio/static/media/taproom.09b31804.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5d68f097.js",
+    "static/js/2.45d6a3bc.chunk.js",
+    "static/css/main.8370b4b7.chunk.css",
+    "static/js/main.0a35f3a0.chunk.js"
+  ]
+}
