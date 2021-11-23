@@ -27,10 +27,10 @@ export default function AboutMe() {
       <div className="container">
         <div className="left">
           <p id="mobileP1">
-            Upon graduation in 2019, Brandon dove head first into software sales. After working collaboratively in a sales team with individual goals/quota retirements, he quickly realized how fleeting success was within the sales industry.
+            After graduating with a GSS degree from U of O in 2019, Brandon quickly landed a job in selling software. After working collaboratively in sales to achieve individual and team performance metrics, along with quota retirements, Brandon quickly realized how fleeting success was within the sales industry.
           </p>
           <p id="mobileP2">
-            After much thought, Brandon came to realize his passion didnt lie in sales, but rather in the excitement of overcoming a challenge. He left my sales role behind and to pursue a career in coding; to be an aspiring software engineer. Applying the knowledge base cultivated from college and from his experiences in sales, Brandon goal is to further develop a growth mindset; leaning into unknown endeavors, and reshaping the world one line of code at a time.
+            After much thought, Brandon came to realize his passion didnt lie in sales, but rather in the excitement of overcoming a challenge. He left his sales role behind to pursue a career in coding; to be an aspiring software developer and designer. Applying the knowledge base cultivated from U of O and leaning into his experiences in sales, Brandon's goal is to further develop a growth mindset; leaning into unknown endeavors, and reshaping the world one line of code at a time.
           <br/>
           <br/>
             With exposure and repetition to best practices for over the better part of a year, Brandon has been building up his technical and nontechnical skills to place him in a position to overcome complex challenges. 
@@ -40,7 +40,7 @@ export default function AboutMe() {
           
           <br/>
           <p>
-          <strong>While he doesn't boast to have the most experience writing code, Brandon is confident in leveraging his abilities as a self-starter to learn and fulfill all communicated objectives, while maintaining best practices along the way. Brandon is focused on strengthening his coding abilities by working on side projects and is currently listed as an individual contributor for VALIDATE, a marketing and data analysis React web application that is nearly ready for its beta launch.</strong>
+          <strong>While he doesn't boast to have the most experience writing code, Brandon is confident in leveraging his abilities as a self-starter to learn and fulfill all communicated objectives, while maintaining best practices along the way. Brandon is focused on strengthening his coding abilities by working on side projects and is currently listed as an individual contributor for VALIDATE, a marketing and data analysis React web application that is nearly ready for its Beta launch.</strong>
           </p>
           <br/>
           <br/>
