@@ -1,5 +1,6 @@
 import React from 'react';
 import aboutMe from "./aboutMe.scss";
+import Resume from "../../assets/Resume.jpeg";
 
 export default function AboutMe() {
   return (
@@ -29,6 +30,7 @@ export default function AboutMe() {
           <p id="mobileP1">
             After graduating with a GSS degree from U of O in 2019, Brandon quickly landed a job in selling software. After working collaboratively in sales to achieve individual and team performance metrics, along with quota retirements, Brandon quickly realized how fleeting success was within the sales industry.
           </p>
+          <br/>
           <p id="mobileP2">
             After much thought, Brandon came to realize his passion didnt lie in sales, but rather in the excitement of overcoming a challenge. He left his sales role behind to pursue a career in coding; to be an aspiring software developer and designer. Applying the knowledge base cultivated from U of O and leaning into his experiences in sales, Brandon's goal is to further develop a growth mindset; leaning into unknown endeavors, and reshaping the world one line of code at a time.
           <br/>
@@ -51,9 +53,7 @@ export default function AboutMe() {
           <a 
             target="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing"
             href="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing">
-            <img 
-              src="https://thumbs.dreamstime.com/b/hand-holding-resume-cartoon-vector-illustration-employment-paper-document-titled-isolated-grey-background-human-resource-87505699.jpg">
-            </img>
+            <img src={Resume}></img>
             <br/>
             <br/>
             <br/>
