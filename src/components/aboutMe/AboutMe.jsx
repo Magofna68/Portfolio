@@ -1,6 +1,6 @@
 import React from 'react';
 import aboutMe from "./aboutMe.scss";
-import Resume from "../../assets/Resume.jpeg";
+import Resume from "../../../src/assets/Resume.jpeg";
 
 export default function AboutMe() {
   return (
