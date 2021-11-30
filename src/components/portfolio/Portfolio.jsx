@@ -2,7 +2,7 @@ import { ListItem } from "@material-ui/core";
 import "./portfolio.scss"
 import PortfolioList from "../portfolioList/PortfolioList"
 import React, {useState, useEffect} from 'react';
-import { featuredPortfolio, featuredReact, featuredC } from "../data" ;
+import { featuredPortfolio, featuredReact, featuredC } from "../../components/data" ;
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
