@@ -32,7 +32,7 @@ export default function AboutMe() {
           </p>
           <br/>
           <p id="mobileP2">
-            After much thought, Brandon came to realize his passion didnt lie in sales, but rather in the excitement of overcoming a challenge. He left his sales role behind to pursue a career in coding; to be an aspiring software developer and designer. Applying the knowledge base cultivated from U of O and leaning into his experiences in sales, Brandon's goal is to further develop a growth mindset; leaning into unknown endeavors, and reshaping the world one line of code at a time.
+            After much thought, Brandon came to realize his passion didnt lie in sales, but rather in the excitement of overcoming a challenge. He left the sales role behind to pursue a career in coding; aspiring to be a software developer and designer. Applying the knowledge base cultivated from U of O and leaning into his experiences in sales, Brandon's goal is to further develop a growth mindset; leaning into unknown endeavors, and reshaping the world one line of code at a time.
           <br/>
           <br/>
             With exposure and repetition to best practices for over the better part of a year, Brandon has been building up his technical and nontechnical skills to place him in a position to overcome complex challenges. 
