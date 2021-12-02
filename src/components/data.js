@@ -1,6 +1,8 @@
 import taproom from "../assets/taproom.png";
 import helpQue from "../assets/helpQue.png";
-import takeAHike from "../assets/takeAHike.png";
+// import takeAHike from "/src/assets/takeAHike.png";
+
+
 import Martian from '../assets/Martian.png';
 import Exchanger from '../assets/Exchanger.png';
 import RecipeBox from '../assets/RecipeBox.png';
@@ -10,7 +12,8 @@ export const featuredPortfolio = [
     id: 1,
     title: "Take-A-Hike",
     alt: "Hiking web application",
-    img: `${takeAHike}`,
+    // img: `${takeAHike}`,
+    img: require('"/src/assets/takeAHike.png"'),
     link: "https://github.com/Magofna68/take-a-hike",
   },
   {
