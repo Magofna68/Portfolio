@@ -112,7 +112,7 @@
         position: relative;
         transition: all 0.7s ease;
         cursor: pointer;
-        background-color: rgb(247, 244, 244);
+        background-color: rgb(138, 138, 138);
         overflow: visible;
 
         @include mobile {
@@ -129,15 +129,15 @@
           height: 75%;
           object-fit: cover;
           z-index: 1;
-          color: rgb(231, 230, 230);
-          opacity: 75%;
+          color: gray;
+          opacity: 95%;
           overflow: hidden;
           border-radius: 10%;
-          transition: ease-out 2s;
+          transition: ease-out 1s;
         }
 
         &:hover {
-          background-color: rgb(155, 155, 155);
+          background-color: rgb(223, 222, 222);
           img {
             opacity: 100%;
             z-index: 0;
