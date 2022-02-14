@@ -21,148 +21,113 @@
     }
 
     @include mobile {
-      font-size: 40px;
+      font-size: 30px;
       padding: 40px 0 0 0;
     }
   }
 
   ul {
-    padding: 0 0px 0 0px;
+    padding: 0 10px 0 10px;
     margin: 10px;
     list-style: none;
     display: flex;
+    align-content: center;
     justify-content: center;
     align-items: center;
     color: darkslategrey;
     overflow: visible;
-    text-align: center;
 
     @include mobile {
-      padding: 0 0 0 40px;
-      margin: 0 0 10% 0;
-      font-size: 15px;
+      padding: 0 0 0 0;
+      font-size: 8px;
+      margin: 8px;
     }
 
     li {
-      width: 120px;
-      height: 30px;
-      margin: 0 10% 0 0px;
-      padding: 15px 0px 5px 0px;
-      font-size: 15px;
+      width: 50px;
+      margin: 0 30px 0 0px;
+      // padding: 0 10px 0 10px;
+      font-size: 12px;
       align-items: center;
-      text-align: center;
       justify-content: center;
       align-content: center;
       flex-wrap: wrap;
       background: white;
-      font-weight: 600;
+      font-weight: 400;
       overflow: hidden;
     }
   }
 
   .container {
-    width: 100%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
-    align-content: center;
     flex-wrap: wrap;
     overflow: hidden;
 
     @include mobile {
       width: 100%;
-      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-top: 1%;
-      justify-content: space-evenly;
-      align-content: space-around;
     }
 
     .item {
+      width: 350px;
+      height: 270px;
+      border-radius: 20px;
+      border: 1px solid rgb(228, 224, 224);
+      margin: 10px 20px;
+      align-items: center;
+      justify-content: center;
+      color: rgb(105, 105, 105);
+      display: flex;
+      position: relative;
+      transition: all 0.7s ease;
+      cursor: pointer;
+      background-color: lightgray;
       overflow: visible;
 
       @include mobile {
-        width: 160px;
-        height: 145px;
-        align-content: center;
-        scroll-behavior: none;
-        margin: 0 0 4% 0;
-        padding: 0 0 4% 0;
-      }
-
-      h4 {
-        display: none;
-        @include mobile {
-          display: flex;
-          position: absolute;
-          bottom: 2%;
-          color: #808080;
-        }
-      }
-
-      a {
-        width: 350px;
-        height: 250px;
-        border-radius: 20px;
-        border: 1px solid rgb(228, 224, 224);
-        margin: 10px 40px;
-        padding: 0% 2%;
+        width: 145px;
+        height: 135px;
         align-items: center;
-        justify-content: center;
-        display: flex;
-        position: relative;
-        transition: all 0.7s ease;
-        cursor: pointer;
-        background-color: rgb(247, 244, 244);
-        overflow: visible;
+        scroll-behavior: none;
+      }
 
-        @include mobile {
-          width: 145px;
-          height: 135px;
-          align-items: center;
-          scroll-behavior: none;
-          margin: 0 0 0 0;
-          padding-bottom: 10px;
-        }
+      h3 {
+        display: none;
+      }
 
+      img {
+        // width: 200px;
+        // height: 200px;
+        width: 70%;
+        height: 70%;
+        object-fit: cover;
+        z-index: 1;
+        color: rgb(231, 230, 230);
+        opacity: 60%;
+        overflow: hidden;
+      }
+
+      &:hover {
+        // background-color: $mainColor;
+        background-color: rgb(155, 155, 155);
         img {
-          width: 90%;
-          height: 75%;
-          object-fit: cover;
-          z-index: 1;
-          color: rgb(231, 230, 230);
-          opacity: 75%;
-          overflow: hidden;
-          border-radius: 10%;
-          transition: ease-out 2s;
+          opacity: 100%;
+          z-index: 0;
+          overflow: contained;
         }
-
-        &:hover {
-          background-color: rgb(155, 155, 155);
-          img {
-            opacity: 100%;
-            z-index: 0;
-            overflow: contained;
-            border-radius: 10%;
-          }
-          h4 {
-            position: absolute;
-            font-size: 20px;
-            display: inline;
-            bottom: 2%;
-            color: black;
-          }
+        h3 {
+          position: absolute;
+          font-size: 20px;
+          display: inline;
+          bottom: 15%;
+          color: rgb(240, 235, 235);
         }
       }
-    }
-  }
-  p {
-    color: white;
-    text-align: center;
-    margin: 8% 0 0 0;
-    @include mobile {
-      color: white;
-      text-align: center;
-      margin: 15% 0 0 0;
     }
   }
 }

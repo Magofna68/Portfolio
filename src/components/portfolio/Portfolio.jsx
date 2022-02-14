@@ -2,25 +2,27 @@ import { ListItem } from "@material-ui/core";
 import "./portfolio.scss"
 import PortfolioList from "../portfolioList/PortfolioList"
 import React, {useState, useEffect} from 'react';
-import { featuredPortfolio, featuredReact, featuredC } from "../../components/data" ;
+import { featuredPortfolio, featuredWebApp } from "../data" ;
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
+  // const [data, setData] = useState();
 
   const [data, setData] = useState([]);
 
   const list = [
+    // potential list of different languages? C#/javascript/ect.
     {
-      id: "react",
-      title: "React",
+      id: "web",
+      title: "Web App",
     },
     {
       id: "featured",
       title: "Featured",
     },
     {
-      id: "c",
-      title: "C#",
+      id: "design",
+      title: "Design",
     }
   ];
     
@@ -29,11 +31,14 @@ export default function Portfolio() {
       case "featured": 
         setData(featuredPortfolio);
         break;
-      case "react": 
-        setData(featuredReact);
+      // case "mobile": 
+      //   setData(featuredMobile);
+      //   break;
+      case "web": 
+        setData(featuredWebApp);
         break;
-      case "c": 
-        setData(featuredC);
+      case "branding": 
+        setData(featuredPortfolio);
         break;
       case "featured": 
         setData(featuredPortfolio);
@@ -69,26 +74,14 @@ export default function Portfolio() {
           ))}
         </ul>
         <div className="container">
-          <>
           {data.map((d) => (
           <div className="item">
-            <a target="_blank" href={d.link}>
-              <img 
-                src={d.img}
-                alt={d.alt}>
-              </img>
-            <h4 id="appTitle">{d.title}</h4>
-            </a>
+            <img src={d.img}
+            alt={d.alt}></img>
+            <h3>{d.title}</h3>
           </div>
           ))}
-        </>
         </div>
-        <p style={{
-            fontWeight: `500`,
-        }}>
-             Epicodus has provided a framework of over 250 hours of experience, and nearly 20 projects in each of the following: C#/.Net, Javascript, & React.<br/>
-             The above projects are a few of those.
-        </p>
     </div>
   );
 }

@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import "./works.scss"
 import Arrow from "../../assets/arrow.png";
+// import Desk from "../../assets/desk.jpeg";
 import Capstone from "../../assets/capstone.png";
-import Martian from '../../assets/Martian.png';
-import VALIDATE from '../../assets/VALIDATE.png';
+// import Skyscrapers from "../../assets/skyscrapers.jpeg";
 
 
 export default function Works() {
@@ -13,31 +13,25 @@ export default function Works() {
   const data = [
 
     {
-      id: "1",
-      title: "Capstone Project",
+      id: "2",
+      title: "Capstone Project @ Epicodus",
       icon: "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/32/original/epicodus-ico.png",
-      desc: "My final project at Epicodus: a 27 week coding bootcamp. This project was built with a React front end to promote and extend reach and accessibility for provided services.",
+      desc: "My final project at Epicodus: built for marketing purposes to extend reach and accessibility for potential clientele.",
       img: `${Capstone}`,
-      alt: "Capstone project at Epicodus: website application",
-      link: "https://magofna68.github.io/capstone/"
     },
     {
-      id: "2",
-      title: "Martian-Project",
-      icon: "https://icon-library.com/images/nasa-icon/nasa-icon-10.jpg",
-      desc: "A collaborative dev-team project focused around APIs. Features numerous API calls for dynamic information updates, photos, and a video of the Mars landing from NASA in April 2021.",
-      img: `${Martian}`,
-      alt: "Nasa API collab project",
-      link: "https://magofna68.github.io/Martian-Proj/",
+      id: "1",
+      title: "Frantic",
+      icon: "https://cdn.mos.cms.futurecdn.net/izXa9hiiSTbnNtwSp2ixKC.jpg",
+      desc: "Loadipisicing elit. Libero, optio labore? Cu dolor sit amet consectetur adipisicing elit. Libero, optio labore? Cupiditate.",
+      img: "http://imgs.abduzeedo.com/files/articles/beautiful-3d-nature-scenes/1229926_large.jpg",
     },
     {
       id: "3",
-      title: "VALIDATE, LLC",
-      icon: "https://media-exp1.licdn.com/dms/image/C4E0BAQGZYBwSEs2zUQ/company-logo_200_200/0/1565048189782?e=1642636800&v=beta&t=igVrMLRHrKjcCzn52VTSo3NjkbWTfxWqf9GV1HMi2cg",
-      desc: "Worked collaboratively in a dev team to further develop a React-based app from Alpha stage to Beta version. Improved UI experience, tested feature branches, and submitted pull requests",
-      img: `${VALIDATE}`,
-      alt: "VALIDATE; from Alpha to Beta",
-      link: "https://www.linkedin.com/company/validateclub/about/",
+      title: "yes",
+      icon: "https://cdn.mos.cms.futurecdn.net/izXa9hiiSTbnNtwSp2ixKC.jpg",
+      desc: "Lorem adipisicing elit. Libero, optio labore? Cupiditateipsum dolor sit amet ",
+      img: "https://assets.weforum.org/article/image/ti3O0eGP60ScE_PpvYwtIYMd3us18yFd3HQqFw-k8rk.jpg",
     },
 ]
   const handleClick = (way) => {
@@ -46,78 +40,54 @@ export default function Works() {
   };
   return (
     <div 
-      className="works" 
-      id="works"
-      style={{
+    className="works" 
+    id="works"
+    style={{
+      // opacity: `90%`,
       backgroundSize: `cover`,
       transform: `rotateY(180deg)`,
       repeat: `no-repeat`,
       backgroundImage: `url("https://i2.wp.com/files.123freevectors.com/wp-content/original/142906-cool-grey-wave-business-background-vector-art.jpg?w=800&q=95")`
     }}>
-      <div 
+        <div 
         className="slider" 
         style={{
           transform: `translateX(-${currentSlide * 100}vw)`,
         }}
-      >
-        {data.map((d) => (
-          <div className="container">
-            <div 
+        >
+          {data.map((d) => (
+            <div className="container">
+              <div 
               className="item"
               style={{
                 transform: `rotateY(180deg)`,
                 backgroundImage: `url("https://cdn.mos.cms.futurecdn.net/gtkekaDHpknr4beyGmbtCo-1200-80.png")`
-            }}
-            >
-              <div className="left">
-                <div className="leftContainer">
+              }}
+              >
+                <div className="left">
+                  <div className="leftContainer">
                   <div className="iconContainer">
                     <img src={d.icon} alt="" />
                   </div>
                   <h2>{d.title}</h2>
                   <div className="descText">
                     <p>{d.desc}</p>
-                    <br/>
-                    <a target="_blank" href={d.link}>Check it out here</a>
                   </div>
+                  {/* <span>Projects</span>
+                  <ul>
+                    <li>one</li>
+                    <li>two</li>
+                  </ul> */}
                 </div>
               </div>
-              <div className="right">
-                <div className="worksImages">
+                <div className="right">
                   <img 
                     src={d.img} 
-                    alt={d.alt}
-                    styles={{
-                      width: "300px"
-                    }}
+                    alt=""
+                    className="sliderImage"
                   />
                 </div>
-                <div className="mobile">
-                  {d.desc}
-                  <br/>
-                  <br/>
-                  <a target="_blank" href={d.link}>Check it out here</a>
-                </div>
               </div>
-              <div className="imgPreview">
-                <img 
-                  src={d.img} 
-                  alt={d.alt}
-                  style={{
-                    width: "260px",
-                    position: "absolute",
-                    bottom: "1%",
-                    right: "12%",
-                    transition: "1.5s ease",
-                    borderLeft: "solid 3px black",
-                    borderRight: "solid 3px black",
-                    borderBottom: "solid 3px",
-                    borderColor: "gray",
-                  }}
-                />
-              </div>
-              <br/>
-            </div>
             </div>
           ))}
           </div>

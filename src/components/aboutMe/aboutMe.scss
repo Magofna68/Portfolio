@@ -1,14 +1,14 @@
 @import "../../global.scss";
 
 .aboutMe {
+  // transform: rotateY(180deg);
+  // rotate: y 180deg;
+  // opacity: 80%;
+  // align-content: row;
   justify-content: center;
+  // align-items: row;
+  // align-content: start;
   margin: 0 0 0 0;
-  scroll-behavior: none;
-  overflow: visible;
-
-  @include mobile {
-    scroll-behavior: none;
-  }
 
   h1 {
     float: left;
@@ -17,6 +17,8 @@
     font-size: 50px;
     margin: 8% 0 10px 30px;
     padding: 0 0 30px 0;
+    // margin: 0 0 10px 0;
+    // position: absolute;
 
     @include mobile {
       font-size: 35px;
@@ -29,6 +31,10 @@
     width: 90%;
     height: 55%;
     align-content: start;
+    // align-items: center;
+    // justify-content: center;
+    // border: solid;
+    // border-color: rgb(189, 49, 49);
     margin: 8% 2% 0 2%;
     padding: 0 10px 0px 0px;
     overflow: visible;
@@ -41,15 +47,17 @@
 
     .left {
       flex: 50%;
+      // width: 35%;
       height: 95%;
       margin: 0% 0% 0 0%;
       padding: 0px 10% 0% 0%;
-      overflow: visible;
+      overflow: contained;
       scroll-behavior: none;
+      // border: solid;
+      // border-color: black;
 
       @include mobile {
         flex: 98%;
-        padding: 0 0 0 0;
       }
 
       #space {
@@ -57,13 +65,27 @@
         padding: 0 0 40px 0;
       }
 
+      // h1 {
+      //   float: left;
+      //   text-align: left;
+      //   justify-content: left;
+      //   font-size: 50px;
+      //   margin: 0 0 20px 0;
+      //   padding: 0 0 0 0;
+      //   // margin: 0 0 10px 0;
+      //   // position: absolute;
+
+      //   @include mobile {
+      //     font-size: 35px;
+      //   }
+      // }
+
       p {
         scroll-behavior: none;
         font-size: 15px;
 
         @include mobile {
           font-size: 12px;
-          margin: -30px 0 0 0;
         }
       }
     }
@@ -75,6 +97,7 @@
       padding: 10px 10px 10px 10px;
       border: solid;
       border-color: black;
+      // align-items: right;
       justify-content: center;
       align-content: space-around;
       background-color: black;
@@ -88,17 +111,13 @@
       overflow: none;
 
       @include mobile {
-        height: 45%;
-        max-width: 300px;
-        padding: 0;
-        margin: 5% 0 0% 7%;
-        position: relative;
-        bottom: 8%;
-        overflow: visible;
-        scroll-behavior: none;
+        flex: 30%;
+        height: 50%;
       }
 
       .clickables {
+        // width: 400px;
+        // height: 300px;
         height: 98%;
         width: 98%;
         align-content: center;
@@ -109,12 +128,11 @@
         display: flex;
         scroll-behavior: none;
         overflow: visible;
-
-        @include mobile {
-          width: 90%;
-        }
+        // display: cover;
 
         .resumeContainer {
+          // width: 150px;
+          // height: 150px;
           height: 100%;
           width: 85%;
           align-content: space-around;
@@ -123,13 +141,11 @@
           display: flex;
           margin: 0 10% 5% 10%;
           scroll-behavior: none;
+          // background-color: rgb(129, 54, 54);
           overflow: visible;
 
-          @include mobile {
-          }
-
           a {
-            margin: 10px 10px 0 10px;
+            margin: 0 10px 0 10px;
             padding: 0 0 0 0;
             transition: all 2s ease;
             justify-content: center;
@@ -141,16 +157,16 @@
               height: 90%;
               margin: 0 0 0 0;
               padding: 2% 0 0 7%;
+              // overflow: hidden;
               border-radius: 70%;
               opacity: 60%;
               transition: all 0.8s ease;
 
               @include mobile {
-                height: 25%;
+                height: 20%;
                 width: 80%;
                 padding: 10% 0 0 9%;
                 opacity: 90%;
-                border-radius: 0px;
               }
               &:hover {
                 opacity: 100%;
@@ -169,16 +185,13 @@
               justify-content: center;
               align-items: center;
               align-content: center;
+              // display: none;
               transition: all 2s ease;
               font-size: 17px;
               text-align: center;
               border-left: solid;
               border-right: solid;
               overflow: contained;
-
-              @include mobile {
-                margin: -20px 0 0 0;
-              }
             }
           }
         }
@@ -196,19 +209,4 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-}
-
-#mobileP1 {
-  @include mobile {
-  }
-}
-
-#mobileP2 {
-  @include mobile {
-    margin: 10px 0 5px 0;
-    background-color: rgb(104, 104, 104);
-    color: white;
-    padding: 5px;
-    border-radius: 10px;
-  }
 }

@@ -56,19 +56,21 @@ export default function Testimonial() {
       backgroundSize: `cover`,
       repeat: `no-repeat`,
       backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
-    }}>
+    }}>>
       <h1>Testimonials<span>.</span></h1>
       <div className="container">
         {reviews.map((r) => (
           <div className={r.featured ? "card featured" : "card"}>
+        {/* <div className="card"> */}
           <div className="top">
-            <img src={r.img} className="user" alt={r.alt}/>
-            <img  src={r.icon} className="right"/>
+          <img src={r.img} className="user" alt={r.alt}/>
+          <img  src={r.icon} className="right"/>
           </div>
           <p>{r.relation}</p>
           <div className="center"> {r.desc}</div>
           <div className="bottom">
             <h3>{r.name}</h3>
+            {/* <h5>Relation: Deltek</h5> */}
             <h5>Current: {r.title}</h5>
           </div>
         </div>

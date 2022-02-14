@@ -12,6 +12,8 @@
   .left {
     flex: 0.5;
     overflow: hidden;
+    // background-color: rgb(70, 64, 65);
+    // border-radius: 5%;
 
     @include mobile {
       margin: 5% 0 -11% 0;
@@ -26,6 +28,7 @@
       display: inline-block;
       align-items: center;
       justify-content: baseline;
+      // float: left;
       margin-top: 10%;
       margin-left: 5%;
       overflow: hidden;
@@ -34,6 +37,7 @@
       border-color: white;
 
       @include mobile {
+        // align-items: center;
         padding: 0 0 0 0;
         margin: 6% 0 0% 0;
         height: 275px;
@@ -48,12 +52,20 @@
         background-color: rgb(218, 216, 214);
         padding: 0 5px 0 5px;
         width: 28%;
+        // font-size: larger;
         border-radius: 5%;
 
         @include mobile {
+          // margin-right: 10%;
+          // margin: 0 0 0 10%;
           height: 0;
+          // padding: 0 0 10 0;
+          // align-items: center;
+          // justify-content: center;
         }
       }
+
+      // transform: rotate(5deg)
 
       .iconContainer {
         display: inline-block;
@@ -81,6 +93,7 @@
         justify-content: center;
         border: solid;
         border-width: 3px;
+        // border-color: rgb(219, 196, 196);
         border-color: black;
 
         @include mobile {
@@ -88,6 +101,8 @@
           width: 75%;
           margin-top: 12%;
           margin-left: 12%;
+          // margin: 0 0 0 12%;
+          // margin-bottom: 50px;
         }
       }
     }
@@ -95,6 +110,10 @@
   #iconTest {
     padding-right: 15px;
     padding-left: 15px;
+
+    @include mobile {
+      // float: left;
+    }
   }
   .right {
     flex: 0.3;
@@ -102,8 +121,7 @@
     overflow: hidden;
 
     @include mobile {
-      margin: 0 0 % 0;
-      bottom: 5%;
+      margin: 0 0 15% 0;
     }
 
     .wrapper {
@@ -116,7 +134,7 @@
 
       @include mobile {
         height: 80%;
-        margin: 20% 0 0% 0;
+        margin: 20% 0 0 0;
       }
 
       h1 {
@@ -164,7 +182,7 @@
         }
 
         .ityped-cursor {
-          animation: blink 0.75s infinite;
+          animation: blink 1s infinite;
         }
 
         @keyframes blink {
@@ -181,13 +199,14 @@
         bottom: 50px;
         left: 30%;
       }
-
       .downIcon {
         width: 50%;
         height: 30%;
         align-items: flex-start;
         justify-content: center;
         color: red;
+        // border-top: solid;
+        // border-color: black;
         transform: rotate(90deg);
         animation: arrowBlink 6s infinite;
 
@@ -204,50 +223,6 @@
             }
           }
         }
-      }
-    }
-  }
-
-  .mobileArrow {
-    display: none;
-
-    @keyframes arrowBlink {
-      100% {
-        display: none;
-      }
-    }
-    @include mobile {
-      display: block;
-      color: red;
-      bottom: 2%;
-      margin: 0% 0 0 0;
-      transform: rotate(90deg);
-      @keyframes arrowBlink {
-        100% {
-          display: none;
-        }
-      }
-    }
-
-    .downIconMobile {
-      display: none;
-      width: 100px;
-      height: 100px;
-      align-items: flex-start;
-      justify-content: center;
-      color: red;
-      animation: arrowBlink 3s infinite;
-
-      @keyframes arrowBlink {
-        100% {
-          opacity: 20%;
-        }
-        0% {
-          opacity: 100%;
-        }
-      }
-      @include mobile {
-        display: flex;
       }
     }
   }
