@@ -53,7 +53,8 @@ export default function AboutMe() {
           <a 
             target="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing"
             href="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing">
-            <img src={Resume}></img>
+            <img src={Resume} alt="resume_link">
+            </img>
             <br/>
             <br/>
             <br/>

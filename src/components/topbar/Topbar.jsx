@@ -1,6 +1,10 @@
 import "./topbar.scss"
 import { Person, Mail } from "@material-ui/icons";
 import GitHubIcon from '@material-ui/icons/GitHub';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
+
 
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
@@ -11,7 +15,36 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
     }}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" id="logo">elevate.</a>
+          <a href="#intro" id="logo"><span className="tomorrowLogo">Tomorrow</span><br/>begins today.</a>
+          <div className="socials">
+        <a target="_blank" href="https://www.facebook.com/brandon.magofna.5">
+                        <FacebookIcon 
+                          fontSize="large"
+                          direction="row"
+                          justifyContent="center"
+                          alignItems="center"
+                        />
+                    </a>
+                    <a 
+                    target="_blank" 
+                    href="https://www.instagram.com/bmagofna68/"
+                    id="iconTest">
+                        <InstagramIcon 
+                          fontSize="large"
+                          direction="row"
+                          justifyContent="center"
+                          alignItems="center"
+                        />
+                    </a>
+                    <a target="_blank" href="https://github.com/Magofna68">
+                        <GitHubIcon
+                          fontSize="large"
+                          direction="row"
+                          justifyContent="center"
+                          alignItems="center"
+                        />
+                    </a>
+        </div>
           <div className="itemContainer">
             <Person className="icon" />
             <span id="mobile">503-269-2656</span>
