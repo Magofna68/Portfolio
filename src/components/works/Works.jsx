@@ -78,7 +78,7 @@ export default function Works() {
                   <div className="descText">
                     <p>{d.desc}</p>
                     <br/>
-                    <a target="_blank" href={d.link}>Check it out here</a>
+                    <a target="_blank"  rel="noreferrer" href={d.link}>Check it out here</a>
                   </div>
                 </div>
               </div>
@@ -96,7 +96,7 @@ export default function Works() {
                   {d.desc}
                   <br/>
                   <br/>
-                  <a target="_blank" href={d.link}>Check it out here</a>
+                  <a target="_blank" rel="noreferrer" href={d.link}>Check it out here</a>
                 </div>
               </div>
               <div className="imgPreview">
