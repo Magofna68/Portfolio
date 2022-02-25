@@ -8,6 +8,7 @@ import AboutMe from './components/aboutMe/AboutMe';
 import "./app.scss"
 import { useState } from 'react';
 import Menu from "./components/menu/Menu";
+import './app.scss';
 
 
 function App() {

@@ -4,14 +4,15 @@ import takeAHike from "../assets/takeAHike.png";
 import Martian from '../assets/Martian.png';
 import Exchanger from '../assets/Exchanger.png';
 import RecipeBox from '../assets/RecipeBox.png';
+import YTProject from '../assets/YTProject.png';
 
 export const featuredPortfolio = [
   {
     id: 1,
-    title: "Take-A-Hike",
-    alt: "Hiking web application",
-    img: `${takeAHike}`,
-    link: "https://github.com/Magofna68/take-a-hike",
+    title: "Youtube API (w/ Hook)",
+    alt: "Youtube API project",
+    img: `${YTProject}`,
+    link: "https://magofna68.github.io/react-hooks-yt-api/",
   },
   {
     id: 2,
@@ -55,6 +56,13 @@ export const featuredReact = [
   },
   {
     id: 2,
+    title: "Take-A-Hike",
+    alt: "Hiking web application",
+    img: `${takeAHike}`,
+    link: "https://github.com/Magofna68/take-a-hike",
+  },
+  {
+    id: 3,
     title: "Help-Que w/ Redux",
     alt: "Help Que web application",
     img: `${helpQue}`,
