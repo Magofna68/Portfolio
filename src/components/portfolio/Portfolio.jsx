@@ -2,6 +2,10 @@ import { ListItem } from "@material-ui/core";
 import "./portfolio.scss"
 import PortfolioList from "../portfolioList/PortfolioList"
 import React, {useState, useEffect} from 'react';
+import Image from 'react-bootstrap/Image';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
 import { featuredPortfolio, featuredReact, featuredC } from "../../components/data" ;
 
 export default function Portfolio() {
@@ -71,15 +75,24 @@ export default function Portfolio() {
         <div className="container">
           <>
           {data.map((d) => (
-          <div className="item">
-            <a target="_blank" href={d.link}>
-              <img 
-                src={d.img}
-                alt={d.alt}>
-              </img>
-            <h4 id="appTitle">{d.title}</h4>
-            </a>
-          </div>
+          // <div className="item">
+          <Container>
+            <Row>
+              <a target="_blank" href={d.link}>
+                {/* <img 
+                  src={d.img}
+                  alt={d.alt}>
+                </img> */}
+                <Image
+                  src={d.img}
+                  alt={d.alt}
+                  fluid="true"
+                />
+              <h4 id="appTitle">{d.title}</h4>
+              </a>
+            </Row>
+          </Container>
+          // </div>
           ))}
         </>
         </div>
