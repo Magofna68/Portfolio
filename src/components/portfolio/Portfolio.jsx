@@ -2,9 +2,11 @@ import { ListItem } from "@material-ui/core";
 import "./portfolio.scss"
 import PortfolioList from "../portfolioList/PortfolioList"
 import React, {useState, useEffect} from 'react';
-import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
+import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 import { featuredPortfolio, featuredReact, featuredC } from "../../components/data" ;
 
@@ -39,14 +41,6 @@ export default function Portfolio() {
       case "c": 
         setData(featuredC);
         break;
-      case "featured": 
-        setData(featuredPortfolio);
-        break;
-      case "design":
-        setData(featuredPortfolio);
-        break;
-      default:
-        setData(featuredPortfolio);
     }
  }, [selected])
 
@@ -75,24 +69,31 @@ export default function Portfolio() {
         <div className="container">
           <>
           {data.map((d) => (
-          // <div className="item">
-          <Container>
-            <Row>
-              <a target="_blank" href={d.link}>
-                {/* <img 
-                  src={d.img}
-                  alt={d.alt}>
-                </img> */}
-                <Image
-                  src={d.img}
-                  alt={d.alt}
-                  fluid="true"
-                />
+          <div className="item">
+            <a target="_blank" href={d.link}>
+              <img 
+                src={d.img}
+                alt={d.alt}>
+              </img>
+              <br/>
               <h4 id="appTitle">{d.title}</h4>
-              </a>
-            </Row>
-          </Container>
-          // </div>
+            </a>
+          </div>
+                // <Container>
+                //   <Row>
+                //     <Col>
+                //       <Card style={{ width: '18rem' }}>
+                //         <Card.Img 
+                //           src={d.img}
+                //           alt={d.alt}
+                //         />
+                //         <Card.Title>{d.title}</Card.Title>
+                //         <Card.Text>{d.text}</Card.Text>
+                //         <Card.Link href={d.link}>Check it Out</Card.Link>
+                //       </Card>
+                //     </Col>
+                //   </Row>
+                // </Container>
           ))}
         </>
         </div>
