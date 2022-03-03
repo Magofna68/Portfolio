@@ -60,7 +60,10 @@ export default function Intro() {
                     spacing={8} 
                     alignItems="center"
                   >
-                    <a target="_blank" href="https://www.facebook.com/brandon.magofna.5">
+                    <a 
+                      target="_blank" 
+                      href="https://www.facebook.com/brandon.magofna.5"
+                      rel="noreferrer">
                         <FacebookIcon 
                           fontSize="large"
                           direction="row"
@@ -71,6 +74,7 @@ export default function Intro() {
                     <a 
                     target="_blank" 
                     href="https://www.instagram.com/bmagofna68/"
+                    rel="noreferrer"
                     id="iconTest">
                         <InstagramIcon 
                           fontSize="large"
@@ -79,7 +83,10 @@ export default function Intro() {
                           alignItems="center"
                         />
                     </a>
-                    <a target="_blank" href="https://github.com/Magofna68">
+                    <a 
+                      target="_blank" 
+                      href="https://github.com/Magofna68"
+                      rel="noreferrer">
                         <GitHubIcon
                           fontSize="large"
                           direction="row"
