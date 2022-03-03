@@ -70,7 +70,7 @@ export default function Portfolio() {
           <>
           {data.map((d) => (
           <div className="item">
-            <a target="_blank" href={d.link}>
+            <a target="_blank" rel="noreferrer" href={d.link}>
               <img 
                 src={d.img}
                 alt={d.alt}>
@@ -79,21 +79,6 @@ export default function Portfolio() {
               <h4 id="appTitle">{d.title}</h4>
             </a>
           </div>
-                // <Container>
-                //   <Row>
-                //     <Col>
-                //       <Card style={{ width: '18rem' }}>
-                //         <Card.Img 
-                //           src={d.img}
-                //           alt={d.alt}
-                //         />
-                //         <Card.Title>{d.title}</Card.Title>
-                //         <Card.Text>{d.text}</Card.Text>
-                //         <Card.Link href={d.link}>Check it Out</Card.Link>
-                //       </Card>
-                //     </Col>
-                //   </Row>
-                // </Container>
           ))}
         </>
         </div>
