@@ -12,6 +12,7 @@ export const featuredPortfolio = [
     title: "Youtube API (w/ Hook)",
     alt: "Youtube API project",
     img: `${YTProject}`,
+    subtitle: "lorum ipsum",
     link: "https://magofna68.github.io/react-hooks-yt-api/",
     text: "This project focused on utilizing a hook to fetch an API call."
   },
