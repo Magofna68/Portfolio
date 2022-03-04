@@ -3,12 +3,8 @@ import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 import { init } from 'ityped';
 import { useEffect, useRef } from "react";
 import Placeholder from "../../assets/placeholder.JPG";
-import FacebookIcon from '@mui/icons-material/Facebook';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import Arrow from "../../assets/arrow.png";
+import Image from 'react-bootstrap/Image';
 
 
 
@@ -50,53 +46,8 @@ export default function Intro() {
             opacity: '80%',
           }}
           >
-          <img src={Placeholder} alt="test"></img>
-            <div className="socials">
-              <Grid item xs={12}>
-                  <Grid 
-                    item 
-                    fontSize="large" 
-                    direction="row" 
-                    spacing={8} 
-                    alignItems="center"
-                  >
-                    <a 
-                      target="_blank" 
-                      href="https://www.facebook.com/brandon.magofna.5"
-                      rel="noreferrer">
-                        <FacebookIcon 
-                          fontSize="large"
-                          direction="row"
-                          justifyContent="center"
-                          alignItems="center"
-                        />
-                    </a>
-                    <a 
-                    target="_blank" 
-                    href="https://www.instagram.com/bmagofna68/"
-                    rel="noreferrer"
-                    id="iconTest">
-                        <InstagramIcon 
-                          fontSize="large"
-                          direction="row"
-                          justifyContent="center"
-                          alignItems="center"
-                        />
-                    </a>
-                    <a 
-                      target="_blank" 
-                      href="https://github.com/Magofna68"
-                      rel="noreferrer">
-                        <GitHubIcon
-                          fontSize="large"
-                          direction="row"
-                          justifyContent="center"
-                          alignItems="center"
-                        />
-                    </a>
-                  </Grid>
-          </Grid>
-          </div>
+            <Image src={Placeholder} fluid="true" alt="Profile Picture"></Image>
+          {/* <img src={Placeholder} alt="test"></img> */}
         </div>
       </div>
       <div className="right">
@@ -112,10 +63,10 @@ export default function Intro() {
         </div>
       </div>
       <div className="mobileArrow">
-          <a href="#aboutMe">
-            <DoubleArrowIcon className="downIconMobile" onClick="" />
-          </a>
-        </div>
+        <a href="#aboutMe">
+          <DoubleArrowIcon className="downIconMobile" onClick="" />
+        </a>
+      </div>
 
     </div>
   )
