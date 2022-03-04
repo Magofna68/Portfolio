@@ -3,7 +3,7 @@ import "./portfolio.scss"
 import PortfolioList from "../portfolioList/PortfolioList"
 import React, {useState, useEffect} from 'react';
 import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
+import ProjectCard from '../card/ProjectCard';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -69,13 +69,14 @@ export default function Portfolio() {
         <div className="container">
           <>
           {data.map((d) => (
-            <Card
+            <ProjectCard
+              id={d.id}
               title={d.title}
               alt={d.alt}
               text={d.text}
               img={d.image}
               link={d.link}
-              subTitle={d.subTitle}
+              subtitle={d.subtitle}
             />
 
           // <div className="item">

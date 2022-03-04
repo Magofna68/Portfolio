@@ -1,8 +1,9 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
+import "./card.scss";
 
-function Card({title, link, subTitle, alt, image, text}) {
+export default function ProjectCard({title, id, link, subtitle, alt, image, text}) {
   return (
     // <Container>
       <Card style={{
@@ -14,7 +15,7 @@ function Card({title, link, subTitle, alt, image, text}) {
           alt={alt} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">{subTitle}</Card.Subtitle>
+          <Card.Subtitle className="mb-2 text-muted">{subtitle}</Card.Subtitle>
           <Card.Text>{text}</Card.Text>
           <Card.Link href={link} rel="noreferrer">Check out this Project</Card.Link>
           // <Card.Link href="#" rel="noreferrer">View Code</Card.Link>
@@ -22,6 +23,4 @@ function Card({title, link, subTitle, alt, image, text}) {
       </Card>
     // </Container>
   )
-}
-
-export default Card;
+};
