@@ -11,7 +11,7 @@
   transition: all 1s ease;
 
   .wrapper {
-    padding: 10px 30px;
+    padding: 0px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,7 +51,7 @@
       }
 
       .tomorrowLogo{
-        font-size: 30px;
+        font-size: 20px;
         color: orange;
       }
 
@@ -84,6 +84,10 @@
             font-size: 200%;
             margin-right: 0;
           }
+        }
+
+        #mobile{
+          font-size: 15px;
         }
 
         span {
