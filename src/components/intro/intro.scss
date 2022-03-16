@@ -1,31 +1,29 @@
 @import "../../global.scss";
 
-// body{
-//   background-color: black;
-// }
-
 #imageBorder{
-  // @include mobile {
-  //   display: none;
-  // }
+  @include mobile{
+    // position:absolute;
+    // right:10%;
+    // left: 10%;
+  }
 }
 
 #mobileView{
   display: none;
 
-  @include mobile{
-    display: block;
-    opacity: 90%;
-    max-width: 350px;
-    border-radius: 30px;
-    border: solid;
-    border-color: white;
-    margin: 10% 5%;
-    padding: 10px 10px;
-    align-items: center;
-    justify-content: center;
+  // @include mobile{
+  //   display: block;
+  //   opacity: 90%;
+  //   max-width: 350px;
+  //   border-radius: 30px;
+  //   border: solid;
+  //   border-color: white;
+  //   margin: 10% 5%;
+  //   padding: 10px 10px;
+  //   align-items: center;
+  //   justify-content: center;
   
-  }
+  // }
 }
 
 #mobileSocial{
@@ -33,12 +31,16 @@
 
   @include mobile{
     display: flex;
+    position: baseline;
     border-left: double 3px;
     border-right: double 3px;
     border-color: red;
     justify-content: space-around;
     width: 60%;
     margin:auto;
+    bottom: 40%;
+    right: 10%;
+    left: 10%;
 
 
     a{
