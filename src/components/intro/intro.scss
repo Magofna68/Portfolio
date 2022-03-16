@@ -49,6 +49,81 @@
   }
 }
 
+#container{
+  // display: flexbox;
+  width: 40%;
+  height: 100%;
+  margin: auto;
+  justify-content: baseline;
+  // position: relative;
+
+  @include mobile{
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+}
+
+
+#introText{
+  // align-items: baseline;
+  // justify-items: baseline;
+  // align-self: baseline;
+  margin: 0% 0 0 8%;
+  color: grey;
+  // overflow-x: visible;
+  // position: absolute;
+  // bottom: 40%;
+
+ h1{
+    color: grey;
+    font-size: 35px;
+  }
+   #smallText{
+     font-size: 25px;
+    }
+
+    #iType{
+      color: red;
+    }
+
+    .ityped-cursor {
+      color: grey;
+      animation: blink 0.75s infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+    }
+  }
+}
+
+
+#arrowContain{
+  position:relative;
+
+  .downIcon {
+    width: 50%;
+    height: 30%;
+    // align-items: flex-start;
+    // justify-content: center;
+    color: red;
+    transform: rotate(90deg);
+    animation: arrowBlink 6s infinite;
+    position: aboslute;
+    bottom: 0%;
+    
+    @keyframes arrowBlink {
+      100% {
+        opacity: 20%;
+      }
+    }
+  }
+}
+
 #introPage{
   background-image: url("https://cdn.wallpapersafari.com/83/6/DY9RHb.gif");
   background-repeat: no-repeat;
@@ -220,19 +295,6 @@
 //           }
 //         }
 
-//         .ityped-cursor {
-//           animation: blink 0.75s infinite;
-//         }
-
-//         @keyframes blink {
-//           50% {
-//             opacity: 1;
-//           }
-//           100% {
-//             opacity: 0;
-//           }
-//         }
-//       }
 //       a {
 //         position: absolute;
 //         bottom: 50px;
