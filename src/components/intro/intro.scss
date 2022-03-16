@@ -5,9 +5,9 @@
 // }
 
 #imageBorder{
-  @include mobile {
-    display: none;
-  }
+  // @include mobile {
+  //   display: none;
+  // }
 }
 
 #mobileView{
@@ -33,15 +33,13 @@
 
   @include mobile{
     display: flex;
-    position: absolute;
     border-left: double 3px;
     border-right: double 3px;
     border-color: red;
     justify-content: space-around;
-    width: auto;
+    width: 60%;
     margin:auto;
-    left: 25%;
-    bottom: 52%;
+
 
     a{
       padding: 0 10px 0 10px;
