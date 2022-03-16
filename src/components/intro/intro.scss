@@ -1,7 +1,52 @@
 @import "../../global.scss";
 
-body{
-  background-color: black;
+// body{
+//   background-color: black;
+// }
+
+#imageBorder{
+  @include mobile {
+    display: none;
+  }
+}
+
+#mobileView{
+  display: none;
+
+  @include mobile{
+    display: block;
+    opacity: 90%;
+    max-width: 350px;
+    border-radius: 30px;
+    border: solid;
+    border-color: white;
+    margin: 10% 5%;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: center;
+  
+  }
+}
+
+#mobileSocial{
+  display: none;
+
+  @include mobile{
+    display: flex;
+    position: absolute;
+    border-left: double 3px;
+    border-right: double 3px;
+    border-color: red;
+    justify-content: space-around;
+    width: auto;
+    margin:auto;
+    left: 25%;
+    bottom: 52%;
+
+    a{
+      padding: 0 10px 0 10px;
+    }
+  }
 }
 
 #introPage{
