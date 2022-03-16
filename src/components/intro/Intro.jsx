@@ -33,47 +33,11 @@ export default function Intro() {
     <div id="introPage">
       <Container fluid>
         <Row>
-          {/* <div id="mobileSocial">
-              <a 
-            target="_blank" 
-            href="https://www.facebook.com/brandon.magofna.5"
-            rel="noreferrer">
-              <FacebookIcon 
-                fontSize="large"
-                direction="row"
-                justifyContent="center"
-                alignItems="center"
-              />
-            </a>
-            <a 
-            target="_blank" 
-            href="https://www.instagram.com/bmagofna68/"
-            id="iconTest"
-            rel="noreferrer">
-                <InstagramIcon 
-                  fontSize="large"
-                  direction="row"
-                  justifyContent="center"
-                  alignItems="center"
-                />
-            </a>
-            <a 
-            target="_blank" 
-            href="https://github.com/Magofna68"
-            rel="noreferrer">
-                <GitHubIcon
-                  fontSize="large"
-                  direction="row"
-                  justifyContent="center"
-                  alignItems="center"
-                />
-            </a>
-            </div> */}
-          <Col xs={12} md={8} lg={6}>
+          <Col xs={12} s={10} md={6} lg={6} xl={6}>
             <div 
               id="imageBorder"
               style={{
-                maxWidth: `1000px`,
+                maxWidth: `600px`,
                 minWidth: `250px`,
                 border: `solid`,
                 borderColor: `white`,
@@ -81,17 +45,18 @@ export default function Intro() {
                 justifyContent: `center`,
                 backgroundImage: `url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25806764.jpg")`,
                 borderRadius: `30%`,
-                margin: `10%`
+                margin: `5%`
             }}>
               <div 
                 id="imgContain"
                 style={{
                 opacity: '90%',
-                maxWidth: `550px`,
+                maxWidth: `350`,
+                minWidth: `200`,
                 borderRadius: `30px`,
                 border: `solid`,
                 borderColor: `white`,
-                margin: `10% 10%`,
+                margin: `10% 7%`,
                 }}
                 >
                   <Image src={Placeholder} fluid alt="Profile Picture"></Image>
@@ -139,33 +104,19 @@ export default function Intro() {
             </div>
           </Col>
         </Row>
+        <Row>
+          <Col>
+            <div className="wrapper">
+              <h2>Hi There, I'm </h2>
+              <h1>Brandon Magofna.</h1>
+              <h3><span ref={textRef}></span></h3>
+            </div>
+          </Col>
+        </Row>
       </Container>
     </div>
 
-    // <div 
-    //   className="intro" 
-    //   id="intro"
-    //   style={{ 
-    //     backgroundImage: `url("https://cdn.wallpapersafari.com/83/6/DY9RHb.gif")`,
-    //     backgroundRepeat: `no-repeat`,
-    //     justifyContent: `center`,
-    //     backgroundColor: `black`,
-    //     opacity: `90%`,
-    //     backgroundSize: `cover`
-        
-    //   }}>
-    //   <div className="left">
-    //     <div 
-    //       className="imgContainer"
-    //         style={{
-    //         backgroundImage: `url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25806764.jpg")`,
-    //         opacity: '80%',
-    //       }}
-    //       >
-    //         <Image src={Placeholder} fluid alt="Profile Picture"></Image>
-    //       {/* <img src={Placeholder} alt="test"></img> */}
-    //     </div>
-    //   </div>
+
     //   <div className="right">
     //     <div className="wrapper">
     //       <h2>Hi There, I'm </h2>
