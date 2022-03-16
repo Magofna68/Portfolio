@@ -3,7 +3,7 @@ import "./intro.scss"
 import { init } from 'ityped';
 import { useEffect, useRef } from "react";
 import Placeholder from "../../assets/placeholder.JPG";
-import Arrow from "../../assets/arrow.png";
+// import Arrow from "../../assets/arrow.png";
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
@@ -33,10 +33,7 @@ export default function Intro() {
     <div id="introPage">
       <Container fluid>
         <Row>
-          <div id="mobileView">
-              <Image src={Placeholder} fluid alt="Profile Picture"></Image>
-          </div>
-            <div id="mobileSocial">
+          {/* <div id="mobileSocial">
               <a 
             target="_blank" 
             href="https://www.facebook.com/brandon.magofna.5"
@@ -71,8 +68,8 @@ export default function Intro() {
                   alignItems="center"
                 />
             </a>
-            </div>
-          <Col>
+            </div> */}
+          <Col xs={12} md={8} lg={6}>
             <div 
               id="imageBorder"
               style={{
@@ -101,9 +98,47 @@ export default function Intro() {
               </div>
             </div>
           </Col>
-          <Col></Col>
         </Row>
-
+        <Row>
+          <Col xs={12} m={6}>
+            <div id="mobileSocial">
+              <a 
+                target="_blank" 
+                href="https://www.facebook.com/brandon.magofna.5"
+                rel="noreferrer">
+                <FacebookIcon 
+                  fontSize="large"
+                  direction="row"
+                  justifyContent="center"
+                  alignItems="center"
+                />
+              </a>
+              <a 
+                target="_blank" 
+                href="https://www.instagram.com/bmagofna68/"
+                id="iconTest"
+                rel="noreferrer">
+                <InstagramIcon 
+                  fontSize="large"
+                  direction="row"
+                  justifyContent="center"
+                  alignItems="center"
+                />
+              </a>
+              <a 
+                target="_blank" 
+                href="https://github.com/Magofna68"
+                rel="noreferrer">
+                <GitHubIcon
+                  fontSize="large"
+                  direction="row"
+                  justifyContent="center"
+                  alignItems="center"
+                />
+              </a>
+            </div>
+          </Col>
+        </Row>
       </Container>
     </div>
 
