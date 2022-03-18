@@ -112,17 +112,19 @@
 #arrowDesk{
   // width: 75px;
   // height: 50px;
+  display: flex;
   color: red;
   animation: arrowBlink 6s infinite;
-
+  align-items: end;
+  justify-content: end;
   @include mobile{
     display: none;
   }
 
   .downLG{
     transform: rotate(90deg);
-    width: 20%;
-    height: 15%;
+    width: 25%;
+    height: 20%;
     color: red;
 
     @keyframes arrowBlink {
