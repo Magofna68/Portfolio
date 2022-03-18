@@ -3,7 +3,6 @@ import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 import { init } from 'ityped';
 import { useEffect, useRef } from "react";
 import Placeholder from "../../assets/placeholder.JPG";
-// import Arrow from "../../assets/arrow.png";
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
@@ -66,12 +65,10 @@ export default function Intro() {
             </div>
           </Col>
           <Col xs={12} s={12} m={6} lg={5} xl={5} id="container">
-            {/* <div id="container"> */}
               <div id="introText">
                 <h2>Hi There,</h2>
                 <h1><span id="smallText">I'm</span> Brandon Magofna.</h1>
                 <h3><span id="iType" ref={textRef}></span></h3>
-              {/* </div> */}
               </div>
               <div id="arrowDesk">
                 <a href="#aboutMe">
@@ -124,32 +121,7 @@ export default function Intro() {
               </a>
           </Col>
         </Row>
-        {/* <Row> */}
-          {/* <a href="#aboutMe">
-             <DoubleArrowIcon className="downIcon" />
-          </a> */}
-        {/* </Row> */}
       </Container>
     </div>
-
-
-    //   <div className="right">
-    //     <div className="wrapper">
-    //       <h2>Hi There, I'm </h2>
-    //       <h1>Brandon Magofna.</h1>
-    //       <h3><span ref={textRef}></span></h3>
-    //     </div>
-    //     <div className="wrapper">
-    //       <a href="#aboutMe">
-    //         <DoubleArrowIcon className="downIcon" onClick="" />
-    //       </a>
-    //     </div>
-    //   </div>
-    //   <div className="mobileArrow">
-    //     <a href="#aboutMe">
-    //       <DoubleArrowIcon className="downIconMobile" onClick="" />
-    //     </a>
-    //   </div>
-    // </div>
   )
 }
