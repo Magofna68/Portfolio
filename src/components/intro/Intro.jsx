@@ -33,7 +33,7 @@ export default function Intro() {
     <div id="introPage">
       <Container fluid>
         <Row>
-          <Col xs={12} s={12} md={12} lg={7} xl={7}>
+          <Col xs={12} s={12} md={6} lg={7} xl={7}>
             <div 
               id="imageBorder"
               style={{
@@ -65,16 +65,18 @@ export default function Intro() {
               </div>
             </div>
           </Col>
-          <Col xs={12} s={12} m={12} lg={5} xl={5} id="container">
+          <Col xs={12} s={12} m={6} lg={5} xl={5} id="container">
             {/* <div id="container"> */}
               <div id="introText">
                 <h2>Hi There,</h2>
                 <h1><span id="smallText">I'm</span> Brandon Magofna.</h1>
                 <h3><span id="iType" ref={textRef}></span></h3>
               {/* </div> */}
-              <a href="#aboutMe" id="arrowContain">
-                <DoubleArrowIcon className="downIcon" />
-              </a>
+              </div>
+              <div id="arrowDesk">
+                <a href="#aboutMe">
+                  <DoubleArrowIcon className="downLG" />
+                </a>
               </div>
           </Col>
         </Row>
@@ -116,6 +118,10 @@ export default function Intro() {
                 />
               </a>
             </div>
+            <br/> <br/><br/>
+            <a href="#aboutMe" id="arrowContain">
+                <DoubleArrowIcon className="downIcon" />
+              </a>
           </Col>
         </Row>
         {/* <Row> */}
