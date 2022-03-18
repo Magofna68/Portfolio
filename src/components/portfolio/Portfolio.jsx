@@ -31,27 +31,44 @@ export default function Portfolio() {
       title: "C#",
     }
   ];
-    
- useEffect(() => {
+
+  
+  useEffect(() => {
     switch(selected){
       case "featured": 
-        setData(featuredPortfolio);
-        break;
+      setData(featuredPortfolio);
+      break;
       case "react": 
-        setData(featuredReact);
-        break;
+      setData(featuredReact);
+      break;
       case "c": 
-        setData(featuredC);
-        break;
-    }
- }, [selected])
+      setData(featuredC);
+      break;
+      default:
+        setData(featuredPortfolio);
+      }
+    }, [selected])
+    
+  //   const renderCard = (card, index) => {
+  //    return (
+  //      <Card style={{ width: '18rem' }} key={index}>
+  //        <Card.Img variant="top" src={card.image} alt={card.alt} />
+  //        <Card.Body>
+  //          <Card.Title>{card.title}</Card.Title>
+  //          <Card.Subtitle className="mb-2 text-muted">{card.subtitle}</Card.Subtitle>
+  //          <Card.Text>{card.text}</Card.Text>
+  //          <Card.Link href={card.link} rel="noreferrer">Check out this Project</Card.Link>
+  //        </Card.Body>
+  //      </Card>
+  //    )
+  //  };
 
   return (
     <div 
     className="portfolio" 
     id="portfolio"
     style={{
-            opacity: `90%`,
+      opacity: `90%`,
       backgroundSize: `cover`,
       repeat: `no-repeat`,
       backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
@@ -71,44 +88,48 @@ export default function Portfolio() {
         <div className="container">
           <>
           {data.map((d) => (
-            <Card style={{
-              width: '18rem'
-            }}>
-              <Card.Img 
-                variant="top"
-                src={d.image}
-                alt={d.alt} />
-              <Card.Body>
-                <Card.Title>{d.title}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">{d.subtitle}</Card.Subtitle>
-                <Card.Text>{d.text}</Card.Text>
-                <Card.Link href={d.link} rel="noreferrer">Check out this Project</Card.Link>
-                // <Card.Link href="#" rel="noreferrer">View Project's Code</Card.Link>
-              </Card.Body>
-            </Card>
-            // <ProjectCard
-            //   id={d.id}
-            //   title={d.title}
-            //   alt={d.alt}
-            //   text={d.text}
-            //   img={d.image}
-            //   link={d.link}
-            //   subtitle={d.subtitle}
-            // />
-
-          // <div className="item">
-          //   <a target="_blank" rel="noreferrer" href={d.link}>
-          //     <img 
-          //       src={d.img}
-          //       alt={d.alt}>
-          //     </img>
-          //     <br/>
-          //     <h4 id="appTitle">{d.title}</h4>
-          //   </a>
-
+          
+          <div className="item">
+            <a target="_blank" rel="noreferrer" href={d.link}>
+              <img 
+                src={d.img}
+                alt={d.alt}>
+              </img>
+              <br/>
+              <h4 id="appTitle">{d.title}</h4>
+            </a>
+          </div>
           ))}
-        </>
-        </div>
+          </>
+          </div>
+            {/* <Card style={{
+               width: '18rem'
+            }}>
+               <Card.Img 
+                 variant="top"
+                 src={d.image}
+                 alt={d.alt} />
+               <Card.Body>
+                 <Card.Title>{d.title}</Card.Title>
+                 <Card.Subtitle className="mb-2 text-muted">{d.subtitle}</Card.Subtitle>
+                 <Card.Text>{d.text}</Card.Text>
+                 <Card.Link href={d.link} rel="noreferrer">Check out this Project</Card.Link>
+                 {/* <Card.Link href="#" rel="noreferrer">View Project's Code</Card.Link> */}
+               {/* </Card.Body> */}
+             {/* </Card> */}
+
+             {/* <ProjectCard
+               title={d.title}
+               link={d.link}
+               subtitle={d.subtitle}
+               alt={d.alt}
+               image={d.image}
+               text={d.text}
+               id={d.id}
+             /> */}
+
+        
+        
         <p style={{
             fontWeight: `500`,
         }}>
