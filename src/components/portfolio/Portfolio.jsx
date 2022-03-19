@@ -89,34 +89,35 @@ export default function Portfolio() {
           <>
           {data.map((d) => (
           
-          <div className="item">
-            <a target="_blank" rel="noreferrer" href={d.link}>
-              <img 
-                src={d.img}
-                alt={d.alt}>
-              </img>
-              <br/>
-              <h4 id="appTitle">{d.title}</h4>
-            </a>
-          </div>
-          ))}
-          </>
-          </div>
-            {/* <Card style={{
-               width: '18rem'
+            <Card style={{
+              width: '18rem'
             }}>
                <Card.Img 
                  variant="top"
-                 src={d.image}
+                 src={d.img}
                  alt={d.alt} />
                <Card.Body>
                  <Card.Title>{d.title}</Card.Title>
                  <Card.Subtitle className="mb-2 text-muted">{d.subtitle}</Card.Subtitle>
                  <Card.Text>{d.text}</Card.Text>
                  <Card.Link href={d.link} rel="noreferrer">Check out this Project</Card.Link>
-                 {/* <Card.Link href="#" rel="noreferrer">View Project's Code</Card.Link> */}
-               {/* </Card.Body> */}
-             {/* </Card> */}
+                 <Card.Link href="#" rel="noreferrer">View Project's Code</Card.Link> */}
+               </Card.Body>
+              </Card>
+          // <div className="item">
+          //   <a target="_blank" rel="noreferrer" href={d.link}>
+          //     <img 
+          //       src={d.img}
+          //       alt={d.alt}>
+          //     </img>
+          //     <br/>
+          //     <h4 id="appTitle">{d.title}</h4>
+          //   </a>
+          // </div>
+
+          ))}
+          </>
+          </div>
 
              {/* <ProjectCard
                title={d.title}
