@@ -4,7 +4,6 @@ import Card from 'react-bootstrap/Card';
 import "./card.scss";
 
 export default function ProjectCard({title, link, subtitle, alt, image, text}) {
-  // export default function renderCard = (card, index) => {
   return (
     <Card style={{
       width: '18rem'
