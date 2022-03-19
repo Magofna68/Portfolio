@@ -9,19 +9,19 @@ import YTProject from '../assets/YTProject.png';
 export const featuredPortfolio = [
   {
     id: 1,
+    title: "Martian-Proj",
+    alt: "placeholder2",
+    img: `${Martian}`,
+    link: "https://magofna68.github.io/Martian-Proj/",
+  },
+  {
+    id: 2,
     title: "Youtube API (w/ Hook)",
     alt: "Youtube API project",
     img: `${YTProject}`,
     // subtitle: "lorum ipsum",
     link: "https://magofna68.github.io/react-hooks-yt-api/",
     text: "This project focused on utilizing a hook to fetch an API call."
-  },
-  {
-    id: 2,
-    title: "Martian-Proj",
-    alt: "placeholder2",
-    img: `${Martian}`,
-    link: "https://magofna68.github.io/Martian-Proj/",
   },
   {
     id: 3,
