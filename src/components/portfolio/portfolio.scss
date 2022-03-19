@@ -27,11 +27,11 @@
   }
 
   ul {
-    padding: 0 0px 0 0px;
-    margin: 10px;
+    padding: 0 0px 0px 0px;
+    // margin: 10px;
     list-style: none;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     color: darkslategrey;
     overflow: visible;
@@ -39,18 +39,18 @@
 
     @include mobile {
       padding: 0 0 0 40px;
-      margin: 0 0 10% 0;
+      margin: 0 0 5% 0;
       font-size: 15px;
     }
 
     li {
       width: 120px;
-      height: 30px;
+      height: 40px;
       margin: 0 10% 0 0px;
-      padding: 15px 0px 5px 0px;
+      padding: 8px 0px 5px 0px;
       font-size: 15px;
-      align-items: center;
-      text-align: center;
+      // align-items: center;
+      // text-align: center;
       justify-content: center;
       align-content: center;
       flex-wrap: wrap;
@@ -68,7 +68,8 @@
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 
     @include mobile {
       width: 100%;
@@ -84,13 +85,23 @@
       display: flexbox;
 
       &:hover {
-        background-color: rgb(75, 72, 72);
+        // background-color: rgb(75, 72, 72);
+        background-image: linear-gradient(to bottom, rgb(26, 25, 25) 0.9, rgba(83, 81, 81, 0.1));
         color: white;
-        transform:scale(1.2);
+        border: double 1px;
+        border-color: white;
+        // transform:scale(1.2);
       }
 
       img.card-img-top{
         border-radius: 5%;
+        transition: 2s all;
+
+        &:hover {
+          background-color: rgb(75, 72, 72);
+          color: white;
+          transform:scale(1.05);
+        }
       }
       .card-body{
         padding: 0;
