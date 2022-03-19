@@ -91,7 +91,7 @@ export default function Portfolio() {
           {data.map((d) => (
           
             <Card style={{
-              width: '15rem',
+              width: '17rem',
               borderRadius: `10%`,
               height: `300px`,
               padding: `20px 10px`,
@@ -102,7 +102,7 @@ export default function Portfolio() {
                  src={d.img}
                  alt={d.alt} 
                  style={{
-                   height: `150px`
+                   height: `175px`
                  }}/>
                <Card.Body>
                  <Card.Title>{d.title}</Card.Title>
@@ -112,33 +112,9 @@ export default function Portfolio() {
                  <Button variant="success" href="#" rel="noreferrer">View Code</Button>
                </Card.Body>
               </Card>
-          // <div className="item">
-          //   <a target="_blank" rel="noreferrer" href={d.link}>
-          //     <img 
-          //       src={d.img}
-          //       alt={d.alt}>
-          //     </img>
-          //     <br/>
-          //     <h4 id="appTitle">{d.title}</h4>
-          //   </a>
-          // </div>
-
           ))}
           </>
-          </div>
-
-             {/* <ProjectCard
-               title={d.title}
-               link={d.link}
-               subtitle={d.subtitle}
-               alt={d.alt}
-               image={d.image}
-               text={d.text}
-               id={d.id}
-             /> */}
-
-        
-        
+          </div>   
         <p style={{
             fontWeight: `500`,
         }}>
