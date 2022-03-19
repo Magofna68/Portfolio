@@ -6,7 +6,8 @@ import Container from 'react-bootstrap/Container';
 import ProjectCard from '../card/ProjectCard';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
+import { Card, Button } from 'react-bootstrap/';
+
 
 
 
@@ -90,18 +91,25 @@ export default function Portfolio() {
           {data.map((d) => (
           
             <Card style={{
-              width: '18rem'
+              width: '15rem',
+              borderRadius: `10%`,
+              height: `300px`,
+              padding: `20px 10px`,
+              margin: `15px`
             }}>
                <Card.Img 
                  variant="top"
                  src={d.img}
-                 alt={d.alt} />
+                 alt={d.alt} 
+                 style={{
+                   height: `150px`
+                 }}/>
                <Card.Body>
                  <Card.Title>{d.title}</Card.Title>
                  <Card.Subtitle className="mb-2 text-muted">{d.subtitle}</Card.Subtitle>
-                 <Card.Text>{d.text}</Card.Text>
-                 <Card.Link href={d.link} rel="noreferrer">Check out this Project</Card.Link>
-                 <Card.Link href="#" rel="noreferrer">View Project's Code</Card.Link> */}
+                 {/* <Card.Text>{d.text}</Card.Text> */}
+                 <Button vaiant="danger" href={d.link} rel="noreferrer">View Project</Button>
+                 <Button variant="success" href="#" rel="noreferrer">View Code</Button>
                </Card.Body>
               </Card>
           // <div className="item">
