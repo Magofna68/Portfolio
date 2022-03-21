@@ -86,32 +86,39 @@ export default function Portfolio() {
             />
           ))}
         </ul>
-        <div className="container">
+        <div className="container" styles={{
+          padding: `10% 0% 0 0`,
+        }}>
           <>
           {data.map((d) => (
-          
-            <Card style={{
-              width: '17rem',
-              borderRadius: `10%`,
-              height: `300px`,
-              padding: `20px 10px`,
-              margin: `15px`
-            }}>
-               <Card.Img 
-                 variant="top"
-                 src={d.img}
-                 alt={d.alt} 
-                 style={{
-                   height: `175px`
-                 }}/>
-               <Card.Body>
-                 <Card.Title>{d.title}</Card.Title>
-                 <Card.Subtitle className="mb-2 text-muted">{d.subtitle}</Card.Subtitle>
-                 {/* <Card.Text>{d.text}</Card.Text> */}
-                 <Button vaiant="danger" href={d.link} rel="noreferrer">View Project</Button>
-                 <Button variant="success" href="#" rel="noreferrer">View Code</Button>
-               </Card.Body>
-              </Card>
+          // <Container fluid>
+          //   <Row xs="auto">
+              // <Col>
+                <Card class="img-responsive" style={{
+                  width: '16rem',
+                  borderRadius: `10%`,
+                  height: `auto`,
+                  padding: `10px 10px 5px 10px`,
+                  margin: `10px 10px 0px 10px`,
+                }}>
+                  <Card.Img 
+                    variant="top"
+                    src={d.img}
+                    alt={d.alt} 
+                    style={{
+                      height: `150px`
+                    }}/>
+                  <Card.Body>
+                    <Card.Title>{d.title}</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">{d.subtitle}</Card.Subtitle>
+                    {/* <Card.Text>{d.text}</Card.Text> */}
+                    <Button vaiant="danger" href={d.link} rel="noreferrer">View Project</Button>
+                    <Button variant="success" href="#" rel="noreferrer">View Code</Button>
+                  </Card.Body>
+                  </Card>
+              // </div></div></Col> */}
+              // </Row>
+            // </Container>
           ))}
           </>
           </div>   
