@@ -60,20 +60,24 @@ export default function AboutMe() {
             </p>
           </Col>
         </Row>
-        <Row>
-          <Col>
-          <a 
-            target="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing"
-            href="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing">
-            <img src={Resume} alt="resume_link">
-            </img>
-            {/* <br/>
-            <br/>
-            <br/> */}
-            <h3>Checkout my <br/>resume</h3>
-          </a>
-          </Col>
-        </Row>
+        <div className="clickables">
+          <div className="resumeContainer">
+            <Row>
+              <Col>
+                <div id="text">
+                  <h3>Checkout</h3><h6>my</h6><h2>Resume</h2>
+                </div>
+              </Col>
+              <Col >
+                <a 
+                  target="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing"
+                  href="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing">
+                  <img src={Resume} alt="resume_link"></img>
+                </a>
+              </Col>
+            </Row>
+            </div>
+          </div>
       </Container>
     </div>
   )

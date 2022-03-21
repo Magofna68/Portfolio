@@ -2,7 +2,7 @@
 
 .aboutMe {
   justify-content: center;
-  margin: 0 0 0 0;
+  padding: 0 5% 0 5%;
   scroll-behavior: none;
   overflow: visible;
 
@@ -10,6 +10,50 @@
     scroll-behavior: none;
   }
 
+  p{
+    font-size: small;
+  }
+
+  .clickables {
+    height: 250px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e4/StarfieldSimulation.gif");
+    align-items: center;
+    display: flex;
+    scroll-behavior: none;
+    overflow: visible;
+  
+    .resumeContainer {
+      display: flex;
+      margin: 5% 0% 5% 0%;
+      scroll-behavior: none;
+      overflow: visible;
+      color: white;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+
+      #text{
+        align-items: center;
+        justify-content: center;      }
+
+      a{
+        height: 250px;
+        width: 200px;
+        cursor: pointer;
+
+        img{
+          height: 200px;
+          width: 175px;
+          }
+        
+      }
+    }
+  }
+}
 //   h1 {
 //     float: left;
 //     text-align: left;
@@ -22,7 +66,6 @@
 //       font-size: 35px;
 //     }
 //   }
-}
 
   // .container {
   //   display: flex;
@@ -99,32 +142,32 @@
   //       scroll-behavior: none;
   //     }
 
-  //     .clickables {
-  //       height: 98%;
-  //       width: 98%;
-  //       align-content: center;
-  //       justify-content: center;
-  //       align-items: center;
-  //       background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e4/StarfieldSimulation.gif");
-  //       align-items: center;
-  //       display: flex;
-  //       scroll-behavior: none;
-  //       overflow: visible;
+      // .clickables {
+      //   height: 98%;
+      //   width: 98%;
+      //   align-content: center;
+      //   justify-content: center;
+      //   align-items: center;
+      //   background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e4/StarfieldSimulation.gif");
+      //   align-items: center;
+      //   display: flex;
+      //   scroll-behavior: none;
+      //   overflow: visible;
 
   //       @include mobile {
   //         width: 90%;
   //       }
 
-  //       .resumeContainer {
-  //         height: 100%;
-  //         width: 85%;
-  //         align-content: space-around;
-  //         align-items: center;
-  //         justify-content: space-around;
-  //         display: flex;
-  //         margin: 0 10% 5% 10%;
-  //         scroll-behavior: none;
-  //         overflow: visible;
+        // .resumeContainer {
+        //   height: 100%;
+        //   width: 85%;
+        //   align-content: space-around;
+        //   align-items: center;
+        //   justify-content: space-around;
+        //   display: flex;
+        //   margin: 0 10% 5% 10%;
+        //   scroll-behavior: none;
+        //   overflow: visible;
 
   //         @include mobile {
   //         }
