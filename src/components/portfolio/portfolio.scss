@@ -1,5 +1,6 @@
 @import "../../global.scss";
 
+
 .portfolio {
   background-color: white;
   display: flex;
@@ -39,7 +40,7 @@
 
     @include mobile {
       padding: 0 0 0 40px;
-      margin: 0 0 0% 0;
+      margin: 0 0 3% 0;
       font-size: 15px;
     }
 
@@ -62,27 +63,39 @@
     width: 100%;
     height: 70%vh;
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
-    align-content: center;
+    // align-content: center;
     flex-wrap: wrap;
     overflow-x: hidden;
-    overflow-y: visible;
-
+    // overflow-y: visible;
+    margin: 5% 0 5% 0;
+    scroll-behavior: none;
+    
     @include mobile {
       width: 100%;
+      height: 60%;
       display: flex;
+      flex-direction: row;
       // margin-top: 1%;
-      justify-content: space-evenly;
-      align-content: space-around;
+      justify-content: center;
+      align-content: center;
+      margin: 0 0 0 0;
+      padding: 0;
+      align-content: flex-start;
     }
 
-    .card{
+    div.card{
+      width: 17rem;
+      height: auto;
       cursor: pointer;
       transition: 1.5s all;
       
       @include mobile{
-        width:fit-content;
+        width: 40%;
+        height: auto;
+        flex-direction: column;
+        margin: 0 0 0 0;
       }
 
       &:hover {
@@ -96,8 +109,18 @@
       }
 
       img.card-img-top{
+        height: 150px;
         border-radius: 5%;
         transition: 2s all;
+
+        @include mobile{
+          width: auto;
+          height: 60%;
+          // width: 175px;
+          // height: 100px;
+          // width: 80%;
+          // height: 60%;
+        }
 
         &:hover {
           background-color: rgb(75, 72, 72);
@@ -109,14 +132,47 @@
         padding: 0;
         justify-content: center;
         align-items: center;
-        align-content: center;
+        // align-content: center;
         text-align: center;
+        scroll-behavior: none;
+        overflow: visible;
+        
+        @include mobile{
+          width: 100%;
+          height: 40%;
+          flex-direction: row;
+        }
       }
       a.btn{
         font-size: small;
       }
+
+      button.btn.btn-primary{
+
+        @media (min-width: $width) {
+          padding: 8px 0 0 0;
+        
+        @include mobile{
+          width: 47%;
+          height: auto;
+          font-size: 60%;
+          scroll-behavior: none;
+          margin-bottom: 5px;
+          padding: 1px 7px;
+        }
+      }
+    }
       .btn.btn-success{
         margin-left: 5px;
+
+        @include mobile{
+          width: 47%;
+          height: auto;
+          font-size: 60%;
+          scroll-behavior: none;
+          margin-bottom: 5px;
+          padding: 8px 6px;
+        }
       }
 
       .card-title.h5{
@@ -124,7 +180,15 @@
         font-size: medium;
         margin: 0;
         text-align: center;
-        
+
+        @include mobile{
+          width: 100%;
+          height: 30%;
+          font-size: 10px;
+          text-align: center;
+          scroll-behavior: none;
+          padding: 3px 0 0 0;
+        }
       }
     }
 

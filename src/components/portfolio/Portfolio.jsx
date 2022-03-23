@@ -70,33 +70,30 @@ export default function Portfolio() {
             />
           ))}
         </ul>
-        <div className="container" styles={{
-          padding: `10% 0% 0 0`,
-        }}>
+        <div className="container">
           <>
           {data.map((d) => (
-                <Card class="img-responsive" style={{
-                  width: '16rem',
-                  borderRadius: `10%`,
-                  height: `auto`,
-                  padding: `10px 10px 5px 10px`,
-                  margin: `10px 10px 0px 10px`,
-                }}>
-                  <Card.Img 
-                    variant="top"
-                    src={d.img}
-                    alt={d.alt} 
-                    style={{
-                      height: `150px`
-                    }}/>
-                  <Card.Body>
-                    <Card.Title>{d.title}</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">{d.subtitle}</Card.Subtitle>
-                    {/* <Card.Text>{d.text}</Card.Text> */}
-                    <a href={d.link} rel="noreferrer" target="_blank"><Button vaiant="danger">View Project</Button></a>
-                    <a href={d.link2} rel="noreferrer" target="_blank"><Button variant="success">View Code</Button></a>
-                  </Card.Body>
-                  </Card>
+            <Card class="img-responsive" style={{
+              borderRadius: `10%`,
+              padding: `10px 10px 5px 10px`,
+              margin: `10px 10px 0px 10px`,
+            }}>
+              <Card.Img 
+                variant="top"
+                src={d.img}
+                alt={d.alt} 
+                // style={{
+                //   height: `150px`
+                // }}
+                />
+              <Card.Body>
+                <Card.Title>{d.title}</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">{d.subtitle}</Card.Subtitle>
+                {/* <Card.Text>{d.text}</Card.Text> */}
+                <a href={d.link} rel="noreferrer" target="_blank"><Button vaiant="danger">View Project</Button></a>
+                <a href={d.link2} rel="noreferrer" target="_blank"><Button variant="success">View Code</Button></a>
+              </Card.Body>
+              </Card>
           ))}
           </>
           </div>   
