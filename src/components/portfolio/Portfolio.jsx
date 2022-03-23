@@ -1,11 +1,9 @@
-import { ListItem } from "@material-ui/core";
 import "./portfolio.scss"
 import PortfolioList from "../portfolioList/PortfolioList"
 import React, {useState, useEffect} from 'react';
-import Container from 'react-bootstrap/Container';
-import ProjectCard from '../card/ProjectCard';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
 import { Card, Button } from 'react-bootstrap/';
 
 
@@ -49,20 +47,6 @@ export default function Portfolio() {
         setData(featuredPortfolio);
       }
     }, [selected])
-    
-  //   const renderCard = (card, index) => {
-  //    return (
-  //      <Card style={{ width: '18rem' }} key={index}>
-  //        <Card.Img variant="top" src={card.image} alt={card.alt} />
-  //        <Card.Body>
-  //          <Card.Title>{card.title}</Card.Title>
-  //          <Card.Subtitle className="mb-2 text-muted">{card.subtitle}</Card.Subtitle>
-  //          <Card.Text>{card.text}</Card.Text>
-  //          <Card.Link href={card.link} rel="noreferrer">Check out this Project</Card.Link>
-  //        </Card.Body>
-  //      </Card>
-  //    )
-  //  };
 
   return (
     <div 
