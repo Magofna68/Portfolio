@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutMe from "./aboutMe.scss";
+// import "./aboutMe.scss"
 import Resume from "../../assets/Resume.png";
 import { Container, Row, Col } from 'react-bootstrap';
 
