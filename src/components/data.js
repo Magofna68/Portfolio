@@ -13,6 +13,7 @@ export const featuredPortfolio = [
     alt: "placeholder2",
     img: `${Martian}`,
     link: "https://magofna68.github.io/Martian-Proj/",
+    link2: "https://github.com/Magofna68/Martian-Proj"
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ export const featuredPortfolio = [
     img: `${YTProject}`,
     // subtitle: "lorum ipsum",
     link: "https://magofna68.github.io/react-hooks-yt-api/",
+    link2: "https://github.com/Magofna68/react-yt-api-redux",
     text: "This project focused on utilizing a hook to fetch an API call."
   },
   {
@@ -29,6 +31,7 @@ export const featuredPortfolio = [
     alt: "Currency Exchanger",
     img: `${Exchanger}`,
     link: "https://magofna68.github.io/Currency-Exchanger/",
+    link2: "https://github.com/Magofna68/Currency-Exchanger"
   },
   // {
   //   id: 4,
@@ -45,6 +48,7 @@ export const featuredC = [
     alt: "Recipe Box",
     img: `${RecipeBox}`,
     link: "https://github.com/Magofna68/RecipeBox.Solution",
+    link2: "https://github.com/Magofna68/RecipeBox"
   }
 ]
 
@@ -54,7 +58,8 @@ export const featuredReact = [
     title: "TapRoom w/ Redux",
     alt: "taproom application",
     img: `${taproom}`,
-    link: "https://magofna68.github.io/TapRoom-Redux/"
+    link: "https://magofna68.github.io/TapRoom-Redux/",
+    link2: "https://github.com/Magofna68/TapRoom-Redux"
   },
   {
     id: 2,
@@ -62,6 +67,7 @@ export const featuredReact = [
     alt: "Hiking web application",
     img: `${takeAHike}`,
     link: "https://github.com/Magofna68/take-a-hike",
+    link2: "https://github.com/Magofna68/take-a-hike"
   },
   {
     id: 3,
@@ -69,6 +75,7 @@ export const featuredReact = [
     alt: "Help Que web application",
     img: `${helpQue}`,
     link: "https://redux-help-queue-15476.web.app/",
+    link2: "https://github.com/Magofna68/Help-Que2"
   },
   // {
   //   id: 3,
