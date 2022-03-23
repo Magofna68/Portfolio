@@ -1,7 +1,7 @@
 import "./contact.scss"
 import React, {useState} from "react";
 import Placeholder from "../../assets/placeholder.JPG";
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
 
 
 
