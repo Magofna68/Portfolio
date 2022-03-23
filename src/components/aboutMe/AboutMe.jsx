@@ -13,15 +13,15 @@ export default function AboutMe() {
       repeat: `no-repeat`,
       backgroundImage: `url("https://i2.wp.com/files.123freevectors.com/wp-content/original/142906-cool-grey-wave-business-background-vector-art.jpg?w=800&q=95")`
     }}>
-      <Container fluid>
-        <Row>
-          <Col>
             <h1>
               <span style={{ color: `grey`, padding: `15% 0 0 0` }}><br/>
                 About </span>Brandon
               <span style={{ color: `grey`, }}>.</span><br/>
             </h1>
             <br/>
+      <Container fluid>
+        <Row>
+          <Col>
             <p>
               After graduating with a GSS degree from U of O in 2019,
               Brandon quickly landed a job in selling software. After
@@ -60,24 +60,32 @@ export default function AboutMe() {
             </p>
           </Col>
         </Row>
+            <Row>
         <div className="clickables">
           <div className="resumeContainer">
-            <Row>
-              <Col>
+              <Col xs={5} s={6} m={6} lg={6}>
                 <div id="text">
                   <h3>Checkout</h3><h6>my</h6><h2>Resume</h2>
                 </div>
               </Col>
-              <Col >
+              <Col xs={7} s={6} m={6} lg={6}>
                 <a 
                   target="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing"
                   href="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing">
-                  <img src={Resume} alt="resume_link"></img>
+                  <img 
+                    src={Resume} 
+                    alt="resume_link" 
+                    width="175px" 
+                    style={{ 
+                      borderRadius: `20px,`,
+                      // border: `1px solid`,
+                      // borderColor: `green`
+                      }}></img>
                 </a>
               </Col>
-            </Row>
             </div>
           </div>
+            </Row>
       </Container>
     </div>
   )

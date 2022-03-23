@@ -91,9 +91,6 @@ export default function Portfolio() {
         }}>
           <>
           {data.map((d) => (
-          // <Container fluid>
-          //   <Row xs="auto">
-              // <Col>
                 <Card class="img-responsive" style={{
                   width: '16rem',
                   borderRadius: `10%`,
@@ -112,13 +109,10 @@ export default function Portfolio() {
                     <Card.Title>{d.title}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">{d.subtitle}</Card.Subtitle>
                     {/* <Card.Text>{d.text}</Card.Text> */}
-                    <Button vaiant="danger" href={d.link} rel="noreferrer">View Project</Button>
-                    <Button variant="success" href="#" rel="noreferrer">View Code</Button>
+                    <a href={d.link} rel="noreferrer" target="_blank"><Button vaiant="danger">View Project</Button></a>
+                    <a href={d.link2} rel="noreferrer" target="_blank"><Button variant="success">View Code</Button></a>
                   </Card.Body>
                   </Card>
-              // </div></div></Col> */}
-              // </Row>
-            // </Container>
           ))}
           </>
           </div>   

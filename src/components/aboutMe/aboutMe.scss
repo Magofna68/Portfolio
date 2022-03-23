@@ -1,7 +1,9 @@
 @import "../../global.scss";
 
 .aboutMe {
+  display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0 5% 0 5%;
   scroll-behavior: none;
   overflow: visible;
@@ -15,19 +17,23 @@
   }
 
   .clickables {
+    display: flex;
     height: 250px;
     width: 100%;
-    align-content: center;
-    justify-content: center;
+    // align-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e4/StarfieldSimulation.gif");
     align-items: center;
-    display: flex;
     scroll-behavior: none;
-    overflow: visible;
+    overflow: hidden;
+    border-radius: 20px;
+    scroll-behavior: none;
+
   
     .resumeContainer {
       display: flex;
+      width: 600px;
       margin: 5% 0% 5% 0%;
       scroll-behavior: none;
       overflow: visible;
@@ -35,21 +41,41 @@
       text-align: center;
       justify-content: center;
       align-items: center;
+      scroll-behavior: none;  
 
       #text{
-        align-items: center;
-        justify-content: center;      }
+        // margin-right: 20%;
+        // align-items: center;
+        // justify-content: center;
 
       a{
+        display: flex;
         height: 250px;
-        width: 200px;
+        width: 215px;
         cursor: pointer;
+        transition: 2s all;
+        // border-radius: 20px;
+        overflow: visible;
+        // padding-right: 10%;
 
-        img{
-          height: 200px;
-          width: 175px;
-          }
         
+        img{
+          // max-height: 215px;
+          // max-width: 175px;
+          // opacity: 45%;
+          // scroll-behavior: none;
+          // overflow: hidden;
+          // border-radius: 20%;
+          
+          
+          &:hover {
+            opacity: 100%;
+            box-shadow: grey;
+            border: solid;
+            border-color: gray;
+            }
+          }
+        }
       }
     }
   }
