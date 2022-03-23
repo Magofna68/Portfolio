@@ -5,6 +5,10 @@ $breakpoint-tablet: 424px;
 
 $width: 768px;
 
+$phone: 424px;
+
+$galaxy: 370px;
+
 @mixin mobile {
   @media (max-width: #{$width}) {
     @content;

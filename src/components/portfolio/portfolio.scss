@@ -149,8 +149,8 @@
 
       button.btn.btn-primary{
 
-        @media (min-width: $width) {
-          padding: 8px 0 0 0;
+        // @media (min-width: $width) {
+        //   padding: 4px 0 0 0;
         
         @include mobile{
           width: 47%;
@@ -158,9 +158,13 @@
           font-size: 60%;
           scroll-behavior: none;
           margin-bottom: 5px;
-          padding: 1px 7px;
+          padding: 3px 7px;
         }
-      }
+          
+          @media (max-width: $phone) {
+            padding: 2px 0;
+          }
+      // }
     }
       .btn.btn-success{
         margin-left: 5px;
@@ -171,7 +175,11 @@
           font-size: 60%;
           scroll-behavior: none;
           margin-bottom: 5px;
-          padding: 8px 6px;
+          padding: 3px 6px;
+        }
+
+        @media (max-width: $galaxy) {
+          padding: 2px 0;
         }
       }
 
