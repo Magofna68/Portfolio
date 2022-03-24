@@ -1,5 +1,5 @@
 import React from 'react';
-// import "./aboutMe.scss"
+import "./aboutMe.scss"
 import Resume from "../../assets/Resume.png";
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -13,14 +13,20 @@ export default function AboutMe() {
       repeat: `no-repeat`,
       backgroundImage: `url("https://i2.wp.com/files.123freevectors.com/wp-content/original/142906-cool-grey-wave-business-background-vector-art.jpg?w=800&q=95")`
     }}>
+      <Container fluid>
+        <Row>
+          <Col md={3}>
+            <div id="title">
             <h1>
-              <span style={{ color: `grey`, padding: `15% 0 0 0` }}><br/>
+              <span style={{ color: `grey`, padding: `0% 0 0 0` }}><br/>
                 About </span>Brandon
               <span style={{ color: `grey`, }}>.</span><br/>
             </h1>
+            </div>
+            </Col>
             <br/>
-      <Container fluid>
-        <Row>
+      {/* <Container fluid>
+        <Row> */}
           <Col>
             <p>
               After graduating with a GSS degree from U of O in 2019,
@@ -34,16 +40,15 @@ export default function AboutMe() {
               After much thought, Brandon came to realize his passion didnt
               lie in sales, but rather in the excitement of overcoming a 
               challenge. He left his sales role behind to pursue a career in
-              coding; to be an aspiring software developer and designer. 
+              coding. 
               Applying the knowledge base cultivated from U of O and leaning 
-              into his experiences in sales, Brandon's goal is to further 
+              into his experiences with teamwork and collaboration, Brandon's goal is to further 
               develop a growth mindset; leaning into unknown endeavors, and 
               reshaping the world one line of code at a time.
             </p>
             <p>
-              With exposure and repetition to best practices for over the better
-              part of a year, Brandon has been building up his technical and 
-              nontechnical skills to place him in a position to overcome complex
+              With exposure and repetition of best practices at Epicodus, Brandon has been building up his technical and 
+              nontechnical skills to place him in a position to revel in complex
               challenges.<br/>The strong push for effective, collaborative-work, 
               has honed his interpersonal skills and have granted him insight to
               alternative perspectives and methodologies while overcoming challenges.
@@ -60,7 +65,8 @@ export default function AboutMe() {
             </p>
           </Col>
         </Row>
-            <Row>
+        <Container>
+        <Row>
         <div className="clickables">
           <div className="resumeContainer">
               <Col xs={5} s={6} m={6} lg={6}>
@@ -75,17 +81,15 @@ export default function AboutMe() {
                   <img 
                     src={Resume} 
                     alt="resume_link" 
-                    width="175px" 
-                    style={{ 
-                      borderRadius: `20px,`,
-                      // border: `1px solid`,
-                      // borderColor: `green`
-                      }}></img>
+                    width="175px"
+                    id="resume"
+                  />
                 </a>
               </Col>
             </div>
           </div>
             </Row>
+            </Container>
       </Container>
     </div>
   )

@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 5% 0 5%;
+  padding: 0 3% 0 3%;
   scroll-behavior: none;
   overflow: visible;
 
@@ -12,14 +12,35 @@
     scroll-behavior: none;
   }
 
+  #title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    height: 80%;
+    padding: 0;
+    scroll-behavior: none;
+
+    @media (max-width: $galaxy) {
+      margin-top: -3%;
+    }
+  }
+
   p{
     font-size: small;
+
+    @media (max-width: $galaxy) {
+      font-size: 9px;
+    }
   }
 
   .clickables {
     display: flex;
-    height: 250px;
+    margin: auto;
+    // height: 250px;
+    height: auto;
     width: 100%;
+    bottom: 3%;
     // align-content: center;
     justify-content: space-evenly;
     align-items: center;
@@ -29,6 +50,11 @@
     overflow: hidden;
     border-radius: 20px;
     scroll-behavior: none;
+
+    @media (max-width: $galaxy) {
+      height: 150px;
+      
+    }
 
   
     .resumeContainer {
@@ -42,6 +68,18 @@
       justify-content: center;
       align-items: center;
       scroll-behavior: none;  
+
+      @media (max-width: $galaxy) {
+        width: 100%;
+        margin: 3% 0;
+        height: 100%;
+      }
+
+      #resume{
+        @media (max-width: $galaxy) {
+          width: 55%
+        }
+      }
 
       #text{
         // margin-right: 20%;
