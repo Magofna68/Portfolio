@@ -32,28 +32,29 @@ export default function Intro() {
     <div id="introPage">
       <Container fluid>
         <Row>
-          <Col xs={12} s={12} md={6} lg={7} xl={7}>
+          <Col xs={12} sm={12} md={12} lg={6} xl={7}>
             <div 
               id="imageBorder"
               style={{
-                maxWidth: `600px`,
-                minWidth: `250px`,
+                maxWidth: `90%`,
+                // minWidth: `250px`,
                 border: `solid`,
                 borderColor: `white`,
                 alignItems: `center`,
                 justifyContent: `center`,
                 backgroundImage: `url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25806764.jpg")`,
                 borderRadius: `30%`,
-                margin: `5%`,
+                // margin: `5%`,
+                // marginTop: `15%`,
                 overflow: `visible`
             }}>
               <div 
                 id="imgContain"
                 style={{
                 opacity: '90%',
-                maxWidth: `350`,
-                maxHeight: `300`,
-                minWidth: `200`,
+                // maxWidth: `350`,
+                // maxHeight: `300`,
+                // minWidth: `200`,
                 borderRadius: `30px`,
                 border: `solid`,
                 borderColor: `white`,
@@ -64,22 +65,27 @@ export default function Intro() {
               </div>
             </div>
           </Col>
-          <Col xs={12} s={12} m={6} lg={5} xl={5} id="container">
-              <div id="introText">
-                <h2>Hi There,</h2>
-                <h1><span id="smallText">I'm</span> Brandon Magofna.</h1>
-                <h3><span id="iType" ref={textRef}></span></h3>
-              </div>
-              <div id="arrowDesk">
-                <a href="#aboutMe">
-                  <DoubleArrowIcon className="downLG" />
-                </a>
-              </div>
+          <Col xs={12} s={12} md={12} lg={5} xl={4} id="container">
+            <div id="introText">
+              <h2>Hi There,</h2>
+              <h1><span id="smallText">I'm</span> Brandon Magofna.</h1>
+              <h3><span class="iType" ref={textRef}></span></h3>
+            </div>
+            <div id="arrowDesk">
+              <a href="#aboutMe">
+                <DoubleArrowIcon className="downLG" />
+              </a>
+            </div>
+            <div id="arrowContain">
+              <a href="#aboutMe">
+                <DoubleArrowIcon className="downIcon" />
+              </a>
+            </div>
           </Col>
-        </Row>
-        <Row>
-          <Col xs={12} m={6}>
-            <div id="mobileSocial">
+          </Row>
+        {/* <Row>
+          <Col xs={12} s={12} m={6}> */}
+            {/* <div id="mobileSocial">
               <a 
                 target="_blank" 
                 href="https://www.facebook.com/brandon.magofna.5"
@@ -114,14 +120,62 @@ export default function Intro() {
                   alignItems="center"
                 />
               </a>
+            </div> */}
+          {/* </Col> */}
+          {/* <br/><br/><br/>
+          <Col xs={12} s={12} lg={4} xl={4} id="containerMobile">
+            <div id="introText">
+              <h2>Hi There,</h2>
+              <h1><span id="smallText">I'm</span> Brandon Magofna.</h1>
+              <h3><span id="iType" ref={textRef}></span></h3>
             </div>
-            <br/> <br/><br/>
-            <a href="#aboutMe" id="arrowContain">
-                <DoubleArrowIcon className="downIcon" />
+            <div id="arrowDesk">
+              <a href="#aboutMe">
+                <DoubleArrowIcon className="downLG" />
               </a>
-          </Col>
-        </Row>
+            </div>
+            <a href="#aboutMe" id="arrowContain">
+              <DoubleArrowIcon className="downIcon" />
+            </a>
+          </Col> */}
+        {/* </Row> */}
       </Container>
+      <div id="mobileSocial">
+        <a 
+          target="_blank" 
+          href="https://www.facebook.com/brandon.magofna.5"
+          rel="noreferrer">
+          <FacebookIcon 
+            fontSize="large"
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+          />
+        </a>
+        <a 
+          target="_blank" 
+          href="https://www.instagram.com/bmagofna68/"
+          id="iconTest"
+          rel="noreferrer">
+          <InstagramIcon 
+            fontSize="large"
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+          />
+        </a>
+        <a 
+          target="_blank" 
+          href="https://github.com/Magofna68"
+          rel="noreferrer">
+          <GitHubIcon
+            fontSize="large"
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+          />
+        </a>
+      </div>
     </div>
   )
 }

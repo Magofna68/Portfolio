@@ -1,13 +1,20 @@
 // $mainColor: #4cc9f0;
 // $mainColor: grey;
 $mainColor: black;
+
 $breakpoint-tablet: 424px;
+
+$desktop: 992px;
+
+$ipad: 820px;
 
 $width: 768px;
 
 $phone: 424px;
 
-$galaxy: 370px;
+$iphone: 415px;
+
+$galaxy: 375px;
 
 @mixin mobile {
   @media (max-width: #{$width}) {
