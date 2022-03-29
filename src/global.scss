@@ -14,7 +14,15 @@ $phone: 424px;
 
 $iphone: 415px;
 
-$galaxy: 375px;
+$galaxy: 412px;
+
+$iphone12: 393px;
+
+$iphoneSE: 376px;
+
+$galaxyS8: 360px;
+
+$galaxyFold: 280px;
 
 @mixin mobile {
   @media (max-width: #{$width}) {
