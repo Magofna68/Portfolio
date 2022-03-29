@@ -86,11 +86,9 @@
   .clickables {
     display: flex;
     margin: auto;
-    // height: 250px;
     height: auto;
     width: 100%;
     bottom: 3%;
-    // align-content: center;
     justify-content: space-evenly;
     align-items: center;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e4/StarfieldSimulation.gif");
@@ -161,10 +159,7 @@
         }
       }
 
-      #text{
-        // margin-right: 20%;
-        // align-items: center;
-        // justify-content: center;
+
 
       a{
         display: flex;
@@ -172,231 +167,18 @@
         width: 215px;
         cursor: pointer;
         transition: 2s all;
-        // border-radius: 20px;
         overflow: visible;
-        // padding-right: 10%;
-
         
         img{
-          // max-height: 215px;
-          // max-width: 175px;
-          // opacity: 45%;
-          // scroll-behavior: none;
-          // overflow: hidden;
-          // border-radius: 20%;
-          
           
           &:hover {
             opacity: 100%;
             box-shadow: grey;
             border: solid;
             border-color: gray;
-            }
           }
         }
       }
     }
   }
 }
-//   h1 {
-//     float: left;
-//     text-align: left;
-//     justify-content: left;
-//     font-size: 50px;
-//     margin: 8% 0 10px 30px;
-//     padding: 0 0 30px 0;
-
-//     @include mobile {
-//       font-size: 35px;
-//     }
-//   }
-
-  // .container {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   width: 90%;
-  //   height: 55%;
-  //   align-content: start;
-  //   margin: 8% 2% 0 2%;
-  //   padding: 0 10px 0px 0px;
-  //   overflow: visible;
-  //   scroll-behavior: none;
-
-  //   @include mobile {
-  //     width: 95%;
-  //     height: 60%;
-  //   }
-
-  //   .left {
-  //     flex: 50%;
-  //     height: 95%;
-  //     margin: 0% 0% 0 0%;
-  //     padding: 0px 10% 0% 0%;
-  //     overflow: visible;
-  //     scroll-behavior: none;
-
-  //     @include mobile {
-  //       flex: 98%;
-  //       padding: 0 0 0 0;
-  //     }
-
-  //     #space {
-  //       margin: 0 0 40px 0;
-  //       padding: 0 0 40px 0;
-  //     }
-
-  //     p {
-  //       scroll-behavior: none;
-  //       font-size: 15px;
-
-  //       @include mobile {
-  //         font-size: 12px;
-  //         margin: -30px 0 0 0;
-  //       }
-  //     }
-  //   }
-
-  //   .right {
-  //     flex: 20%;
-  //     height: 80%;
-  //     margin: 2% 0 0 0%;
-  //     padding: 10px 10px 10px 10px;
-  //     border: solid;
-  //     border-color: black;
-  //     justify-content: center;
-  //     align-content: space-around;
-  //     background-color: black;
-  //     align-items: center;
-  //     scroll-behavior: none;
-  //     display: flex;
-  //     border-radius: 5%;
-  //     border: solid;
-  //     border-color: gray;
-  //     position: bottom;
-  //     overflow: none;
-
-  //     @include mobile {
-  //       height: 45%;
-  //       max-width: 300px;
-  //       padding: 0;
-  //       margin: 5% 0 0% 7%;
-  //       position: relative;
-  //       bottom: 8%;
-  //       overflow: visible;
-  //       scroll-behavior: none;
-  //     }
-
-      // .clickables {
-      //   height: 98%;
-      //   width: 98%;
-      //   align-content: center;
-      //   justify-content: center;
-      //   align-items: center;
-      //   background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e4/StarfieldSimulation.gif");
-      //   align-items: center;
-      //   display: flex;
-      //   scroll-behavior: none;
-      //   overflow: visible;
-
-  //       @include mobile {
-  //         width: 90%;
-  //       }
-
-        // .resumeContainer {
-        //   height: 100%;
-        //   width: 85%;
-        //   align-content: space-around;
-        //   align-items: center;
-        //   justify-content: space-around;
-        //   display: flex;
-        //   margin: 0 10% 5% 10%;
-        //   scroll-behavior: none;
-        //   overflow: visible;
-
-  //         @include mobile {
-  //         }
-
-  //         a {
-  //           margin: 10px 10px 0 10px;
-  //           padding: 0 0 0 0;
-  //           transition: all 2s ease;
-  //           justify-content: center;
-  //           scroll-behavior: none;
-  //           align-content: center;
-
-  //           img {
-  //             width: 85%;
-  //             height: 90%;
-  //             margin: 0 0 0 0;
-  //             padding: 2% 0 0 7%;
-  //             border-radius: 70%;
-  //             opacity: 60%;
-  //             transition: all 0.8s ease;
-
-  //             @include mobile {
-  //               height: 25%;
-  //               width: 80%;
-  //               padding: 10% 0 0 9%;
-  //               opacity: 90%;
-  //               border-radius: 0px;
-  //             }
-  //             &:hover {
-  //               opacity: 100%;
-  //               box-shadow: white;
-
-  //               img {
-  //                 opacity: 100%;
-  //                 z-index: 0;
-  //                 overflow: visible;
-  //               }
-  //             }
-  //           }
-  //           h3 {
-  //             opacity: 30%;
-  //             color: white;
-  //             justify-content: center;
-  //             align-items: center;
-  //             align-content: center;
-  //             transition: all 2s ease;
-  //             font-size: 17px;
-  //             text-align: center;
-  //             border-left: solid;
-  //             border-right: solid;
-  //             overflow: contained;
-
-  //             @include mobile {
-  //               margin: -20px 0 0 0;
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-// }
-
-// .center {
-//   height: 40%;
-//   flex: 90%;
-//   padding: 0 0 0 30px;
-//   margin: 0% 0 0 0;
-//   position: top;
-//   justify-content: center;
-//   align-items: center;
-//   align-content: center;
-// }
-
-// #mobileP1 {
-//   @include mobile {
-//   }
-// }
-
-// #mobileP2 {
-//   @include mobile {
-//     margin: 10px 0 5px 0;
-//     background-color: rgb(104, 104, 104);
-//     color: white;
-//     padding: 5px;
-//     border-radius: 10px;
-//   }
-// }
