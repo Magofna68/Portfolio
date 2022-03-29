@@ -36,7 +36,7 @@ export default function AboutMe() {
               Brandon quickly realized how fleeting success was within 
               the sales industry.
             </p>
-            <p id="galaxyFold">
+            <p id="galaxyFold" className='grayBackground'>
               After much thought, Brandon came to realize his passion didnt
               lie in sales, but rather in the excitement of overcoming a 
               challenge. He left his sales role behind to pursue a career in
@@ -53,15 +53,17 @@ export default function AboutMe() {
               has honed his interpersonal skills and have granted him insight to
               alternative perspectives and methodologies while overcoming challenges.
             </p>
-            <p>
-              <strong>While he doesn't boast to have the most experience writing
+            <p className='grayBackground'>
+              {/* <strong> */}
+                While he doesn't boast to have the most experience writing
               code, Brandon is confident in leveraging his abilities as a 
               self-starter to learn and fulfill all communicated objectives, 
               while maintaining best practices along the way. Brandon is focused
               on strengthening his coding abilities by working on side projects 
               and is currently listed as an individual contributor for VALIDATE, 
               a marketing and data analysis React web application that was nearly 
-              ready for Beta launch.</strong>
+              ready for Beta launch.
+              {/* </strong> */}
             </p>
           </Col>
         </Row>
