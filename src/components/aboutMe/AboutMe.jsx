@@ -7,7 +7,7 @@ export default function AboutMe() {
   return (
     <div 
       className="aboutMe"
-      id="aboutMe"
+      // id="aboutMe"
       style={{
       backgroundSize: `cover`,
       repeat: `no-repeat`,
@@ -36,7 +36,7 @@ export default function AboutMe() {
               Brandon quickly realized how fleeting success was within 
               the sales industry.
             </p>
-            <p>
+            <p id="galaxyFold">
               After much thought, Brandon came to realize his passion didnt
               lie in sales, but rather in the excitement of overcoming a 
               challenge. He left his sales role behind to pursue a career in
