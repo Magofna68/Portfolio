@@ -7,6 +7,7 @@ export default function AboutMe() {
   return (
     <div 
       className="aboutMe"
+      id="aboutMe"
       style={{
       backgroundSize: `cover`,
       repeat: `no-repeat`,
@@ -14,7 +15,7 @@ export default function AboutMe() {
     }}>
       <Container fluid>
         <Row>
-          <Col md={3}>
+          <Col md={2} lg={2}>
             <div id="title">
               <h1>
                 <span style={{ color: `grey`, padding: `0% 0 0 0` }}><br/>
@@ -25,6 +26,7 @@ export default function AboutMe() {
           </Col>
           <br/>
           <Col>
+          {/* <Container id="textContainer"> */}
             <p>
               After graduating with a GSS degree from U of O in 2019,
               Brandon quickly landed a job in selling software. After
@@ -62,9 +64,10 @@ export default function AboutMe() {
               ready for Beta launch.
               {/* </strong> */}
             </p>
+          {/* </Container> */}
           </Col>
         </Row>
-        <Container>
+        <Container fluid>
           <Row>
             <div className="clickables">
               <div className="resumeContainer">
