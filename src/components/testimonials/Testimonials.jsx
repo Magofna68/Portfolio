@@ -1,4 +1,7 @@
-import "./testimonial.scss"
+import "./testimonial.scss";
+import Levi from "../../assets/LeviProfilePic.jpeg";
+import Jadon from "../../assets/JadonProfilePic.jpeg";
+import Card from 'react-bootstrap/Card';
 
 export default function Testimonial() {
 
@@ -9,8 +12,7 @@ export default function Testimonial() {
       title: "Junior Developer",
       relation:
         "Colleague at Deltek",
-      img: 
-        "https://media-exp1.licdn.com/dms/image/C5603AQGbbV68LZyErg/profile-displayphoto-shrink_100_100/0/1547706774120?e=1639612800&v=beta&t=VOMYbuvZgsaRtzxKSqB8NzgIgCcu7AVOUbBLaeNhG9k",
+      img: `${Levi}`,
       icon: 
         "https://images.squarespace-cdn.com/content/v1/5524448ee4b0d6f6b83ab9e2/1473199586097-9Q0FQMMH0NGMKY0LVZ60/epicodus-logo-300.png",
       alt:
@@ -24,8 +26,7 @@ export default function Testimonial() {
       title: "Sales Development Representative",
       relation:
         "Colleague at Deltek",
-      img: 
-        "https://media-exp1.licdn.com/dms/image/C5603AQGKgIpGqB8gqw/profile-displayphoto-shrink_100_100/0/1545327570046?e=1639612800&v=beta&t=iWr34qsMc-qfNWvSlZcNPmMWJEm3UmVpaUQ69-KRbkw",
+      img: `${Jadon}`,
       icon: 
         "https://cdn.freelogovectors.net/wp-content/uploads/2018/03/deltek_logo.png",
       alt:
@@ -34,17 +35,6 @@ export default function Testimonial() {
         `"I had the pleasure of working with Brandon for almost 2 years. Brandon was consistently one of the most prepared and introspective professionals I've worked with. His organization allowed him to be prepared for nearly any situation that popped up in the day-to-day and he went the extra mile to understand prospects and their unique situations. Brandon is always looking to improve himself with personal development and ways to improve things internally and that spirit lifted others up as well. He truly cares and puts pride in his work doing all of the little things that make a huge difference at the end of the day. He would be a fantastic asset to anyone's team both personally and professionally."`,
       // featured: true,
     },
-    // {
-    //   id:2,
-    //   name: "Aron Yessik",
-    //   title: "Carpenter",
-    //   img: 
-    //     "https://www.stlukesonline.org/~/media/stlukes/provider%20images/fearday-aaron-hs.jpg",
-    //   icon: 
-    //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfYYjpR9PSe6HzwooCkC50psOk0UZwnUFwDt1_39ZuK5a3oVIMi8_k6asdmPG4rQ2NNU&usqp=CAU",
-    //   desc: 
-    //     "lorem ipsum  for the win of course if they didnt want that it would fall apart and this wouldnt be the best example."
-    // }
   ]
 
   return (
@@ -60,18 +50,40 @@ export default function Testimonial() {
       <h1>Testimonials<span>.</span></h1>
       <div className="container">
         {reviews.map((r) => (
-          <div className={r.featured ? "card featured" : "card"}>
-          <div className="top">
-            <img src={r.img} className="user" alt={r.alt}/>
-            <img  src={r.icon} className="right"/>
-          </div>
-          <p>{r.relation}</p>
-          <div className="center"> {r.desc}</div>
-          <div className="bottom">
-            <h3>{r.name}</h3>
-            <h5>Current: {r.title}</h5>
-          </div>
-        </div>
+          // <div className={r.featured ? "card featured" : "card"}>
+
+          //   <div className="top">
+          //     <img src={r.img} className="user" alt={r.alt}/>
+          //     <img  src={r.icon} alt="" className="right"/>
+          //   </div>
+          //   <p>{r.relation}</p>
+          //   <div className="center"> {r.desc}</div>
+          //   <div className="bottom">
+          //     <h3>{r.name}</h3>
+          //     <h5>Current: {r.title}</h5>
+          //   </div>
+          // </div>
+
+          <Card style={{ 
+            width: '22rem',
+            height: `95%`,
+            borderRadius: `10%`,
+            padding: `10px 10px 5px 10px`,
+            margin: `10px 10px 0px 10px`,
+          }}>
+          <Card.Img variant="top" src={r.img} alt={r.alt} styles={{
+            borderRadius: `60%`
+          }}/>
+          <Card.Body>
+            <Card.Text>
+              {r.desc}
+            </Card.Text>
+            <Card.Title>{r.name}</Card.Title>
+            <Card.Text>
+              Current:<br/> {r.title}
+            </Card.Text>
+          </Card.Body>
+        </Card>
       ))}
       </div>
       

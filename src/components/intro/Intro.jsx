@@ -62,6 +62,8 @@ export default function Intro() {
                 }}
                 >
                   <Image src={Placeholder} fluid alt="Profile Picture"></Image>
+                  {/* <img src={Placeholder} fluid alt="Profile"></img> */}
+
               </div>
             </div>
           </Col>

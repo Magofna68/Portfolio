@@ -30,133 +30,133 @@
       display: grid;
     }
 
-    .card {
-      width: 300px;
-      margin: 0 1% 0 1%;
-      height: 80%;
-      border-radius: 10px;
-      box-shadow: 0px 0px 15px -8px white;
-      display: flex;
-      background-color: rgb(255, 255, 255);
-      overflow: visible;
-      scroll-behavior: none;
-      flex-direction: column;
-      justify-content: space-around;
-      padding: 20px 20px 20px 20px;
-      transition: all 0.5s ease;
+    // .card {
+    //   width: 300px;
+    //   margin: 0 1% 0 1%;
+    //   height: 80%;
+    //   border-radius: 10px;
+    //   box-shadow: 0px 0px 15px -8px white;
+    //   display: flex;
+    //   background-color: rgb(255, 255, 255);
+    //   overflow: visible;
+    //   scroll-behavior: none;
+    //   flex-direction: column;
+    //   justify-content: space-around;
+    //   padding: 20px 20px 20px 20px;
+    //   transition: all 0.5s ease;
 
-      @include mobile {
-        height: 95%;
-        width: 92%;
-        padding: 5px;
-        margin: 0% 2% 0 2%;
-      }
+    //   @include mobile {
+    //     height: 95%;
+    //     width: 92%;
+    //     padding: 5px;
+    //     margin: 0% 2% 0 2%;
+    //   }
 
-      p {
-        font-size: 10px;
-        text-align: right;
-        margin: -17% 0 8% 0;
-        padding: 0% 0 3% 10%;
-        font-weight: 500;
+    //   p {
+    //     font-size: 10px;
+    //     text-align: right;
+    //     margin: -17% 0 8% 0;
+    //     padding: 0% 0 3% 10%;
+    //     font-weight: 500;
 
-        @include mobile {
-          margin: -10% 8% 0 0;
-        }
-      }
+    //     @include mobile {
+    //       margin: -10% 8% 0 0;
+    //     }
+    //   }
 
-      &.featured {
-        width: 400px;
-        height: 75%;
-      }
+    //   &.featured {
+    //     width: 400px;
+    //     height: 75%;
+    //   }
 
-      &:hover {
-        transform: scale(1.05);
-      }
+    //   &:hover {
+    //     transform: scale(1.05);
+    //   }
 
-      .top {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: 0 0 20px 0;
-        border-radius: 5%;
-        align-content: center;
-        align-items: center;
-        overflow: visible;
-        scroll-behavior: none;
+    //   .top {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     width: 100%;
+    //     margin: 0 0 20px 0;
+    //     border-radius: 5%;
+    //     align-content: center;
+    //     align-items: center;
+    //     overflow: visible;
+    //     scroll-behavior: none;
 
-        @include mobile {
-          margin: 8px 10px 20px 0;
-        }
+    //     @include mobile {
+    //       margin: 8px 10px 20px 0;
+    //     }
 
-        img {
-          &.left,
-          &.right {
-            height: 40px;
-            margin: 0 15px 0 0;
+    //     img {
+    //       &.left,
+    //       &.right {
+    //         height: 40px;
+    //         margin: 0 15px 0 0;
 
-            @include mobile {
-              height: 40px;
-              margin: 0 50px 0 0;
-            }
-          }
-          &.user {
-            height: 100px;
-            width: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            padding: 3px;
-            margin: -3px 30px;
-            border: solid;
-            border-color: goldenrod;
+    //         @include mobile {
+    //           height: 40px;
+    //           margin: 0 50px 0 0;
+    //         }
+    //       }
+    //       &.user {
+    //         height: 100px;
+    //         width: 100px;
+    //         border-radius: 50%;
+    //         object-fit: cover;
+    //         padding: 3px;
+    //         margin: -3px 30px;
+    //         border: solid;
+    //         border-color: goldenrod;
 
-            @include mobile {
-              height: 70px;
-              width: 70px;
-              margin: 0 30px 0 0;
-            }
-          }
-        }
-      }
+    //         @include mobile {
+    //           height: 70px;
+    //           width: 70px;
+    //           margin: 0 30px 0 0;
+    //         }
+    //       }
+    //     }
+    //   }
 
-      .center {
-        margin: 5px;
-        padding: 10px;
-        border-radius: 10px;
-        background-color: rgb(233, 230, 230);
+    //   .center {
+    //     margin: 5px;
+    //     padding: 10px;
+    //     border-radius: 10px;
+    //     background-color: rgb(233, 230, 230);
 
-        @include mobile {
-          margin: 3%;
-          padding-bottom: 10%;
-          overflow: visible;
-        }
-      }
+    //     @include mobile {
+    //       margin: 3%;
+    //       padding-bottom: 10%;
+    //       overflow: visible;
+    //     }
+    //   }
 
-      .bottom {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0 0 10px 0;
-        overflow: visible;
-        scroll-behavior: none;
+    //   .bottom {
+    //     align-items: center;
+    //     display: flex;
+    //     justify-content: center;
+    //     flex-direction: column;
+    //     padding: 0 0 10px 0;
+    //     overflow: visible;
+    //     scroll-behavior: none;
 
-        h3 {
-          align-content: start;
-          margin: 10px 0 0 0;
-          padding: 5px 0 0px 0;
-          overflow: visible;
-          scroll-behavior: none;
-          display: block;
-        }
+    //     h3 {
+    //       align-content: start;
+    //       margin: 10px 0 0 0;
+    //       padding: 5px 0 0px 0;
+    //       overflow: visible;
+    //       scroll-behavior: none;
+    //       display: block;
+    //     }
 
-        h5 {
-          padding: 0px 0 0px 0;
-          color: rgb(136, 128, 128);
-          overflow: visible;
-          scroll-behavior: none;
-        }
-      }
-    }
+    //     h5 {
+    //       padding: 0px 0 0px 0;
+    //       color: rgb(136, 128, 128);
+    //       overflow: visible;
+    //       scroll-behavior: none;
+    //     }
+    //   }
+    // }
   }
 }
