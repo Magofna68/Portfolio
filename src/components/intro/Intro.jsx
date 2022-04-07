@@ -52,9 +52,6 @@ export default function Intro() {
                 id="imgContain"
                 style={{
                 opacity: '90%',
-                // maxWidth: `350`,
-                // maxHeight: `300`,
-                // minWidth: `200`,
                 borderRadius: `30px`,
                 border: `solid`,
                 borderColor: `white`,
@@ -85,62 +82,6 @@ export default function Intro() {
             </div>
           </Col>
           </Row>
-        {/* <Row>
-          <Col xs={12} s={12} m={6}> */}
-            {/* <div id="mobileSocial">
-              <a 
-                target="_blank" 
-                href="https://www.facebook.com/brandon.magofna.5"
-                rel="noreferrer">
-                <FacebookIcon 
-                  fontSize="large"
-                  direction="row"
-                  justifyContent="center"
-                  alignItems="center"
-                />
-              </a>
-              <a 
-                target="_blank" 
-                href="https://www.instagram.com/bmagofna68/"
-                id="iconTest"
-                rel="noreferrer">
-                <InstagramIcon 
-                  fontSize="large"
-                  direction="row"
-                  justifyContent="center"
-                  alignItems="center"
-                />
-              </a>
-              <a 
-                target="_blank" 
-                href="https://github.com/Magofna68"
-                rel="noreferrer">
-                <GitHubIcon
-                  fontSize="large"
-                  direction="row"
-                  justifyContent="center"
-                  alignItems="center"
-                />
-              </a>
-            </div> */}
-          {/* </Col> */}
-          {/* <br/><br/><br/>
-          <Col xs={12} s={12} lg={4} xl={4} id="containerMobile">
-            <div id="introText">
-              <h2>Hi There,</h2>
-              <h1><span id="smallText">I'm</span> Brandon Magofna.</h1>
-              <h3><span id="iType" ref={textRef}></span></h3>
-            </div>
-            <div id="arrowDesk">
-              <a href="#aboutMe">
-                <DoubleArrowIcon className="downLG" />
-              </a>
-            </div>
-            <a href="#aboutMe" id="arrowContain">
-              <DoubleArrowIcon className="downIcon" />
-            </a>
-          </Col> */}
-        {/* </Row> */}
       </Container>
       <div id="mobileSocial">
         <a 
