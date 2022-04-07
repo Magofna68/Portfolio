@@ -62,6 +62,7 @@ export default function Intro() {
                 }}
                 >
                   <Image src={Placeholder} fluid alt="Profile Picture"></Image>
+                  <p>hello bitch</p>
                   {/* <img src={Placeholder} fluid alt="Profile"></img> */}
 
               </div>
