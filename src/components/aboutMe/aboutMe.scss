@@ -17,7 +17,7 @@
     padding: 5px 5px;
     border-radius: 10px;
     color: white;
-    opacity: 100%;
+    // opacity: 100%;
   }
 
   #title{
@@ -43,7 +43,7 @@
     p{
       font-size: small;
       background-color: white;
-      opacity: 80%;
+      // opacity: 80%;
       border-radius: 10px;
   
       @media (max-width: $ipadMini) {
