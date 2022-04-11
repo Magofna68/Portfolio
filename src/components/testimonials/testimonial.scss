@@ -30,21 +30,49 @@
       display: grid;
     }
 
-    // .card {
-    //   width: 300px;
-    //   margin: 0 1% 0 1%;
-    //   height: 80%;
-    //   border-radius: 10px;
-    //   box-shadow: 0px 0px 15px -8px white;
-    //   display: flex;
-    //   background-color: rgb(255, 255, 255);
-    //   overflow: visible;
-    //   scroll-behavior: none;
-    //   flex-direction: column;
-    //   justify-content: space-around;
-    //   padding: 20px 20px 20px 20px;
-    //   transition: all 0.5s ease;
+    .card {
+      width: 300px;
+      max-width: 300px;
+      margin: 0 1% 0 1%;
+      height: 95%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px -8px white;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      // overflow: visible;
+      scroll-behavior: none;
+      flex-direction: column;
+      justify-content: center;
+      // padding: 20px 20px 20px 20px;
+      transition: all 0.5s ease;
 
+      .cardImg{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      p.card-text{
+        font-size: 10px;
+        background-color: rgb(242, 234, 234);
+        padding: 3px;
+        border-radius: 10px;
+      }
+
+      .card-body{
+        height: 60%;
+      }
+
+      // img.card-img-top{
+      //   border-radius: 10%;
+      //   width: 150px;
+      //   max-width: 100px;
+      //   height: 150px;
+      // }
+    }
     //   @include mobile {
     //     height: 95%;
     //     width: 92%;

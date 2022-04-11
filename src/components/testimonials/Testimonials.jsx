@@ -2,6 +2,11 @@ import "./testimonial.scss";
 import Levi from "../../assets/LeviProfilePic.jpeg";
 import Jadon from "../../assets/JadonProfilePic.jpeg";
 import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
 
 export default function Testimonial() {
 
@@ -48,7 +53,8 @@ export default function Testimonial() {
       backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
     }}>
       <h1>Testimonials<span>.</span></h1>
-      <div className="container">
+      {/* <div className="container"> */}
+      <Container>
         {reviews.map((r) => (
           // <div className={r.featured ? "card featured" : "card"}>
 
@@ -64,16 +70,21 @@ export default function Testimonial() {
           //   </div>
           // </div>
 
-          <Card style={{ 
-            width: '22rem',
-            height: `95%`,
-            borderRadius: `10%`,
-            padding: `10px 10px 5px 10px`,
-            margin: `10px 10px 0px 10px`,
-          }}>
-          <Card.Img variant="top" src={r.img} alt={r.alt} styles={{
-            borderRadius: `60%`
-          }}/>
+          <Card>
+          <Row>
+            <Col>
+              <Card.Img 
+                variant="top" 
+                src={r.img} 
+                alt={r.alt}
+                className="cardImg"
+              />
+            </Col>
+            <Col>
+              <Card.Img
+              />
+            </Col>
+          </Row>
           <Card.Body>
             <Card.Text>
               {r.desc}
@@ -85,7 +96,8 @@ export default function Testimonial() {
           </Card.Body>
         </Card>
       ))}
-      </div>
+      </Container>
+      {/* </div> */}
       
     </div>
   )
