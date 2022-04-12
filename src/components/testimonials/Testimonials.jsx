@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ListGroup from 'react-bootstrap/ListGroup'
 
 
 
@@ -15,7 +16,7 @@ export default function Testimonial() {
     {
       id:0,
       name: "Levi Kohler",
-      title: "Solutions Engineer @ Submittable",
+      title: "Solutions Engineer",
       relation:
         "Colleague at Deltek",
       img: `${Levi}`,
@@ -47,29 +48,14 @@ export default function Testimonial() {
     className="testimonial" 
     id="testimonial"
     style={{
-      // opacity: `90%`,
       backgroundSize: `cover`,
       repeat: `no-repeat`,
       backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
     }}>
       <h1>Testimonials<span>.</span></h1>
-      {/* <div className="container"> */}
       <Container>
         {reviews.map((r) => (
           // <div className={r.featured ? "card featured" : "card"}>
-
-          //   <div className="top">
-          //     <img src={r.img} className="user" alt={r.alt}/>
-          //     <img  src={r.icon} alt="" className="right"/>
-          //   </div>
-          //   <p>{r.relation}</p>
-          //   <div className="center"> {r.desc}</div>
-          //   <div className="bottom">
-          //     <h3>{r.name}</h3>
-          //     <h5>Current: {r.title}</h5>
-          //   </div>
-          // </div>
-
           <Card>
             <Row>
               <Col>
@@ -91,21 +77,17 @@ export default function Testimonial() {
           <Card.Body>
             <Row>
             <Col>
-              <Card.Text>
+              <Card.Text id="cardText">
                 {r.desc}
               </Card.Text>
               </Col>
             </Row>
           </Card.Body>
           <Card.Title>{r.name}</Card.Title>
-          <h8>Current Role:</h8>
-          <p styles={{fontSize: ` 5px`}}>{r.title}</p>
-          {/* <p className="bottomText"><span id="current">Current Role:<br/></span>{r.title}</p> */}
+          <Card.Footer className="text-muted" id="cardTitle">{r.title}</Card.Footer>
         </Card>
       ))}
-      </Container>
-      {/* </div> */}
-      
+      </Container>      
     </div>
   )
 }

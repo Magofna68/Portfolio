@@ -40,21 +40,38 @@
       box-shadow: 0px 0px 15px -8px rgb(193, 45, 45);
       display: flex;
       background-color: rgb(245, 239, 239);
-      // scroll-behavior: none;
       justify-content: center;
       align-items: center;
-      transition: all 0.5s ease;
+      transition: all 1s;
+      // transition-delay: 0.5s;
+
+      &:hover {
+        transform: scale(1.05);
+        border: 3px solid;
+        border-color: goldenrod;
+        
+        .cardImg{
+          border: solid 2px;
+          border-color: gold;
+          transform: rotate(360deg);
+          
+        }
+      }
+
+      // &.featured {
+      //   width: 38%;
+      //   height: 75%;
+      // }
 
       .cardImg{
         border-radius: 50%;
         width: 100px;
         height: 100px;
         display: flex;
-        border: solid 2px;
-        border-color: gold;
         margin-left: 10%;
         margin: 0 0 1% 10%;
-      }
+        transition-delay: 0.5s ease;
+        }
 
       .iconContain{
         display: flex;
@@ -68,13 +85,12 @@
         }
       }
       .card-body{
-        // display: flex;
         height: 50%;
         padding: 5px 10px 0px 10px;
         justify-content: flex-start;
         align-items: center;
 
-        p.card-text{
+        p.card-text#cardText{
           display: flex;
           font-size: 11px;
           background-color: rgb(238, 230, 230);
@@ -82,149 +98,25 @@
           border-radius: 10px;
           margin-bottom: 2%;
         }
-
-        .card-title.h5{
-          // display: flex;
-          text-align: center;
-        }
-
-        span#current{
-          // display: flex;
+        
+        p.bottomText{
+          bottom: 3%;
           font-size: 10px;
-          font-weight: 500;
           text-align: center;
+          font-weight: 300;
+          margin-bottom: 2%;
         }
-
-      p.bottomText{
-        // position: bottom;
-        bottom: 3%;
-        // display: flex;
-        font-size: 10px;
-        text-align: center;
-        font-weight: 300;
-        margin-bottom: 2%;
       }
 
-      // img.card-img-top{
-      //   border-radius: 10%;
-      //   width: 150px;
-      //   max-width: 100px;
-      //   height: 150px;
-      // }
-    }
-    //   @include mobile {
-    //     height: 95%;
-    //     width: 92%;
-    //     padding: 5px;
-    //     margin: 0% 2% 0 2%;
-    //   }
+      .card-title.h5{
+        margin-top: 10px;
+      }
 
-    //   p {
-    //     font-size: 10px;
-    //     text-align: right;
-    //     margin: -17% 0 8% 0;
-    //     padding: 0% 0 3% 10%;
-    //     font-weight: 500;
-
-    //     @include mobile {
-    //       margin: -10% 8% 0 0;
-    //     }
-    //   }
-
-    //   &.featured {
-    //     width: 400px;
-    //     height: 75%;
-    //   }
-
-    //   &:hover {
-    //     transform: scale(1.05);
-    //   }
-
-    //   .top {
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     width: 100%;
-    //     margin: 0 0 20px 0;
-    //     border-radius: 5%;
-    //     align-content: center;
-    //     align-items: center;
-    //     overflow: visible;
-    //     scroll-behavior: none;
-
-    //     @include mobile {
-    //       margin: 8px 10px 20px 0;
-    //     }
-
-    //     img {
-    //       &.left,
-    //       &.right {
-    //         height: 40px;
-    //         margin: 0 15px 0 0;
-
-    //         @include mobile {
-    //           height: 40px;
-    //           margin: 0 50px 0 0;
-    //         }
-    //       }
-    //       &.user {
-    //         height: 100px;
-    //         width: 100px;
-    //         border-radius: 50%;
-    //         object-fit: cover;
-    //         padding: 3px;
-    //         margin: -3px 30px;
-    //         border: solid;
-    //         border-color: goldenrod;
-
-    //         @include mobile {
-    //           height: 70px;
-    //           width: 70px;
-    //           margin: 0 30px 0 0;
-    //         }
-    //       }
-    //     }
-    //   }
-
-    //   .center {
-    //     margin: 5px;
-    //     padding: 10px;
-    //     border-radius: 10px;
-    //     background-color: rgb(233, 230, 230);
-
-    //     @include mobile {
-    //       margin: 3%;
-    //       padding-bottom: 10%;
-    //       overflow: visible;
-    //     }
-    //   }
-
-    //   .bottom {
-    //     align-items: center;
-    //     display: flex;
-    //     justify-content: center;
-    //     flex-direction: column;
-    //     padding: 0 0 10px 0;
-    //     overflow: visible;
-    //     scroll-behavior: none;
-
-    //     h3 {
-    //       align-content: start;
-    //       margin: 10px 0 0 0;
-    //       padding: 5px 0 0px 0;
-    //       overflow: visible;
-    //       scroll-behavior: none;
-    //       display: block;
-    //     }
-
-    //     h5 {
-    //       padding: 0px 0 0px 0;
-    //       color: rgb(136, 128, 128);
-    //       overflow: visible;
-    //       scroll-behavior: none;
-    //     }
-    //   }
-    // }
+      #cardTitle.text-muted.card-footer{
+          text-align: center;
+          width: 100%;
+          
+      }
     }
   }
 }
