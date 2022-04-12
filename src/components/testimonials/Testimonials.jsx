@@ -1,6 +1,7 @@
 import "./testimonial.scss";
 import Levi from "../../assets/LeviProfilePic.jpeg";
 import Jadon from "../../assets/JadonProfilePic.jpeg";
+import Deltek from "../../assets/Deltek.png";
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -14,14 +15,14 @@ export default function Testimonial() {
     {
       id:0,
       name: "Levi Kohler",
-      title: "Junior Developer",
+      title: "Solutions Engineer @ Submittable",
       relation:
         "Colleague at Deltek",
       img: `${Levi}`,
       icon: 
         "https://images.squarespace-cdn.com/content/v1/5524448ee4b0d6f6b83ab9e2/1473199586097-9Q0FQMMH0NGMKY0LVZ60/epicodus-logo-300.png",
       alt:
-        "Deltek",
+        "Epicodus",
       desc: 
         `"Brandon is the most organized SDR I have ever worked with, and it shows with the results he got during our time at Deltek together. If there was any objection I hadn't heard from a prospect I knew Brandon would have some record of how to best handle it and shoot for the opportunity. Listening to Brandon make calls was a work of art, I've never seen an SDR who has a great plan going into every call. Inevitably we all have calls where we are unprepared or get surprised by something on the account, but never Brandon. He joined the team over a year after me, but I couldn't be happier because within just a few short months he had already taught me things that had never even crossed my mind. He is an avid learner who is constantly trying the newest strategies from whatever book he happens to be reading at the time, and he is always more than willing to share that information with the rest of the team. I couldn't look back on our time together more fondly, and I know wherever his career opportunities lead him he will use that same intrinsic drive and thirst for knowledge to find success."`
     },
@@ -32,8 +33,7 @@ export default function Testimonial() {
       relation:
         "Colleague at Deltek",
       img: `${Jadon}`,
-      icon: 
-        "https://cdn.freelogovectors.net/wp-content/uploads/2018/03/deltek_logo.png",
+      icon: `${Deltek}`,
       alt:
         "Deltek",
       desc: 
@@ -71,29 +71,36 @@ export default function Testimonial() {
           // </div>
 
           <Card>
-          <Row>
-            <Col>
-              <Card.Img 
-                variant="top" 
-                src={r.img} 
-                alt={r.alt}
-                className="cardImg"
-              />
-            </Col>
-            <Col>
-              <Card.Img
-              />
-            </Col>
-          </Row>
+            <Row>
+              <Col>
+                <Card.Img 
+                  variant="top" 
+                  src={r.img} 
+                  className="cardImg"
+                  />
+              </Col>
+              <Col className="iconContain">
+                <Card.Img
+                  variant="top"
+                  src={r.icon}
+                  alt={r.alt}
+                  className="cardIcon"
+                />
+              </Col>
+            </Row>
           <Card.Body>
-            <Card.Text>
-              {r.desc}
-            </Card.Text>
-            <Card.Title>{r.name}</Card.Title>
-            <Card.Text>
-              Current:<br/> {r.title}
-            </Card.Text>
+            <Row>
+            <Col>
+              <Card.Text>
+                {r.desc}
+              </Card.Text>
+              </Col>
+            </Row>
           </Card.Body>
+          <Card.Title>{r.name}</Card.Title>
+          <h8>Current Role:</h8>
+          <p styles={{fontSize: ` 5px`}}>{r.title}</p>
+          {/* <p className="bottomText"><span id="current">Current Role:<br/></span>{r.title}</p> */}
         </Card>
       ))}
       </Container>
