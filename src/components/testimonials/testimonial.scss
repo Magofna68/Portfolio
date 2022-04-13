@@ -31,7 +31,7 @@
     }
 
     .card {
-      width: 35%;
+      // width: 35%;
       max-width: 300px;
       padding: 1% 0%;
       height: 95%;
@@ -43,7 +43,6 @@
       justify-content: center;
       align-items: center;
       transition: all 1s;
-      // transition-delay: 0.5s;
 
       &:hover {
         transform: scale(1.05);
@@ -73,6 +72,12 @@
         margin-left: 10%;
         margin: 0 0 1% 10%;
         transition-delay: 0.5s ease;
+
+        @include mobile{
+          width: 90px;
+          height: 90px;
+          scroll-behavior: none;
+        }
         }
 
       .iconContain{
@@ -112,12 +117,15 @@
 
       .card-title.h5{
         margin-top: 10px;
+
+        @include mobile{
+          margin-top: 5px;
+        }
       }
 
       #cardTitle.text-muted.card-footer{
           text-align: center;
           width: 100%;
-          
       }
     }
   }

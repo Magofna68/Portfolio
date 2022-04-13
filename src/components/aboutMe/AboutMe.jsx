@@ -17,11 +17,11 @@ export default function AboutMe() {
         <Row>
           <Col md={2} lg={2}>
             <div id="title">
-              <h1>
+              <h2>
                 <span style={{ color: `grey`, padding: `0% 0 0 0` }}><br/>
                   About </span>Brandon
                 <span style={{ color: `grey`, }}>.</span><br/>
-              </h1>
+              </h2>
             </div>
           </Col>
           <br/>
@@ -53,18 +53,12 @@ export default function AboutMe() {
               alternative perspectives and methodologies while overcoming challenges.
             </p>
             <p className='grayBackground'>
-              {/* <strong> */}
-                While he doesn't boast to have the most experience writing
+              While he doesn't boast to have the most experience writing
               code, Brandon is confident in leveraging his abilities as a 
-              self-starter to learn and fulfill all communicated objectives, 
-              while maintaining best practices along the way. Brandon is focused
-              on strengthening his coding abilities by working on side projects 
-              and is currently listed as an individual contributor for VALIDATE, 
-              a marketing and data analysis React web application that was nearly 
-              ready for Beta launch.
-              {/* </strong> */}
+              self-starter; to learn and fulfill all communicated objectives 
+              while maintaining best practices along the way. After his internship at VALIDATE, 
+              Brandon is focusing on side projects, mastering new tools, and learning new tech stacks. 
             </p>
-          {/* </Container> */}
           </Col>
         </Row>
         <Container fluid>

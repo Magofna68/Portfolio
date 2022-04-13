@@ -82,14 +82,10 @@ export default function Portfolio() {
                 variant="top"
                 src={d.img}
                 alt={d.alt} 
-                // style={{
-                //   height: `150px`
-                // }}
                 />
               <Card.Body>
                 <Card.Title>{d.title}</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{d.subtitle}</Card.Subtitle>
-                {/* <Card.Text>{d.text}</Card.Text> */}
                 <a href={d.link} rel="noreferrer" target="_blank"><Button vaiant="danger">View Project</Button></a>
                 <a href={d.link2} rel="noreferrer" target="_blank"><Button variant="success">View Code</Button></a>
               </Card.Body>
