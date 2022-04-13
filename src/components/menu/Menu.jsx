@@ -13,20 +13,6 @@ export default function Menu({ menuOpen, setMenuOpen }) {
     }}>
       <ul>
         <li onClick={() => setMenuOpen(false)}>
-          <a 
-            target="_blank" 
-            href="https://github.com/Magofna68"
-            rel="noreferrer"
-          >
-            <GitHubIcon
-              fontSize="large"
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-            />
-          </a>
-        </li>
-        <li onClick={() => setMenuOpen(false)}>
           <a href="#intro">Home</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
@@ -49,6 +35,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
             href="https://www.facebook.com/brandon.magofna.5"
             rel="noreferrer"
             target="_blank" 
+            className="topbarIcon"
           >
           <FacebookIcon 
                 fontSize="large"
@@ -62,6 +49,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
             href="https://www.instagram.com/bmagofna68/"
             id="iconTest"
             rel="noreferrer"
+            className="topbarIcon"
           >
             <InstagramIcon 
               fontSize="large"
@@ -70,6 +58,21 @@ export default function Menu({ menuOpen, setMenuOpen }) {
               alignItems="center"
           />
           </a>
+          <a 
+            target="_blank" 
+            href="https://github.com/Magofna68"
+            rel="noreferrer"
+            className="topbarIcon"
+          >
+            <GitHubIcon
+              fontSize="large"
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+            />
+          </a>
+        </li>
+        <li onClick={() => setMenuOpen(false)}>
         </li>
       </ul>
     </div>
