@@ -137,7 +137,8 @@
       text-align: center;
       justify-content: center;
       align-items: center;
-      scroll-behavior: none;  
+      scroll-behavior: none;
+      transition: 1s ease; 
 
       @media (max-width: $galaxy) {
         width: 100%;
@@ -163,8 +164,6 @@
           width: 55%;
         }
       }
-
-
 
       a{
         

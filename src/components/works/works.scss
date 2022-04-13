@@ -62,7 +62,9 @@
       .item {
         border-radius: 3%;
         height: 90%;
-        width: 700px;
+        // width: 700px;
+        max-width: 700px;
+        width: 70%;
         background-color: rgb(175, 175, 175);
         display: flex;
         align-items: center;
@@ -70,57 +72,77 @@
         border: solid;
         border-color: grey;
         box-shadow: 4px 5px black;
+        padding: 0% 2% 0 10px;
 
         @include mobile {
           height: 67%;
           width: 90%;
         }
 
-        .left {
-          flex: 4;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: rgb(66, 65, 65);
+        // .left {
+        //   flex: 4;
+        //   height: 100%;
+        //   display: flex;
+        //   align-items: center;
+        //   justify-content: center;
+        //   color: rgb(66, 65, 65);
 
-          @include mobile {
-            flex: none;
-            height: 20%;
-            width: 35%;
-            position: absolute;
-            height: 150px;
-            left: 0px;
-            top: 10px;
-          }
+        //   @include mobile {
+        //     flex: none;
+        //     height: 20%;
+        //     width: 35%;
+        //     position: absolute;
+        //     height: 150px;
+        //     left: 0px;
+        //     top: 10px;
+        //   }
 
-          .leftContainer {
-            width: 90%;
-            height: 90%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+          .worksLogo{
+            justify-content: center;
+            align-items: center;
+            // display: block;
+            text-align: center;
+            height: 50%;
+            width: 100%;
+            padding-top: 8%;
 
-            @include mobile {
-              margin: 0 15% 0 0;
-              top: 10%;
-              align-items: center;
-              text-align: center;
+            a{
+              font-size: smaller;
             }
+          
+          // .leftContainer {
+          //   width: 90%;
+          //   height: 90%;
+          //   display: flex;
+          //   flex-direction: column;
+          //   justify-content: space-between;
+
+          //   @include mobile {
+          //     margin: 0 15% 0 0;
+          //     top: 10%;
+          //     align-items: center;
+          //     text-align: center;
+          //   }
 
             .iconContainer {
-              width: 30%;
-              height: 25%;
-              border-radius: 25%;
-              background-color: black;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              margin: 0 0 0 33%;
-              border-color: white;
-              border: solid;
-              overflow: hidden;
-              scroll-behavior: none;
+              width: 75px;
+              max-width: 100%;  
+              vertical-align: top;
+              // display: flex;
+              margin: auto;
+              border-radius: 20px;
+              // width: 30%;
+              // height: 25%;
+              // border-radius: 25%;
+              // background-color: black;
+              // display: flex;
+              // align-items: center;
+              // justify-content: center;
+              // margin: 0 0 0 33%;
+              // border-color: white;
+              // border: solid;
+              // overflow: hidden;
+              // scroll-behavior: none;
 
               @include mobile {
                 width: 60%;
@@ -128,18 +150,25 @@
                 margin: 0% 0 0% 15%;
               }
 
-              .img {
-                width: 35px;
-              }
+            }
+
+            // p{
+              //   font-size: 10px;
+              // }
+              
+              // .img {
+              //   width: 35px;
+              // }
             }
             h2 {
               font-size: 20px;
               color: white;
-              padding: 0px 0 25px 15px;
+              // padding: 0px 0 25px 15px;
               overflow: visible;
-              align-content: center;
-              justify-content: center;
-              align-items: center;
+              margin: 3% 0 0 0;
+              // align-content: center;
+              // justify-content: center;
+              // align-items: center;
 
               @include mobile {
                 margin: 0px 0 0 15px;
@@ -148,6 +177,7 @@
               }
             }
 
+            
             .descText {
               font-size: 14px;
               font-weight: 500;
@@ -156,7 +186,7 @@
               overflow: visible;
               border-top: double;
               border-color: white;
-
+              
               @include mobile {
                 width: 300px;
                 overflow: visible;
@@ -173,28 +203,70 @@
               margin: 10px 0 5px 0;
               overflow: visible;
             }
+            
+            // ul {
+            //   overflow: visible;
+            //   li {
+            //     align-self: start;
+            //     margin: 0 0 0 0;
+            //     color: black;
+            //     font-size: 12px;
+            //     align-content: center;
+            //     justify-content: center;
+            //     align-items: center;
+            //     overflow: visible;
+                
+            //     @include mobile {
+            //     }
+                // }
+              // }
+            // }
+          // }
+          .textContainer{
+            margin-top: 5%;
+            align-content: baseline;
+            text-align: baseline;
+            justify-content: center;
+            // display: flex;
+            position: relative;
+            height: 40%;
+            // position: absolute;
+            // bottom: 2%;
 
-            ul {
-              overflow: visible;
-              li {
-                align-self: start;
-                margin: 0 0 0 0;
-                color: black;
-                font-size: 12px;
-                align-content: center;
-                justify-content: center;
-                align-items: center;
-                overflow: visible;
+            #cardDesc{
+              display: flex;
+              font-size: 12px;
+              // position: absolute;
+              // bottom: 2%;
+            }
+          }
+          .worksImages {
+            max-width: 100%;
+            border-radius: 4%;
+            border: solid;
+            border-bottom: white;
+            border-color: black;
+            transition: 1.5s ease;
+            margin: 2%;
 
-                @include mobile {
-                }
+            @include mobile {
+              display: none;
+            }
+
+            &:hover {
+              transform: scale(1.05);
+            }
+
+            img {
+              width: 100%;
+              @include mobile {
+                transition: 1.5s ease;
               }
             }
           }
-        }
-        .right {
-          flex: 8;
-          height: 100%;
+          .right {
+            flex: 8;
+            height: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -215,31 +287,31 @@
             margin: 0% 0 0% 0;
           }
 
-          .worksImages {
-            width: 78%;
-            max-height: 70%;
-            border-radius: 4%;
-            border: solid;
-            border-bottom: white;
-            border-color: black;
-            transition: 1.5s ease;
-            margin: 0 0 0 1%;
+          // .worksImages {
+          //   width: 78%;
+          //   max-height: 70%;
+          //   border-radius: 4%;
+          //   border: solid;
+          //   border-bottom: white;
+          //   border-color: black;
+          //   transition: 1.5s ease;
+          //   margin: 0 0 0 1%;
 
-            @include mobile {
-              display: none;
-            }
+          //   @include mobile {
+          //     display: none;
+          //   }
 
-            &:hover {
-              transform: scale(1.25);
-            }
+          //   &:hover {
+          //     transform: scale(1.25);
+          //   }
 
-            img {
-              width: 100%;
-              @include mobile {
-                transition: 1.5s ease;
-              }
-            }
-          }
+          //   img {
+          //     width: 100%;
+          //     @include mobile {
+          //       transition: 1.5s ease;
+          //     }
+          //   }
+          // }
 
           .mobile {
             display: none;
