@@ -16,16 +16,18 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
       <div className="wrapper">
         <div className="left">
           <a 
-          href="#intro" 
-          id="logo" 
-          rel="noreferrer">
+            href="#intro" 
+            id="logo" 
+            rel="noreferrer">
             <span className="tomorrowLogo">Tomorrow</span>
-          <br/>begins today.</a>
+            <br/>begins today.
+          </a>
           <div className="socials">
             <a 
-            target="_blank" 
-            href="https://www.facebook.com/brandon.magofna.5"
-            rel="noreferrer">
+              target="_blank" 
+              href="https://www.facebook.com/brandon.magofna.5"
+              rel="noreferrer"
+            >
               <FacebookIcon 
                 fontSize="large"
                 direction="row"
@@ -34,27 +36,29 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
               />
             </a>
             <a 
-            target="_blank" 
-            href="https://www.instagram.com/bmagofna68/"
-            id="iconTest"
-            rel="noreferrer">
-                <InstagramIcon 
-                  fontSize="large"
-                  direction="row"
-                  justifyContent="center"
-                  alignItems="center"
-                />
+              target="_blank" 
+              href="https://www.instagram.com/bmagofna68/"
+              id="iconTest"
+              rel="noreferrer"
+            >
+              <InstagramIcon 
+                fontSize="large"
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+              />
             </a>
             <a 
-            target="_blank" 
-            href="https://github.com/Magofna68"
-            rel="noreferrer">
-                <GitHubIcon
-                  fontSize="large"
-                  direction="row"
-                  justifyContent="center"
-                  alignItems="center"
-                />
+              target="_blank" 
+              href="https://github.com/Magofna68"
+              rel="noreferrer"
+            >
+              <GitHubIcon
+                fontSize="large"
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+              />
             </a>
         </div>
           <div className="itemContainer">
@@ -63,7 +67,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
-            <span id="mobile">Magofna68@gmail.com </span>
+            <span id="mobile1">Magofna68@gmail.com </span>
           </div>
         </div>
         <div className="right">
