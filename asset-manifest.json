@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.cfd005f7.chunk.css",
-    "main.js": "/Portfolio/static/js/main.75f10e1c.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.75f10e1c.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.6304801e.chunk.css",
+    "main.js": "/Portfolio/static/js/main.41ecf16f.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.41ecf16f.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.261db112.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.261db112.js.map",
-    "static/js/2.dfac0f99.chunk.js": "/Portfolio/static/js/2.dfac0f99.chunk.js",
-    "static/js/2.dfac0f99.chunk.js.map": "/Portfolio/static/js/2.dfac0f99.chunk.js.map",
+    "static/js/2.2f247f0c.chunk.js": "/Portfolio/static/js/2.2f247f0c.chunk.js",
+    "static/js/2.2f247f0c.chunk.js.map": "/Portfolio/static/js/2.2f247f0c.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.cfd005f7.chunk.css.map": "/Portfolio/static/css/main.cfd005f7.chunk.css.map",
-    "static/js/2.dfac0f99.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.dfac0f99.chunk.js.LICENSE.txt",
+    "static/css/main.6304801e.chunk.css.map": "/Portfolio/static/css/main.6304801e.chunk.css.map",
+    "static/js/2.2f247f0c.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.2f247f0c.chunk.js.LICENSE.txt",
+    "static/media/Deltek.f12308b7.png": "/Portfolio/static/media/Deltek.f12308b7.png",
     "static/media/Exchanger.43c665a8.png": "/Portfolio/static/media/Exchanger.43c665a8.png",
     "static/media/JadonProfilePic.cd7f69e5.jpeg": "/Portfolio/static/media/JadonProfilePic.cd7f69e5.jpeg",
     "static/media/LeviProfilePic.4f36f861.jpeg": "/Portfolio/static/media/LeviProfilePic.4f36f861.jpeg",
@@ -17,6 +18,7 @@
     "static/media/RecipeBox.3ce3f578.png": "/Portfolio/static/media/RecipeBox.3ce3f578.png",
     "static/media/Resume.242d794b.png": "/Portfolio/static/media/Resume.242d794b.png",
     "static/media/VALIDATE.f8846713.png": "/Portfolio/static/media/VALIDATE.f8846713.png",
+    "static/media/VALIDATEIcon.59205802.png": "/Portfolio/static/media/VALIDATEIcon.59205802.png",
     "static/media/YTProject.801ad054.png": "/Portfolio/static/media/YTProject.801ad054.png",
     "static/media/capstone.394aed30.png": "/Portfolio/static/media/capstone.394aed30.png",
     "static/media/helpQue.ac498514.png": "/Portfolio/static/media/helpQue.ac498514.png",
@@ -26,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.261db112.js",
-    "static/js/2.dfac0f99.chunk.js",
-    "static/css/main.cfd005f7.chunk.css",
-    "static/js/main.75f10e1c.chunk.js"
+    "static/js/2.2f247f0c.chunk.js",
+    "static/css/main.6304801e.chunk.css",
+    "static/js/main.41ecf16f.chunk.js"
   ]
 }
