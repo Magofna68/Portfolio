@@ -7,11 +7,16 @@
   padding: 0 3% 0 3%;
   scroll-behavior: none;
   overflow: visible;
+  height: 100%;
 
   @include mobile {
     scroll-behavior: none;
+    padding: 0 1%;
   }
 
+  .container-fluid{
+    height: 100%;
+  }
   .grayBackground{
     background-color: gray;
     padding: 5px 5px;
@@ -26,7 +31,7 @@
     justify-content: center;
     text-align: left;
     height: 80%;
-    padding: 0;
+    padding: 5px 0;
     scroll-behavior: none;
 
     @media (max-width: $galaxy) {
@@ -34,7 +39,8 @@
     }
 
     @media (max-width: $phone) {
-      height: 70%;
+      // margin-top: -10%;
+      height: auto;
       scroll-behavior: none;
     }
 
@@ -43,8 +49,9 @@
     p{
       font-size: small;
       background-color: white;
-      // opacity: 80%;
       border-radius: 10px;
+      margin-top: 3%;
+      opacity: 0.7;
   
       @media (max-width: $ipadMini) {
         font-size: 12px;
@@ -52,6 +59,7 @@
   
       @media (max-width: $phone) {
         font-size: 11px;
+        // margin-bottom: 5px;
       }
       
       @media (max-width: $iphone) {
@@ -102,6 +110,7 @@
     overflow: hidden;
     border-radius: 20px;
     scroll-behavior: none;
+    margin-top: 10px;
 
     @media (max-width: $galaxy) {
       height: 150px; 
