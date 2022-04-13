@@ -65,32 +65,29 @@ export default function Works() {
         }}
       >
         {data.map((d) => (
-          // <div className="container">
           <Container>
             <div 
               className="item"
               style={{
                 transform: `rotateY(180deg)`,
                 backgroundImage: `url("https://cdn.mos.cms.futurecdn.net/gtkekaDHpknr4beyGmbtCo-1200-80.png")`,
-                backgroundSize: `100vh`,
-                backgroundAttachment: `sticky`
             }}
             >
               <Col lg={4} md={4} s={4}>
                 <Row>
-                <div className="worksLogo">
-                  <div className="iconContainer">
-                    <img src={d.icon} alt="" height="auto" width="100%" />
+                  <div className="worksLogo">
+                    <div className="iconContainer">
+                      <img src={d.icon} alt="" height="auto" width="100%" />
+                    </div>
+                    <h2>{d.title}</h2>
+                    <a target="_blank"  rel="noreferrer" href={d.link}>Check it out here</a>
                   </div>
-                  <h2>{d.title}</h2><br/>
-                  <a target="_blank"  rel="noreferrer" href={d.link}>Check it out here</a>
-                </div>
                 </Row>
                 <br/>
                 <Row>
-                <div className="textContainer">
-                  <p id="cardDesc">{d.desc}</p>
-                </div>
+                  <div className="textContainer">
+                    <p id="cardDesc">{d.desc}</p>
+                  </div>
                 </Row>
               </Col>
               <Col>
@@ -103,57 +100,29 @@ export default function Works() {
                   />
                 </div>
               </Col>
-              {/* <div className="left">
-                <div className="leftContainer">
-                  <div className="iconContainer">
-                    <img src={d.icon} alt="" />
-                  </div>
-                  <h2>{d.title}</h2>
-                  <div className="descText">
-                    <p>{d.desc}</p>
-                    <br/>
-                    <a target="_blank"  rel="noreferrer" href={d.link}>Check it out here</a>
-                  </div>
-                </div>
-              </div>
-              <div className="right">
-                <div className="worksImages">
-                  <img 
-                    src={d.img} 
-                    alt={d.alt}
-                    styles={{
-                      width: "300px"
-                    }}
-                  />
-                </div>
-                <div className="mobile">
-                  {d.desc}
-                  <br/>
+              <div className='mobileContainer'>
+                <Col>
+                  <Row>
+                    <div className='mobileImgContain'>
+                      <img 
+                        src={d.img} 
+                        alt={d.alt}
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                    <h5 id="mobileTitle">{d.title}</h5>
+                  </Row>
+                  <Row>
+                  <p id="mobileDesc">{d.desc}</p>
                   <br/>
                   <a target="_blank" rel="noreferrer" href={d.link}>Check it out here</a>
-                </div>
+                  </Row>
+                </Col>
               </div>
-              <div className="imgPreview">
-                <img 
-                  src={d.img} 
-                  alt={d.alt}
-                  style={{
-                    width: "260px",
-                    position: "absolute",
-                    bottom: "1%",
-                    right: "12%",
-                    transition: "1.5s ease",
-                    borderLeft: "solid 3px black",
-                    borderRight: "solid 3px black",
-                    borderBottom: "solid 3px",
-                    borderColor: "gray",
-                  }}
-                />
-              </div>
-              <br/> */}
+              <br/>
             </div>
             </Container>
-            // </div>
           ))}
           </div>
           <img 

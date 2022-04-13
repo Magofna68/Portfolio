@@ -62,7 +62,6 @@
       .item {
         border-radius: 3%;
         height: 90%;
-        // width: 700px;
         max-width: 700px;
         width: 70%;
         background-color: rgb(175, 175, 175);
@@ -75,100 +74,80 @@
         padding: 0% 2% 0 10px;
 
         @include mobile {
-          height: 67%;
-          width: 90%;
+          height: 74%;
         }
 
-        // .left {
-        //   flex: 4;
-        //   height: 100%;
-        //   display: flex;
-        //   align-items: center;
-        //   justify-content: center;
-        //   color: rgb(66, 65, 65);
+        .mobileContainer{
+          display: none;
 
-        //   @include mobile {
-        //     flex: none;
-        //     height: 20%;
-        //     width: 35%;
-        //     position: absolute;
-        //     height: 150px;
-        //     left: 0px;
-        //     top: 10px;
-        //   }
+          @include mobile{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          }
+
+          .mobileImgContainer{
+            display: block;
+            padding-bottom: 3%;
+            min-height: 130px;
+          }
+
+          img{
+            border-top: solid 2px;
+            border-bottom: solid 2px;
+            border-right: solid 2px;
+            border-color: black;
+            border-radius: 10px;
+            min-height: 130px;
+          }
+
+          #mobileTitle{
+            color: rgb(90, 88, 88);
+            padding-top: 5%;
+          }
+
+          #mobileDesc{
+            text-align: left;
+            font-size: 12px;
+          }
+        }
 
           .worksLogo{
             justify-content: center;
             align-items: center;
-            // display: block;
             text-align: center;
             height: 50%;
             width: 100%;
             padding-top: 8%;
 
+            @include mobile {
+              display: none;
+            }
+
             a{
               font-size: smaller;
             }
-          
-          // .leftContainer {
-          //   width: 90%;
-          //   height: 90%;
-          //   display: flex;
-          //   flex-direction: column;
-          //   justify-content: space-between;
-
-          //   @include mobile {
-          //     margin: 0 15% 0 0;
-          //     top: 10%;
-          //     align-items: center;
-          //     text-align: center;
-          //   }
 
             .iconContainer {
               width: 75px;
               max-width: 100%;  
               vertical-align: top;
-              // display: flex;
               margin: auto;
               border-radius: 20px;
-              // width: 30%;
-              // height: 25%;
-              // border-radius: 25%;
-              // background-color: black;
-              // display: flex;
-              // align-items: center;
-              // justify-content: center;
-              // margin: 0 0 0 33%;
-              // border-color: white;
-              // border: solid;
-              // overflow: hidden;
-              // scroll-behavior: none;
 
               @include mobile {
                 width: 60%;
                 height: 90%;
                 margin: 0% 0 0% 15%;
               }
-
             }
-
-            // p{
-              //   font-size: 10px;
-              // }
-              
-              // .img {
-              //   width: 35px;
-              // }
-            }
+          }
             h2 {
               font-size: 20px;
               color: white;
-              // padding: 0px 0 25px 15px;
               overflow: visible;
               margin: 3% 0 0 0;
-              // align-content: center;
-              // justify-content: center;
-              // align-items: center;
 
               @include mobile {
                 margin: 0px 0 0 15px;
@@ -203,41 +182,22 @@
               margin: 10px 0 5px 0;
               overflow: visible;
             }
-            
-            // ul {
-            //   overflow: visible;
-            //   li {
-            //     align-self: start;
-            //     margin: 0 0 0 0;
-            //     color: black;
-            //     font-size: 12px;
-            //     align-content: center;
-            //     justify-content: center;
-            //     align-items: center;
-            //     overflow: visible;
-                
-            //     @include mobile {
-            //     }
-                // }
-              // }
-            // }
-          // }
+
           .textContainer{
             margin-top: 5%;
             align-content: baseline;
             text-align: baseline;
             justify-content: center;
-            // display: flex;
             position: relative;
             height: 40%;
-            // position: absolute;
-            // bottom: 2%;
+
+            @include mobile{
+              display: none;
+            }
 
             #cardDesc{
               display: flex;
               font-size: 12px;
-              // position: absolute;
-              // bottom: 2%;
             }
           }
           .worksImages {
@@ -267,11 +227,11 @@
           .right {
             flex: 8;
             height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          overflow: hidden;
-          margin-right: 3%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-right: 3%;
 
           @include mobile {
             flex: 1;
@@ -285,76 +245,6 @@
             right: 0%;
             font-size: 14px;
             margin: 0% 0 0% 0;
-          }
-
-          // .worksImages {
-          //   width: 78%;
-          //   max-height: 70%;
-          //   border-radius: 4%;
-          //   border: solid;
-          //   border-bottom: white;
-          //   border-color: black;
-          //   transition: 1.5s ease;
-          //   margin: 0 0 0 1%;
-
-          //   @include mobile {
-          //     display: none;
-          //   }
-
-          //   &:hover {
-          //     transform: scale(1.25);
-          //   }
-
-          //   img {
-          //     width: 100%;
-          //     @include mobile {
-          //       transition: 1.5s ease;
-          //     }
-          //   }
-          // }
-
-          .mobile {
-            display: none;
-
-            @include mobile {
-              margin: 15% 0 12% 0;
-              width: 100%;
-              align-content: center;
-              display: flex;
-              flex-direction: column;
-            }
-
-            a {
-              @include mobile {
-                color: #dee2e6;
-              }
-            }
-
-            p {
-              display: none;
-
-              @include mobile {
-                display: block;
-              }
-            }
-
-            h2 {
-              display: none;
-
-              @include mobile {
-                display: block;
-              }
-            }
-          }
-        }
-        .imgPreview {
-          display: none;
-          @include mobile {
-            display: flex;
-
-            &:hover {
-              transform: scale(1.25);
-            }
           }
         }
       }
