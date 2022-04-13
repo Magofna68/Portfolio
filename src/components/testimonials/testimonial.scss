@@ -18,7 +18,7 @@
 
   .container {
     width: 90%;
-    height: 80%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -46,7 +46,7 @@
       // transition-delay: 0.5s;
 
       &:hover {
-        transform: scale(1.05);
+        transform: scale(1.01);
         border: 3px solid;
         border-color: goldenrod;
         
@@ -54,7 +54,9 @@
           border: solid 2px;
           border-color: gold;
           transform: rotate(360deg);
-          
+          transition-timing-function: ease-in-out;
+          transition-duration: 1.5s;
+
         }
       }
 
@@ -94,7 +96,7 @@
           display: flex;
           font-size: 11px;
           background-color: rgb(238, 230, 230);
-          padding: 3px;
+          padding: 5px;
           border-radius: 10px;
           margin-bottom: 2%;
         }

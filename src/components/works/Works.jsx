@@ -4,6 +4,10 @@ import Arrow from "../../assets/arrow.png";
 import Capstone from "../../assets/capstone.png";
 import Martian from '../../assets/Martian.png';
 import VALIDATE from '../../assets/VALIDATE.png';
+import VALIDATEIcon from '../../assets/VALIDATEIcon.png';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 
 
 export default function Works() {
@@ -33,7 +37,7 @@ export default function Works() {
     {
       id: "3",
       title: "VALIDATE, LLC",
-      icon: "https://media-exp1.licdn.com/dms/image/C4E0BAQGZYBwSEs2zUQ/company-logo_200_200/0/1565048189782?e=1642636800&v=beta&t=igVrMLRHrKjcCzn52VTSo3NjkbWTfxWqf9GV1HMi2cg",
+      icon: `${VALIDATEIcon}`,
       desc: "Worked collaboratively in a dev team to further develop a React-based app from Alpha stage to Beta version. Improved UI experience, tested feature branches, and submitted pull requests",
       img: `${VALIDATE}`,
       alt: "VALIDATE; from Alpha to Beta",
@@ -61,15 +65,45 @@ export default function Works() {
         }}
       >
         {data.map((d) => (
-          <div className="container">
+          // <div className="container">
+          <Container>
             <div 
               className="item"
               style={{
                 transform: `rotateY(180deg)`,
-                backgroundImage: `url("https://cdn.mos.cms.futurecdn.net/gtkekaDHpknr4beyGmbtCo-1200-80.png")`
+                backgroundImage: `url("https://cdn.mos.cms.futurecdn.net/gtkekaDHpknr4beyGmbtCo-1200-80.png")`,
+                backgroundSize: `100vh`,
+                backgroundAttachment: `sticky`
             }}
             >
-              <div className="left">
+              <Col lg={4} md={4} s={4}>
+                <Row>
+                <div className="worksLogo">
+                  <div className="iconContainer">
+                    <img src={d.icon} alt="" height="auto" width="100%" />
+                  </div>
+                  <h2>{d.title}</h2><br/>
+                  <a target="_blank"  rel="noreferrer" href={d.link}>Check it out here</a>
+                </div>
+                </Row>
+                <br/>
+                <Row>
+                <div className="textContainer">
+                  <p id="cardDesc">{d.desc}</p>
+                </div>
+                </Row>
+              </Col>
+              <Col>
+              <div className="worksImages">
+                <img 
+                    src={d.img} 
+                    alt={d.alt}
+                    width="100%"
+                    height="auto"
+                  />
+                </div>
+              </Col>
+              {/* <div className="left">
                 <div className="leftContainer">
                   <div className="iconContainer">
                     <img src={d.icon} alt="" />
@@ -116,9 +150,10 @@ export default function Works() {
                   }}
                 />
               </div>
-              <br/>
+              <br/> */}
             </div>
-            </div>
+            </Container>
+            // </div>
           ))}
           </div>
           <img 
