@@ -3,6 +3,7 @@ import "./menu.scss";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import Row from 'react-bootstrap'
 
 export default function Menu({ menuOpen, setMenuOpen }) {
   return (
@@ -39,7 +40,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           >
           <FacebookIcon 
                 fontSize="large"
-                // direction="row"
+                direction="row"
                 justifyContent="center"
                 alignItems="center"
               />
@@ -53,7 +54,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           >
             <InstagramIcon 
               fontSize="large"
-              // direction="row"
+              direction="row"
               justifyContent="center"
               alignItems="center"
           />
