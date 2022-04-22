@@ -48,7 +48,7 @@
     // margin-top: 10%;
     position: absolute;
     right: 20%;
-    bottom: 5%;
+    bottom: 10%;
 
     a{
       padding: 0 10px 0 10px;
@@ -226,7 +226,7 @@
       position: absolute;
       right: 40%;
       width: 20%;
-      bottom: 5%;
+      bottom: 8%;
       justify-content: flex-end;
       align-items: flex-end;
       display: block;
@@ -234,6 +234,7 @@
     @media (max-width: $galaxy) {
       width: 15%;
       right: 42.5%;
+      bottom: 8%;
   }
     
     @keyframes arrowBlink {

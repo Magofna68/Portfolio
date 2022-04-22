@@ -51,6 +51,14 @@
 
       .topbarIcon{
         padding-right: 15px;
+
+      }
+      .MuiSvgIcon-root{
+        fill: white; 
+        
+        &:hover{
+        fill: black;
+        }
       }
     }
   }
