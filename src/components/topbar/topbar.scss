@@ -10,30 +10,60 @@
   z-index: 3;
   transition: all 1s ease;
 
+  
   .wrapper {
-    padding: 0px 30px;
+    padding: 0px 25px 0 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    height: 70px;
+    overflow: visible;
+    
     @include mobile {
-      padding: 10px 0 0 5px;
-      width: 90%;
+      padding: 10px 10px 0 5px;
+      width: 100%;
       overflow: visible;
     }
+    
+    a#logo {
+      padding-left: 0px;
+      text-decoration: none;
+      transition: transform 2s;
 
-    .left {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      @include mobile {
-        height: 50px;
-        // width: 500px;
-        width: 90%;
-        padding-right: 20px;
-        margin: 0 0 0 0;
+      &:hover{
+      transform: scale(1.2) translateX(35%);
       }
+
+      .blackText{
+        color: black;
+        font-weight: 600;
+        font-size: 20px;
+        // transition: all 2s ease;
+  
+        // &:hover{
+        //   transform: translateX(10%);
+        // }
+      }
+    }
+
+    .topbarIcon{
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+    }
+
+
+    // .left {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+
+    //   @include mobile {
+    //     height: 50px;
+    //     // width: 500px;
+    //     width: 90%;
+    //     padding-right: 20px;
+    //     margin: 0 0 0 0;
+    //   }
 
       .socials{
         margin: 0 15px 0 0px;
@@ -44,39 +74,50 @@
       }
 
       a{
-        padding-right: 10px;
-
-      }
-
-      .logo {
-        position:fixed;
-        font-size: 40px;
-        font-weight: 700;
+        padding-left: 10px;
+        color: white;
+        transition: transform 1s;
+        overflow: visible;
         text-decoration: none;
-        color: inherit;
-        margin-right: 40px;
-      }
-
-      .tomorrowLogo{
-        font-size: 20px;
-        color: orange;
-      }
-
-      #logo {
-        font-size: 20px;
-        font-weight: 700;
-        text-decoration: none;
-        color: black;
-        margin-right: 40px;
-
-        @include mobile {
-          font-size: 20px;
-          font-weight: 400;
-          // padding-right: 30px;
-          display: none;
-          margin-right: none;
+        // transition: transform 2s;
+        
+        &:hover{
+          transform: scale(1.1);
+          
+          color: black;
         }
       }
+
+      // .logo {
+      //   position:fixed;
+      //   font-size: 40px;
+      //   font-weight: 700;
+      //   text-decoration: none;
+      //   color: inherit;
+      //   margin-right: 40px;
+      // }
+
+      // .tomorrowLogo{
+      //   font-size: 20px;
+      //   color: orange;
+      // }
+
+      // #logo {
+      //   font-size: 20px;
+      //   font-weight: 700;
+      //   text-decoration: none;
+      //   color: black;
+      //   margin-right: 40px;
+
+      //   @include mobile {
+      //     font-size: 10px;
+      //     font-weight: 400;
+      //     width: fit-content;
+      //     // padding-right: 30px;
+      //     // display: none;
+      //     margin-right: none;
+      //   }
+      // }
 
       .itemContainer {
         display: flex;
@@ -84,6 +125,8 @@
         margin-left: 30px;
         justify-content:space-evenly;
         align-items: center;
+        text-decoration: none;
+
 
         @include mobile{
           margin: 0;
@@ -99,9 +142,21 @@
             margin-right: 0;
           }
         }
+
+        .MuiSvgIcon-root{
+          fill: white;
+          text-decoration: none;
+          transition: all 2s ease;
+
+          &:hover{
+            fill: black;
+          }
+        }
+
         #mobile{
           font-size: 15px;
           align-items: center;
+          text-decoration: none;
 
           @include mobile{
             font-size: 12px;
@@ -110,22 +165,28 @@
           }
         }
 
-
         span {
           font-size: 15px;
           font-weight: 400;
           color: #d3d3d3;
           margin: 0 35px 0 0;
+          text-decoration: none;
+
 
           @include mobile {
             font-size: 10px;
             margin-right: 5px;
           }
         }
-      }
+      // }
     }
 
     .right {
+      width: 32px;
+
+      @include mobile{
+        width: 20%;
+      }
       .hamburger {
         width: 32px;
         height: 25px;
@@ -148,6 +209,24 @@
   &.active {
     background-color: black;
     color: black;
+
+    .wrapper .itemContainer .MuiSvgIcon-root{
+      fill: black;
+    }
+
+    .topbarIcon{
+      color: black;
+      font-weight: 600;
+      font-size: 20px;
+      transition: all 2s ease;
+    }
+
+    a#logo .blackText{
+      color: white;
+      font-weight: 600;
+      font-size: 20px;
+      transition: all 2s ease;
+    }
 
     .hamburger {
       span {

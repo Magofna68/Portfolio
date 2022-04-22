@@ -15,7 +15,7 @@ export default function AboutMe() {
     }}>
       <Container fluid>
         <Row>
-          <Col md={2} lg={2}>
+          {/* <Col md={2} lg={2}> */}
             <div id="title">
               <h2>
                 <span style={{ color: `grey`, padding: `0% 0 0 0` }}><br/>
@@ -23,7 +23,7 @@ export default function AboutMe() {
                 <span style={{ color: `grey`, }}>.</span><br/>
               </h2>
             </div>
-          </Col>
+          {/* </Col> */}
           <br/>
           <Col>
           {/* <Container id="textContainer"> */}

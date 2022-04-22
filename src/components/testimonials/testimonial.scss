@@ -7,12 +7,23 @@
   align-items: center;
   padding-top: 20px;
 
+  @media (max-width: $phone) {
+    padding-top: 15px;
+    // margin-bottom: 10px;
+  }
+
   h1 {
     font-size: 50px;
     color: grey;
+    overflow: hidden;
 
     span {
       color: white;
+    }
+
+    @media (max-width: $phone) {
+      font-size: 30px;
+      margin-bottom: 15px;
     }
   }
 
@@ -44,6 +55,12 @@
       align-items: center;
       transition: all 1s;
 
+      @include mobile{
+        min-height: 400px;
+        margin-bottom: 5%;
+        
+      }
+
       &:hover {
         transform: scale(1.05);
         border: 3px solid;
@@ -53,8 +70,7 @@
           border: solid 2px;
           border-color: gold;
           transform: rotate(360deg);
-          transition-timing-function: ease-in-out;
-          transition-duration: 1.5s;
+          transition-duration: 1s;
 
         }
       }
@@ -100,7 +116,7 @@
         p.card-text#cardText{
           display: flex;
           font-size: 11px;
-          background-color: rgb(238, 230, 230);
+          background-color: rgb(243, 221, 221);
           padding: 5px;
           border-radius: 10px;
           margin-bottom: 2%;
