@@ -5,8 +5,17 @@ import Martian from '../assets/Martian.png';
 import Exchanger from '../assets/Exchanger.png';
 import RecipeBox from '../assets/RecipeBox.png';
 import YTProject from '../assets/YTProject.png';
+import UndergroundRoyalty from '../assets/UndergroundRoyalty.png';
 
 export const featuredPortfolio = [
+  {
+    id: 4,
+    title: "eCommerce Project: Underground Royalty",
+    alt: "ecommerce project",
+    img: `${UndergroundRoyalty}`,
+    link2: "https://github.com/Magofna68/e-commerce",
+    link: "https://magofna68.github.io/eCommerce-FrontEnd/",
+  },
   {
     id: 1,
     title: "Martian-Proj",
