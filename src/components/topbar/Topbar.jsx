@@ -21,55 +21,56 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <span className="topbarIcon">.</span>
         </a>
         <div className="itemContainer">
-        <a 
-          target="_blank" 
-          href="https://www.facebook.com/brandon.magofna.5"
-          rel="noreferrer">
-          <FacebookIcon 
-            fontSize="large"
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-          />
-        </a>
-        <div className="itemContainer">
-        <a 
-          target="_blank" 
-          href="https://www.instagram.com/bmagofna68/"
-          id="iconTest"
-          rel="noreferrer">
-          <InstagramIcon 
-            fontSize="large"
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-          />
-        </a>
+          <a 
+            target="_blank" 
+            href="https://www.facebook.com/brandon.magofna.5"
+            rel="noreferrer">
+            <FacebookIcon 
+              fontSize="large"
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+            />
+          </a>
         </div>
         <div className="itemContainer">
-        <a 
-          target="_blank" 
-          href="https://github.com/Magofna68"
-          rel="noreferrer">
-          <GitHubIcon
-            fontSize="large"
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-          />
-        </a>
+          <a 
+            target="_blank" 
+            href="https://www.instagram.com/bmagofna68/"
+            id="iconTest"
+            rel="noreferrer">
+            <InstagramIcon 
+              fontSize="large"
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+            />
+          </a>
         </div>
-      </div>
-          <div className="itemContainer">
+        <div className="itemContainer">
+          <a 
+            target="_blank" 
+            href="https://github.com/Magofna68"
+            rel="noreferrer">
+            <GitHubIcon
+              fontSize="large"
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+            />
+          </a>
+        </div>
+        <div className="itemContainer">
           <a href="mailto:Magofna68@gmail.com">
             <Mail className="icon"/>
-            <span id="mobile">Email</span>
+            {/* <span id="mobile">Email</span> */}
           </a>
-          </div>
-          <div className="itemContainer">
+        </div>
+          {/* <div className="itemContainer">
             <Person className="icon" />
             <span id="mobile">503-269-2656</span>
-          </div>
+          </div> */}
+      {/* </div> */}
         <div className="right">
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span>className="line1"</span>

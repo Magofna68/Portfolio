@@ -6,8 +6,17 @@ import Exchanger from '../assets/Exchanger.png';
 import RecipeBox from '../assets/RecipeBox.png';
 import YTProject from '../assets/YTProject.png';
 import UndergroundRoyalty from '../assets/UndergroundRoyalty.png';
+import capstone from '../assets/capstone.png';
 
 export const featuredPortfolio = [
+  {
+    id: 1,
+    title: "Capstone Project",
+    alt: "placeholder2",
+    img: `${capstone}`,
+    link: "https://magofna68.github.io/capstone/",
+    link2: "https://github.com/Magofna68/capstone"
+  },
   {
     id: 4,
     title: "eCommerce Project: Underground Royalty",
@@ -17,19 +26,10 @@ export const featuredPortfolio = [
     link: "https://magofna68.github.io/eCommerce-FrontEnd/",
   },
   {
-    id: 1,
-    title: "Martian-Proj",
-    alt: "placeholder2",
-    img: `${Martian}`,
-    link: "https://magofna68.github.io/Martian-Proj/",
-    link2: "https://github.com/Magofna68/Martian-Proj"
-  },
-  {
     id: 2,
     title: "Youtube API (w/ Hook)",
     alt: "Youtube API project",
     img: `${YTProject}`,
-    // subtitle: "lorum ipsum",
     link: "https://magofna68.github.io/react-hooks-yt-api/",
     link2: "https://github.com/Magofna68/react-yt-api-redux",
     text: "This project focused on utilizing a hook to fetch an API call."
@@ -42,12 +42,6 @@ export const featuredPortfolio = [
     link: "https://magofna68.github.io/Currency-Exchanger/",
     link2: "https://github.com/Magofna68/Currency-Exchanger"
   },
-  // {
-  //   id: 4,
-  //   title: "four",
-  //   alt: "placeholder4",
-  //   img: "http://imgs.abduzeedo.com/files/articles/beautiful-3d-nature-scenes/1293669_large.jpg",
-  // },
 ]
 
 export const featuredC = [
@@ -86,16 +80,12 @@ export const featuredReact = [
     link: "https://redux-help-queue-15476.web.app/",
     link2: "https://github.com/Magofna68/Help-Que2"
   },
-  // {
-  //   id: 3,
-  //   title: "The who is the What",
-  //   alt: "placeholder3",
-  //   img: "https://icatcare.org/app/uploads/2018/07/Helping-your-new-cat-or-kitten-settle-in-1.png",
-  // },
-  // {
-  //   id: 4,
-  //   title: "four",
-  //   alt: "placeholder4",
-  //   img: "http://imgs.abduzeedo.com/files/articles/beautiful-3d-nature-scenes/1293669_large.jpg",
-  // }
+  {
+    id: 4,
+    title: "Martian-Proj",
+    alt: "placeholder2",
+    img: `${Martian}`,
+    link: "https://magofna68.github.io/Martian-Proj/",
+    link2: "https://github.com/Magofna68/Martian-Proj"
+  },
 ]

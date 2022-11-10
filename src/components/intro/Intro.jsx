@@ -7,9 +7,6 @@ import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function Intro() {
 
@@ -32,7 +29,7 @@ export default function Intro() {
     <div id="introPage">
       <Container fluid>
         <Row>
-          <Col xs={12} sm={12} md={12} lg={6} xl={7}>
+          <Col xs={12} sm={12} md={11} lg={6} xl={7}>
             <div 
               id="imageBorder"
               style={{
@@ -75,50 +72,14 @@ export default function Intro() {
                 <DoubleArrowIcon className="downLG" />
               </a>
             </div>
-            <div id="arrowContain">
+            {/* <div id="arrowContain">
               <a href="#aboutMe">
                 <DoubleArrowIcon className="downIcon" />
               </a>
-            </div>
+            </div> */}
           </Col>
           </Row>
       </Container>
-      {/* <div id="mobileSocial">
-        <a 
-          target="_blank" 
-          href="https://www.facebook.com/brandon.magofna.5"
-          rel="noreferrer">
-          <FacebookIcon 
-            fontSize="large"
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-          />
-        </a>
-        <a 
-          target="_blank" 
-          href="https://www.instagram.com/bmagofna68/"
-          id="iconTest"
-          rel="noreferrer">
-          <InstagramIcon 
-            fontSize="large"
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-          />
-        </a>
-        <a 
-          target="_blank" 
-          href="https://github.com/Magofna68"
-          rel="noreferrer">
-          <GitHubIcon
-            fontSize="large"
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-          />
-        </a>
-      </div> */}
     </div>
   )
 }

@@ -4,6 +4,8 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Row from 'react-bootstrap'
+import { Person } from "@material-ui/icons";
+
 
 export default function Menu({ menuOpen, setMenuOpen }) {
   return (
@@ -84,6 +86,10 @@ export default function Menu({ menuOpen, setMenuOpen }) {
         </li>
         <li onClick={() => setMenuOpen(false)}>
         </li>
+          <div style={{ color: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+            <Person className="icon" />
+            <span style={{fontSize: '.9rem'}}>503-269-2656</span>
+          </div>
       </ul>
     </div>
   )
