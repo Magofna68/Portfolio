@@ -22,8 +22,8 @@ export const featuredPortfolio = [
     title: "eCommerce Project: Underground Royalty",
     alt: "ecommerce project",
     img: `${UndergroundRoyalty}`,
-    link2: "https://github.com/Magofna68/e-commerce",
-    link: "https://magofna68.github.io/eCommerce-FrontEnd/",
+    link2: "https://github.com/Magofna68/eCommerce-front-end",
+    link: "https://magofna68.github.io/eCommerce-front-end/",
   },
   {
     id: 2,
