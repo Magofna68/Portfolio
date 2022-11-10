@@ -10,7 +10,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
     <div 
     className={"menu " + (menuOpen && "active")}
     style={{ 
-      backgroundImage: `url("https://media.freestocktextures.com/cache/0d/42/0d42eeb83ad3a56c97468d69721b2c18.jpg")` 
+      // backgroundImage: `url("https://media.freestocktextures.com/cache/0d/42/0d42eeb83ad3a56c97468d69721b2c18.jpg")` 
     }}>
       <ul>
         <li onClick={() => setMenuOpen(false)}>
@@ -31,7 +31,11 @@ export default function Menu({ menuOpen, setMenuOpen }) {
         {/* <li onClick={() => setMenuOpen(false)}>
           <a href="#contact">Contact</a>
         </li> */}
-        <li onClick={() => setMenuOpen(false)}>
+        <li 
+          onClick={() => setMenuOpen(false)}
+          className="socialContainer"
+        >
+          <div className='iconContain'>
           <a 
             href="https://www.facebook.com/brandon.magofna.5"
             rel="noreferrer"
@@ -45,6 +49,8 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                 alignItems="center"
               />
           </a>
+          </div>
+          <div className='iconContain'>
           <a 
             target="_blank" 
             href="https://www.instagram.com/bmagofna68/"
@@ -59,6 +65,8 @@ export default function Menu({ menuOpen, setMenuOpen }) {
               alignItems="center"
           />
           </a>
+          </div>
+          <div className='iconContain'>
           <a 
             target="_blank" 
             href="https://github.com/Magofna68"
@@ -72,6 +80,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
               alignItems="center"
             />
           </a>
+          </div>
         </li>
         <li onClick={() => setMenuOpen(false)}>
         </li>

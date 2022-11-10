@@ -83,7 +83,7 @@ export default function Intro() {
           </Col>
           </Row>
       </Container>
-      <div id="mobileSocial">
+      {/* <div id="mobileSocial">
         <a 
           target="_blank" 
           href="https://www.facebook.com/brandon.magofna.5"
@@ -118,7 +118,7 @@ export default function Intro() {
             alignItems="center"
           />
         </a>
-      </div>
+      </div> */}
     </div>
   )
 }

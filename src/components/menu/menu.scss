@@ -3,8 +3,9 @@
 .menu {
   width: 300px;
   height: 100vh;
-  background-color: $mainColor;
-  position: fixed;
+  background: linear-gradient(217deg, rgba(8, 5, 5, 0.8), rgba(183, 54, 54, 0) 70.71%),
+        linear-gradient(127deg, rgba(80, 81, 80, 0.8), rgba(123, 247, 123, 0) 70.71%),
+        linear-gradient(336deg, rgba(50, 50, 150, 0.8), rgba(99, 99, 103, 0) 70.71%);  position: fixed;
   top: 0;
   right: -300px;
   z-index: 2;
@@ -61,5 +62,16 @@
         }
       }
     }
+  }
+}
+
+.socialContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .iconContain {
+    margin: 10% 0 0 0;
   }
 }
