@@ -6,9 +6,6 @@ import React, {useState, useEffect} from 'react';
 // import Col from 'react-bootstrap/Col';
 import { Card, Button } from 'react-bootstrap/';
 
-
-
-
 import { featuredPortfolio, featuredReact, featuredC } from "../../components/data" ;
 
 export default function Portfolio() {
@@ -30,7 +27,6 @@ export default function Portfolio() {
       title: "C#",
     }
   ];
-
   
   useEffect(() => {
     switch(selected){
@@ -93,9 +89,7 @@ export default function Portfolio() {
           ))}
           </>
           </div>   
-        <p style={{
-            fontWeight: `500`,
-        }}>
+        <p style={{ fontWeight: `500`,}}>
              Epicodus has provided a framework of over 250 hours of experience, and nearly 20 projects in each of the following: C#/.Net, Javascript, & React.<br/>
              The above projects are a few of those.
         </p>

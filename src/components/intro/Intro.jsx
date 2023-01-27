@@ -7,9 +7,11 @@ import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import { Typography } from "@mui/material";
+import CustomTypography from '../utility/typography/Typography';
 
 export default function Intro() {
-
+  const text = "Hi There";
   const textRef = useRef(null);
 
   useEffect(() => {
@@ -29,14 +31,15 @@ export default function Intro() {
     <div id="introPage">
       <Container fluid>
         <Row>
-          <Col xs={12} sm={12} md={11} lg={6} xl={7}>
+          <Col xs={12} sm={12} md={12} lg={6} xl={6}>
             <div 
               id="imageBorder"
               style={{
                 maxWidth: `90%`,
                 // minWidth: `250px`,
                 border: `solid`,
-                borderColor: `white`,
+                borderColor: `red`,
+                opacity: '.75',
                 alignItems: `center`,
                 justifyContent: `center`,
                 backgroundImage: `url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25806764.jpg")`,
@@ -61,12 +64,72 @@ export default function Intro() {
               </div>
             </div>
           </Col>
-          <Col xs={12} s={12} md={12} lg={5} xl={4} id="container">
+          <Col xs={12} s={12} md={12} lg={6} xl={6} id="container">
             <div id="introText">
-              <h2>Hi There,</h2>
-              <h1><span id="smallText">I'm</span> Brandon Magofna.</h1>
-              <h3><span class="iType" ref={textRef}></span></h3>
+          <Typography
+            variant='h4'
+            sx={{
+              fontWeight: 'bold',
+              color: 'rgb(0,255,255,0%)',
+              WebkitTextStroke: '0.5px white',
+              backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+              WebkitBackgroundClip: 'text',
+              backgroundClip: 'text',
+              transition: 'color 0.50s, -webkit-text-stroke 0.50s',
+              '&: hover': {
+                color: 'rgb(200,0,0,50%)',
+                WebkitTextStroke: '0.5px red',
+                cursor: 'arrow',
+                userSelect: 'none'
+              }
+            }}
+          >
+            Hey, I'm
+          </Typography>
+          <Typography
+            variant='h2'
+            sx={{
+              position: 'relative',
+              fontWeight: 'bold',
+              color: 'rgb(0,255,255,0%)',
+              WebkitTextStroke: '0.5px white',
+              backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+              WebkitBackgroundClip: 'text',
+              backgroundClip: 'text',
+              transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
+              '&: hover': {
+                color: 'rgb(200,0,0,50%)',
+                WebkitTextStroke: '0.5px red',
+                cursor: 'arrow',
+                userSelect: 'none'
+              }
+            }}
+          >
+            Brandon Magofna
+          </Typography>
+          <Typography
+            variant='h5'
+            sx={{
+              color: 'rgb(0,255,255,0%)',
+              WebkitTextStroke: '0.5px white',
+              backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+              WebkitBackgroundClip: 'text',
+              backgroundClip: 'text',
+              transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
+              '&: hover': {
+                color: 'rgb(200,0,0,50%)',
+                WebkitTextStroke: '0.5px red',
+                cursor: 'arrow',
+                userSelect: 'none'
+              }
+            }}
+          >
+            <span 
+            ref={textRef}></span>
+          </Typography>
             </div>
+            </Col>
+            </Row>
             <div id="arrowDesk">
               <a href="#aboutMe">
                 <DoubleArrowIcon className="downLG" />
@@ -77,8 +140,6 @@ export default function Intro() {
                 <DoubleArrowIcon className="downIcon" />
               </a>
             </div> */}
-          </Col>
-          </Row>
       </Container>
     </div>
   )

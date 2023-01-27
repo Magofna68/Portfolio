@@ -14,7 +14,14 @@
     padding: 0 1%;
   }
 
+div.container-fluid{
+  height: 85vh;
 
+  @media only screen and (max-width: 420px) {
+    height: 92vh;
+    padding: 10px 0 0 0;
+  }
+}
   .grayBackground{
     background-color: rgb(55, 53, 53);
     padding: 5px 5px;
@@ -28,31 +35,45 @@
     align-items: center;
     justify-content: center;
     text-align: left;
+    // margin-top: -5%;
     // height: 80%;
-    padding: 5px 0;
+    // padding: 5px 0;
     scroll-behavior: none;
 
     @media (max-width: $galaxy) {
-      margin-top: -3%;
+      // margin-top: -3%;
     }
 
     @media (max-width: $phone) {
       // margin-top: -10%;
       height: auto;
+      // margin: 0 10px 0 px;
       scroll-behavior: none;
     }
 
   }
 
+  .largeLettering{
+    font-size: 30px;
+
+    @media (max-width: $ipadMini) {
+      font-size: 20px;
+    }
+
+    @media only screen and (max-width: 420px) {
+      font-size: 15px;
+    }
+  }
+
     p{
-      font-size: small;
+      font-size: 15px;
       background-color: white;
       border-radius: 10px;
       margin-top: 3%;
       opacity: 0.7;
   
       @media (max-width: $ipadMini) {
-        font-size: 12px;
+        font-size: 15px;
       }
   
       @media (max-width: $phone) {
@@ -68,6 +89,7 @@
         font-size: 11px;
         margin-bottom: 15px;
         margin-top: 0;
+        padding: 0 5px 0 5px;
       }
   
       @media (max-width: $iphoneSE) {

@@ -4,7 +4,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Row from 'react-bootstrap'
-import { Person } from "@material-ui/icons";
+import { Person, Mail } from "@material-ui/icons";
 
 
 export default function Menu({ menuOpen, setMenuOpen }) {
@@ -83,11 +83,24 @@ export default function Menu({ menuOpen, setMenuOpen }) {
             />
           </a>
           </div>
+          <div className="iconContain">
+          <a 
+            className='topbarIcon'
+            href='mailto:Magofna68@gmail.com'>
+            <Mail 
+              className='icon'
+              fontSize="large"
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+            />
+          </a>
+        </div>
         </li>
         <li onClick={() => setMenuOpen(false)}>
         </li>
           <div style={{ color: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
-            <Person className="icon" />
+            <Person className='icon' />
             <span style={{fontSize: '.9rem'}}>503-269-2656</span>
           </div>
       </ul>

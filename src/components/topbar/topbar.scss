@@ -15,7 +15,7 @@
 
   
   .wrapper {
-    padding: 0px 25px 0 5px;
+    padding: 0px 10px 0 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,8 +23,8 @@
     overflow: visible;
     
     @include mobile {
-      padding: 10px 10px 0 5px;
-      width: 100%;
+      // padding: 10px 10px 0 5px;
+      width: 95%;
       overflow: visible;
     }
     
@@ -54,20 +54,6 @@
       color: rgb(255, 255, 255);
     }
 
-
-    // .left {
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: center;
-
-    //   @include mobile {
-    //     height: 50px;
-    //     // width: 500px;
-    //     width: 90%;
-    //     padding-right: 20px;
-    //     margin: 0 0 0 0;
-    //   }
-
       .socials{
         margin: 0 15px 0 0px;
 
@@ -77,12 +63,10 @@
       }
 
       a{
-        padding-left: 10px;
         color: white;
         transition: transform 1s;
         overflow: visible;
         text-decoration: none;
-        // transition: transform 2s;
         
         &:hover{
           // transform: scale(1.1);
@@ -103,6 +87,19 @@
         @include mobile{
           margin: 0;
           width: 100%;
+        }
+
+        .item2{
+          display: flex;
+          align-items: center;
+          margin-left: 30px;
+          justify-content:space-evenly;
+          align-items: center;
+          text-decoration: none;
+
+          @media only screen and (max-width: 420px) {
+            display: none;
+          }
         }
 
         .icon {
@@ -154,9 +151,11 @@
 
     .right {
       width: 32px;
+      padding: 0 10px 0 0;
 
       @include mobile{
-        width: 20%;
+        width: 100px;
+        margin: 0 0 0 10px;
       }
       .hamburger {
         width: 32px;
@@ -198,9 +197,11 @@
       font-weight: 600;
       font-size: 20px;
       transition: all 2s ease;
+
     }
 
     .hamburger {
+      margin-right: 10px;
       span {
         &:first-child {
           // background-color: black;

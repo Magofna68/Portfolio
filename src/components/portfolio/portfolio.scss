@@ -13,17 +13,18 @@
   }
 
   h1 {
+    margin-top: 20px;
     font-style: 50px;
     color: white;
     overflow: visible;
-
-    span {
-      color: grey;
-    }
-
+    
     @include mobile {
       font-size: 40px;
-      padding: 40px 0 0 0;
+      padding: 30px 0 0 0;
+      margin-top: 0;
+    }
+    span {
+      color: grey;
     }
   }
 
@@ -31,6 +32,7 @@
     padding: 0 0px 0px 0px;
     list-style: none;
     display: flex;
+    // opacity: .75;
     align-items: center;
     color: darkslategrey;
     overflow: visible;
@@ -40,6 +42,7 @@
       padding: 0 0 0 40px;
       margin: 0 0 3% 0;
       font-size: 15px;
+      border: 1px;
     }
 
     li {
@@ -78,7 +81,7 @@
       // margin-top: 1%;
       justify-content: center;
       align-content: center;
-      margin: 0 0 0 0;
+      margin: 3% 0 0 0;
       padding: 0;
       align-content: flex-start;
     }
@@ -216,11 +219,11 @@
   p {
     color: white;
     text-align: center;
-    margin: 2% 0 0 0;
-    @include mobile {
-      color: white;
-      text-align: center;
-      margin: 2% 0 0 0;
+    margin: 2%;
+    
+    @media only screen and (max-width: 420px) {
+      margin-top: -10%;
+      font-size: 12px;
     }
   }
 }

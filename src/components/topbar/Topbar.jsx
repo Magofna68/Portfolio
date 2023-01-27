@@ -26,7 +26,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             href="https://www.facebook.com/brandon.magofna.5"
             rel="noreferrer">
             <FacebookIcon 
-              fontSize="large"
+              fontSize="medium"
               direction="row"
               justifyContent="center"
               alignItems="center"
@@ -40,7 +40,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             id="iconTest"
             rel="noreferrer">
             <InstagramIcon 
-              fontSize="large"
+              fontSize="medium"
               direction="row"
               justifyContent="center"
               alignItems="center"
@@ -53,24 +53,13 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             href="https://github.com/Magofna68"
             rel="noreferrer">
             <GitHubIcon
-              fontSize="large"
+              fontSize="medium"
               direction="row"
               justifyContent="center"
               alignItems="center"
             />
           </a>
         </div>
-        <div className="itemContainer">
-          <a href="mailto:Magofna68@gmail.com">
-            <Mail className="icon"/>
-            {/* <span id="mobile">Email</span> */}
-          </a>
-        </div>
-          {/* <div className="itemContainer">
-            <Person className="icon" />
-            <span id="mobile">503-269-2656</span>
-          </div> */}
-      {/* </div> */}
         <div className="right">
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span>className="line1"</span>
