@@ -12,7 +12,7 @@ import VALIDATEIcon from '../assets/VALIDATEIcon.png';
 
 export const worksData = [
   {
-    id: "1",
+    id: 0,
     title: "Capstone Project",
     icon: "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/32/original/epicodus-ico.png",
     desc: "My final project at Epicodus: a 27 week coding bootcamp. This project was built with a React front end to promote and extend reach and accessibility for provided services.",
@@ -21,7 +21,7 @@ export const worksData = [
     link: "https://magofna68.github.io/capstone/"
   },
   {
-    id: "2",
+    id: 1,
     title: "Martian-Project",
     icon: "https://icon-library.com/images/nasa-icon/nasa-icon-10.jpg",
     desc: "A collaborative dev-team project focused around APIs. Features numerous API calls for dynamic information updates, photos, and a video of the Mars landing from NASA in April 2021.",
@@ -30,7 +30,7 @@ export const worksData = [
     link: "https://magofna68.github.io/Martian-Proj/",
   },
   {
-    id: "3",
+    id: 2,
     title: "VALIDATE, LLC",
     icon: `${VALIDATEIcon}`,
     desc: "Worked collaboratively in a dev team to further develop a React-based app from Alpha stage to Beta version. Improved UI experience, tested feature branches, and submitted pull requests",
