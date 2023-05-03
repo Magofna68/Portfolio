@@ -16,11 +16,11 @@ export default function AboutMe() {
       <Container fluid>
         <Row>
             <div id="title">
-              <h2>
-                <span style={{ color: `grey`}}>About </span>
+              {/* <h2> */}
+                <span style={{ color: `grey`}}>About &nbsp;</span>
                 Brandon
                 <span style={{ color: `grey`, }}>.</span>
-              </h2>
+              {/* </h2> */}
             </div>
           {/* </Col> */}
           <br/>

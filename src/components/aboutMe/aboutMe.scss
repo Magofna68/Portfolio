@@ -15,7 +15,7 @@
   }
 
 div.container-fluid{
-  height: 85vh;
+  height: 90vh;
 
   @media only screen and (max-width: 420px) {
     height: 92vh;
@@ -24,7 +24,8 @@ div.container-fluid{
 }
   .grayBackground{
     background-color: rgb(55, 53, 53);
-    padding: 5px 5px;
+    padding: 0% 1% 0.5% 1%;
+    // padding-top: -3%;
     border-radius: 10px;
     color: white;
     // opacity: 100%;
@@ -35,29 +36,29 @@ div.container-fluid{
     align-items: center;
     justify-content: center;
     text-align: left;
-    // margin-top: -5%;
-    // height: 80%;
-    // padding: 5px 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
     scroll-behavior: none;
+    
 
     @media (max-width: $galaxy) {
       // margin-top: -3%;
     }
 
     @media (max-width: $phone) {
-      // margin-top: -10%;
       height: auto;
-      // margin: 0 10px 0 px;
       scroll-behavior: none;
     }
 
   }
 
   .largeLettering{
-    font-size: 30px;
+    padding-top: -1%;
+    font-size: 1.75rem;
 
     @media (max-width: $ipadMini) {
-      font-size: 20px;
+      font-size: 2rem;
     }
 
     @media only screen and (max-width: 420px) {
@@ -69,7 +70,7 @@ div.container-fluid{
       font-size: 15px;
       background-color: white;
       border-radius: 10px;
-      margin-top: 3%;
+      padding: 0% 1% 0.5% 1%;
       opacity: 0.7;
   
       @media (max-width: $ipadMini) {
@@ -124,7 +125,7 @@ div.container-fluid{
     margin: auto;
     height: auto;
     max-height: 250px;
-    width: 100%;
+    width: 60%;
     bottom: 3%;
     justify-content: space-evenly;
     align-items: center;
@@ -134,7 +135,7 @@ div.container-fluid{
     overflow: hidden;
     border-radius: 20px;
     scroll-behavior: none;
-    margin-top: 10px;
+    margin-top: 2.5rem;
 
     @media (max-width: $galaxy) {
       height: 150px; 

@@ -7,6 +7,38 @@ import RecipeBox from '../assets/RecipeBox.png';
 import YTProject from '../assets/YTProject.png';
 import UndergroundRoyalty from '../assets/UndergroundRoyalty.png';
 import capstone from '../assets/capstone.png';
+import VALIDATE from '../assets/VALIDATE.png';
+import VALIDATEIcon from '../assets/VALIDATEIcon.png';
+
+export const worksData = [
+  {
+    id: "1",
+    title: "Capstone Project",
+    icon: "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/32/original/epicodus-ico.png",
+    desc: "My final project at Epicodus: a 27 week coding bootcamp. This project was built with a React front end to promote and extend reach and accessibility for provided services.",
+    img: `${capstone}`,
+    alt: "Capstone project at Epicodus: website application",
+    link: "https://magofna68.github.io/capstone/"
+  },
+  {
+    id: "2",
+    title: "Martian-Project",
+    icon: "https://icon-library.com/images/nasa-icon/nasa-icon-10.jpg",
+    desc: "A collaborative dev-team project focused around APIs. Features numerous API calls for dynamic information updates, photos, and a video of the Mars landing from NASA in April 2021.",
+    img: `${Martian}`,
+    alt: "Nasa API collab project",
+    link: "https://magofna68.github.io/Martian-Proj/",
+  },
+  {
+    id: "3",
+    title: "VALIDATE, LLC",
+    icon: `${VALIDATEIcon}`,
+    desc: "Worked collaboratively in a dev team to further develop a React-based app from Alpha stage to Beta version. Improved UI experience, tested feature branches, and submitted pull requests",
+    img: `${VALIDATE}`,
+    alt: "VALIDATE; from Alpha to Beta",
+    link: "https://www.linkedin.com/company/validateclub/about/",
+  },
+]
 
 export const featuredPortfolio = [
   {

@@ -8,7 +8,8 @@ import VALIDATEIcon from '../../assets/VALIDATEIcon.png';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-
+import Opine from '../../assets/Opine.png';
+import OpineQuiz from '../../assets/OpineQuiz.png';
 
 export default function Works() {
 
@@ -27,11 +28,11 @@ export default function Works() {
     },
     {
       id: "2",
-      title: "Martian-Project",
-      icon: "https://icon-library.com/images/nasa-icon/nasa-icon-10.jpg",
-      desc: "A collaborative dev-team project focused around APIs. Features numerous API calls for dynamic information updates, photos, and a video of the Mars landing from NASA in April 2021.",
-      img: `${Martian}`,
-      alt: "Nasa API collab project",
+      title: "Opine, LLC",
+      icon: `${Opine}`,
+      desc: "An anonymous quizzlet with studysets and flashcards built out with the WA school district in mind",
+      img: `${OpineQuiz}`,
+      alt: "Quizlet for WA school district",
       link: "https://magofna68.github.io/Martian-Proj/",
     },
     {
@@ -93,11 +94,11 @@ export default function Works() {
               <Col>
               <div className="worksImages">
                 <img 
-                    src={d.img} 
-                    alt={d.alt}
-                    width="100%"
-                    height="auto"
-                  />
+                  src={d.img} 
+                  alt={d.alt}
+                  width="100%"
+                  height="auto"
+                />
                 </div>
               </Col>
               <div className='mobileContainer'>
