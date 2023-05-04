@@ -24,15 +24,6 @@ export default function Works() {
   const [ activeId, setActiveId ] = useState(0);
 
   const data = [
-    // {
-    //   id: 0,
-    //   title: "Capstone Project",
-    //   icon: "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/32/original/epicodus-ico.png",
-    //   desc: "My final project at Epicodus: a 27 week coding bootcamp. This project was built with a React front end to promote and extend reach and accessibility for provided services.",
-    //   img: [`${Capstone}`, , , ],
-    //   alt: "Capstone project at Epicodus: website application",
-    //   link: "https://magofna68.github.io/capstone/"
-    // },
     {
       id: 0,
       title: 'Underground Royalty',
@@ -46,17 +37,17 @@ export default function Works() {
       id: 1,
       title: "Opine, LLC",
       icon: `${Opine}`,
-      desc: "An anonymous quizzlet with studysets and flashcards built out with the WA school district in mind",
+      desc: "An anonymous quizzlet utilizing studysets and flashcards to arm students with a powerful learning tool. Built out with the a focus on an anonymous userbase, specifically curated for the Washington School District.",
       img: [`${OpineQuiz}`, `${Stripe}`, `${CSV}`, `${OpineDash}`, ],
       alt: "Quizlet for WA school district",
-      link: "https://magofna68.github.io/Martian-Proj/",
+      link: "https://opineschool.com/",
     },
     {
       id: 2,
       title: "VALIDATE, LLC",
       icon: `${VALIDATEIcon}`,
-      desc: "Worked collaboratively in a dev team to further develop a React-based app from Alpha stage to Beta version. Improved UI experience, tested feature branches, and submitted pull requests",
-      img: [`${VALIDATE}`, `${OpineQuiz}`, `${VALIDATE}`, `${VALIDATE}`,],
+      desc: "VALIDATE offers a service to early-stage companies who need more market data to make informed decisions. I worked collaboratively to further develop this React app from its Alpha stage into a Beta version. Enhanced UI experience, implemented feature branches, and submitted pull requests for review.",
+      img: [`${VALIDATE}`,],
       alt: "VALIDATE; from Alpha to Beta",
       link: "https://www.linkedin.com/company/validateclub/about/",
     },
@@ -66,10 +57,12 @@ export default function Works() {
     setCurrentSlide(currentSlide<data.length -1 ? currentSlide +1 : 0);
   };
 
-  const imgStyles = {
-    padding: '0 .5rem 0 .5rem',
-    maxHeight: '100px',
-  }
+  // const imgStyles = {
+  //   padding: '0 .5rem 0 .5rem',
+  //   maxHeight: '90px',
+  //   borderRadius: '10px',
+
+  // }
 
   useEffect(()=> {
     setActiveId(currentSlide)
@@ -101,10 +94,6 @@ export default function Works() {
                 backgroundImage: `url("https://cdn.mos.cms.futurecdn.net/gtkekaDHpknr4beyGmbtCo-1200-80.png")`,
               }}
               >
-              {/* {console.log("index: ", index)}
-              {console.log("data: ", d)}
-              {console.log("Data[index]: ", d[index])} */}
-
               <Col lg={4} md={4} s={4}>
                 <Row>
                   <div className="worksLogo">
@@ -112,7 +101,13 @@ export default function Works() {
                       <img src={data[index]?.icon} alt="" height="auto" width="100%" />
                     </div>
                     <h2>{data[index]?.title}</h2>
-                    <a target="_blank"  rel="noreferrer" href={data[index]?.link}>Check it out here</a>
+                    {
+                      data[index].link 
+                      ?
+                        <a target="_blank"  rel="noreferrer" href={data[index]?.link}>Check it out here</a>
+                      :
+                        <p style={{ color: 'white', fontSize: '.75rem'}}>Studysets, Flashcards, and Quizlets</p>
+                    }
                   </div>
                 </Row>
                 <br/>
@@ -123,92 +118,74 @@ export default function Works() {
                 </Row>
               </Col>
               <Col>
-              <div className="worksImages">
-                {console.log("activeId ", activeId)}
-                {console.log("activeImg ", activeImg)}
-
-                <img 
-                  src={
-                    activeId === d.id 
-                    ? activeImg || d.img[0]
-                    : d.img[0]
-                  } 
-                  alt={d.alt}
-                  width="100%"
-                  height="auto"
-                />
+                <div className="worksImages">
+                  <img
+                    className="activeImg"
+                    alt={d.alt}
+                    width="100%"
+                    height="100%"
+                    src={
+                      activeId === d.id 
+                      ? activeImg || d.img[0]
+                      : d.img[0]
+                    } 
+                  />
                 </div>
-                <div 
-                  style={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    marginTop: '1rem',
-                    justifyContent: 'center',
-                  }}
-                >
-                   <span
-                    style={imgStyles}
-                    onClick={() =>
-                      setActiveImg(activeId === d.id ? d.img[0] : null)
-                    }
-                  >
-                    <img src={d.img[0]} alt="test" width="100px" height="100%"/>
+                <div className="thumbnailContainer">
+                   <span onClick={() => setActiveImg(activeId === d.id ? d.img[0] : null)}>
+                    <img className="imgThumbnails" src={d.img[0]} alt="test" width="100px" height="100%"/>
                   </span>
-                  <span
-                    style={imgStyles}
-                    onClick={() =>
-                      setActiveImg(activeId === d.id ? d.img[1] : null)
-                    }
-                  >
-                    <img src={d.img[1]} alt="test" width="100px" height="100%"/>
-                  </span>
-                  <span
-                    style={imgStyles}
-                    onClick={() =>
-                      setActiveImg(activeId === d.id ? d.img[2] : null)
-                    }
-                  >
-                    <img src={d.img[2]} alt="test" width="100px" height="100%"/>
-                  </span>
-                  <span
-                    style={imgStyles}
-                    onClick={() =>
-                      setActiveImg(activeId === d.id ? d.img[3] : null)
-                    }
-                  >
-                    <img src={d.img[3]} alt="test" width="100px" height="100%" />
-                  </span>
-                  {/* <span style={imgStyles} onClick={() => setActiveImg(data)}>
-                    <img src={data[index]?.img[1]} alt="test" width="100px" />
-                  </span>
-                  <span style={imgStyles} onClick={() => setActiveImg(data[index]?.img[2])}>
-                    <img src={data[index]?.img[2]} alt="test" width="100px" />
-                  </span>
-                  <span style={imgStyles} onClick={() => setActiveImg(data[index]?.img[3])}>
-                    <img src={data[index]?.img[3]} alt="test" width="100px" />
-                  </span> */}
+                  {
+                    d.img[1] && d.img[2] && d.img[3]
+                    ?
+                    <>
+                      <span onClick={() => setActiveImg(activeId === d.id ? d.img[1] : null)}>
+                        <img className="imgThumbnails" src={d.img[1]} alt="test" width="100px" height="100%"/>
+                      </span>
+                      <span onClick={() => setActiveImg(activeId === d.id ? d.img[2] : null)}>
+                        <img className="imgThumbnails" src={d.img[2]} alt="test" width="100px" height="100%"/>
+                      </span>
+
+                      <span onClick={() => setActiveImg(activeId === d.id ? d.img[3] : null)}>
+                        <img className="imgThumbnails" src={d.img[3]} alt="test" width="100px" height="100%" />
+                      </span>
+                    </>
+                    :
+                    null
+                  }
+
                 </div>
               </Col>
-              {/* <div className='mobileContainer'>
+              <div className='mobileContainer'>
                 <Col>
                   <Row>
-                    <div className='mobileImgContain'>
-                      <img 
-                        src={d.img} 
-                        alt={d.alt}
-                        width="100%"
-                        height="100%"
-                      />
-                    </div>
                     <h5 id="mobileTitle">{d.title}</h5>
                   </Row>
                   <Row>
                   <p id="mobileDesc">{d.desc}</p>
-                  <br/>
-                  <a target="_blank" rel="noreferrer" href={d.link}>Check it out here</a>
+                  <div className='mobileImgContain'>
+                    <img
+                      className="activeImg"
+                      alt={d.alt}
+                      width="100%"
+                      height="100%"
+                      src={
+                        activeId === d.id 
+                        ? activeImg || d.img[0]
+                        : d.img[0]
+                      } 
+                    />
+                  </div>
+                  {
+                    d.link
+                    ?
+                      <a style={{color: 'white', marginBottom: 0, paddingBottom: '-3%'}} target="_blank" rel="noreferrer" href={d.link}>Check it out here</a>
+                    :
+                      null
+                  }
                   </Row>
                 </Col>
-              </div> */}
+              </div>
               <br/>
             </div>
             </Container>

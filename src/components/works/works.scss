@@ -63,7 +63,8 @@
         border-radius: 3%;
         height: 90%;
         max-width: 700px;
-        width: 70%;
+        max-height: 500px;
+        width: 85%;
         background-color: rgb(175, 175, 175);
         display: flex;
         align-items: center;
@@ -72,6 +73,7 @@
         border-color: grey;
         box-shadow: 4px 5px black;
         padding: 0% 2% 0 10px;
+        overflow: hidden;
 
         @include mobile {
           height: 74%;
@@ -87,10 +89,13 @@
             text-align: center;
           }
 
-          .mobileImgContainer{
-            display: block;
+          .mobileImgContain{
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
             padding-bottom: 3%;
             min-height: 130px;
+            justify-content: center;
           }
 
           img{
@@ -100,15 +105,18 @@
             border-color: black;
             border-radius: 10px;
             min-height: 130px;
+            // max-height: 300px;
           }
 
           #mobileTitle{
-            color: rgb(90, 88, 88);
-            padding-top: 5%;
+            color: white;
+            // color: rgb(90, 88, 88);
+            padding-top: 2%;
           }
 
           #mobileDesc{
-            text-align: left;
+            color: white;
+            text-align: center;
             font-size: 12px;
           }
         }
@@ -117,9 +125,8 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            height: 50%;
             width: 100%;
-            padding-top: 8%;
+            padding-top: 10%;
 
             @include mobile {
               display: none;
@@ -206,6 +213,7 @@
             border: solid;
             border-bottom: white;
             border-color: black;
+            border-bottom: black;
             transition: 1.5s ease;
             margin: 2%;
 
@@ -217,12 +225,31 @@
               transform: scale(1.05);
             }
 
-            img {
+            .activeImg {
               width: 100%;
+              // max-width: 400px;
+              max-height: 240px;
               @include mobile {
                 transition: 1.5s ease;
               }
             }
+          }
+          .thumbnailContainer{
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            margin: 0 auto;
+
+          }
+          .imgThumbnails{
+            width: 75px;
+            height: 50px;
+            border-radius: 20%;
+            display: flex;
+            // margin: 10px;
+            align-items: center;
           }
           .right {
             flex: 8;
