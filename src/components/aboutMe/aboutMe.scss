@@ -6,7 +6,7 @@
   align-items: center;
   padding: 0 3% 0 3%;
   scroll-behavior: none;
-  overflow: visible;
+  overflow: hidden;
   height: 70%;
 
   @include mobile {
@@ -16,6 +16,7 @@
 
 div.container-fluid{
   height: 90vh;
+  overflow: hidden;
 
   @media only screen and (max-width: 420px) {
     height: 92vh;
