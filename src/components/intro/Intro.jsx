@@ -140,6 +140,9 @@ export default function Intro() {
                 <DoubleArrowIcon className="downIcon" />
               </a>
             </div> */}
+            <div style={{ width: '75%', marginLeft: '2rem'}}>
+              <span style={{ marginLeft: '1rem', color: 'white'}}>While I reside In Oregon,</span><br/> <h1 style={{ margin: '.75rem 0 0 5rem', marginBottom: '-1.5rem', color: 'white'}}>I help create web applications</h1><br/><span style={{ margin: '1rem 0 0 20rem', color: 'white', fontSize: '1.75rem'}}>for people all over the world.</span>
+            </div>
       </Container>
     </div>
   )

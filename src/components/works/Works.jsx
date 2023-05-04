@@ -12,11 +12,11 @@ import OpineQuiz from '../../assets/OpineQuiz.png';
 import Stripe from '../../assets/Stripe.png';
 import OpineDash from '../../assets/OpineDash.png';
 import CSV from '../../assets/CSV_Converter.png';
-// import UGR from '../../assets/UGR_mobile.png';
 import under100 from '../../assets/under100.png';
 import Crown from '../../assets/Crown.png';
 import UGR_Dash from '../../assets/UGR_Dash.png';
 import UG_Details from '../../assets/UGR_Details.png';
+import { Typography } from "@mui/material";
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -61,7 +61,6 @@ export default function Works() {
   //   padding: '0 .5rem 0 .5rem',
   //   maxHeight: '90px',
   //   borderRadius: '10px',
-
   // }
 
   useEffect(()=> {
@@ -79,6 +78,29 @@ export default function Works() {
       repeat: `no-repeat`,
       backgroundImage: `url("https://i2.wp.com/files.123freevectors.com/wp-content/original/142906-cool-grey-wave-business-background-vector-art.jpg?w=800&q=95")`
     }}>
+      {/* <div style={{ position: 'absolute', top: 0, transform: 'rotateY(180deg)'}}>
+        <Typography
+          variant='h4'
+          sx={{
+            marginTop: '3rem',
+            fontWeight: 'bold',
+            color: 'rgb(255,0,255,10%)',
+            WebkitTextStroke: '0.5px gold',
+            backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+            WebkitBackgroundClip: 'text',
+            backgroundClip: 'text',
+            transition: 'color 0.50s, -webkit-text-stroke 0.50s',
+            '&: hover': {
+              color: 'rgb(200,0,0,50%)',
+              WebkitTextStroke: '0.5px silver',
+              cursor: 'arrow',
+              userSelect: 'none'
+            }
+          }}
+        >
+          Here's What I've been up to lately..
+        </Typography>
+      </div> */}
       <div 
         className="slider" 
         style={{

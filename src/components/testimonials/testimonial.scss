@@ -1,16 +1,12 @@
 @import "../../global.scss";
 
+
 .testimonial {
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-
-  @media (max-width: $phone) {
-    padding-top: 15px;
-    // margin-bottom: 10px;
-  }
 
   h1 {
     font-size: 50px;
@@ -19,11 +15,6 @@
 
     span {
       color: white;
-    }
-
-    @media (max-width: $phone) {
-      font-size: 30px;
-      margin-bottom: 15px;
     }
   }
 
@@ -34,12 +25,6 @@
     align-items: center;
     justify-content: space-evenly;
 
-    @include mobile {
-      flex-direction: row;
-      width: 92%;
-      height: 95%;
-      display: grid;
-    }
 
     .card {
       // width: 35%;
@@ -54,12 +39,6 @@
       justify-content: center;
       align-items: center;
       transition: all 1s;
-
-      @include mobile{
-        min-height: 400px;
-        margin-bottom: 5%;
-        
-      }
 
       &:hover {
         transform: scale(1.05);
@@ -88,23 +67,19 @@
         margin-left: 10%;
         margin: 0 0 1% 10%;
         transition-delay: 0.5s ease;
-
-        @include mobile{
-          width: 90px;
-          height: 90px;
-          scroll-behavior: none;
-        }
         }
 
       .iconContain{
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
 
         .cardIcon{
           opacity: 0.75;
           width: 100px;
           align-self: center;
+          overflow: hidden;
         }
       }
       .card-body{
@@ -133,16 +108,83 @@
 
       .card-title.h5{
         margin-top: 10px;
-
-        @include mobile{
-          margin-top: 5px;
-        }
       }
 
       #cardTitle.text-muted.card-footer{
           text-align: center;
           width: 100%;
+          overflow: hidden;
       }
     }
   }
+}
+
+// ______________________________________________________________
+
+@media only screen and (min-width: 100px) and (max-width: 420px) {
+  
+  .testimonial {
+    padding-top: 15px;
+
+    h1 {
+      
+      span {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .container {
+    flex-direction: column;
+    width: 92%;
+    height: 95%;
+    display: grid;
+
+    .card {
+      min-height: 250px;
+      margin-bottom: 5%;
+      overflow: hidden;
+      height: 40%;
+      max-width: 300px;
+      padding: 1% 0%;
+      // height: 95%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px -8px rgb(193, 45, 45);
+      display: flex;
+      background-color: rgb(245, 239, 239);
+      justify-content: center;
+      align-items: center;
+      transition: all 1s;
+    }
+  }
+
+  .cardImg {
+    width: 50px;
+    height: 75px;
+    border-radius: 100%;
+    scroll-behavior: none;
+  }
+  
+  .iconContain{
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    .cardIcon{
+      width: 75px;
+
+    }
+  }
+
+  .iconContain::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card-title.h5{
+    margin-top: 5px;
+  }
+  // #cardTitle.text-muted.card-footer{
+
+  // }
 }
