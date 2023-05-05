@@ -54,19 +54,21 @@ export default function Testimonial() {
       repeat: `no-repeat`,
       backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
     }}>
-      <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', color: 'white'}}><h1 >Testimonials<span>.</span></h1></div>
+      <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', color: 'gray'}}>
+        <h1 className="testimonialTitle">Testimonials<span style={{color: 'white'}}>.</span></h1>
+      </div>
       <Container fluid className="testimonialContainer">
         {reviews.map((r) => (
           <Card className={r.featured ? "featuredTestimonial" : "testimonialCard"}> 
             <Row className="topTestimonialCard">
-              <Col style={{ padding: 0}}>
+              <Col style={{ padding: 0 }}>
                 <Card.Img 
                   variant="top" 
                   src={r.img} 
                   className="testimonialCardImg"
                 />
               </Col>
-              <Col className="testimonialIconContain p0">
+              <Col className="testimonialIconContain">
                 <Card.Img
                   variant="top"
                   src={r.icon}
