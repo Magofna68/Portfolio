@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import OpineIcon from '../../assets/OpineIcon.png';
 
 export default function Testimonial() {
 
@@ -22,8 +23,19 @@ export default function Testimonial() {
     },
     {
       id:1,
+      name: "Lee Grambush",
+      title: "Senior Developer",
+      relation: "Lead Developer @ Opine",
+      img: 'https://media.licdn.com/dms/image/C5603AQHB5BLrD5tGww/profile-displayphoto-shrink_800_800/0/1516330813978?e=1688601600&v=beta&t=zoNVVsdajaAqgJa-piI_E52IA6O5NkzZjeLQcrJZMXk',
+      icon: `${OpineIcon}`,
+      alt: "Opine Icon",
+      desc: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."`,
+      featured: true,
+    },
+    {
+      id:2,
       name: "Jadon Wiersma",
-      title: "Sales Development Representative",
+      title: "Client Sales Executive",
       relation: "Colleague at Deltek",
       img: `${Jadon}`,
       icon: `${Deltek}`,
@@ -42,41 +54,40 @@ export default function Testimonial() {
       repeat: `no-repeat`,
       backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
     }}>
-      <h1>Testimonials<span>.</span></h1>
-      <Container>
+      <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', color: 'white'}}><h1 >Testimonials<span>.</span></h1></div>
+      <Container fluid className="testimonialContainer">
         {reviews.map((r) => (
-          // <div className={r.featured ? "card featured" : "card"}>
-          <Card>
-            <Row>
-              <Col>
+          <Card className={r.featured ? "featuredTestimonial" : "testimonialCard"}> 
+            <Row className="topTestimonialCard">
+              <Col style={{ padding: 0}}>
                 <Card.Img 
                   variant="top" 
                   src={r.img} 
-                  className="cardImg"
-                  />
+                  className="testimonialCardImg"
+                />
               </Col>
-              <Col className="iconContain">
+              <Col className="testimonialIconContain p0">
                 <Card.Img
                   variant="top"
                   src={r.icon}
                   alt={r.alt}
-                  className="cardIcon"
+                  className="testimonialCardIcon"
                 />
               </Col>
+              <Card.Title id="testimonialCardName">{r.name}</Card.Title>
             </Row>
-          <Card.Body>
-            <Row>
-            <Col>
-              <Card.Text id="cardText">
-                {r.desc}
-              </Card.Text>
-              </Col>
-            </Row>
-          </Card.Body>
-          <Card.Title>{r.name}</Card.Title>
-          <Card.Footer className="text-muted" id="cardTitle">{r.title}</Card.Footer>
-        </Card>
-      ))}
+            <Card.Body>
+              <Row>
+              <Col>
+                <Card.Text id="testimonialCardText">
+                  {r.desc}
+                </Card.Text>
+                </Col>
+              </Row>
+            </Card.Body>
+            <Card.Footer className="text-muted testimonialCardTitle" id="testimonialCardTitle">{r.title}</Card.Footer>
+          </Card>
+        ))}
       </Container>      
     </div>
   )

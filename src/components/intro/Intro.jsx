@@ -124,8 +124,7 @@ export default function Intro() {
               }
             }}
           >
-            <span 
-            ref={textRef}></span>
+            <span ref={textRef}></span>
           </Typography>
             </div>
             </Col>
