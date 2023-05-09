@@ -31,7 +31,7 @@ export default function Intro() {
     <div id="introPage">
       <Container fluid>
         <Row>
-          <Col xs={12} sm={12} md={12} lg={6} xl={6}>
+          {/* <Col xs={12} sm={12} md={9} lg={6} xl={6}> */}
             <div 
               id="imageBorder"
               style={{
@@ -63,14 +63,14 @@ export default function Intro() {
 
               </div>
             </div>
-          </Col>
-          <Col xs={12} s={12} md={12} lg={6} xl={6} id="container">
+          {/* </Col> */}
+          <Col xs={12} s={12} md={12} lg={6} xl={6} style={{ margin: 0, padding: 0,}}>
       {/* Desktop */}
           {
             windowSize > 420
             ?
             <>
-              <div id="introText">
+              <div className="introText">
                 <Typography
                 variant='h4'
                 sx={{
@@ -113,7 +113,7 @@ export default function Intro() {
                 >
                   Brandon Magofna
                 </Typography>
-                <span style={{ color: 'white',}}><hr style={{height: '2px', width: '95%'}} /></span>
+                <span><hr className="divider" /></span>
                 <Typography
                 variant='h5'
                 sx={{
@@ -128,25 +128,20 @@ export default function Intro() {
                   <span ref={textRef}></span>
                 </Typography>
               </div>
+
               <div className="introTextLocation">
-                <span>Based out of Oregon,</span>
+                <span className="introTextOregon">
+                  Based out of Oregon,
+                </span>
                 <br/>
-                <h2 className="introTextInnovative">
+                <h2 className="introTextTransform">
                   I help transform<br/>
                 </h2>
-                  <span style={{ 
-                    marginRight: '2rem', 
-                    letterSpacing: '5px', 
-                    backgroundColor: 'white', 
-                    color: 'black',
-                    margin: 0,
-                    fontSize: '2.5rem'
-                  }}
-                  >
+                  <span className="textInnovative" >
                     innovative &nbsp;&nbsp;Ideas,
                   </span>
                 <br/>
-                <span >into tangible</span><br/>
+                <span className="introTextTangibles">into tangible</span><br/>
                 <h1 className="introTextRealities">realities.</h1>
               </div>
             </>
