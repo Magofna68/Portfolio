@@ -62,15 +62,12 @@
 
   .container {
     width: 100%;
-    height: 70%vh;
+    height: 60%;
     display: flex;
-    // align-items: center;
     justify-content: center;
-    // align-content: center;
     flex-wrap: wrap;
-    overflow-x: hidden;
-    // overflow-y: visible;
-    margin: 5% 0 5% 0;
+    overflow: hidden;
+    margin: 3% 0 0% 0;
     scroll-behavior: none;
     
     @include mobile {
@@ -78,7 +75,6 @@
       height: 60%;
       display: flex;
       flex-direction: row;
-      // margin-top: 1%;
       justify-content: center;
       align-content: center;
       margin: 3% 0 0 0;
@@ -216,14 +212,17 @@
       }
     }
   }
-  p {
+  .portfolioText {
     color: white;
     text-align: center;
     margin: 2%;
+    overflow: hidden;
+    width: 55%;
     
     @media only screen and (max-width: 420px) {
-      margin-top: -10%;
+      // margin-top: -10%;
       font-size: 12px;
+      width: 90%;
     }
   }
 }

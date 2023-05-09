@@ -42,7 +42,7 @@ export default function Intro() {
                 opacity: '.75',
                 alignItems: `center`,
                 justifyContent: `center`,
-                backgroundImage: `url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25806764.jpg")`,
+                // backgroundImage: `url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25806764.jpg")`,
                 borderRadius: `30%`,
                 // margin: `5%`,
                 // marginTop: `15%`,
@@ -129,19 +129,30 @@ export default function Intro() {
             </div>
             </Col>
             </Row>
-            <div id="arrowDesk">
-              <a href="#aboutMe">
-                <DoubleArrowIcon className="downLG" />
-              </a>
+            <div style={{ width: '75%', marginLeft: '2rem'}}>
+              <span style={{ marginLeft: '1rem', color: 'white'}}>While I reside In Oregon,</span><br/> <h1 style={{ margin: '.75rem 0 0 5rem', marginBottom: '-1.5rem', color: 'white'}}>I help create web applications</h1><br/><span style={{ margin: '1rem 0 0 20rem', color: 'white', fontSize: '1.75rem'}}>for people all over the world.</span>
             </div>
+            <div id="arrowDesk">
+              {/* <a href="#aboutMe">
+                <DoubleArrowIcon className="downLG" />
+              </a> */}
+            </div>
+
+
+                <a href="#aboutMe" className="customButtonEffect">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <div className="doubleArrowIcon">
+                    <DoubleArrowIcon fontSize="large" />
+                  </div>
+                </a>
             {/* <div id="arrowContain">
               <a href="#aboutMe">
                 <DoubleArrowIcon className="downIcon" />
               </a>
             </div> */}
-            <div style={{ width: '75%', marginLeft: '2rem'}}>
-              <span style={{ marginLeft: '1rem', color: 'white'}}>While I reside In Oregon,</span><br/> <h1 style={{ margin: '.75rem 0 0 5rem', marginBottom: '-1.5rem', color: 'white'}}>I help create web applications</h1><br/><span style={{ margin: '1rem 0 0 20rem', color: 'white', fontSize: '1.75rem'}}>for people all over the world.</span>
-            </div>
       </Container>
     </div>
   )

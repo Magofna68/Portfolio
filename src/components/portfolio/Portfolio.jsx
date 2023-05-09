@@ -72,7 +72,7 @@ export default function Portfolio() {
             <Card class="img-responsive" style={{
               borderRadius: `10%`,
               padding: `10px 10px 5px 10px`,
-              margin: `10px 10px 0px 10px`,
+              margin: `0 1rem 2rem 10px`,
             }}>
               <Card.Img 
                 variant="top"
@@ -82,14 +82,14 @@ export default function Portfolio() {
               <Card.Body>
                 <Card.Title>{d.title}</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{d.subtitle}</Card.Subtitle>
-                <a href={d.link} rel="noreferrer" target="_blank"><Button vaiant="danger">View Project</Button></a>
+                <a href={d.link} rel="noreferrer" target="_blank"><Button>View Project</Button></a>
                 <a href={d.link2} rel="noreferrer" target="_blank"><Button variant="success">View Code</Button></a>
               </Card.Body>
               </Card>
           ))}
           </>
           </div>   
-        <p style={{ fontWeight: `500`,}}>
+        <p className="portfolioText" style={{ fontWeight: `500`}}>
              Epicodus has provided a framework of over 250 hours of experience, and nearly 20 projects in each of the following: C#/.Net, Javascript, & React.<br/>
              The above projects are a few of those.
         </p>
