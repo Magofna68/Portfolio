@@ -11,8 +11,8 @@ import { Typography } from "@mui/material";
 import CustomTypography from '../utility/typography/Typography';
 
 export default function Intro() {
-  const text = "Hi There";
   const textRef = useRef(null);
+  const windowSize = window.innerWidth; 
 
   useEffect(() => {
     if (!textRef.current) {
@@ -23,7 +23,7 @@ export default function Intro() {
       startDelay: 0,
       typeSpeed: 150,
       showCursor: true,
-      strings: ['Developer.', 'Designer.', 'Content Creator.']
+      strings: ['React Developer.', 'Designer.', 'Content Creator.']
     })
   }, []);
   
@@ -38,7 +38,7 @@ export default function Intro() {
                 maxWidth: `90%`,
                 // minWidth: `250px`,
                 border: `solid`,
-                borderColor: `red`,
+                borderColor: '',
                 opacity: '.75',
                 alignItems: `center`,
                 justifyContent: `center`,
@@ -54,7 +54,7 @@ export default function Intro() {
                 opacity: '90%',
                 borderRadius: `30px`,
                 border: `solid`,
-                borderColor: `white`,
+                borderColor: `gray`,
                 margin: `10% 7%`,
                 }}
                 >
@@ -65,94 +65,174 @@ export default function Intro() {
             </div>
           </Col>
           <Col xs={12} s={12} md={12} lg={6} xl={6} id="container">
-            <div id="introText">
-          <Typography
-            variant='h4'
-            sx={{
-              fontWeight: 'bold',
-              color: 'rgb(0,255,255,0%)',
-              WebkitTextStroke: '0.5px white',
-              backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
-              WebkitBackgroundClip: 'text',
-              backgroundClip: 'text',
-              transition: 'color 0.50s, -webkit-text-stroke 0.50s',
-              '&: hover': {
-                color: 'rgb(200,0,0,50%)',
-                WebkitTextStroke: '0.5px red',
-                cursor: 'arrow',
-                userSelect: 'none'
-              }
-            }}
-          >
-            Hey, I'm
-          </Typography>
-          <Typography
-            variant='h2'
-            sx={{
-              position: 'relative',
-              fontWeight: 'bold',
-              color: 'rgb(0,255,255,0%)',
-              WebkitTextStroke: '0.5px white',
-              backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
-              WebkitBackgroundClip: 'text',
-              backgroundClip: 'text',
-              transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
-              '&: hover': {
-                color: 'rgb(200,0,0,50%)',
-                WebkitTextStroke: '0.5px red',
-                cursor: 'arrow',
-                userSelect: 'none'
-              }
-            }}
-          >
-            Brandon Magofna
-          </Typography>
-          <Typography
-            variant='h5'
-            sx={{
-              color: 'rgb(0,255,255,0%)',
-              WebkitTextStroke: '0.5px white',
-              backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
-              WebkitBackgroundClip: 'text',
-              backgroundClip: 'text',
-              transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
-              '&: hover': {
-                color: 'rgb(200,0,0,50%)',
-                WebkitTextStroke: '0.5px red',
-                cursor: 'arrow',
-                userSelect: 'none'
-              }
-            }}
-          >
-            <span ref={textRef}></span>
-          </Typography>
-            </div>
-            </Col>
-            </Row>
-            <div style={{ width: '75%', marginLeft: '2rem'}}>
-              <span style={{ marginLeft: '1rem', color: 'white'}}>While I reside In Oregon,</span><br/> <h1 style={{ margin: '.75rem 0 0 5rem', marginBottom: '-1.5rem', color: 'white'}}>I help create web applications</h1><br/><span style={{ margin: '1rem 0 0 20rem', color: 'white', fontSize: '1.75rem'}}>for people all over the world.</span>
-            </div>
-            <div id="arrowDesk">
-              {/* <a href="#aboutMe">
-                <DoubleArrowIcon className="downLG" />
-              </a> */}
-            </div>
+      {/* Desktop */}
+          {
+            windowSize > 420
+            ?
+            <>
+              <div id="introText">
+                <Typography
+                variant='h4'
+                sx={{
+                  fontWeight: 'bold',
+                  background: 'gray',
+                  color: 'rgb(0,255,255,0%)',
+                  WebkitTextStroke: '1px white',
+                  // backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  transition: 'color 0.50s, -webkit-text-stroke 0.50s',
+                  '&: hover': {
+                    color: 'rgb(0,0,0,100%)',
+                    WebkitTextStroke: '1px gray',
+                    cursor: 'arrow',
+                    userSelect: 'none'
+                  }
+                }}
+                >
+                  Hey, I'm
+                </Typography>
+                <Typography
+                variant='h2'
+                sx={{
+                  position: 'relative',
+                  fontWeight: 'bold',
+                  color: 'rgb(0,255,255,0%)',
+                  WebkitTextStroke: '0.5px white',
+                  backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
+                  '&: hover': {
+                    color: 'rgb(200,0,0,50%)',
+                    WebkitTextStroke: '0.5px red',
+                    cursor: 'arrow',
+                    userSelect: 'none'
+                  }
+                }}
+                >
+                  Brandon Magofna
+                </Typography>
+                <span style={{ color: 'white',}}><hr style={{height: '2px', width: '95%'}} /></span>
+                <Typography
+                variant='h5'
+                sx={{
+                  color: 'rgb(0,255,255,0%)',
+                  background: 'gray',
+                  WebkitTextStroke: '0.75px white',
+                  // backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                }}
+                >
+                  <span ref={textRef}></span>
+                </Typography>
+              </div>
+              <div className="introTextLocation">
+                <span>Based out of Oregon,</span>
+                <br/>
+                <h2 className="introTextInnovative">
+                  I help transform<br/>
+                </h2>
+                  <span style={{ 
+                    marginRight: '2rem', 
+                    letterSpacing: '5px', 
+                    backgroundColor: 'white', 
+                    color: 'black',
+                    margin: 0,
+                    fontSize: '2.5rem'
+                  }}
+                  >
+                    innovative &nbsp;&nbsp;Ideas,
+                  </span>
+                <br/>
+                <span >into tangible</span><br/>
+                <h1 className="introTextRealities">realities.</h1>
+              </div>
+            </>
+            :
+      // mobile View
+            <>
+              <div id="introText">
+                <Typography
+                variant='h5'
+                sx={{
+                  fontWeight: 'bold',
+                  background: 'gray',
+                  color: 'rgb(0,255,255,0%)',
+                  WebkitTextStroke: '1px white',
+                  // backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  transition: 'color 0.50s, -webkit-text-stroke 0.50s',
+                  '&: hover': {
+                    color: 'rgb(0,0,0,100%)',
+                    WebkitTextStroke: '1px gray',
+                    cursor: 'arrow',
+                    userSelect: 'none'
+                  }
+                }}
+                >
+                  Hey, I'm
+                </Typography>
+                <Typography
+                variant='h3'
+                sx={{
+                  position: 'relative',
+                  fontWeight: 'bold',
+                  color: 'rgb(0,255,255,0%)',
+                  WebkitTextStroke: '0.5px white',
+                  backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
+                  '&: hover': {
+                    color: 'rgb(200,0,0,50%)',
+                    WebkitTextStroke: '0.5px red',
+                    cursor: 'arrow',
+                    userSelect: 'none'
+                  }
+                }}
+                >
+                  Brandon Magofna
+                </Typography>
+                <span style={{ color: 'white', margin: '-3.25% 0'}}><hr style={{height: '3px', width: '70%'}} /></span>
+                <Typography
+                variant='h5'
+                sx={{
+                  color: 'rgb(0,255,255,0%)',
+                  background: 'gray',
+                  WebkitTextStroke: '0.75px white',
+                  // backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                }}
+                >
+                  <span ref={textRef}></span>
+                </Typography>
+              </div>
+              <div className="introTextLocation">
+                <span className="introTextTransform">I &nbsp;&nbsp;transform </span><br/>
+                <h3 className="introTextInnovative">innovative</h3>
+                <span className="introTextIdea">Ideas,</span><br/>
+                <span className="introTextInto">into tangible</span><br/>
+                <span className="introTextRealities"><span className="capitalLetter">R</span>ealities.</span>
+              </div>
+            </>
+          }
+          </Col>
+          </Row>
 
 
-                <a href="#aboutMe" className="customButtonEffect">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <div className="doubleArrowIcon">
-                    <DoubleArrowIcon fontSize="large" />
-                  </div>
-                </a>
-            {/* <div id="arrowContain">
-              <a href="#aboutMe">
-                <DoubleArrowIcon className="downIcon" />
-              </a>
-            </div> */}
+            <a href="#aboutMe" className="customButtonEffect">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div className="doubleArrowIcon">
+                <DoubleArrowIcon fontSize="large" />
+              </div>
+            </a>
       </Container>
     </div>
   )
