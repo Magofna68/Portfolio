@@ -9,6 +9,11 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { Typography } from "@mui/material";
 import CustomTypography from '../utility/typography/Typography';
+import JS from '../../assets/JS-Portfolio.png';
+import CSS from '../../assets/CSS.png';
+import React from '../../assets/React.png';
+import HTML from '../../assets/HTML.png';
+import Location from '../../assets/Location.png';
 
 export default function Intro() {
   const textRef = useRef(null);
@@ -117,7 +122,10 @@ export default function Intro() {
                 <div className="bottomIntroTextContainer">
                   <div className="introTextLocation">
                     <span className="introTextOregon">
-                      Based out of Oregon,
+                      Based out of Oregon, 
+                      <span>
+                        <img style={{}} src={Location} alt="Location Icon" width="40px" /> 
+                      </span>
                     </span>
                     <br/>
                     <h2 className="introTextTransform">
@@ -126,12 +134,28 @@ export default function Intro() {
                       <span className="textInnovative" >
                         innovative &nbsp;&nbsp;Ideas,
                       </span>
+                      <span className="textInnovativeDesktop">innovative Ideas, into tangible</span>
                     <br/>
                     <span className="introTextTangibles">into tangible</span><br/>
                     <h1 className="introTextRealities">realities.</h1>
                 </div>
-                <div className="whiteLines">
-                    TESTing
+                <div className="whiteLines" style={{ width: '35%'}} >
+                  <div className="whiteLines" style={{ marginLeft: '.25rem', width: '98%'}}>
+                    <div style={{ width: '100%', overflow: 'hidden', marginLeft: '1rem'}}>Tech Stack:
+                      <span className="introIconContainer">
+                        <img src={JS}  alt="Javascript" width="100%" />
+                      </span>
+                      <span className="introIconContainer">
+                        <img src={CSS}  alt="Cascading Style Sheets" width="100%" />
+                      </span>
+                      <span className="introIconContainer">
+                        <img src={HTML}  alt="HTML5" width="100%" />
+                      </span>
+                      <span className="introIconContainer">
+                        <img src={React}  alt="React Framework" width="100%" />
+                      </span>
+                    </div>
+                  </div>
                 </div>
 
               </div>

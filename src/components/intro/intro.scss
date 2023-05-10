@@ -404,10 +404,11 @@
     display: flex;
     margin: 5% 2%;
     width: 75%;
+    max-width: 600px;
   }
 
   .introText{
-    margin: 30% 0 0 2%;
+    margin: 25% 0 0 2%;
     // margin-left: 20%;
     display: flex;
     flex-direction: column;
@@ -423,6 +424,17 @@
     left: 5%;
     width: 80%;
     height: 30%;
+    max-width: 700px;
+
+    .textInnovative, .introTextTangibles{
+      display: none;
+    }
+
+    .textInnovativeDesktop {
+      // margin: 0 0 -5% 0;
+      padding: 0;
+      letter-spacing: 2px;
+    }
 
     .bottomIntroTextContainer{
       display: flex;
@@ -432,30 +444,40 @@
       
       .introTextLocation{
         position: relative;
-        // position: absolute;
-        // bottom: 5%;
-        // left: 5%;
-        // display: flex;
-        // justify-content: left;
-        // align-self: flex-end;
         flex-direction: row;
         text-transform: uppercase;
-        margin: 5% 0 0 10%;
+        margin: 0% 3% 0 10%;
         padding: 0 0 0 1%;
         background-color: rgb(57, 56, 56);
         opacity: .8;
         border-radius: 5%;
-        padding: 2%;
+        padding: 2% 5% 2% 2%;
         text-align: left;
-        width: 50%;
-        height: 100%;
-        overflow: hidden;
+        width: 65%;
+        max-width: 500px;
+        min-width: fit-content;
+        height: fit-content;
+        
       }
       .whiteLines{
         color: white;
-        width: 50%;
         height: 100%;
-        background-color: red;
+        overflow: hidden;
+        border-left: 2px double;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        align-content: center;
+        flex-direction: column;
+        // margin: 0 0 0 1rem;
+        // padding: 0 0 0 1rem;
+      }
+      
+      .introIconContainer{
+        margin: 0 0 0 3%;
+        display: flex;
+        width: 65px;
+        max-width: 75px;
       }
     }
   }
@@ -463,8 +485,9 @@
   .divider{
     color: white;
     margin: 0 3% 0 0;
-    width: 100%;
+    width: 90%;
     height: 4px;
+    min-width: 500px;
   }
 
   .whiteLines{
