@@ -30,24 +30,9 @@ export default function Intro() {
   return (
     <div id="introPage">
       <Container fluid>
-        <Row>
+        {/* <Row> */}
           {/* <Col xs={12} sm={12} md={9} lg={6} xl={6}> */}
-            <div 
-              id="imageBorder"
-              style={{
-                maxWidth: `90%`,
-                // minWidth: `250px`,
-                border: `solid`,
-                borderColor: '',
-                opacity: '.75',
-                alignItems: `center`,
-                justifyContent: `center`,
-                // backgroundImage: `url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25806764.jpg")`,
-                borderRadius: `30%`,
-                // margin: `5%`,
-                // marginTop: `15%`,
-                overflow: `visible`
-            }}>
+            <div id="imageBorder">
               <div 
                 id="imgContain"
                 style={{
@@ -64,7 +49,7 @@ export default function Intro() {
               </div>
             </div>
           {/* </Col> */}
-          <Col xs={12} s={12} md={12} lg={6} xl={6} style={{ margin: 0, padding: 0,}}>
+          {/* <Col xs={12} s={12} md={12} lg={6} xl={6} style={{ margin: 0, padding: 0,}}> */}
       {/* Desktop */}
           {
             windowSize > 420
@@ -128,27 +113,34 @@ export default function Intro() {
                   <span ref={textRef}></span>
                 </Typography>
               </div>
+              <div className="introBottomSection" style={{ display: 'flex', flexDirection: 'row'}}>
+                <div className="bottomIntroTextContainer">
+                  <div className="introTextLocation">
+                    <span className="introTextOregon">
+                      Based out of Oregon,
+                    </span>
+                    <br/>
+                    <h2 className="introTextTransform">
+                      I help transform<br/>
+                    </h2>
+                      <span className="textInnovative" >
+                        innovative &nbsp;&nbsp;Ideas,
+                      </span>
+                    <br/>
+                    <span className="introTextTangibles">into tangible</span><br/>
+                    <h1 className="introTextRealities">realities.</h1>
+                </div>
+                <div className="whiteLines">
+                    TESTing
+                </div>
 
-              <div className="introTextLocation">
-                <span className="introTextOregon">
-                  Based out of Oregon,
-                </span>
-                <br/>
-                <h2 className="introTextTransform">
-                  I help transform<br/>
-                </h2>
-                  <span className="textInnovative" >
-                    innovative &nbsp;&nbsp;Ideas,
-                  </span>
-                <br/>
-                <span className="introTextTangibles">into tangible</span><br/>
-                <h1 className="introTextRealities">realities.</h1>
+              </div>
               </div>
             </>
             :
       // mobile View
             <>
-              <div id="introText">
+              <div className="introTypographyContainer" id="introText">
                 <Typography
                 variant='h5'
                 sx={{
@@ -171,7 +163,29 @@ export default function Intro() {
                   Hey, I'm
                 </Typography>
                 <Typography
-                variant='h3'
+                variant='h2'
+                sx={{
+                  marginBottom: '-3%',
+                  position: 'relative',
+                  fontWeight: 'bold',
+                  color: 'rgb(0,255,255,0%)',
+                  WebkitTextStroke: '0.5px white',
+                  backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
+                  '&: hover': {
+                    color: 'rgb(200,0,0,50%)',
+                    WebkitTextStroke: '0.5px red',
+                    cursor: 'arrow',
+                    userSelect: 'none'
+                  }
+                }}
+                >
+                  Brandon
+                </Typography>
+                <Typography
+                variant='h2'
                 sx={{
                   position: 'relative',
                   fontWeight: 'bold',
@@ -189,9 +203,9 @@ export default function Intro() {
                   }
                 }}
                 >
-                  Brandon Magofna
+                   Magofna
                 </Typography>
-                <span style={{ color: 'white', margin: '-3.25% 0'}}><hr style={{height: '3px', width: '70%'}} /></span>
+                <span><hr className="divider" /></span>
                 <Typography
                 variant='h5'
                 sx={{
@@ -215,8 +229,8 @@ export default function Intro() {
               </div>
             </>
           }
-          </Col>
-          </Row>
+          {/* </Col> */}
+          {/* </Row> */}
 
 
             <a href="#aboutMe" className="customButtonEffect">
