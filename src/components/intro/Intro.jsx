@@ -5,10 +5,7 @@ import { useEffect, useRef } from "react";
 import Placeholder from "../../assets/placeholder.JPG";
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import { Typography } from "@mui/material";
-import CustomTypography from '../utility/typography/Typography';
 import JS from '../../assets/JS-Portfolio.png';
 import CSS from '../../assets/CSS.png';
 import React from '../../assets/React.png';
@@ -35,85 +32,78 @@ export default function Intro() {
   return (
     <div id="introPage">
       <Container fluid>
-        {/* <Row> */}
-          {/* <Col xs={12} sm={12} md={9} lg={6} xl={6}> */}
-            <div id="imageBorder">
-              <div 
-                id="imgContain"
-                style={{
-                opacity: '90%',
-                borderRadius: `30px`,
-                border: `solid`,
-                borderColor: `gray`,
-                margin: `10% 7%`,
-                }}
-                >
-                  <Image src={Placeholder} fluid alt="Profile Picture"></Image>
-                  {/* <img src={Placeholder} fluid alt="Profile"></img> */}
+        <div id="imageBorder">
+          <div 
+            id="imgContain"
+            style={{
+            opacity: '90%',
+            borderRadius: `30px`,
+            border: `solid`,
+            borderColor: `gray`,
+            margin: `10% 7%`,
+            }}
+            >
+              <Image src={Placeholder} fluid alt="Profile Picture"></Image>
+          </div>
+        </div>
 
-              </div>
-            </div>
-          {/* </Col> */}
-          {/* <Col xs={12} s={12} md={12} lg={6} xl={6} style={{ margin: 0, padding: 0,}}> */}
-      {/* Desktop */}
+        {/* Desktop */}
           {
             windowSize > 420
             ?
             <>
               <div className="introText">
                 <Typography
-                variant='h4'
-                sx={{
-                  fontWeight: 'bold',
-                  background: 'gray',
-                  color: 'rgb(0,255,255,0%)',
-                  WebkitTextStroke: '1px white',
-                  // backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
-                  WebkitBackgroundClip: 'text',
-                  backgroundClip: 'text',
-                  transition: 'color 0.50s, -webkit-text-stroke 0.50s',
-                  '&: hover': {
-                    color: 'rgb(0,0,0,100%)',
-                    WebkitTextStroke: '1px gray',
-                    cursor: 'arrow',
-                    userSelect: 'none'
-                  }
-                }}
+                  variant='h4'
+                  sx={{
+                    fontWeight: 'bold',
+                    background: 'gray',
+                    color: 'rgb(0,255,255,0%)',
+                    WebkitTextStroke: '1px white',
+                    WebkitBackgroundClip: 'text',
+                    backgroundClip: 'text',
+                    transition: 'color 0.50s, -webkit-text-stroke 0.50s',
+                    '&: hover': {
+                      color: 'rgb(0,0,0,100%)',
+                      WebkitTextStroke: '1px gray',
+                      cursor: 'arrow',
+                      userSelect: 'none'
+                    }
+                  }}
                 >
                   Hey, I'm
                 </Typography>
                 <Typography
-                variant='h2'
-                sx={{
-                  position: 'relative',
-                  fontWeight: 'bold',
-                  color: 'rgb(0,255,255,0%)',
-                  WebkitTextStroke: '0.5px white',
-                  backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
-                  WebkitBackgroundClip: 'text',
-                  backgroundClip: 'text',
-                  transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
-                  '&: hover': {
-                    color: 'rgb(200,0,0,50%)',
-                    WebkitTextStroke: '0.5px red',
-                    cursor: 'arrow',
-                    userSelect: 'none'
-                  }
-                }}
+                  variant='h2'
+                  sx={{
+                    position: 'relative',
+                    fontWeight: 'bold',
+                    color: 'rgb(0,255,255,0%)',
+                    WebkitTextStroke: '0.5px white',
+                    backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+                    WebkitBackgroundClip: 'text',
+                    backgroundClip: 'text',
+                    transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
+                    '&: hover': {
+                      color: 'rgb(200,0,0,50%)',
+                      WebkitTextStroke: '0.5px red',
+                      cursor: 'arrow',
+                      userSelect: 'none'
+                    }
+                  }}
                 >
                   Brandon Magofna
                 </Typography>
                 <span><hr className="divider" /></span>
                 <Typography
-                variant='h5'
-                sx={{
-                  color: 'rgb(0,255,255,0%)',
-                  background: 'gray',
-                  WebkitTextStroke: '0.75px white',
-                  // backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
-                  WebkitBackgroundClip: 'text',
-                  backgroundClip: 'text',
-                }}
+                  variant='h5'
+                  sx={{
+                    color: 'rgb(0,255,255,0%)',
+                    background: 'gray',
+                    WebkitTextStroke: '0.75px white',
+                    WebkitBackgroundClip: 'text',
+                    backgroundClip: 'text',
+                  }}
                 >
                   <span ref={textRef}></span>
                 </Typography>
@@ -121,129 +111,132 @@ export default function Intro() {
               <div className="introBottomSection" style={{ display: 'flex', flexDirection: 'row'}}>
                 <div className="bottomIntroTextContainer">
                   <div className="introTextLocation">
+
                     <span className="introTextOregon">
                       Based out of Oregon, 
                       <span>
                         <img style={{}} src={Location} alt="Location Icon" width="40px" /> 
                       </span>
-                    </span>
-                    <br/>
+                    </span><br/>
+
                     <h2 className="introTextTransform">
                       I help transform<br/>
                     </h2>
-                      <span className="textInnovative" >
-                        innovative &nbsp;&nbsp;Ideas,
-                      </span>
-                      <span className="textInnovativeDesktop">innovative Ideas, into tangible</span>
+
+                    <span className="textInnovative" >
+                      innovative &nbsp;&nbsp;Ideas,
+                    </span>
+
+                    <span className="textInnovativeDesktop">innovative Ideas, into tangible</span>
                     <br/>
                     <span className="introTextTangibles">into tangible</span><br/>
                     <h1 className="introTextRealities">realities.</h1>
-                </div>
-                <div className="whiteLines" style={{ width: '35%'}} >
-                  <div className="whiteLines" style={{ marginLeft: '.25rem', width: '98%'}}>
-                    <div style={{ width: '100%', overflow: 'hidden', marginLeft: '1rem'}}>Tech Stack:
-                      <span className="introIconContainer">
-                        <img src={JS}  alt="Javascript" width="100%" />
-                      </span>
-                      <span className="introIconContainer">
-                        <img src={CSS}  alt="Cascading Style Sheets" width="100%" />
-                      </span>
-                      <span className="introIconContainer">
-                        <img src={HTML}  alt="HTML5" width="100%" />
-                      </span>
-                      <span className="introIconContainer">
-                        <img src={React}  alt="React Framework" width="100%" />
-                      </span>
+                  </div>
+                  <div className="whiteLines" style={{ width: '35%'}} >
+                    <div className="whiteLines" style={{ marginLeft: '.25rem', width: '98%'}}>
+                      <div style={{ width: '100%', overflow: 'hidden', marginLeft: '1rem'}}>
+                        <span className="introIconContainer">
+                          <img src={JS}  alt="Javascript" width="100%" />
+                        </span>
+                        <span className="introIconContainer">
+                          <img src={CSS}  alt="Cascading Style Sheets" width="100%" />
+                        </span>
+                        <span className="introIconContainer">
+                          <img src={HTML}  alt="HTML5" width="100%" />
+                        </span>
+                        <span className="introIconContainer">
+                          <img src={React}  alt="React Framework" width="100%" />
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-              </div>
+                </div>
               </div>
             </>
             :
-      // mobile View
+            // mobile View
             <>
               <div className="introTypographyContainer" id="introText">
                 <Typography
-                variant='h5'
-                sx={{
-                  fontWeight: 'bold',
-                  background: 'gray',
-                  color: 'rgb(0,255,255,0%)',
-                  WebkitTextStroke: '1px white',
-                  // backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
-                  WebkitBackgroundClip: 'text',
-                  backgroundClip: 'text',
-                  transition: 'color 0.50s, -webkit-text-stroke 0.50s',
-                  '&: hover': {
-                    color: 'rgb(0,0,0,100%)',
-                    WebkitTextStroke: '1px gray',
-                    cursor: 'arrow',
-                    userSelect: 'none'
-                  }
-                }}
+                  variant='h5'
+                  sx={{
+                    marginBottom: '-1%',
+                    fontWeight: 'bold',
+                    background: 'gray',
+                    color: 'rgb(0,255,255,0%)',
+                    WebkitTextStroke: '1px white',
+                    WebkitBackgroundClip: 'text',
+                    backgroundClip: 'text',
+                    transition: 'color 0.50s, -webkit-text-stroke 0.50s',
+                    '&: hover': {
+                      color: 'rgb(0,0,0,100%)',
+                      WebkitTextStroke: '1px gray',
+                      cursor: 'arrow',
+                      userSelect: 'none'
+                    }
+                  }}
                 >
                   Hey, I'm
                 </Typography>
                 <Typography
-                variant='h2'
-                sx={{
-                  marginBottom: '-3%',
-                  position: 'relative',
-                  fontWeight: 'bold',
-                  color: 'rgb(0,255,255,0%)',
-                  WebkitTextStroke: '0.5px white',
-                  backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
-                  WebkitBackgroundClip: 'text',
-                  backgroundClip: 'text',
-                  transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
-                  '&: hover': {
-                    color: 'rgb(200,0,0,50%)',
-                    WebkitTextStroke: '0.5px red',
-                    cursor: 'arrow',
-                    userSelect: 'none'
-                  }
-                }}
+                  variant='h2'
+                  sx={{
+                    marginBottom: '-5%',
+                    position: 'relative',
+                    fontWeight: 'bold',
+                    color: 'rgb(0,255,255,0%)',
+                    WebkitTextStroke: '0.5px white',
+                    backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+                    WebkitBackgroundClip: 'text',
+                    backgroundClip: 'text',
+                    transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
+                    '&: hover': {
+                      color: 'rgb(200,0,0,50%)',
+                      WebkitTextStroke: '0.5px red',
+                      cursor: 'arrow',
+                      userSelect: 'none'
+                    }
+                  }}
                 >
                   Brandon
                 </Typography>
                 <Typography
-                variant='h2'
-                sx={{
-                  position: 'relative',
-                  fontWeight: 'bold',
-                  color: 'rgb(0,255,255,0%)',
-                  WebkitTextStroke: '0.5px white',
-                  backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
-                  WebkitBackgroundClip: 'text',
-                  backgroundClip: 'text',
-                  transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
-                  '&: hover': {
-                    color: 'rgb(200,0,0,50%)',
-                    WebkitTextStroke: '0.5px red',
-                    cursor: 'arrow',
-                    userSelect: 'none'
-                  }
-                }}
+                  variant='h2'
+                  sx={{
+                    position: 'relative',
+                    fontWeight: 'bold',
+                    color: 'rgb(0,255,255,0%)',
+                    WebkitTextStroke: '0.5px white',
+                    backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+                    WebkitBackgroundClip: 'text',
+                    backgroundClip: 'text',
+                    transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
+                    '&: hover': {
+                      color: 'rgb(200,0,0,50%)',
+                      WebkitTextStroke: '0.5px red',
+                      cursor: 'arrow',
+                      userSelect: 'none'
+                    }
+                  }}
                 >
                    Magofna
                 </Typography>
                 <span><hr className="divider" /></span>
                 <Typography
-                variant='h5'
-                sx={{
-                  color: 'rgb(0,255,255,0%)',
-                  background: 'gray',
-                  WebkitTextStroke: '0.75px white',
-                  // backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
-                  WebkitBackgroundClip: 'text',
-                  backgroundClip: 'text',
-                }}
+                  variant='h5'
+                  sx={{
+                    color: 'rgb(0,255,255,0%)',
+                    background: 'gray',
+                    WebkitTextStroke: '0.75px white',
+                    WebkitBackgroundClip: 'text',
+                    backgroundClip: 'text',
+                  }}
                 >
                   <span ref={textRef}></span>
                 </Typography>
               </div>
+
               <div className="introTextLocation">
                 <span className="introTextTransform">I &nbsp;&nbsp;transform </span><br/>
                 <h3 className="introTextInnovative">innovative</h3>
@@ -253,19 +246,15 @@ export default function Intro() {
               </div>
             </>
           }
-          {/* </Col> */}
-          {/* </Row> */}
-
-
-            <a href="#aboutMe" className="customButtonEffect">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <div className="doubleArrowIcon">
-                <DoubleArrowIcon fontSize="large" />
-              </div>
-            </a>
+          <a href="#aboutMe" className="customButtonEffect">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div className="doubleArrowIcon">
+              <DoubleArrowIcon fontSize="large" />
+            </div>
+          </a>
       </Container>
     </div>
   )

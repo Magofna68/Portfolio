@@ -13,73 +13,68 @@ export default function AboutMe() {
       repeat: `no-repeat`,
       backgroundImage: `url("https://i2.wp.com/files.123freevectors.com/wp-content/original/142906-cool-grey-wave-business-background-vector-art.jpg?w=800&q=95")`
     }}>
-      <Container fluid>
-        <Row>
-          <div id="title">
+      <Container fluid className="aboutMeContainer">
+        <Col>
+          <Row>
+            <div className="aboutMeTitle">
               <span style={{ color: `grey`}}>About &nbsp;</span>
-              Brandon
+                Brandon
               <span style={{ color: `grey`, }}>.</span>
-          </div>
-          <br/>
-          <Col>
-            <p>
-              <span className="largeLettering">A</span>fter graduating with a GSS degree from U of O in 2019,
-              Brandon quickly landed a job in selling software. After
-              working collaboratively in sales to achieve individual 
-              and team performance metrics, along with quota retirements,
-              Brandon quickly realized how fleeting success was within 
-              the sales industry.
+            </div>
+          </Row>
+
+          <div className='aboutMeTextContainer'>
+            <p className='grayBackground para-1'>
+              <span className='largeLettering'>A</span>fter working in sales since the completion of college, in 2021, Brandon made the
+              jump from sales to pursue a career in coding. Brandon enrolled at Epicodus, and received hands-on
+              experience & exposure with: Javascript, C#, and React. 
             </p>
-            <p id="galaxyFold" className='grayBackground'>
-              <span className='largeLettering'>A</span>fter much thought, Brandon came to realize his passion didnt
-              lie in sales, but rather in the excitement of overcoming a 
-              challenge. He left his sales role behind to pursue a career in
-              coding. 
-              Applying the knowledge base cultivated from U of O and leaning 
-              into his experiences with teamwork and collaboration, Brandon's goal is to further 
-              develop a growth mindset; leaning into unknown endeavors, and 
-              reshaping the world one line of code at a time.
+
+            <p className='aboutMeBorder para-2'>
+              <span className='largeLettering'>A</span>fter Epicodus & his internship at VALIDATE, 
+              Brandon's focus shifted to side projects, mastering new tools, and learning new tech stacks. 
+              Brandon is confident in leveraging his knowledge of React, while
+              maintaining best practices & fulfilling communicated objectives along the way.
             </p>
-            <p>
+
+            <p className='aboutMeBorder borderDesktop para-3'>
               <span className='largeLettering'>W</span>ith exposure and repetition of best practices at Epicodus, Brandon has been building up his technical and 
               nontechnical skills to place him in a position to revel in complex
               challenges.<br/>The strong push for effective, collaborative-work, 
               has honed his interpersonal skills and have granted him insight to
               alternative perspectives and methodologies while overcoming challenges.
             </p>
-            <p className='grayBackground'>
-              <span className='largeLettering'>W</span>hile he doesn't boast to have the most experience writing
-              code, Brandon is confident in leveraging his abilities as a 
-              self-starter; to learn and fulfill all communicated objectives 
-              while maintaining best practices along the way. After his internship at VALIDATE, 
-              Brandon is focusing on side projects, mastering new tools, and learning new tech stacks. 
+
+            <p className='grayBackground para-4'>
+              <span className='largeLettering'>I</span>n 2022, Brandon began at Opine, an online learning platform 
+              curated for students in the WA School District. <br/>Since joining Opine, Brandon has added value by:<br/><br/> 
+              - Devlopment of a Node backend server<br/>- Creation of Firebase security rules for app<br/>
+              - Stripe integration for payment processing
             </p>
-          </Col>
-        </Row>
-        <Row>
-          <div className="clickables">
+          </div>
+
+          <div className="aboutMeClickables">
             <div className="resumeContainer">
-              <Col xs={5} s={6} m={6} lg={6}>
-                <div id="text">
-                  <h3>Checkout</h3><h6>my</h6><h2>Resume</h2>
-                </div>
-              </Col>
-              <Col xs={7} s={6} m={6} lg={6}>
-                <a 
-                  target="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing"
-                  href="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing"
-                >
-                  <img 
-                    src={Resume} 
-                    alt="resume_link" 
-                    width="175px"
-                    id="resume"
-                  />
-                </a>
-              </Col>
+              <span style={{ flexDirection: 'column', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                <h3>Checkout</h3>
+                <h6>my</h6>
+                <h2>Resume</h2>
+              </span>
+              <a 
+                target="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing"
+                href="https://docs.google.com/document/d/1oaRwK2RvkR2c0hmXVDrE1k8jNoHA_CdWvMhrpSNsVuM/edit?usp=sharing"
+              >
+                <img 
+                  src={Resume} 
+                  alt="resume_link" 
+                  width="175px"
+                  id="resume"
+                />
+              </a>
             </div>
           </div>
-        </Row>
+          
+        </Col>
       </Container>
     </div>
   )

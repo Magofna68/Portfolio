@@ -1,9 +1,8 @@
 @import "../../global.scss";
 
-// @media screen and (min-width: 421px) {
-
 .container-fluid{
   margin: 0;
+  overflow: hidden;
 }
 
 #imageBorder{
@@ -18,146 +17,11 @@
   overflow: hidden;
 }
 
-//   @media (max-width: $desktop) {
-//     margin: auto;
-//     margin-top: 10%;
-//     width: 70%;
-//   }
-//   @media (max-width: $iphone) {
-//     width: 90%;
-//     margin-top: 18%;
-//   }
-//   @media (max-width: $galaxy) {
-//     margin-top: 5%;
-//     width: 85%;
-//   }
-// }
-
-#mobileSocial{
-  display: none;
-
-  @media (max-width: $ipad) {
-    display: flex;
-    border-left: double 3px;
-    border-right: double 3px;
-    border-color: red;
-    justify-content: space-around;
-    width: 60%;
-    margin:auto;
-    position: absolute;
-    right: 20%;
-    bottom: 5%;
-  }
-}
-
-#container{
-  padding-top: 15%;
-  height: 50%;
-  margin: auto;
-  
-  @media (max-width: $galaxy) {
-    padding-top: 5%;
-  }
-  @media (max-width: $iphone) {
-    padding-top: 15%;
-  }
-  @media (max-width: $desktop) {
-    padding-top: 5%;
-    margin: 5% 0% 0 10%;
-    height: 30%;
-  }
-}
-
-#containerMobile{
-  display: none;
-  
-  @include mobile{
-    margin-bottom: 10%; 
-    display: flex;
-    width: 80%;
-    height: 10%;
-    margin: 0 0;
-    padding-left: 10%;
-
-  }
-}
-
-
-#introText{
-  width: 500px;
-  margin: 0% 3% 0% 3%;
-  color: grey;
-  overflow: visible;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: left;
-  // margin-right: auto;
-  
-  @media only screen and (max-width: 775px) {
-    margin-left: 7%;
-
-  }
-
- h1{
-    color: grey;
-    font-size: 35px;
-
-    @include mobile{
-      font-size: 25px;
-    }
-    @media (max-width: $desktop) {
-      font-size: 45px;
-    }
-  }
-
-   #smallText{
-     font-size: 25px;
-    }
-
-    .iType{
-      color: red;
-      
-      @media (max-width: $desktop) {
-        font-size: 40px;
-      }
-    }
-
-    #iType{
-      color: red;
-    }
-
-    .ityped-cursor {
-      color: grey;
-      animation: blink 1s infinite;
-    }
-
-    h3{
-      margin-bottom: 20%;
-
-      @media (max-width: $ipad) {
-        margin-bottom: 5%;
-      }
-    }
-
-    @keyframes blink {
-      50% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-    }
-  }
-}
-
 .introTextLocation{
   position: absolute;
   color: white;
-  // top: 60%;
-  // left: 5%;
   text-transform: uppercase;
   margin: auto;
-  // padding: 0 0 0 1%;
   background-color: rgb(57, 56, 56);
   opacity: .8;
   border-radius: 5%;
@@ -166,39 +30,12 @@
   width: fit-content;
   height: 30%;
   
-  // .capitalLetter{
-  //   font-size: 2rem;
-  //   margin: 0 0 0 0;
-  //   padding: 0 0 0 0;
-  //   // background-color: black;
-  //   color: black;
-  // }
-
-  // .introTextTransform{
-  //   margin: 0 0 1% 0rem;
-  //   background-color: black;
-  // }
   
   .introTextInnovative{
     margin: 0 0 0% 0;
     letter-spacing: 2px;
   }
 
-  // .introTextIdea{
-  //   letter-spacing: 4px;
-  //   margin: 0 0 2% 0;
-  //   // padding: -1px 5px -1px 5px;
-  //   font-size: 2rem;
-  //   // margin: 2% 0 3% 0%;
-  //   background-color: white;
-  //   color: black;
-  //   border-radius: 3px;
-  // }
-  // .introTextInto{
-  //   background-color: black;
-  //   font-size: 1rem;
-  //   margin: 3% 0 3% 0;
-  // }
   .introTextRealities{
     letter-spacing: 8px;
     font-size: 3rem;
@@ -207,7 +44,6 @@
     padding-top: 2%;
     border-radius: 10px;
     width:fit-content;
-    // margin: 0 0 0 5rem;
   }
 
   span, h3 {
@@ -216,66 +52,16 @@
   }
 }
 
-#arrowDesk{
-  display: flex;
-  color: red;
-  animation: arrowBlink 6s infinite;
-  align-items: end;
-  justify-content: end;
-  margin: 0 0 0 0;
-
-  .downLG{
-    transform: rotate(90deg);
-    width: 25%;
-    height: 20%;
-    color: red;
-
-    @media (min-width: $ipad) {
-      width: 50%;
-      // margin-bottom: 10%;
-    }
-    @media (max-width: $desktop) {
-      margin-bottom: 40%;
-    }
-
-    @keyframes arrowBlink {
-      100% {
-        opacity: 20%;
-      }
-    }
-  }
-}
-
-#arrowContain{
-  display: none;
-
-  @include mobile{
-    display: block;
-    margin: 0 0 5% 0;
-  }
-
-  }
-
 
 .doubleArrowIcon{
   transform: rotate(45deg);
-  // width: 50px;
-  // height: 50px;
 }
 
-// .introTextLocation{
-//   span {
-
-//   }
-// }
-
 #introPage{
-  // background-image: url("https://cdn.wallpapersafari.com/83/6/DY9RHb.gif");
   background-image: url('https://static.vecteezy.com/system/resources/previews/002/049/807/original/dark-geometric-black-abstract-background-elegant-design-pattern-free-vector.jpg');
   background-repeat: no-repeat;
   background-color: black;
   justify-content: center;
-  // opacity: 0.9;
   background-size: cover;
 };
 
@@ -393,7 +179,7 @@
   }
 
   // ____________________________________________________________
-@media screen and (min-width: 921px) and (max-width: 1500px) {
+@media screen and (min-width: 921px) and (max-width: 2500px) {
   .container-fluid{
     display: flex;
     flex-direction: row;
@@ -409,13 +195,13 @@
 
   .introText{
     margin: 25% 0 0 2%;
-    // margin-left: 20%;
     display: flex;
     flex-direction: column;
     justify-content: right;
     padding: 0;
     text-align: left;
     width: 50%;
+    max-height: 500px;
   }
 
   .introBottomSection {
@@ -424,14 +210,13 @@
     left: 5%;
     width: 80%;
     height: 30%;
-    max-width: 700px;
+    max-width: 1200px;
 
     .textInnovative, .introTextTangibles{
       display: none;
     }
 
     .textInnovativeDesktop {
-      // margin: 0 0 -5% 0;
       padding: 0;
       letter-spacing: 2px;
     }
@@ -469,8 +254,6 @@
         align-items: left;
         align-content: center;
         flex-direction: column;
-        // margin: 0 0 0 1rem;
-        // padding: 0 0 0 1rem;
       }
       
       .introIconContainer{
@@ -515,9 +298,12 @@
     text-align: left;
   }
 
+  .introIconContainer{
+    display: none;
+  }
+
   .introTextLocation{
     display: flex;
-    // justify-content: left;
     float: left;
     flex-direction: column;
     text-transform: uppercase;
@@ -534,9 +320,7 @@
 
     .capitalLetter{
       font-size: 2rem;
-      // margin: 0 0 0 0;
       padding: 0 0 0 0;
-      // background-color: black;
       color: black;
     }
 
@@ -556,15 +340,14 @@
       margin: 0 0 -3% 0;
       background-color: black;
       color: white;
-      // width: fit-content;
       padding: 0 3%;
+      padding-bottom: 1%;
       border-radius: 10px;
       overflow: hidden;
     }
 
     .introTextTransform{
       font-size: 2rem;
-      // background-color: black;
       margin: 0 0 0% 0;
       overflow: hidden;
     }
@@ -583,6 +366,10 @@
       overflow: hidden;
     }
 
+    .textInnovativeDesktop {
+      display: none;
+    }
+
     .introTextIdea{
       letter-spacing: 4px;
       font-size: 1.8rem;
@@ -593,7 +380,6 @@
     .introTextInto{
       background-color: black;
       font-size: 1rem;
-      // margin: 3% 0 3% 0;
     }
     .introTextRealities{
       letter-spacing: 10px;
@@ -614,21 +400,25 @@
 }
 
 // ____________________________________________________________
-@media screen and (min-width: 100px) and (max-width: 420px) {
+@media screen and (min-width: 376px) and (max-width: 420px) {
 
 #introText{
   margin: 0;
   width: 100%;
+  overflow: hidden;
 }
 
   div.container-fluid {
     text-align: center;
     margin: 3% 0 0 0;
+    overflow: hidden;
   }
   #imageBorder{
     margin: 5% 5% 0 5%;
     align-self: center;
     justify-content: center;
+    overflow: hidden;
+
   }
 
   #container {
@@ -636,11 +426,13 @@
     display: flex;
     width: 100%;
     height: 10%;
+    overflow: hidden;
   }
   
   .introTypographyContainer{
     text-align: center;
     margin:auto;
+    overflow: hidden;
 
     h1 {
       font-size: 30px;
@@ -669,17 +461,17 @@
     text-align: center;
     width: fit-content;
     height:fit-content;
+    overflow: hidden;
+
 
     .capitalLetter{
       font-size: 2.5rem;
       margin: 0 0 0 0;
       padding: 0 0 0 0;
-      // background-color: black;
       color: black;
     }
 
     .introTextTransform{
-      // margin: 0 0 1% 0rem;
       padding: 0 3%;
       background-color: black;
       font-size: 1rem;
@@ -698,7 +490,6 @@
       background-color: white;
       color: black;
       border-radius: 3px;
-      // margin: 0 0 0 1.5rem;
     }
     .introTextInto{
       background-color: black;
@@ -712,7 +503,6 @@
       color: black;
       padding-top: 6%;
       border-radius: 10px;
-      // margin-top: -10%;
     }
 
     span, h3 {
@@ -741,14 +531,12 @@
 
   #mobileSocial {
     display: flex;
-    // position: fixed;
     border-left: double 3px;
     border-right: double 3px;
     border-color: red;
     justify-content: space-around;
     width: 60%;
     margin:auto;
-    // margin-top: 10%;
     position: absolute;
     right: 20%;
     bottom: 10%;
@@ -756,5 +544,36 @@
     a{
       padding: 0 10px 0 10px;
     }
+  }
+}
+// ____________________________________________________________
+@media screen and (min-width: 100px) and (max-width: 375px) {
+
+  #imageBorder{
+    margin: 5%;
+    align-self: center;
+    justify-content: center;
+    overflow: hidden;
+
+  }
+  .introTextLocation{
+    display: none;
+  }
+
+  .introTypographyContainer{
+    text-align: left;
+    margin: 5% 0 0 15%;
+    overflow: hidden;
+  }
+
+  .divider{
+    display: none;
+  }
+
+  .customButtonEffect{
+    position: absolute;
+    bottom: 7%;
+    right: 10%;
+    padding: 20px;
   }
 }
