@@ -45,18 +45,18 @@ export default function Portfolio() {
     }, [selected])
 
   return (
-    <div 
-    className="portfolio" 
-    id="portfolio"
-    style={{
-      opacity: `90%`,
-      backgroundSize: `cover`,
-      repeat: `no-repeat`,
-      backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
-    }}>
-        <h1>Portfolio<span>.</span></h1>
-        <br/>
-        <ul>
+    <div  
+      id="portfolio"
+      style={{
+        opacity: `90%`,
+        backgroundSize: `cover`,
+        repeat: `no-repeat`,
+        backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
+      }}
+    >
+        <span className="portfolioHeader"><h1>Portfolio<span>.</span></h1></span>
+        {/* <br/> */}
+        <ul className="portfolioCategory">
           {list.map((item) => (
             <PortfolioList 
               title={item.title} 
@@ -69,30 +69,32 @@ export default function Portfolio() {
         <div className="container">
           <>
           {data.map((d) => (
-            <Card class="img-responsive" style={{
-              borderRadius: `10%`,
-              padding: `10px 10px 5px 10px`,
-              margin: `0 1rem 2rem 10px`,
-            }}>
+            <Card class="img-responsive">
               <Card.Img 
                 variant="top"
                 src={d.img}
                 alt={d.alt} 
+                width="100%"
+                height="100%"
                 />
               <Card.Body>
                 <Card.Title>{d.title}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">{d.subtitle}</Card.Subtitle>
-                <a href={d.link} rel="noreferrer" target="_blank"><Button>View Project</Button></a>
-                <a href={d.link2} rel="noreferrer" target="_blank"><Button variant="success">View Code</Button></a>
+                <Card.Subtitle className="mb-2 text-muted portfolioSubtitle">{d.subtitle}</Card.Subtitle>
+                <span className="cardButtonContainer">
+                  <a href={d.link} rel="noreferrer" target="_blank"><Button>View Project</Button></a>
+                  <a href={d.link2} rel="noreferrer" target="_blank"><Button variant="success">View Code</Button></a>
+                </span>
               </Card.Body>
               </Card>
           ))}
           </>
+          </div>
+          <div className="portfolioTextContainer">
+            <p className="portfolioText">
+              Epicodus has provided over 250 hours of experience, and nearly 20 projects in C#/.Net, Javascript, & React.<br/>
+              The above projects are a few of those.
+            </p>
           </div>   
-        <p className="portfolioText" style={{ fontWeight: `500`}}>
-             Epicodus has provided a framework of over 250 hours of experience, and nearly 20 projects in each of the following: C#/.Net, Javascript, & React.<br/>
-             The above projects are a few of those.
-        </p>
     </div>
   );
 }

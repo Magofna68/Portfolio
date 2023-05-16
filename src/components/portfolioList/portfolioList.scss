@@ -1,22 +1,37 @@
 @import "../../global.scss";
 
 .portfolioList {
-  font-size: 14px;
-  margin-right: 50px;
-  padding: 0 7px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  // justify-content: space-evenly;
+  align-items: center;
+  padding: .25rem 1rem;
   border-radius: 10px;
   cursor: pointer;
-  margin: 0 10px 0 0;
+  text-transform: uppercase;
   overflow: hidden;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
+  margin-top: 0;
 
   &.active {
-    // background-color: darkslategrey;
-    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    font-size: 1.25rem;
     color: white;
-    border: 1px solid;
-    border-color: red;
+    letter-spacing: 1px;
+    border: 1.5px solid;
+    border-color: rgb(174, 174, 174);
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+  .portfolioList {
+    font-size: 1.75rem;
+
+    &.active{
+      font-size: 1.9rem;
+    }
   }
 }

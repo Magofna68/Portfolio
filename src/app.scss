@@ -1,32 +1,38 @@
 @import "~bootstrap/scss/bootstrap";
 
-body {
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
   overflow: hidden;
-}
-
-.app {
-  height: 100vh; 
-
+  
+  .app {
+    height: 100vh; 
+    
     .sections {
-        width: 100%;
-        // height: 100vh;
-        height: calc(100vh - 70px);
-        // background-color: black;
-        position: relative;
-        top: 70px;
-        scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
-        scroll-snap-stop: always;
-        scrollbar-width: none;
-        
-        &::-webkit-scrollbar{
-          display: none;
-        }
-        
-        >  *{
-          width: 100vw;
-          height: calc(100vh - 70px);
-          scroll-snap-align: start;
-        }
+      width: 100%;
+      // height: 100vh;
+      height: calc(100vh - 70px);
+      height: -moz-calc(100vh - 70px);
+      height: -webkit-calc(100vh - 70px);
+      // background-color: black;
+      position: relative;
+      top: 70px;
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory;
+      scroll-snap-stop: always;
+      scrollbar-width: none;
+      
+      &::-webkit-scrollbar{
+        display: none;
+      }
+      
+      >  *{
+        width: 100vw;
+        // height: calc(100vh - 70px);
+        height: 100%;
+        scroll-snap-align: start;
+      }
     }
+  }
 }
