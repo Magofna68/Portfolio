@@ -8,20 +8,18 @@ export default function AboutMe() {
     <div 
       className="aboutMe"
       id="aboutMe"
-      style={{
-      backgroundSize: `cover`,
-      repeat: `no-repeat`,
-      backgroundImage: `url("https://i2.wp.com/files.123freevectors.com/wp-content/original/142906-cool-grey-wave-business-background-vector-art.jpg?w=800&q=95")`
-    }}>
-      <Container fluid className="aboutMeContainer">
-        <Col>
-          <Row>
-            <div className="aboutMeTitle">
-              <span style={{ color: `grey`}}>About &nbsp;</span>
-                Brandon
-              <span style={{ color: `grey`, }}>.</span>
-            </div>
-          </Row>
+    //   style={{
+    //   backgroundSize: `cover`,
+    //   repeat: `no-repeat`,
+    //   backgroundImage: `url("https://i2.wp.com/files.123freevectors.com/wp-content/original/142906-cool-grey-wave-business-background-vector-art.jpg?w=800&q=95")`
+    // }}
+    >
+      <div fluid className="aboutMeContainer">
+        <div className="aboutMeTitle">
+          <span style={{ color: `grey`}}>About &nbsp;</span>
+            Brandon
+          <span style={{ color: `grey`, }}>.</span>
+        </div>
 
           <div className='aboutMeTextContainer'>
             <p className='grayBackground para-1'>
@@ -55,7 +53,7 @@ export default function AboutMe() {
 
           <div className="aboutMeClickables">
             <div className="resumeContainer">
-              <span style={{ flexDirection: 'column', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+              <span className="aboutMeTextContainer">
                 <h3>Checkout</h3>
                 <h6>my</h6>
                 <h2>Resume</h2>
@@ -74,8 +72,7 @@ export default function AboutMe() {
             </div>
           </div>
           
-        </Col>
-      </Container>
+      </div>
     </div>
   )
 }
