@@ -52,7 +52,7 @@ _*This is my personal portfolio containing work to display.*_
 
 _*This webpage will act as a display for my present/past projects.*_
 
-_*This project mainly focused on utilizing the skills I have learned thus far and apply them to a web based application -- and later modified for mobile viewing. This project focused mainly on deploying projects to get them up and running live on a server. My experience at Epicodus taught me many things, but I was not to familiar with deployment. This app has given me the experience and confidence to tackle deployment in future endeavors.*_
+_*This project mainly focuses on utilizing the skills I have learned thus far and apply them to a web based application --  later modified for responsiveness along with mobile viewing. This project focuses mainly on getting projects deployed and available for consumption, to highlight what I can do with the skillset i've accumulated. My portfolio has given me the experiences of tackling new endeavors, technologies, and challenges.*_
 
 # Technologies Used:
 
@@ -63,6 +63,7 @@ _*This project mainly focused on utilizing the skills I have learned thus far an
 5. iTyped
 6. React-spring
 7. Material-UI/Core
+8. Framer-Motion
 
 ## Support and contact details
 
