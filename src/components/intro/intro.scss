@@ -1,5 +1,9 @@
 @import "../../global.scss";
 
+#introPage {
+  padding: 70px 0 0 0;
+}
+
 .container-fluid{
   margin: 0;
   overflow: hidden;
@@ -551,7 +555,7 @@
 @media screen and (min-width: 100px) and (max-width: 375px) {
 
   #imageBorder{
-    margin: 5%;
+    margin: 6%;
     align-self: center;
     justify-content: center;
     overflow: hidden;
@@ -573,7 +577,7 @@
 
   .customButtonEffect{
     position: absolute;
-    bottom: 15%;
+    bottom: 5%;
     right: 10%;
     padding: 20px;
   }

@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import "./testimonial.scss";
 import Levi from "../../assets/LeviProfilePic.jpeg";
 import Jadon from "../../assets/JadonProfilePic.jpeg";
@@ -7,9 +8,17 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import OpineIcon from '../../assets/OpineIcon.png';
+import BouncingIcon from '../utility/animation/BouncingIcon';
 
 export default function Testimonial() {
+  const [isOpen, setIsOpen] = useState(-1); // Initialize with -1
+  const isMobile = window.innerWidth < 420;
 
+  
+  function RevealTestimonial(index) {
+    setIsOpen(isOpen === index ? -1 : index);
+  }
+  
   const reviews = [
     {
       id:0,
@@ -51,7 +60,7 @@ export default function Testimonial() {
       // featured: true,
     },
   ]
-
+  
   return (
     <div 
     className="testimonial" 
@@ -60,42 +69,109 @@ export default function Testimonial() {
       backgroundSize: `cover`,
       repeat: `no-repeat`,
       backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
-    }}>
+    }}
+    >
       <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', color: 'gray'}}>
         <h1 className="testimonialTitle">Testimonials<span style={{color: 'white'}}>.</span></h1>
       </div>
-      <Container fluid className="testimonialContainer">
-        {reviews.map((r) => (
-          <Card className={r.featured ? "featuredTestimonial" : "testimonialCard"}> 
-            <Row className="topTestimonialCard">
-              <Col style={{ padding: 0 }}>
-                <Card.Img 
-                  variant="top" 
-                  src={r.img} 
-                  className="testimonialCardImg"
+        <Container fluid className="testimonialContainer">
+        {reviews.map((r, index) => (
+          isMobile ? 
+          isOpen === index ? (
+            
+            <Card key={r.id} className="testimonialCard">
+                
+                <Row className="topTestimonialCard">
+                  <Col style={{ padding: 0 }}>
+                    <Card.Img 
+                      variant="top" 
+                      src={r.img} 
+                      className="testimonialCardImg"
+                      />
+                  </Col>
+                  <Col className="testimonialIconContain">
+                    <Card.Img
+                      variant="top"
+                      src={r.icon}
+                      alt={r.alt}
+                      className="testimonialCardIcon"
+                      />
+                  </Col>
+                  <Card.Title id="testimonialCardName">{r.name}</Card.Title>
+                </Row>
+                <Card.Body>
+                  <Row>
+                  <Col>
+                    <Card.Text id="testimonialCardText">
+                      {r.desc}
+                    </Card.Text>
+                    </Col>
+                  </Row>
+                </Card.Body>
+                <Card.Footer className="text-muted testimonialCardTitle" id="testimonialCardTitle">{r.title}</Card.Footer>
+                <span onClick={() => RevealTestimonial(false)} className="collapseIconContainer">
+                  <BouncingIcon />
+                </span>
+              </Card>
+
+          ) : (
+
+              <Card key={r.id} className="mobileTestimonialCard">
+                <Row className="mobileTopTestimonialCard">
+                    <Card.Img 
+                      variant="top" 
+                      src={r.img} 
+                      className="mobileTestimonialCardImg"
+                    />
+                  <Col style={{padding: 0}} className="mobileTestimonialIconContain">
+                    <Card.Img
+                      variant="top"
+                      src={r.icon}
+                      alt={r.alt}
+                      className="mobileTestimonialCardIcon"
+                    />
+                  <p className="mobileTestimonialCardName">
+                    {r.name}
+                  </p>
+                  </Col>
+                </Row>
+                <span onClick={() => RevealTestimonial(index)} className="mobileExpandIconContainer">
+                  <BouncingIcon />
+                </span>
+              </Card>
+          )
+          : 
+          <Card key={r.id} className={r.featured ? "featuredTestimonial" : "testimonialCard"}>
+                
+          <Row className="topTestimonialCard">
+            <Col style={{ padding: 0 }}>
+              <Card.Img 
+                variant="top" 
+                src={r.img} 
+                className="testimonialCardImg"
                 />
-              </Col>
-              <Col className="testimonialIconContain">
-                <Card.Img
-                  variant="top"
-                  src={r.icon}
-                  alt={r.alt}
-                  className="testimonialCardIcon"
+            </Col>
+            <Col className="testimonialIconContain">
+              <Card.Img
+                variant="top"
+                src={r.icon}
+                alt={r.alt}
+                className="testimonialCardIcon"
                 />
+            </Col>
+            <Card.Title id="testimonialCardName">{r.name}</Card.Title>
+          </Row>
+          <Card.Body>
+            <Row>
+            <Col>
+              <Card.Text id="testimonialCardText">
+                {r.desc}
+              </Card.Text>
               </Col>
-              <Card.Title id="testimonialCardName">{r.name}</Card.Title>
             </Row>
-            <Card.Body>
-              <Row>
-              <Col>
-                <Card.Text id="testimonialCardText">
-                  {r.desc}
-                </Card.Text>
-                </Col>
-              </Row>
-            </Card.Body>
-            <Card.Footer className="text-muted testimonialCardTitle" id="testimonialCardTitle">{r.title}</Card.Footer>
-          </Card>
+          </Card.Body>
+          <Card.Footer className="text-muted testimonialCardTitle" id="testimonialCardTitle">{r.title}</Card.Footer>
+        </Card>
         ))}
       </Container>      
     </div>

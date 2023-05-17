@@ -69,7 +69,7 @@ export default function Portfolio() {
         <div className="container">
           <>
           {data.map((d) => (
-            <Card class="img-responsive">
+            <Card class="img-responsive portfolioCard">
               <Card.Img 
                 variant="top"
                 src={d.img}
