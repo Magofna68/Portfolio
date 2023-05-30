@@ -1,0 +1,101 @@
+.timelineContainer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: rgb(53, 53, 53);
+  background-image: url('https://w0.peakpx.com/wallpaper/550/345/HD-wallpaper-triangle-solid-black-gold-abstract.jpg');
+  overflow: auto;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 100%;
+  width: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  // margin: 0;
+  padding: .25rem;
+  border-radius: 20px;
+  // margin: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  div.vertical-timeline-element {
+    // padding: 0 1rem 0 1rem;
+  }
+
+  .timelineDate {
+    font-size: smaller;
+    float: none;
+    margin: 1.5rem 0% 0 0;
+    color: rgb(178, 178, 178);
+  }
+
+  .timelineTitle{
+    color: rgb(192, 191, 191);
+    width: 100%;
+    font-size: 5em;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  .vertical-timeline-element-icon {
+    margin-top: 10px;
+    margin-right: 1rem;
+    // margin-left: 1rem;
+  }
+  .vertical-timeline-element-subtitle {
+    color: gray;
+  }
+
+
+  .vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.25), rbga(0, 0, 0, 0.15) !important;
+    // padding: 2em 3em !important;
+  }
+
+  .date {
+    color: rgb(10, 10, 10);
+  }
+
+  #description {
+    margin: 1.5em 0 2em 0;
+  }
+
+  .timelinePoints {
+    margin-top: -12%;
+  }
+
+  .timelineButton {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .workButton {
+    background-color: #06d6a0;
+    :hover {
+      background-color: #0ac593;
+    }
+  }
+
+  .schoolButton {
+    background-color: #f9c74f;
+    :hover{
+      background-color: #f3bc3c;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .timelineContainer{
+    font-size: 12px;
+  }
+}
+
+// @media only screen and (max-width: 1700px) {
+//   .vertical-timeline-element-date {
+//     display: block !important;
+//     float: none !important;
+//     color: rgb(54, 54, 54);
+//     margin-top: 1.5em;
+//   }
+// }

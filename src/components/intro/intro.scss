@@ -32,7 +32,7 @@
   padding: 2%;
   text-align: left;
   width: fit-content;
-  height: 30%;
+  // height: 30%;
   
   
   .introTextInnovative{
@@ -376,6 +376,7 @@
     }
 
     .introTextIdea{
+      height: 30%;
       letter-spacing: 4px;
       font-size: 1.8rem;
       background-color: white;
@@ -453,8 +454,9 @@
   }
 
   .introTextLocation{
+    height: 25%;
     position: absolute;
-    bottom: 3%;
+    bottom: 1%;
     left: 8%;
     text-transform: uppercase;
     margin: auto;
@@ -465,7 +467,7 @@
     padding: 2%;
     text-align: center;
     width: fit-content;
-    height:fit-content;
+    // height:fit-content;
     overflow: hidden;
 
 

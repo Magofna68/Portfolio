@@ -63,13 +63,13 @@ export default function Testimonial() {
   
   return (
     <div 
-    className="testimonial" 
-    id="testimonial"
-    style={{
-      backgroundSize: `cover`,
-      repeat: `no-repeat`,
-      backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
-    }}
+      className="testimonial" 
+      id="testimonial"
+      style={{
+        backgroundSize: `cover`,
+        repeat: `no-repeat`,
+        backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
+      }}
     >
       <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', color: 'gray'}}>
         <h1 className="testimonialTitle">Testimonials<span style={{color: 'white'}}>.</span></h1>

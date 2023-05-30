@@ -3,9 +3,210 @@
 #testimonial {
   padding: 70px 0 20px 0;
 }
+// ______________________________________________________
+@media screen and (min-width: 1500px) {
+  .testimonial {
+    padding-top: 15px;
+    height: 80%;
+  }
 
+    .testimonialTitle{
+      font-size: 3rem;
+      margin: 3rem 0;
+    }
+    
+    div.testimonialContainer {
+      width: 95%;
+      max-width: 1500px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 5rem;
+    }
+      
+      .testimonialCard {
+        min-height: 550px;
+        max-height: 750px;
+        min-width: 300px;
+        max-width: 400px;
+
+        margin: 0 auto 5% auto;
+        overflow: visible;
+        padding: 1% 0%;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        transition: all .2s;
+
+        &:hover {
+          background-color: none;
+          transform: scale(1.05);
+          border: 3px solid;
+          border-color: white;
+        
+          // .testimonialCardImg{
+          //   border: solid 2px;
+          //   border-color: white;
+          //   transform:rotateY(180deg);
+          //   transition-duration: 3s;
+          // }
+
+        }
+
+        .topTestimonialCard{
+          display: flex;
+          justify-content: space-between;
+          min-height: 75px;
+          max-height: 75px;
+          width: 90%;
+          margin: .5rem 0 0% 0;
+          overflow: hidden;
+          border-radius: 10px;
+          background: rgb(240, 237, 237);
+        }
+        
+        .testimonialCardImg {
+          display: flex;
+          margin: 0 0 0 1.5rem;
+          width: 75px;
+          height: 75px;
+          border-radius: 100%;
+          scroll-behavior: none;
+          transition-delay: 0.5s ease;
+        }
+          
+        .testimonialIconContain{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          margin: 0 2.5rem 2rem 0;
+          
+          .testimonialCardIcon{
+            width: 75px;
+          }
+        }
+
+        #testimonialCardName{
+          margin: -1.5rem 0 1rem 3rem;
+          text-align: center;
+          width: 100%;
+          height: 10%;
+        }
+
+        .testimonialCardTitle{
+          margin: .5rem 0 0rem 0;
+          border-radius: 20%;
+          height: 3rem;
+          text-align: center;
+          width: 90%;
+          overflow: hidden;
+        }
+      }
+
+      #testimonialCardText{
+        display: flex;
+        font-size: .8rem;
+        background-color: rgb(243, 221, 221);
+        border-radius: 10px;
+        padding: 5%;
+      }
+
+      .featuredTestimonial {
+        min-height: 600px;
+        max-height: 800px;
+        min-width: 320px;
+        max-width: 425px;
+
+        margin: 0 auto 5% auto;
+        overflow: visible;
+        padding: 1% 0%;
+        border-radius: 10%;
+        box-shadow: 0px 0px 15px -8px rgb(193, 45, 45);
+        justify-content: center;
+        align-items: center;
+        transition: all .2s;
+
+        &:hover {
+          transform: scale(1.05);
+          border: 3px solid;
+          border-color: white;
+        
+          // .testimonialCardImg{
+          //   border: solid 2px;
+          //   border-color: white;
+          //   transform:rotateY(180deg);
+          //   transition-duration: 3s;
+          // }
+          // .topTestimonialCard {
+          //   border: solid goldenrod 1px;
+          // }
+        }
+        .topTestimonialCard{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          min-height: 95px;
+          max-height: 75px;
+          width: 90%;
+          margin: .5rem 0 0% 0;
+          overflow: hidden;
+          border-radius: 10px;
+          background: rgb(240, 237, 237);
+        }
+        
+        .testimonialCardImg {
+          display: flex;
+          margin: .25rem 0 0 1rem;
+          width: 85px;
+          height: 85px;
+          border-radius: 100%;
+          scroll-behavior: none;
+          transition-delay: 0.5s ease;
+        }
+
+        .testimonialIconContain{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          margin: 0 2.5rem 2rem 0;
+          
+          .testimonialCardIcon{
+            width: 75px;
+          }
+        }
+
+        #testimonialCardName{
+          margin: -1.5rem 0 1rem 3rem;
+          text-align: center;
+          width: 100%;
+          height: 10%;
+        }
+
+        .testimonialCardTitle{
+          margin: .5rem 0 0rem 0;
+          height: 3rem;
+          text-align: center;
+          width: 90%;
+          overflow: hidden;
+          font-size: 1.25rem;
+          color: goldenrod;
+        }
+      }
+        
+      .testimonialIconContain::-webkit-scrollbar {
+        display: none;
+      }
+}
 // ---------------------------------------------------------------
-@media screen and (min-width: 973px) {
+@media screen and (min-width: 973px) and (max-width: 1499px) {
   .testimonial {
     padding-top: 15px;
     height: 80%;
@@ -39,7 +240,7 @@
         border-radius: 10px;
         justify-content: center;
         align-items: center;
-        transition: all 1s;
+        transition: all .2s;
 
         &:hover {
           background-color: none;
@@ -47,12 +248,12 @@
           border: 3px solid;
           border-color: white;
         
-          .testimonialCardImg{
-            border: solid 2px;
-            border-color: white;
-            transform:rotateY(180deg);
-            transition-duration: 3s;
-          }
+          // .testimonialCardImg{
+          //   border: solid 2px;
+          //   border-color: white;
+          //   transform:rotateY(180deg);
+          //   transition-duration: 3s;
+          // }
 
         }
 
@@ -130,22 +331,22 @@
         box-shadow: 0px 0px 15px -8px rgb(193, 45, 45);
         justify-content: center;
         align-items: center;
-        transition: all 1s;
+        transition: all .2s;
 
         &:hover {
           transform: scale(1.05);
           border: 3px solid;
           border-color: white;
         
-          .testimonialCardImg{
-            border: solid 2px;
-            border-color: white;
-            transform:rotateY(180deg);
-            transition-duration: 3s;
-          }
-          .topTestimonialCard {
-            border: solid goldenrod 1px;
-          }
+          // .testimonialCardImg{
+          //   border: solid 2px;
+          //   border-color: white;
+          //   transform:rotateY(180deg);
+          //   transition-duration: 3s;
+          // }
+          // .topTestimonialCard {
+          //   border: solid goldenrod 1px;
+          // }
         }
         .topTestimonialCard{
           display: flex;
@@ -243,7 +444,7 @@
         background: rgb(205, 37, 37);
         justify-content: center;
         align-items: center;
-        transition: all 1s;
+        transition: all .2s;
 
         &:hover {
           transform: scale(1.05);
@@ -332,7 +533,7 @@
         box-shadow: 0px 0px 15px -8px rgb(193, 45, 45);
         justify-content: center;
         align-items: center;
-        transition: all 1s;
+        transition: all .2s;
 
         &:hover {
           transform: scale(1.05);
@@ -439,7 +640,7 @@
         border-radius: 10px;
         justify-content: center;
         align-items: center;
-        transition: all 1s;
+        transition: all .2s;
         z-index: 0;
 
         &:hover {
@@ -534,7 +735,7 @@
         background: rgb(205, 37, 37);
         justify-content: center;
         align-items: center;
-        transition: all 1s;
+        transition: all .2s;
 
         &:hover {
           transform: scale(1.05);
@@ -630,7 +831,7 @@
         box-shadow: 0px 0px 15px -8px rgb(193, 45, 45);
         justify-content: center;
         align-items: center;
-        transition: all 1s;
+        transition: all .2s;
 
         &:hover {
           transform: scale(1.05);

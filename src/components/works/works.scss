@@ -11,6 +11,10 @@
   justify-content: center;
   position: relative;
 
+  .mobileWorksTextContainer{
+    display: none;
+  }
+
   .arrow {
     width: 10%;
     height: 20%;
@@ -260,21 +264,6 @@
             justify-content: center;
             overflow: hidden;
             margin-right: 3%;
-
-          // @include mobile {
-          //   flex: 1;
-          //   width: 65%;
-          //   height: 50%;
-          //   align-items: flex-end;
-          //   position: right;
-          //   position: absolute;
-          //   color: white;
-          //   top: 3%;
-          //   right: 0%;
-          //   font-size: 14px;
-          //   margin: 0% 0 0% 0;
-          //   z-index: 3;
-          // }
         }
       }
     }
@@ -305,4 +294,4 @@
     }
   }
   }
-      
+// ______________________________________________
