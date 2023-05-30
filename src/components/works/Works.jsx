@@ -71,11 +71,6 @@ export default function Works() {
       repeat: `no-repeat`,
       backgroundImage: `url("https://i2.wp.com/files.123freevectors.com/wp-content/original/142906-cool-grey-wave-business-background-vector-art.jpg?w=800&q=95")`
     }}>
-      {/* <div className='mobileWorksTextContainer'>
-        <p> My fascination with coding began in 2021 when I was introduced to Javascript and React. Following my successful completion of Epicodus, a rigorous 27-week bootcamp centered around Javascript, C#, and CSS, I eagerly embraced an internship opportunity with VALIDATE.';
-            const 'This marked the initial phase of a remarkable journey that would ultimately prove to be the most rewarding career decision I have ever made—an audacious leap of faith into a new professional path.';
-        </p>
-      </div> */}
       <div 
         className="slider" 
         style={{
