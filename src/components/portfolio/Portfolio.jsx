@@ -54,7 +54,7 @@ export default function Portfolio() {
         backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
       }}
     >
-        <span className="portfolioHeader"><h1>Portfolio<span>.</span></h1></span>
+        <span className="portfolioHeader"><h1>Portfolio<span style={{ color: 'gray'}}>.</span></h1></span>
         {/* <br/> */}
         <ul className="portfolioCategory">
           {list.map((item) => (

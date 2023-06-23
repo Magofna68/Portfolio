@@ -237,16 +237,12 @@ export default function Intro() {
                 </Typography>
               </div>
 
-              <div className="introTextLocation">
-                <span className="introTextTransform">I &nbsp;&nbsp;transform </span><br/>
-                <h3 className="introTextInnovative">innovative</h3>
-                <span className="introTextIdea">Ideas,</span><br/>
-                <span className="introTextInto">into tangible</span><br/>
-                <span className="introTextRealities"><span className="capitalLetter">R</span>ealities.</span>
-              </div>
+
             </>
           }
-          <a href="#aboutMe" className="customButtonEffect">
+          {
+            windowSize > 420 ?
+            <a href="#aboutMe" className="customButtonEffect">
             <span></span>
             <span></span>
             <span></span>
@@ -255,6 +251,35 @@ export default function Intro() {
               <DoubleArrowIcon fontSize="large" />
             </div>
           </a>
+          :
+            <>
+            <a href="#aboutMe" className="customButtonEffect">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div className="doubleArrowIcon">
+              <DoubleArrowIcon fontSize="large" />
+            </div>
+          </a>
+            <div className="mobileIconPosition">
+              <div className="mobileIconContainer">
+                <div className="mobileIntroIconContainer">
+                  <img src={JS}  alt="Javascript" width="100%" />
+                </div>
+                <div className="mobileIntroIconContainer">
+                  <img src={CSS}  alt="Cascading Style Sheets" width="100%" />
+                </div>
+                <div className="mobileIntroIconContainer">
+                  <img src={HTML}  alt="HTML5" width="100%" />
+                </div>
+                <div className="mobileIntroIconContainer">
+                  <img src={React}  alt="React Framework" width="100%" />
+                </div>
+              </div>
+            </div>
+          </>
+          }
       </Container>
     </div>
   )

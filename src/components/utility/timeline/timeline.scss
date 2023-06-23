@@ -2,7 +2,8 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: rgb(53, 53, 53);
-  background-image: url('https://w0.peakpx.com/wallpaper/550/345/HD-wallpaper-triangle-solid-black-gold-abstract.jpg');
+  background-color: transparent;
+  // background-image: url('https://w0.peakpx.com/wallpaper/550/345/HD-wallpaper-triangle-solid-black-gold-abstract.jpg');
   overflow: auto;
   border-left: 2px solid black;
   border-right: 2px solid black;
@@ -17,8 +18,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  div.vertical-timeline-element {
-    // padding: 0 1rem 0 1rem;
+  .vertical-timeline-element-content {
+    color: white;
+    // opacity: 75%;
+    background: linear-gradient(to bottom, rgb(171, 82, 55), rgb(121, 99, 85), rgb(74, 74, 74));
   }
 
   .timelineDate {
@@ -88,6 +91,10 @@
 @media screen and (max-width: 420px) {
   .timelineContainer{
     font-size: 12px;
+
+    .date{
+      display: none;
+    }
   }
 }
 

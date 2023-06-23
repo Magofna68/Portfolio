@@ -33,6 +33,10 @@
   text-align: left;
   width: fit-content;
   // height: 30%;
+
+  .mobileIntroIconContainer{
+    display: none;
+  }
   
   
   .introTextInnovative{
@@ -86,7 +90,6 @@
     transform: rotate(45deg);
     transition: ease-in 1s;
     animation: arrowBlink 2s infinite;
-    
   }
   @keyframes arrowBlink {
     0%{ opacity: 50%}
@@ -409,14 +412,13 @@
 @media screen and (min-width: 376px) and (max-width: 420px) {
 
 #introText{
-  margin: 0;
   width: 100%;
   overflow: hidden;
 }
 
   div.container-fluid {
     text-align: center;
-    margin: 3% 0 0 0;
+    margin: -5% 0 0 0;
     overflow: hidden;
   }
   #imageBorder{
@@ -438,6 +440,7 @@
   .introTypographyContainer{
     text-align: center;
     margin:auto;
+    margin-top: 3%;
     overflow: hidden;
 
     h1 {
@@ -453,68 +456,27 @@
     }
   }
 
-  .introTextLocation{
-    height: 25%;
+  .mobileIconPosition {
     position: absolute;
-    bottom: 1%;
-    left: 8%;
-    text-transform: uppercase;
-    margin: auto;
-    padding: 0 0 0 1%;
-    background-color: rgb(57, 56, 56);
-    opacity: .8;
-    border-radius: 5%;
-    padding: 2%;
-    text-align: center;
-    width: fit-content;
-    // height:fit-content;
-    overflow: hidden;
-
-
-    .capitalLetter{
-      font-size: 2.5rem;
-      margin: 0 0 0 0;
-      padding: 0 0 0 0;
-      color: black;
-    }
-
-    .introTextTransform{
-      padding: 0 3%;
-      background-color: black;
-      font-size: 1rem;
-    }
+    bottom: 0;
+    width: 80%;
+    margin: 0 10% 0 7%;
+  }
+  .mobileIconContainer{
+    display: flex;
+    flex-direction: row;
     
-    .introTextInnovative{
-      font-size: 1.5rem;
-      letter-spacing: 2px;
-      text-align: center;
-    }
+    .mobileIntroIconContainer{
+      display: flex;
+      flex-direction: row;
+      width: 75px;
+      height: 75px;
 
-    .introTextIdea{
-      letter-spacing: 4px;
-      font-size: 2rem;
-      text-align: center;
-      background-color: white;
-      color: black;
-      border-radius: 3px;
-    }
-    .introTextInto{
-      background-color: black;
-      font-size: 1rem;
-      margin: 3% 0 3% 0;
-    }
-    .introTextRealities{
-      letter-spacing: 5px;
-      font-size: 1.5rem;
-      background-color: white;
-      color: black;
-      padding-top: 6%;
-      border-radius: 10px;
-    }
-
-    span, h3 {
-      color: white;
-      margin-bottom: 0;
+      &:last-child{
+        margin-top: 5px;
+        height: 70px;
+        width: 90px;
+      }
     }
   }
 
@@ -531,7 +493,7 @@
 
   .customButtonEffect{
     position: absolute;
-    bottom: 7%;
+    bottom: 13%;
     right: 10%;
     padding: 20px;
   }
@@ -577,7 +539,7 @@
     display: none;
   }
 
-  .customButtonEffect{
+  .mobileCustomButtonEffect{
     position: absolute;
     bottom: 5%;
     right: 10%;

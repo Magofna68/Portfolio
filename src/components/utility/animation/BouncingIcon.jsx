@@ -37,7 +37,7 @@ const BouncingIcon = () => {
       duration: 0.4,
       // repeatType: 'mirror',
       // repeat: 4,
-      yoyo: 4,
+      yoyo: 2,
       ease: 'easeOut',
     },
   };

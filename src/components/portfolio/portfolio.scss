@@ -11,6 +11,10 @@
         justify-content: center;
         margin-top: 1rem;
         margin: 0 0 3% 0;
+        background: linear-gradient(to right, #ffffff, #000000,);
+        -webkit-background-clip: text;
+        background-clip: text;
+        // color: transparent;
       }
 
       ul.portfolioCategory {
@@ -138,8 +142,8 @@
         font-size: 3rem;
       }
 
-    ul.portfolioCategory {
-      font-size: 5rem;
+    li.portfolioCategory {
+      font-size: 3rem;
     }
 
     .container {
@@ -204,7 +208,7 @@
       }
 
     ul.portfolioCategory {
-      font-size: 5rem;
+      font-size: 3rem;
     }
 
     .container {

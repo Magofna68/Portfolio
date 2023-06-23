@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .portfolioList {
-  font-size: 1rem;
+  font-size: 1.25rem;
   display: flex;
   justify-content: center;
   // justify-content: space-evenly;
@@ -28,10 +28,10 @@
 
 @media screen and (min-width: 1000px) and (max-width: 1500px) {
   .portfolioList {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
 
     &.active{
-      font-size: 1.9rem;
+      font-size: 1.3rem;
     }
   }
 }
