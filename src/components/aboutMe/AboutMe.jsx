@@ -5,11 +5,9 @@ import Timeline from '../utility/timeline/Timeline';
 
 export default function AboutMe() {
   const isMobile = 420;
-  const quoteStyle = {
-    fontSize: ''
-  }
+
   const bioStyles = {
-    margin: '5% auto% 0 auto', 
+    margin: '5% auto 0 auto', 
     justifyContent: 'space-between', 
     width: '45%',
     maxWidth: '550px',
