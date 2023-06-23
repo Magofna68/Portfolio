@@ -45,15 +45,7 @@ export default function Portfolio() {
     }, [selected])
 
   return (
-    <div  
-      id="portfolio"
-      style={{
-        opacity: `90%`,
-        backgroundSize: `cover`,
-        repeat: `no-repeat`,
-        backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
-      }}
-    >
+    <div  id="portfolio">
         <span className="portfolioHeader"><h1>Portfolio<span style={{ color: 'gray'}}>.</span></h1></span>
         {/* <br/> */}
         <ul className="portfolioCategory">
