@@ -6,6 +6,7 @@ import SchoolIcon from "@material-ui/icons/School";
 import WorkIcon from '@mui/icons-material/Work';
 import './timeline.scss';
 import HistoryIcon from '@mui/icons-material/History';
+import AccessibleForwardIcon from '@mui/icons-material/AccessibleForward';
 
 export default function Timeline() {
   let workIconStyles = {background: '#06d6a0'}
