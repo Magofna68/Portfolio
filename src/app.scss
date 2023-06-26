@@ -36,3 +36,11 @@ html, body {
     }
   }
 }
+
+.onHover {
+
+  &:hover{
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}

@@ -1,3 +1,5 @@
+
+
 import React, { useEffect, useRef } from 'react';
 import "./aboutMe.scss"
 import 'react-vertical-timeline-component/style.min.css';
@@ -7,11 +9,11 @@ export default function AboutMe() {
   const isMobile = 420;
 
   const bioStyles = {
-    margin: '5% auto 0 auto', 
-    justifyContent: 'space-between', 
-    width: '45%',
-    maxWidth: '550px',
-    flexDirection: 'column', 
+    // margin: '5% auto 0 auto', 
+    // justifyContent: 'space-between', 
+    // width: '45%',
+    // maxWidth: '550px',
+    // flexDirection: 'column', 
     display: 'flex',
   }
 
@@ -36,6 +38,7 @@ export default function AboutMe() {
       const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
+            console.log("Intersection HIT: starting animation")
             aboutMeTextContainer.classList.add('animate');
             paragraphs.forEach(p => p.classList.add('animate'));
             observer.unobserve(entry.target);
@@ -55,7 +58,7 @@ export default function AboutMe() {
     <>
       {
         window.innerWidth < isMobile ?
-          <div className="mobileAboutMeContainer" id="aboutMe">
+          <section className="mobileAboutMeContainer" id="aboutMe">
             <div className="mobileAboutMeTitleContain">
               <span className='mobileAboutMeTitle'>My Timeline.</span>
             </div>
@@ -65,29 +68,28 @@ export default function AboutMe() {
             <div className="aboutMeTextLocation">
                 <span className="introTextTransform">I &nbsp;&nbsp;transform </span><br/>
                 <h3 className="introTextInnovative">innovative Ideas,</h3>
-                {/* <span className="introTextIdea">Ideas,</span><br/> */}
                 <span className="introTextInto">into tangible</span><br/>
                 <span className="introTextRealities"><span className="capitalLetter">R</span>ealities.</span>
               </div>
-          </div>
+          </section>
         :
         <>
-          <div className="aboutMeContainer" id='aboutMe'>
-            <div className="aboutMeTitleContain">
-              {/* <span className='grayTextAboutMe'>About</span><span>Brandon</span><span className='grayTextAboutMe'>.</span> */}
-              <span style={{ fontFamily: 'cursive'}}>So, Who Am I?</span>
-            </div>
-            <div style={bioStyles}>
-              <div className="aboutMeBio">
-                <div ref={aboutMeTextContainerRef} className="aboutMeTextContainer">
-                  <p ref={ref => paragraphsRefs.current[0] = ref} className="p1">{p2}</p>
-                  <p ref={ref => paragraphsRefs.current[1] = ref} className="p2">{p3}</p>
-                  <p ref={ref => paragraphsRefs.current[2] = ref} className="p3">{p4}</p>
-                  <p ref={ref => paragraphsRefs.current[3] = ref} className="p4">{p5}</p>
-                </div>
-              </div>
+          <section className="aboutMeContainer" id='aboutMe'>
 
+            <div className='aboutMeLeftContainer'>
+              <span className="aboutMeTitleContain">
+                So, Who Am I?
+              </span>
+                <div className="aboutMeBio">
+                  <div ref={aboutMeTextContainerRef} className="aboutMeTextContainer">
+                    <p ref={ref => paragraphsRefs.current[0] = ref} className="p1">{p2}</p>
+                    <p ref={ref => paragraphsRefs.current[1] = ref} className="p2">{p3}</p>
+                    <p ref={ref => paragraphsRefs.current[2] = ref} className="p3">{p4}</p>
+                    <p ref={ref => paragraphsRefs.current[3] = ref} className="p4">{p5}</p>
+                  </div>
+                </div>
             </div>
+
             <div className='aboutMeRightContainer'>
               <div className="timeLineContainer">
                 <h6 style={{
@@ -99,7 +101,7 @@ export default function AboutMe() {
                 <Timeline />
               </div>
             </div>
-          </div>
+          </section>
         </>
       }
     </>

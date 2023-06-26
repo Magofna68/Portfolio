@@ -51,7 +51,6 @@
 
   .vertical-timeline-element-content {
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.25), rbga(0, 0, 0, 0.15) !important;
-    // padding: 2em 3em !important;
   }
 
   .date {
@@ -80,6 +79,13 @@
     }
   }
 
+  .resumeButton {
+    background-color: #E5E7E7;
+    :hover {
+      background-color: #c9caca;
+    }
+  }
+
   .schoolButton {
     background-color: #f9c74f;
     :hover{
@@ -98,11 +104,11 @@
   }
 }
 
-// @media only screen and (max-width: 1700px) {
-//   .vertical-timeline-element-date {
-//     display: block !important;
-//     float: none !important;
-//     color: rgb(54, 54, 54);
-//     margin-top: 1.5em;
-//   }
-// }
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: none !important;
+    // float: none !important;
+    // color: rgb(54, 54, 54);
+    // margin-top: 1.5em;
+  }
+}
