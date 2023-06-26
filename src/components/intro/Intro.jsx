@@ -32,83 +32,84 @@ export default function Intro() {
   return (
     <div id="introPage">
       <Container fluid>
-        <div id="imageBorder">
-          <div 
-            id="imgContain"
-            style={{
-            opacity: '90%',
-            borderRadius: `30px`,
-            border: `solid`,
-            borderColor: `gray`,
-            margin: `10% 7%`,
-            }}
-            >
-              <Image src={Placeholder} fluid alt="Profile Picture"></Image>
-          </div>
-        </div>
-
         {/* Desktop */}
-          {
-            windowSize > 420
-            ?
-            <>
-              <div className="introText">
-                <Typography
-                  variant='h4'
-                  sx={{
-                    fontWeight: 'bold',
-                    background: 'gray',
-                    color: 'rgb(0,255,255,0%)',
-                    WebkitTextStroke: '1px white',
-                    WebkitBackgroundClip: 'text',
-                    backgroundClip: 'text',
-                    transition: 'color 0.50s, -webkit-text-stroke 0.50s',
-                    '&: hover': {
-                      color: 'rgb(0,0,0,100%)',
-                      WebkitTextStroke: '1px gray',
-                      cursor: 'arrow',
-                      userSelect: 'none'
-                    }
+        {
+          windowSize > 420
+          ?
+          <>
+            <div className="introTopContain">
+              <div id="imageBorder">
+                <div 
+                  id="imgContain"
+                  style={{
+                  opacity: '90%',
+                  borderRadius: `30px`,
+                  border: `solid`,
+                  borderColor: `gray`,
+                  margin: `10% 7%`,
                   }}
-                >
-                  Hey, I'm
-                </Typography>
-                <Typography
-                  variant='h2'
-                  sx={{
-                    position: 'relative',
-                    fontWeight: 'bold',
-                    color: 'rgb(0,255,255,0%)',
-                    WebkitTextStroke: '0.5px white',
-                    backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
-                    WebkitBackgroundClip: 'text',
-                    backgroundClip: 'text',
-                    transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
-                    '&: hover': {
-                      color: 'rgb(200,0,0,50%)',
-                      WebkitTextStroke: '0.5px red',
-                      cursor: 'arrow',
-                      userSelect: 'none'
-                    }
-                  }}
-                >
-                  Brandon Magofna
-                </Typography>
-                <span><hr className="divider" /></span>
-                <Typography
-                  variant='h5'
-                  sx={{
-                    color: 'rgb(0,255,255,0%)',
-                    background: 'gray',
-                    WebkitTextStroke: '0.75px white',
-                    WebkitBackgroundClip: 'text',
-                    backgroundClip: 'text',
-                  }}
-                >
-                  <span ref={textRef}></span>
-                </Typography>
+                  >
+                    <Image src={Placeholder} fluid alt="Profile Picture"></Image>
+                </div>
               </div>
-              <div className="introBottomSection" style={{ display: 'flex', flexDirection: 'row'}}>
+              <div className="introText">
+              <Typography
+                variant='h4'
+                sx={{
+                  fontWeight: 'bold',
+                  background: 'gray',
+                  color: 'rgb(0,255,255,0%)',
+                  WebkitTextStroke: '1px white',
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  transition: 'color 0.50s, -webkit-text-stroke 0.50s',
+                  '&: hover': {
+                    color: 'rgb(0,0,0,100%)',
+                    WebkitTextStroke: '1px gray',
+                    cursor: 'arrow',
+                    userSelect: 'none'
+                  }
+                }}
+              >
+                Hey, I'm
+              </Typography>
+              <Typography
+                variant='h2'
+                sx={{
+                  position: 'relative',
+                  fontWeight: 'bold',
+                  color: 'rgb(0,255,255,0%)',
+                  WebkitTextStroke: '0.5px white',
+                  backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
+                  '&: hover': {
+                    color: 'rgb(200,0,0,50%)',
+                    WebkitTextStroke: '0.5px red',
+                    cursor: 'arrow',
+                    userSelect: 'none'
+                  }
+                }}
+              >
+                Brandon Magofna
+              </Typography>
+              <span><hr className="divider" /></span>
+              <Typography
+                variant='h5'
+                sx={{
+                  color: 'rgb(0,255,255,0%)',
+                  background: 'gray',
+                  WebkitTextStroke: '0.75px white',
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                }}
+              >
+                <span ref={textRef}></span>
+                  </Typography>
+            </div>
+             </div>
+              <div className="introBottomSection">
                 <div className="bottomIntroTextContainer">
                   <div className="introTextLocation">
 
@@ -164,8 +165,23 @@ export default function Intro() {
           </a>
             </>
             : (   // mobile View
-             windowSize > 380 ?
+             windowSize < 376 ?
             <>
+             <div className="introTopContain">
+              <div id="imageBorder">
+                <div 
+                  id="imgContain"
+                  style={{
+                  opacity: '90%',
+                  borderRadius: `30px`,
+                  border: `solid`,
+                  borderColor: `gray`,
+                  margin: `10% 7%`,
+                  }}
+                  >
+                    <Image src={Placeholder} fluid alt="Profile Picture"></Image>
+                </div>
+            </div>
               <div className="introTypographyContainer" id="introText">
                 <Typography
                   variant='h5'
@@ -245,7 +261,7 @@ export default function Intro() {
                   <span ref={textRef}></span>
                 </Typography>
               </div>
-
+            </div>
             <a href="#aboutMe" className="customButtonEffect">
               <span></span>
               <span></span>
@@ -274,6 +290,37 @@ export default function Intro() {
           </>
              : 
               <>
+              <div className="introTopContain">
+                <div id="imageBorder">
+                  <div 
+                    id="imgContain"
+                    style={{
+                      opacity: '90%',
+                      borderRadius: `30px`,
+                      border: `solid`,
+                      borderColor: `gray`,
+                      margin: `10% 7%`,
+                    }}
+                  >
+                <Image src={Placeholder} fluid alt="Profile Picture"></Image>
+            </div>
+          </div>
+              <div className="mobileIconPosition">
+                <div className="mobileIconContainer">
+                  <div className="mobileIntroIconContainer">
+                    <img src={JS}  alt="Javascript" width="75%" height="75%" />
+                  </div>
+                  <div className="mobileIntroIconContainer">
+                    <img src={CSS}  alt="Cascading Style Sheets" width="75%" height="75%" />
+                  </div>
+                  <div className="mobileIntroIconContainer">
+                    <img src={HTML}  alt="HTML5" width="75%" height="75%" />
+                  </div>
+                  <div className="mobileIntroIconContainer">
+                    <img src={React}  alt="React Framework" width="75%" height="72%" />
+                  </div>
+                </div>
+              </div>
               <div className="introTypographyContainer" id="introText">
                 <Typography
                   variant='h5'
@@ -297,7 +344,7 @@ export default function Intro() {
                   Hey, I'm
                 </Typography>
                 <Typography
-                  variant='h4'
+                  variant='h3'
                   sx={{
                     marginBottom: '-5%',
                     position: 'relative',
@@ -318,6 +365,7 @@ export default function Intro() {
                 >
                   Brandon Magofna
                 </Typography>
+                <span><hr className="divider" /></span>
                 <Typography
                   variant='h5'
                   sx={{
@@ -332,6 +380,7 @@ export default function Intro() {
                   <span ref={textRef}></span>
                 </Typography>
               </div>
+            </div>
             <a href="#aboutMe" className="customButtonEffect">
               <span></span>
               <span></span>
@@ -341,22 +390,6 @@ export default function Intro() {
                 <DoubleArrowIcon fontSize="large" />
               </div>
             </a>
-          <div className="mobileIconPosition">
-            <div className="mobileIconContainer">
-              <div className="mobileIntroIconContainer">
-                <img src={JS}  alt="Javascript" width="100%" />
-              </div>
-              <div className="mobileIntroIconContainer">
-                <img src={CSS}  alt="Cascading Style Sheets" width="100%" />
-              </div>
-              <div className="mobileIntroIconContainer">
-                <img src={HTML}  alt="HTML5" width="100%" />
-              </div>
-              <div className="mobileIntroIconContainer">
-                <img src={React}  alt="React Framework" width="100%" />
-              </div>
-            </div>
-          </div>
           </>
           )}
          

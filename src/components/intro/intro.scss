@@ -1,7 +1,8 @@
 @import "../../global.scss";
 
 #introPage {
-  padding: 30px 0 0 0;
+  height: 100vh;
+  // padding: 30px 0 0 0;
 }
 
 .container-fluid{
@@ -189,34 +190,42 @@
 @media screen and (min-width: 921px) and (max-width: 2500px) {
   .container-fluid{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0;
   }
 
-  div#imageBorder{
+  .introTopContain {
+    max-height: 600px;
     display: flex;
-    margin: 5% 2%;
-    width: 75%;
-    max-width: 600px;
-  }
-
-  .introText{
-    margin: 25% 0 0 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    padding: 0;
-    text-align: left;
-    width: 50%;
-    max-height: 500px;
+    flex-direction: row;
+    
+    div#imageBorder{
+      display: flex;
+      margin: 5% 2%;
+      width: 75%;
+      max-width: 600px;
+    }
+    
+    .introText{
+      // margin: 0% 0 -5% 2%;
+      justify-content:end;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      // justify-content: right;
+      padding: 0;
+      text-align: left;
+      width: 50%;
+      max-height: 450px;
+    }
   }
 
   .introBottomSection {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
     width: 80%;
-    height: 30%;
+    height: 25%;
     max-width: 1200px;
 
     .textInnovative, .introTextTangibles{
@@ -424,8 +433,12 @@
 }
 
   div.container-fluid {
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    width: 100%;
     text-align: center;
-    margin: -5% 0 0 0;
+    margin: 5% 0 0 0;
     overflow: hidden;
   }
   #imageBorder{
@@ -464,14 +477,16 @@
   }
 
   .mobileIconPosition {
-    position: absolute;
-    bottom: 0;
-    width: 80%;
-    margin: 0 10% 0 7%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    align-self: flex-end;
+    width: 100%;
   }
   .mobileIconContainer{
     display: flex;
     flex-direction: row;
+    margin: 0 0 0% 6%;
     
     .mobileIntroIconContainer{
       display: flex;
