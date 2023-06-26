@@ -153,9 +153,18 @@ export default function Intro() {
 
                 </div>
               </div>
+              <a href="#aboutMe" className="customButtonEffect">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div className="doubleArrowIcon">
+              <DoubleArrowIcon fontSize="large" />
+            </div>
+          </a>
             </>
-            :
-            // mobile View
+            : (   // mobile View
+             windowSize > 380 ?
             <>
               <div className="introTypographyContainer" id="introText">
                 <Typography
@@ -237,49 +246,120 @@ export default function Intro() {
                 </Typography>
               </div>
 
-
-            </>
-          }
-          {
-            windowSize > 420 ?
             <a href="#aboutMe" className="customButtonEffect">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <div className="doubleArrowIcon">
-              <DoubleArrowIcon fontSize="large" />
-            </div>
-          </a>
-          :
-            <>
-            <a href="#aboutMe" className="customButtonEffect">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <div className="doubleArrowIcon">
-              <DoubleArrowIcon fontSize="large" />
-            </div>
-          </a>
-            <div className="mobileIconPosition">
-              <div className="mobileIconContainer">
-                <div className="mobileIntroIconContainer">
-                  <img src={JS}  alt="Javascript" width="100%" />
-                </div>
-                <div className="mobileIntroIconContainer">
-                  <img src={CSS}  alt="Cascading Style Sheets" width="100%" />
-                </div>
-                <div className="mobileIntroIconContainer">
-                  <img src={HTML}  alt="HTML5" width="100%" />
-                </div>
-                <div className="mobileIntroIconContainer">
-                  <img src={React}  alt="React Framework" width="100%" />
-                </div>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div className="doubleArrowIcon">
+                <DoubleArrowIcon fontSize="large" />
+              </div>
+            </a>
+          <div className="mobileIconPosition">
+            <div className="mobileIconContainer">
+              <div className="mobileIntroIconContainer">
+                <img src={JS}  alt="Javascript" width="100%" />
+              </div>
+              <div className="mobileIntroIconContainer">
+                <img src={CSS}  alt="Cascading Style Sheets" width="100%" />
+              </div>
+              <div className="mobileIntroIconContainer">
+                <img src={HTML}  alt="HTML5" width="100%" />
+              </div>
+              <div className="mobileIntroIconContainer">
+                <img src={React}  alt="React Framework" width="100%" />
               </div>
             </div>
+          </div>
           </>
-          }
+             : 
+              <>
+              <div className="introTypographyContainer" id="introText">
+                <Typography
+                  variant='h5'
+                  sx={{
+                    marginBottom: '-1%',
+                    fontWeight: 'bold',
+                    background: 'gray',
+                    color: 'rgb(0,255,255,0%)',
+                    WebkitTextStroke: '1px white',
+                    WebkitBackgroundClip: 'text',
+                    backgroundClip: 'text',
+                    transition: 'color 0.50s, -webkit-text-stroke 0.50s',
+                    '&: hover': {
+                      color: 'rgb(0,0,0,100%)',
+                      WebkitTextStroke: '1px gray',
+                      cursor: 'arrow',
+                      userSelect: 'none'
+                    }
+                  }}
+                >
+                  Hey, I'm
+                </Typography>
+                <Typography
+                  variant='h4'
+                  sx={{
+                    marginBottom: '-5%',
+                    position: 'relative',
+                    fontWeight: 'bold',
+                    color: 'rgb(0,255,255,0%)',
+                    WebkitTextStroke: '0.5px white',
+                    backgroundImage: `url('https://media1.giphy.com/media/5k00E7cigvvqnBYDdP/giphy.gif?cid=ecf05e47cde9hqvaqke38lehjfkc1r8hjs44rqvfdl6z49kb&rid=giphy.gif&ct=g')`,
+                    WebkitBackgroundClip: 'text',
+                    backgroundClip: 'text',
+                    transition: 'color 0.50s, left 0.50s, -webkit-text-stroke 0.50s',
+                    '&: hover': {
+                      color: 'rgb(200,0,0,50%)',
+                      WebkitTextStroke: '0.5px red',
+                      cursor: 'arrow',
+                      userSelect: 'none'
+                    }
+                  }}
+                >
+                  Brandon Magofna
+                </Typography>
+                <Typography
+                  variant='h5'
+                  sx={{
+                    color: 'rgb(0,255,255,0%)',
+                    background: 'gray',
+                    WebkitTextStroke: '0.75px white',
+                    WebkitBackgroundClip: 'text',
+                    backgroundClip: 'text',
+                    marginTop: '5%',
+                  }}
+                >
+                  <span ref={textRef}></span>
+                </Typography>
+              </div>
+            <a href="#aboutMe" className="customButtonEffect">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div className="doubleArrowIcon">
+                <DoubleArrowIcon fontSize="large" />
+              </div>
+            </a>
+          <div className="mobileIconPosition">
+            <div className="mobileIconContainer">
+              <div className="mobileIntroIconContainer">
+                <img src={JS}  alt="Javascript" width="100%" />
+              </div>
+              <div className="mobileIntroIconContainer">
+                <img src={CSS}  alt="Cascading Style Sheets" width="100%" />
+              </div>
+              <div className="mobileIntroIconContainer">
+                <img src={HTML}  alt="HTML5" width="100%" />
+              </div>
+              <div className="mobileIntroIconContainer">
+                <img src={React}  alt="React Framework" width="100%" />
+              </div>
+            </div>
+          </div>
+          </>
+          )}
+         
       </Container>
     </div>
   )
