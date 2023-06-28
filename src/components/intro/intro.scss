@@ -192,9 +192,16 @@
     display: flex;
     flex-direction: column;
     margin: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    :-webkit-scrollbar {
+      display: none;
+    }
   }
 
   .introTopContain {
+    overflow: hidden;
     max-height: 600px;
     display: flex;
     flex-direction: row;
@@ -323,7 +330,7 @@
   }
 
   .introTextLocation{
-    display: flex;
+    display: none;
     float: left;
     flex-direction: column;
     text-transform: uppercase;

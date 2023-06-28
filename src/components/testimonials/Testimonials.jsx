@@ -11,12 +11,13 @@ import OpineIcon from '../../assets/OpineIcon.png';
 import BouncingIcon from '../utility/animation/BouncingIcon';
 
 export default function Testimonial() {
-  const [isOpen, setIsOpen] = useState(-1); // Initialize with -1
+  const [isOpen, setIsOpen] = useState(1); // Initialize with -1
   const isMobile = window.innerWidth < 420;
 
   
-  function RevealTestimonial(index) {
-    setIsOpen(isOpen === index ? -1 : index);
+  function RevealTestimonial(id) {
+    setIsOpen(isOpen === id ? -1 : id);
+    console.log("KEY: ", id)
   }
   
   const reviews = [
@@ -75,11 +76,11 @@ export default function Testimonial() {
         <h1 className="testimonialTitle">Testimonials<span style={{color: 'white'}}>.</span></h1>
       </div>
         <Container fluid className="testimonialContainer">
-        {reviews.map((r, index) => (
+        {reviews.map((r) => (
           isMobile ? 
-          isOpen === index ? (
+          isOpen === r.id ? (
             
-            <Card key={r.id} className="testimonialCard">
+            <Card key={r.id} className="testimonialCard openedTestimonial">
                 
                 <Row className="topTestimonialCard">
                   <Col style={{ padding: 0 }}>
@@ -96,8 +97,8 @@ export default function Testimonial() {
                       alt={r.alt}
                       className="testimonialCardIcon"
                       />
-                  </Col>
                   <Card.Title id="testimonialCardName">{r.name}</Card.Title>
+                  </Col>
                 </Row>
                 <Card.Body>
                   <Row>
@@ -135,7 +136,7 @@ export default function Testimonial() {
                   </p>
                   </Col>
                 </Row>
-                <span onClick={() => RevealTestimonial(index)} className="mobileExpandIconContainer">
+                <span onClick={() => RevealTestimonial(r.id)} className="mobileExpandIconContainer">
                   <BouncingIcon />
                 </span>
               </Card>

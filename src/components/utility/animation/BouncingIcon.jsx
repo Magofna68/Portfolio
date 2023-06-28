@@ -35,8 +35,6 @@ const BouncingIcon = () => {
   const bounceTransition = {
     y: {
       duration: 0.4,
-      // repeatType: 'mirror',
-      // repeat: 4,
       yoyo: 2,
       ease: 'easeOut',
     },
@@ -44,7 +42,6 @@ const BouncingIcon = () => {
 
   const bounceStyling = {
     cursor: 'pointer',
-    backgroundColor: 'white',
     borderRadius: '50%',
     overflow: 'visible',
     border: 'solid 2px gray',
@@ -53,7 +50,6 @@ const BouncingIcon = () => {
   return (
     <div
     style={{
-      // alignItems: 'baseline',
       zIndex: 3,
         width: 'fit-content',
         height: 'fit-content',
