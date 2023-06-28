@@ -11,7 +11,7 @@ import OpineIcon from '../../assets/OpineIcon.png';
 import BouncingIcon from '../utility/animation/BouncingIcon';
 
 export default function Testimonial() {
-  const [isOpen, setIsOpen] = useState(1); // Initialize with -1
+  const [isOpen, setIsOpen] = useState(-1); // Initialize with -1
   const isMobile = window.innerWidth < 420;
 
   
