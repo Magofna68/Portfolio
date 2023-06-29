@@ -785,6 +785,32 @@
           overflow: visible;
         }
       }
+
+      .openedTestimonial {
+        display: flex;
+
+        .topTestimonialCard{
+          min-height: 100px !important;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 2% 5%;
+
+          .testimonialIconContain {
+            margin: 0;
+          }
+
+          .testimonialCardImg {
+            display: flex;
+            width: 85px;
+            height: 85px;
+            border-radius: 100%;
+            scroll-behavior: none;
+            margin: 0 !important;
+            padding: 0 !important;
+          }
+        }
+      }
       
       .testimonialCard {
         min-height: 400px;

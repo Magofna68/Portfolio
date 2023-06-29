@@ -83,7 +83,7 @@ export default function Testimonial() {
             <Card key={r.id} className="testimonialCard openedTestimonial">
                 
                 <Row className="topTestimonialCard">
-                  <Col style={{ padding: 0 }}>
+                  <Col>
                     <Card.Img 
                       variant="top" 
                       src={r.img} 
