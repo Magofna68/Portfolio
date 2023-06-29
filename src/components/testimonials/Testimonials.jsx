@@ -97,7 +97,7 @@ export default function Testimonial() {
                       alt={r.alt}
                       className="testimonialCardIcon"
                       />
-                  <Card.Title id="testimonialCardName">{r.name}</Card.Title>
+                    <Card.Title id="testimonialCardName">{r.name}</Card.Title>
                   </Col>
                 </Row>
                 <Card.Body>
@@ -145,7 +145,7 @@ export default function Testimonial() {
           <Card key={r.id} className={r.featured ? "featuredTestimonial" : "testimonialCard"}>
                 
           <Row className="topTestimonialCard">
-            <Col style={{ padding: 0 }}>
+            <Col className="imgColumn">
               <Card.Img 
                 variant="top" 
                 src={r.img} 
@@ -159,8 +159,8 @@ export default function Testimonial() {
                 alt={r.alt}
                 className="testimonialCardIcon"
                 />
+              <Card.Title id="testimonialCardName">{r.name}</Card.Title>
             </Col>
-            <Card.Title id="testimonialCardName">{r.name}</Card.Title>
           </Row>
           <Card.Body>
             <Row>
