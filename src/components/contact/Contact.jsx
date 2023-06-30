@@ -1,48 +1,65 @@
 import "./contact.scss"
-import React, {useState} from "react";
+import React, {useRef} from "react";
+import emailjs from '@emailjs/browser';
 import Placeholder from "../../assets/placeholder.JPG";
 // import ReactPlayer from 'react-player';
 
 
-
-
 export default function Contact() {
-  const [message, setMessage] = useState(false);
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setMessage(true);
-  }
-  return (
-    <div 
-    className="contact" 
-    id="contact"
-    >
-      <div 
-        className="left"
-        style={{
-          backgroundImage: `url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25806764.jpg")`,
-          opacity: '80%'
-        }}>
-          {/* format for rendering a video-- */}
-          {/* <video controls autoPlay loop muted>
-            <source src={Martian} type="video/mp4"></source>
-          </video> */}
-        <img src={Placeholder} alt="hiking face shot"/>
-      </div>
-      <div className="right">
-        <h2>Contact<span>.</span></h2>
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Enter Email.."></input>
-          <textarea placeholder="Enter Message.."></textarea>
-          <button type="submit">Send</button>
-        </form>
-          {message && <span> Thanks for your interest. <br/>I will get back to you shortly.<br/><br/>    - Brandon<br/><br/></span>}
-      </div>
-        {/* <div className="aboutMe">
-          <h2>About Me<span>.</span></h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, recusandae ipsa aliquam accusamus maiores illum voluptatum ex ipsam fuga repellendus magni aperiam nesciunt libero earum iusto at eaque porro alias!</p>
-        </div> */}
+  const form = useRef();
+  console.log("Form: ", form.current)
 
-    </div>
-  )
-}
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // if (!form.current) {
+    //   // add notyf for notifications
+    //   document.getElementById('contactBtn').disabled = true;
+    //   console.log("No form data: button should be disabled: ", form)
+    // } else {
+    emailjs.sendForm('service_orkfipy', 'template_oetq44p', form.current, 'E8gbKgeE-esRKWWXh')
+      .then((result) => {
+        console.log("Did it work?: ", result.text);
+        console.log("form: ", form)
+        form.current = null;
+      }, (error) => {
+        console.log("Error: ", error.text);
+      })
+
+      form.reset();
+    // }
+  };
+  return (
+    <div className="contact" id="contact">
+      <div className="contactTitle">Contact.</div>
+      <div className="formContainer">
+        <form ref={form} onSubmit={sendEmail}>
+          <div className="inputContain">
+            <div className="contactInput">
+              <label>Name:</label>
+              <input type='text' name="user_name" />
+            </div>
+
+            <div className="contactInput">
+              <label>Email:</label>
+              <input type='text' name="user_email" />
+            </div>
+
+            <div className="contactInput">
+              <label>Company:</label>
+              <input type="text" name="user_company" />
+            </div>
+
+            <div className="contactInput">
+              <label>Job Title:</label>
+              <input type="text" name="user_title" />
+            </div>
+          </div>
+          <label>Message:</label>
+          <textarea name="message" placeholder="Send me a message.."/>
+          <button id='contactBtn' className="contactButtonEffect" type="submit" value="Send">Send Message</button>
+        </form>
+       </div>
+     </div>
+  );
+};
