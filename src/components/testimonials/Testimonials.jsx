@@ -9,6 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import OpineIcon from '../../assets/OpineIcon.png';
 import BouncingIcon from '../utility/animation/BouncingIcon';
+import Evgeny from '../../assets/Evgeny.jpeg';
 
 export default function Testimonial() {
   const [isOpen, setIsOpen] = useState(-1); // Initialize with -1
@@ -25,7 +26,7 @@ export default function Testimonial() {
       id:0,
       name: "Levi Kohler",
       title: "Solutions Engineer",
-      relation: "Colleague at Deltek",
+      relation: "Colleague @ Deltek",
       img: `${Levi}`,
       icon: "https://images.squarespace-cdn.com/content/v1/5524448ee4b0d6f6b83ab9e2/1473199586097-9Q0FQMMH0NGMKY0LVZ60/epicodus-logo-300.png",
       alt: "Epicodus",
@@ -50,10 +51,21 @@ export default function Testimonial() {
       featured: true,
     },
     {
-      id:2,
+      id: 2,
+      name: "Evgeny Zbirun",
+      title: "Web Developer",
+      relation: 'Colleague @ Opine',
+      img: `${Evgeny}`,
+      icon: `${OpineIcon}`,
+      alt: "Opine Icon",
+      featured: true,
+      desc: `"I am delighted to provide this testimony for Brandon Magofna, an exceptional pair programmer. Brandon's ability to come up with out of the box solutions allows him to contribute to projects with minimal guidance and in a unique way. His expertise in REACT and JavaScript shines through in his clean and concise code, ensuring readability and maintainability. Brandon\'s collaborative nature, attention to detail, and continuous learning make him a solid contributor for any project. Working with him has been insightful and pushed me to grow as a developer. I highly recommend him as a talented and proficient pair programmer and developer."`
+    },
+    {
+      id:3,
       name: "Jadon Wiersma",
       title: "Client Sales Executive",
-      relation: "Colleague at Deltek",
+      relation: "Colleague @ Deltek",
       img: `${Jadon}`,
       icon: `${Deltek}`,
       alt: "Deltek",
