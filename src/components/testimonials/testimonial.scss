@@ -687,14 +687,14 @@
       flex-direction: column;
       align-items: center;
       // justify-content: space-evenly;
-      margin-top: 1rem;
+      margin-top: 0rem;
     }
 
       .mobileTestimonialCard{
-        min-height: 125px;
-        max-height: 125px;
-        min-width: 300px;
-        max-width: 300px;
+        min-height: 100px;
+        max-height: 110px;
+        min-width: 325px;
+        max-width: 325px;
         overflow: hidden;
         padding: 0% 0% .5rem 0;
         color: white;
@@ -704,12 +704,12 @@
         align-items: center;
         transition: all .2s;
         z-index: 0;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
         background-color: rgba(0, 0, 0, 0.50)!important;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -4px 4px 15px rgba(255, 255, 255, 0.8);
 
         &:first-child {
-          margin-top: 1rem;
+          margin-top: 0rem;
         }
 
         &:hover {
@@ -717,13 +717,6 @@
           transform: scale(1.05);
           border: 3px solid;
           border-color: white;
-        
-          .mobileTestimonialCardImg{
-            border: solid 2px;
-            border-color: white;
-            transform:rotateY(180deg);
-            transition-duration: 3s;
-          }
         }
 
         .mobileTopTestimonialCard{
@@ -795,6 +788,7 @@
 
       .openedTestimonial {
         display: flex;
+        width: 98%;
 
         .topTestimonialCard{
           min-height: 100px !important;
@@ -822,8 +816,8 @@
       .testimonialCard {
         min-height: 400px;
         max-height: 500px;
-        min-width: 300px;
-        max-width: 300px;
+        min-width: 350px;
+        max-width: 350px;
         font-size: 1rem;
         margin: 2% 0 12% 0;
         overflow: visible;

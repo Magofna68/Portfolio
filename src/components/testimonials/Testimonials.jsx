@@ -92,7 +92,7 @@ export default function Testimonial() {
           isMobile ? 
           isOpen === r.id ? (
             
-            <Card key={r.id} className="testimonialCard openedTestimonial">
+            <Card onClick={() => RevealTestimonial(false)} key={r.id} className="testimonialCard openedTestimonial">
                 
                 <Row className="topTestimonialCard">
                   <Col>
@@ -129,7 +129,7 @@ export default function Testimonial() {
 
           ) : (
 
-              <Card key={r.id} className="mobileTestimonialCard">
+              <Card onClick={() => RevealTestimonial(r.id)} key={r.id} className="mobileTestimonialCard">
                 <Row className="mobileTopTestimonialCard">
                     <Card.Img 
                       variant="top" 

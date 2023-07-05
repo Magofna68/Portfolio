@@ -274,22 +274,26 @@
 @media screen and (min-width: 100px) and (max-width: 420px) {
 
   .works{
-    img.arrow {
-      width: 10%;
-      height: 20%;
-      top: 50%;
-      z-index: 3;
+    .slider{
+      top: 5%;
+    }
       
-      &.left {
-        position: absolute;
-        left: 0%;
-        z-index: 1;
-      }
-      
-      &.right{
-        position: absolute;
-        right: 0%;
-        z-index: 1;
+      img.arrow {
+        width: 10%;
+        height: 20%;
+        top: 30%;
+        z-index: 3;
+        
+        &.left {
+          position: absolute;
+          left: 0%;
+          z-index: 1;
+        }
+        
+        &.right{
+          position: absolute;
+          right: 0%;
+          z-index: 1;
       }
     }
   }

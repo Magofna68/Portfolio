@@ -3,6 +3,10 @@ import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { Notyf } from 'notyf';
 import 'notyf/notyf.min.css';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import {Mail} from "@material-ui/icons";
 
 export default function Contact() {
   const notyf = new Notyf();
@@ -42,9 +46,125 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact" id="contact">
-        <div className="contactTitle">Contact.</div>
+    <section className="contact" id="contact">
+      <div className="contactInfoContain">
+        <div className="contactTitle">
+          <span className="contactTitleSpan">Lets get in </span>
+          Contact.
+        </div>
+        {
+          windowSize > 420 
+          ?
+            <div className="contactSubTextContain">
+              <div className="contactSocialContain">
+                <div className='iconContain'>
+                  <a 
+                    target="_blank" 
+                    href="https://www.instagram.com/bmagofna68/"
+                    id="iconTest"
+                    rel="noreferrer"
+                    className="topbarIcon"
+                  >
+                    <InstagramIcon 
+                      fontSize="large"
+                      direction="row"
+                      justifyContent="center"
+                      alignItems="center"
+                  />
+                  </a>
+                  </div>
+                  <div className='iconContain'>
+                  <a 
+                    href="https://www.facebook.com/brandon.magofna.5"
+                    rel="noreferrer"
+                    target="_blank" 
+                    className="topbarIcon"
+                  >
+                  <FacebookIcon 
+                        fontSize="large"
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                      />
+                  </a>
+                  </div>
+                  <div className='iconContain'>
+                  <a 
+                    target="_blank" 
+                    href="https://github.com/Magofna68"
+                    rel="noreferrer"
+                    className="topbarIcon"
+                  >
+                    <GitHubIcon
+                      fontSize="large"
+                      direction="row"
+                      justifyContent="center"
+                      alignItems="center"
+                    />
+                  </a>
+                  </div>
+              </div>
+              <span className="contactSubText">
+                <h2>Location:</h2>
+                <p>Salem, Oregon</p>
+                <h2>Contact:</h2>
+                <p>Magofna68@gmail.com</p>
+              </span>
+            </div>
+          :
+          // <div className="mobileContactSocialContain">
+          //       <div className='iconContain'>
+          //         <a 
+          //           target="_blank" 
+          //           href="https://www.instagram.com/bmagofna68/"
+          //           id="iconTest"
+          //           rel="noreferrer"
+          //           className="topbarIcon"
+          //         >
+          //           <InstagramIcon 
+          //             fontSize="large"
+          //             direction="row"
+          //             justifyContent="center"
+          //             alignItems="center"
+          //         />
+          //         </a>
+          //         </div>
+          //         <div className='iconContain'>
+          //         <a 
+          //           href="https://www.facebook.com/brandon.magofna.5"
+          //           rel="noreferrer"
+          //           target="_blank" 
+          //           className="topbarIcon"
+          //         >
+          //         <FacebookIcon 
+          //               fontSize="large"
+          //               direction="row"
+          //               justifyContent="center"
+          //               alignItems="center"
+          //             />
+          //         </a>
+          //         </div>
+          //         <div className='iconContain'>
+          //         <a 
+          //           target="_blank" 
+          //           href="https://github.com/Magofna68"
+          //           rel="noreferrer"
+          //           className="topbarIcon"
+          //         >
+          //           <GitHubIcon
+          //             fontSize="large"
+          //             direction="row"
+          //             justifyContent="center"
+          //             alignItems="center"
+          //           />
+          //         </a>
+          //         </div>
+          //     </div>
+          null
+        }
+      </div>
         <div className="formContainer">
+            <span className="formTitle"><h2>Lets Connect!</h2></span>
           <form ref={form} onSubmit={sendEmail}>
             <div className="inputContain"> 
             {
@@ -53,13 +173,13 @@ export default function Contact() {
               // Desktop View:
               <>
                 <div className="contactInput">
-                  <label>Name:</label>
-                  <input type='text' name="user_name" placeholder="John Smith..." required/>
+                  <label>First:</label>
+                  <input type='text' name="user_first_name" placeholder="John.." required/>
                 </div>
-                
+
                 <div className="contactInput">
-                  <label>Email:</label>
-                  <input type='text' name="user_email" placeholder="email@example.com.." required/>
+                  <label>Last:</label>
+                  <input type='text' name="user_last_name" placeholder="Smith..." required/>
                 </div>
                 
                 <div className="contactInput">
@@ -71,16 +191,21 @@ export default function Contact() {
                   <label>Job Title:</label>
                   <input type="text" name="user_title" placeholder="Senior Developer.." required/>
                 </div>
+                
+                <div className="contactInput">
+                  <label>Email:</label>
+                  <input type='text' name="user_email" placeholder="email@example.com.." required/>
+                </div>
               </>
               :
               // mobile view:
               <>
                 <div className="contactInput">
-                  <input type='text' name="user_name" placeholder="Name" required/>
+                  <input type='text' name="user_first_name" placeholder="First Name" required/>
                 </div>
-                
+
                 <div className="contactInput">
-                  <input type='text' name="user_email" placeholder="Email" required/>
+                  <input type='text' name="user_last_name" placeholder="Last Name" required/>
                 </div>
                 
                 <div className="contactInput">
@@ -90,16 +215,20 @@ export default function Contact() {
                 <div className="contactInput">
                   <input type="text" name="user_title" placeholder="Job Title" required/>
                 </div>
+                
+                <div className="contactInput">
+                  <input type='text' name="user_email" placeholder="Email" required/>
+                </div>
               </>
             }
             </div>
 
             <label>Message:</label>
             <textarea name="message" placeholder="Send me a message.." required />
-            <button id='contactBtn' className="contactButtonEffect" type="submit" value="Send">Send Message</button>
+            <button id='contactBtn' className="contactButtonEffect" type="submit" value="Send">Send Message <Mail /></button>
           </form>
         </div>
-    </div>
+    </section>
       );
     };
     
