@@ -23,9 +23,10 @@
     letter-spacing: 1px;
     border: 1.5px solid;
     border-color: rgb(174, 174, 174);
-    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    box-shadow:-3px -0px 5px rgba(149, 127, 127, 0.8);
+    // background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    //             linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    //             linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
   }
 }
 
@@ -35,6 +36,16 @@
 
     &.active{
       font-size: 1.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .portfolioList{
+    font-size: 1rem;
+    padding: 0.5rem 0.3rem;
+    &.active{
+      font-size: 1rem;
     }
   }
 }

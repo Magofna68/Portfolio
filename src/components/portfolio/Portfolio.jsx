@@ -46,20 +46,21 @@ export default function Portfolio() {
 
   return (
     <div  id="portfolio">
-        <span className="portfolioHeader"><h1>Portfolio<span style={{ color: 'gray'}}>.</span></h1></span>
-        {/* <br/> */}
-        <ul className="portfolioCategory">
-          {list.map((item) => (
-            <PortfolioList 
-              title={item.title} 
-              active={selected === item.id}
-              setSelected={setSelected}
-              id={item.id}
-            />
-          ))}
-        </ul>
-        <div className="container">
-          <>
+      <span className="portfolioHeader">
+        <h1>Portfolio<span style={{ color: 'gray'}}>.</span></h1>
+      </span>
+      <ul className="portfolioCategory">
+        {list.map((item) => (
+          <PortfolioList 
+            title={item.title} 
+            active={selected === item.id}
+            setSelected={setSelected}
+            id={item.id}
+          />
+        ))}
+      </ul>
+      <div className="container">
+        <>
           {data.map((d) => (
             <Card class="img-responsive portfolioCard">
               <Card.Img 
@@ -79,14 +80,14 @@ export default function Portfolio() {
               </Card.Body>
               </Card>
           ))}
-          </>
-          </div>
-          <div className="portfolioTextContainer">
-            <p className="portfolioText">
-              Epicodus has provided over 250 hours of experience, and nearly 20 projects in C#/.Net, Javascript, & React.<br/>
-              The above projects are a few of those.
-            </p>
-          </div>   
+        </>
+      </div>
+      <div className="portfolioTextContainer">
+        <p className="portfolioText">
+          Epicodus has provided over 250 hours of experience, and nearly 20 projects in C#/.Net, Javascript, & React.<br/>
+          The above projects are a few of those.
+        </p>
+      </div>   
     </div>
   );
 }
