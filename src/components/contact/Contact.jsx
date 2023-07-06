@@ -164,7 +164,12 @@ export default function Contact() {
         }
       </div>
         <div className="formContainer">
+          {
+            windowSize > 420 ?
             <span className="formTitle"><h2>Lets Connect!</h2></span>
+            :
+            null
+          }
           <form ref={form} onSubmit={sendEmail}>
             <div className="inputContain"> 
             {
