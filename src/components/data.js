@@ -9,6 +9,7 @@ import UndergroundRoyalty from '../assets/UndergroundRoyalty.png';
 import capstone from '../assets/capstone.png';
 import VALIDATE from '../assets/VALIDATE.png';
 import VALIDATEIcon from '../assets/VALIDATEIcon.png';
+import Promptopia from '../assets/Promptopia.png';
 
 export const worksData = [
   {
@@ -68,6 +69,16 @@ export const featuredPortfolio = [
     link: "https://magofna68.github.io/react-hooks-yt-api/",
     link2: "https://github.com/Magofna68/react-yt-api-redux",
     text: "This project focused on utilizing a hook to fetch an API call."
+  },
+  {
+    id: 3,
+    title: "Promptopia",
+    alt: "AI prompting tool",
+    img: `${Promptopia}`,
+    subtitle: 'Full CRUD application that utilizing NextJs, React, & MongoDB for a full-stack experience.',
+    link: "https://promptopia-two-mu.vercel.app/",
+    link2: "https://github.com/Magofna68/Promptopia",
+    // text: "Prompting application that utilizing NextJs, React, & MongoDB for a full-stack application."
   },
 ]
 

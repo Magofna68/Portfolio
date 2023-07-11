@@ -10,6 +10,7 @@ import Col from 'react-bootstrap/Col';
 import OpineIcon from '../../assets/OpineIcon.png';
 import BouncingIcon from '../utility/animation/BouncingIcon';
 import Evgeny from '../../assets/Evgeny.jpeg';
+import LeeGrambush from '../../assets/LeeGrambush.jpeg';
 
 export default function Testimonial() {
   const [isOpen, setIsOpen] = useState(-1); // Initialize with -1
@@ -37,7 +38,7 @@ export default function Testimonial() {
       name: "Lee Grambush",
       title: "Senior Developer",
       relation: "Lead Developer @ Opine",
-      img: 'https://media.licdn.com/dms/image/C5603AQHB5BLrD5tGww/profile-displayphoto-shrink_800_800/0/1516330813978?e=1688601600&v=beta&t=zoNVVsdajaAqgJa-piI_E52IA6O5NkzZjeLQcrJZMXk',
+      img: `${LeeGrambush}`,
       icon: `${OpineIcon}`,
       alt: "Opine Icon",
       desc: `"I recommend Brandon for any software development position based on my assessment as Senior Developer. Brandon possesses great skills and expertise in developing robust web applications using React. Additionally, Brandon also showcased proficiency in deploying a Node.js backend server, showcasing his solid understanding of server-side development.

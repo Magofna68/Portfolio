@@ -204,9 +204,80 @@
     }
   }
 }
+// __________________________________________
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+  #portfolio {
+
+    .portfolioHeader {
+      margin-top: 3%;
+        font-size: 3rem;
+      }
+
+    ul.portfolioCategory {
+      height: 100px;
+      font-size: 3rem;
+    }
+
+    .container {
+      height: 70%;
+        
+      div.card {
+        border-radius: 30px;
+        width: 33%;
+        max-width: 400px;
+        max-height: 300px;
+
+        &:hover{
+          
+          .card-title.h5 {
+            color: white;
+          }
+        }
+      
+        img.card-img-top {
+          border-radius: 20px;
+          height: 60%;
+          max-width:90%;
+          max-height: 200px;
+
+        }
+
+        .portfolioSubtitle{
+          font-size: .75rem;
+        }
+
+        .cardButtonContainer{
+
+          button.btn.btn-primary {
+            height: 100%;
+            font-size: 1rem;
+            padding: .25rem 1rem;
+          }
+          .btn.btn-success {
+            font-size: 1rem;   
+            padding: .25rem 1rem;         
+          }
+        }
+
+        div.card-title.h5 {
+          font-size: 1.25rem;
+          padding: .5rem 0 0 0;
+        }
+      }
+      
+    }
+    .portfolioTextContainer{
+
+      .portfolioText {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
 
 // __________________________________________
-@media screen and (min-width: 991px) and (max-width: 1500px) {
+@media screen and (min-width: 991px) and (max-width: 1200px) {
   #portfolio {
 
     .portfolioHeader {
@@ -249,11 +320,9 @@
           button.btn.btn-primary {
             height: 100%;
             font-size: 1rem;
-            padding: .5rem 1.25rem;
           }
           .btn.btn-success {
             font-size: 1rem;            
-            padding: 0rem 2rem;          
           }
         }
 
